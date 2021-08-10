@@ -52,3 +52,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: techno-tim/littlelink-server:latest
+          registry: ghcr.io
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PAT }}
