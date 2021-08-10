@@ -52,6 +52,3 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/386
           push: true
           tags: techno-tim/littlelink-server:latest
-
-
-          
