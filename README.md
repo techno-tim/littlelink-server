@@ -4,7 +4,7 @@ This project is based on the great work from [littlelink](https://github.com/set
 It takes the same simple approach to a link page and hosts it within a nodeJS server containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.
 
 
-# 👇 What is `LittleLink`? 
+# 👇 What is LittleLink? 
 
 ![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
