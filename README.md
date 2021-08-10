@@ -1,13 +1,10 @@
 # 🔗 LittleLink-Server
 
-[![Docker Build Status](https://img.shields.io/docker/pulls/timothystewart6/littlelink-server.svg)](https://hub.docker.com/r/timothystewart6/littlelink-server/)
-
 This project is based on the great work from [littlelink](https://github.com/sethcottle/littlelink)
-It takes the same simple approach to a link page and hosts it within a nodeJS server containerized for you to use. Now, customizing `littlelink` with `littlelink-server` is as easy as passing in some environment variables.
+It takes the same simple approach to a link page and hosts it within a nodeJS server containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.
 
 
-
-# 👇 What is `littlelink`? 
+# 👇 What is `LittleLink`? 
 
 ![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
