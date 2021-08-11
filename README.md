@@ -19,4 +19,42 @@ LittleLink has more than 20 company button styles you can use and we'll be throw
 
 Using [Skeleton](http://getskeleton.com/) let us build something that loads quickly & doesn't have any of the unnecessary bloat you would get from using a large framework for a page that requires nothing more than simplicity. LittleLink scored a 99/100 in performance when tested with [Google Lighthouse](https://developers.google.com/web/tools/lighthouse).
 
-![Publish](https://cdn.cottle.cloud/littlelink/fork-edit-publish.png)
+
+# Getting Started
+
+`docker-compose.yml`
+
+```yml
+---
+version: '3'
+services:
+  little-link:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    container_name: littlelink-server
+   volumes:
+     - ./www:/usr/src/app
+    environment:
+      - META_TITLE=Techno Tim
+      - META_DESCRIPTION=Techno Tim Link page
+      - META_AUTHOR=Techno Tim
+      - THEME=Dark
+      - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
+      - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
+      - AVATAR_ALT=Techno Tim Profile Pic
+      - NAME=TechnoTim
+      - BIO=Hey! Just a place where you can connect with me!
+      - GITHUB=https://github.com/timothystewart6
+      - TWITTER=https://twitter.com/TechnoTimLive
+      - INSTAGRAM=https://www.instagram.com/techno.tim
+      - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A/
+      - TWITCH=https://www.twitch.tv/technotim/
+      - DISCORD=https://discord.gg/DJKexrJ
+      - KIT=https://kit.co/TechnoTim
+      - FOOTER=Thanks for stopping by!
+
+    ports:
+      - 8080:3000
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+```
