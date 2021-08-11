@@ -3,7 +3,6 @@ RUN apk --no-cache add \
     gettext \
     bash
 ENV NODE_ENV=production
-VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile --check-files --production=true
