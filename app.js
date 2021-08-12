@@ -10,7 +10,7 @@ app.use(
       useDefaults: true,
       directives: {
         "img-src": '* data:', // this is needed to load images off site
-        upgradeInsecureRequests: [], // you should use SSL, this is disabled for internal use
+        upgradeInsecureRequests: false, // you should use SSL, this is disabled for internal use
       },
     })
   );
