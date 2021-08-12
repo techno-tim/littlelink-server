@@ -47,12 +47,33 @@ services:
       - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A/
       - TWITCH=https://www.twitch.tv/technotim/
       - DISCORD=https://discord.gg/DJKexrJ
+      - TIKTOK=https://www.tiktok.com/@technotim
       - KIT=https://kit.co/TechnoTim
+      # - FACEBOOK=https:://facebook.com
+      # - FACEBOOK_MESSENGER=https:://facebook.com
+      # - LINKED_IN=https:://linkedin.com
+      # - PRODUCT_HUNT=https://www.producthunt.com/
+      # - SNAPCHAT=https://www.snapchat.com/
+      # - SPOTIFY=https://www.spotify.com/
+      # - REDDIT=https://www.reddit.com/
+      # - MEDIUM=https://medium.com
+      # - PINTEREST=https://www.pinterest.com/
+      # - EMAIL=you@example.com
+      # - EMAIL_ALT=you@example.com
+      # - SOUND_CLOUD=https://souncloud.com
+      # - FIGMA=https://figma.com
+      # - TELEGRAM=https://telegram.org/
+      # - TUMBLR=https://www.tumblr.com/
+      # - STEAM=https://steamcommunity.com/
+      # - VIMEO=https://vimeo.com/
+      # - WORDPRESS=https://wordpress.com/
+      # - GOODREADS=https://www.goodreads.com/
+      # - SKOOB=https://www.skoob.com.br/
       - FOOTER=Thanks for stopping by!
-
     ports:
       - 8080:3000
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
 ```
+
