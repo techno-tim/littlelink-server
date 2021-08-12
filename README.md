@@ -31,8 +31,6 @@ services:
   little-link:
     image: ghcr.io/techno-tim/littlelink-server:latest
     container_name: littlelink-server
-   volumes:
-     - ./www:/usr/src/app
     environment:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
