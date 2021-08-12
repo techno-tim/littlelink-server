@@ -49,9 +49,9 @@ services:
       - DISCORD=https://discord.gg/DJKexrJ
       - TIKTOK=https://www.tiktok.com/@technotim
       - KIT=https://kit.co/TechnoTim
-      # - FACEBOOK=https:://facebook.com
-      # - FACEBOOK_MESSENGER=https:://facebook.com
-      # - LINKED_IN=https:://linkedin.com
+      # - FACEBOOK=https://facebook.com
+      # - FACEBOOK_MESSENGER=https://facebook.com
+      # - LINKED_IN=https://linkedin.com
       # - PRODUCT_HUNT=https://www.producthunt.com/
       # - SNAPCHAT=https://www.snapchat.com/
       # - SPOTIFY=https://www.spotify.com/
