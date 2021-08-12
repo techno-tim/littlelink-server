@@ -1,19 +1,8 @@
-require('dotenv').config()
 const express = require('express')
-const helmet = require("helmet");
 const morgan = require('morgan')
 const compression = require('compression')
 
 const app = express();
-app.use(
-    helmet.contentSecurityPolicy({
-      useDefaults: true,
-      directives: {
-        "img-src": '* data:', // this is needed to load images off site
-        upgradeInsecureRequests: false, // you should use SSL, this is disabled for internal use
-      },
-    })
-  );
 app.use(morgan('combined'));
 app.use(express.static('www'));
 app.use(compression())
