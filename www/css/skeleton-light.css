@@ -165,3 +165,10 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+
+  .avatar {
+    vertical-align: middle;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+  }
