@@ -78,7 +78,7 @@ var avatarEl = document.getElementById('avatar');
 if  (env.AVATAR_URL) {
     avatarEl.src = env.AVATAR_URL;
     avatarEl.alt = env.AVATAR_ALT;
-    avatarEl.srcset = env.AVATAR_2X_URL;
+    avatarEl.srcset = env.AVATAR_2X_URL + ' 2x';
 } else {
     avatarEl.remove()
 }
