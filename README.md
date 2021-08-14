@@ -1,7 +1,7 @@
 # 🔗 LittleLink-Server
 
 This project is based on the great work from [littlelink](https://github.com/sethcottle/littlelink)
-It takes the same simple approach to a link page and hosts it within a nodeJS server containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.
+It takes the same simple approach to a link page and hosts it within a nodeJS server containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.  If you need help configuring this, please see [this video that explains everything](https://www.youtube.com/watch?v=42SqfI_AjXU).
 
 # 🚀 Getting Started
 
@@ -27,7 +27,7 @@ services:
       - GITHUB=https://github.com/timothystewart6
       - TWITTER=https://twitter.com/TechnoTimLive
       - INSTAGRAM=https://www.instagram.com/techno.tim
-      - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A/
+      - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
       - TWITCH=https://www.twitch.tv/technotim/
       - DISCORD=https://discord.gg/DJKexrJ
       - TIKTOK=https://www.tiktok.com/@technotim
@@ -59,6 +59,34 @@ services:
     security_opt:
       - no-new-privileges:true
 ```
+
+Docker command
+
+```
+docker run -d \
+  --name=littlelink-server \
+  -p 8080:3000 \
+  -e META_TITLE='Techno Tim' \
+  -e META_DESCRIPTION='Techno Tim Link page' \
+  -e META_AUTHOR='Techno Tim' \
+  -e THEME='Dark' \
+  -e FAVICON_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg' \
+  -e AVATAR_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg' \
+  -e AVATAR_ALT='Techno Tim Profile Pic' \
+  -e NAME='TechnoTim' \
+  -e BIO='Hey! Just a place where you can connect with me!' \
+  -e GITHUB='https://github.com/timothystewart6' \
+  -e TWITTER='https://twitter.com/TechnoTimLive' \
+  -e INSTAGRAM='https://www.instagram.com/techno.tim' \
+  -e YOUTUBE='https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A' \
+  -e TWITCH='https://www.twitch.tv/technotim' \
+  -e DISCORD='https://discord.gg/DJKexrJ' \
+  -e TIKTOK='https://www.tiktok.com/@technotim' \
+  -e KIT='https://kit.co/TechnoTim' \
+  --restart unless-stopped \
+  ghcr.io/techno-tim/littlelink-server:latest
+```
+
 
 # 👇 What is LittleLink? 
 
