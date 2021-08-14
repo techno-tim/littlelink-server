@@ -6,6 +6,7 @@ var env = {
     FAVICON_URL: '$FAVICON_URL',
     AVATAR_URL: '$AVATAR_URL',
     AVATAR_ALT: '$AVATAR_ALT',
+    AVATAR_2X_URL : '$AVATAR_2X_URL',
     NAME:'$NAME',
     BIO: '$BIO',
     GITHUB: '$GITHUB',
@@ -77,6 +78,7 @@ var avatarEl = document.getElementById('avatar');
 if  (env.AVATAR_URL) {
     avatarEl.src = env.AVATAR_URL;
     avatarEl.alt = env.AVATAR_ALT;
+    avatarEl.srcset = env.AVATAR_2X_URL;
 } else {
     avatarEl.remove()
 }
