@@ -236,6 +236,7 @@ function useEnv(document) {
 
     var emailEl = document.getElementById('email');
     if  (env.EMAIL) {
+        emailEl.innerHTML = env.EMAIL
         emailEl.href = env.EMAIL;
     } else {
         emailEl.nextElementSibling.remove()
@@ -245,6 +246,7 @@ function useEnv(document) {
 
     var emailAltEl = document.getElementById('email-alt');
     if  (env.EMAIL_ALT) {
+        emailAltEl.innerHTML = env.EMAIL_ALT
         emailAltEl.href = env.EMAIL_ALT;
     } else {
         emailAltEl.nextElementSibling.remove()
