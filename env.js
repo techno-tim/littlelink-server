@@ -13,6 +13,7 @@ var env = {
     BIO: '$BIO',
     GITHUB: '$GITHUB',
     TWITTER: '$TWITTER',
+    MASTODON: '$MASTODON',
     MICRO_BLOG: '$MICRO_BLOG',
     INSTAGRAM: '$INSTAGRAM',
     FACEBOOK: '$FACEBOOK',
@@ -117,6 +118,14 @@ function useEnv(document) {
     } else {
         twitterEl.nextElementSibling.remove()
         twitterEl.remove()
+    }
+
+    var mastodonEl = document.getElementById('mastodon');
+    if  (env.MASTODON) {
+        mastodonEl.href = env.MASTODON;
+    } else {
+        mastodonEl.nextElementSibling.remove()
+        mastodonEl.remove()
     }
 
     var microblogEl = document.getElementById('microblog');
