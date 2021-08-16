@@ -1,0 +1,27 @@
+name: 'Pull Request'
+on:
+  pull_request:
+    branches:
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+
+jobs:
+  js-install-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [v14.17.4]  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@master
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Dependencies, Test, and Build
+      run: |
+        yarn install --frozen-lockfile --check-files
+      env:
+        CI: true
