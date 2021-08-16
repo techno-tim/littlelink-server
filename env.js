@@ -13,6 +13,7 @@ var env = {
     BIO: '$BIO',
     GITHUB: '$GITHUB',
     TWITTER: '$TWITTER',
+    MICRO_BLOG: '$MICRO_BLOG',
     INSTAGRAM: '$INSTAGRAM',
     FACEBOOK: '$FACEBOOK',
     FACEBOOK_MESSENGER: '$FACEBOOK_MESSENGER',
@@ -114,6 +115,14 @@ function useEnv(document) {
     } else {
         twitterEl.nextElementSibling.remove()
         twitterEl.remove()
+    }
+
+    var microblogEl = document.getElementById('microblog');
+    if  (env.MICRO_BLOG) {
+        microblogEl.href = env.MICRO_BLOG;
+    } else {
+        microblogEl.nextElementSibling.remove()
+        microblogEl.remove()
     }
 
     var instagramEl = document.getElementById('instagram');
