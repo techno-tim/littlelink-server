@@ -28,7 +28,9 @@ var env = {
     PINTEREST: '$PINTEREST',
     TIKTOK: '$TIKTOK',
     EMAIL: '$EMAIL',
+    EMAIL_TEXT: '$EMAIL_TEXT',
     EMAIL_ALT: '$EMAIL_ALT',
+    EMAIL_ALT_TEXT: '$EMAIL_ALT_TEXT',
     SOUND_CLOUD: '$SOUND_CLOUD',
     FIGMA: '$FIGMA',
     KIT: '$KIT',
@@ -236,7 +238,7 @@ function useEnv(document) {
 
     var emailEl = document.getElementById('email');
     if  (env.EMAIL) {
-        emailEl.innerHTML = env.EMAIL
+        emailEl.innerHTML = env.EMAIL_TEXT || env.EMAIL
         emailEl.href = 'mailto:' + env.EMAIL;
     } else {
         emailEl.nextElementSibling.remove()
@@ -246,7 +248,7 @@ function useEnv(document) {
 
     var emailAltEl = document.getElementById('email-alt');
     if  (env.EMAIL_ALT) {
-        emailAltEl.innerHTML = env.EMAIL_ALT
+        emailAltEl.innerHTML = env.EMAIL_ALT_TEXT || env.EMAIL_ALT
         emailAltEl.href = 'mailto:' + env.EMAIL_ALT;
     } else {
         emailAltEl.nextElementSibling.remove()
