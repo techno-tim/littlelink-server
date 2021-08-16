@@ -19,6 +19,7 @@ services:
       - BIO=Hey! Just a place where you can connect with me!
       - GITHUB=https://github.com/timothystewart6
       - TWITTER=https://twitter.com/TechnoTimLive
+      - MASTODON=https://mastodon.social/@Gargron
       - INSTAGRAM=https://www.instagram.com/techno.tim
       - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A/
       - TWITCH=https://www.twitch.tv/technotim/
