@@ -5,6 +5,8 @@ It takes the same simple approach to a link page and hosts it within a nodeJS se
 
 # 🚀 Getting Started
 
+## Docker
+
 `docker-compose.yml`
 
 ```yml
@@ -88,6 +90,22 @@ docker run -d \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
+
+## Kubernetes
+
+[unoffical helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
+
+```
+helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo update
+helm install littlelink-server \
+  --set env.TZ="America/New York" \
+  --set env.META_TITLE="Technotim"
+    k8s-at-home/littlelink-server
+```
+Or use a values.yaml files
+
+`helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
 
 
 # 👇 What is LittleLink? 
