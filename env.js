@@ -43,6 +43,7 @@ var env = {
     WORDPRESS: '$WORDPRESS',
     GOODREADS: '$GOODREADS',
     SKOOB: '$SKOOB',
+    LETTERBOXD: '$LETTERBOXD',
     FOOTER: '$FOOTER',
 
 }
@@ -359,6 +360,13 @@ function useEnv(document) {
         skoobEl.remove()
     }
 
+    var letterboxdEl = document.getElementById('letterboxd');
+    if (env.LETTERBOXD) {
+        letterboxdEl.href = env.LETTERBOXD;
+    } else {
+        letterboxdEl.nextElementSibling.remove()
+        letterboxdEl.remove();
+    }
 
     var footerEl = document.getElementById('footer');
     if  (env.FOOTER) {

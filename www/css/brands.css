@@ -147,6 +147,14 @@ button:hover,
 .button.button-kit:focus {
   filter: brightness(90%) }
 
+/* Letterboxd */
+.button.button-letterboxd {
+  color: #FFFFFF;
+  background-color: #2c3440 }
+.button.button-letterboxd:hover,
+.button.button-letterboxd:focus {
+  filter: brightness(90%) }
+
 /* LinkedIn */
 .button.button-linkedin {
   color: #FFFFFF;
