@@ -75,5 +75,6 @@ jobs:
         author_email: hello@shubhkumar.in
         message: "Commit Updates"
         add: "*"
+        branch: pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
