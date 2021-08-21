@@ -1,6 +1,7 @@
 name: CI for releases
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
