@@ -11,7 +11,7 @@ fs.readFile('./template/index.html', 'utf8', (err, file) => {
   }
   const { JSDOM } = jsdom
   const dom = new JSDOM(file);
-  const html = useEnv(dom.window.document).documentElement.outerHTML;
+  const html = "<!DOCTYPE html>\n" + useEnv(dom.window.document).documentElement.outerHTML;
   fs.writeFile('./www/index.html', html, 'utf8', (err) => {
     if (err) {
       throw err;
