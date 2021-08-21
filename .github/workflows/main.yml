@@ -6,49 +6,73 @@ on:
       - master
 
 jobs:
-  js-install-and-test:
+  # This workflow contains a single job called "build"
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [v14.17.4]  
+        node-version: [14.16.X]
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@master
+      uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install Dependencies, Test, and Build
-      run: |
-        yarn install --frozen-lockfile --check-files
+    - name: Install dependencies
+      run: yarn install 
+    - name: Build Page
+      run: yarn start
       env:
-        CI: true
-
-  build-and-push-docker-image:
-    needs: [js-install-and-test]
-    runs-on: ubuntu-latest
-    steps:
-      - 
-        name: Checkout
-        uses: actions/checkout@v2
-      -
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
-      -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-      -
-        name: Login to GitHub Container Registry
-        uses: docker/login-action@v1 
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.PAT }}
-      -
-        name: Build and push
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
-          push: true
-          tags: ghcr.io/techno-tim/littlelink-server:latest
+        META_TITLE: ${{ secrets.META_TITLE }}
+        META_DESCRIPTION: ${{ secrets.META_DESCRIPTION }}
+        META_AUTHOR: ${{ secrets.META_AUTHOR }}
+        THEME: ${{ secrets.THEME }}
+        FAVICON_URL: ${{ secrets.FAVICON_URL }}
+        AVATAR_URL: ${{ secrets.AVATAR_URL }}
+        AVATAR_ALT: ${{ secrets.AVATAR_ALT }}
+        AVATAR_2X_URL: ${{ secrets.AVATAR_2X_URL }}
+        NAME: ${{ secrets.NAME }}
+        BIO: ${{ secrets.BIO }}
+        GITHUB: ${{ secrets.GITHUB }}
+        TWITTER: ${{ secrets.TWITTER }}
+        MASTODON: ${{ secrets.MASTODON }}
+        MICRO_BLOG: ${{ secrets.MICRO_BLOG }}
+        INSTAGRAM: ${{ secrets.INSTAGRAM }}
+        FACEBOOK: ${{ secrets.FACEBOOK }}
+        FACEBOOK_MESSENGER: ${{ secrets.FACEBOOK_MESSENGER }}
+        LINKED_IN: ${{ secrets.LINKED_IN }}
+        YOUTUBE: ${{ secrets.YOUTUBE }}
+        DISCORD: ${{ secrets.DISCORD }}
+        TWITCH: ${{ secrets.TWITCH }}
+        PRODUCT_HUNT: ${{ secrets.PRODUCT_HUNT }}
+        SNAPCHAT: ${{ secrets.SNAPCHAT }}
+        SPOTIFY: ${{ secrets.SPOTIFY }}
+        REDDIT: ${{ secrets.REDDIT }}
+        MEDIUM: ${{ secrets.MEDIUM }}
+        PINTEREST: ${{ secrets.PINTEREST }}
+        TIKTOK: ${{ secrets.TIKTOK }}
+        EMAIL: ${{ secrets.EMAIL }}
+        EMAIL_TEXT: ${{ secrets.EMAIL_TEXT }}
+        EMAIL_ALT: ${{ secrets.EMAIL_ALT }}
+        EMAIL_ALT_TEXT: ${{ secrets.EMAIL_ALT_TEXT }}
+        SOUND_CLOUD: ${{ secrets.SOUND_CLOUD }}
+        FIGMA: ${{ secrets.FIGMA }}
+        KIT: ${{ secrets.KIT }}
+        TELEGRAM: ${{ secrets.TELEGRAM }}
+        TUMBLR: ${{ secrets.TUMBLR }}
+        STEAM: ${{ secrets.STEAM }}
+        VIMEO: ${{ secrets.VIMEO }}
+        WORDPRESS: ${{ secrets.WORDPRESS }}
+        GOODREADS: ${{ secrets.GOODREADS }}
+        SKOOB: ${{ secrets.SKOOB }}
+        LETTERBOXD: ${{ secrets.LETTERBOXD }}
+        FOOTER: ${{ secrets.FOOTER }}
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v5
+      with:
+        author_name: Shubham Kumar
+        author_email: hello@shubhkumar.in
+        message: "Commit Updates"
+        add: "*"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
