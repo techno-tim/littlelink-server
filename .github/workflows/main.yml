@@ -1,4 +1,4 @@
-name: CI for releases
+name: Deploy on Github
 
 on:
   workflow_dispatch:
@@ -75,6 +75,6 @@ jobs:
         author_email: hello@shubhkumar.in
         message: "Commit Updates"
         add: "*"
-        branch: pages
+        branch: master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
