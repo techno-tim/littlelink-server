@@ -1,7 +1,7 @@
 # 🔗 LittleLink-Server
 
 This project is based on the great work from [littlelink](https://github.com/sethcottle/littlelink)
-It takes the same simple approach to a link page and hosts it within a nodeJS server containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.  If you need help configuring this, please see [this video that explains everything](https://www.youtube.com/watch?v=42SqfI_AjXU).
+It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.  If you need help configuring this, please see [this video that explains everything](https://www.youtube.com/watch?v=42SqfI_AjXU).
 
 # 🚀 Getting Started
 
@@ -98,14 +98,14 @@ docker run -d \
 
 ## Kubernetes
 
-[unoffical helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
+[Unofficial helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
 
 ```
 helm repo add k8s-at-home https://k8s-at-home.com/charts/
 helm repo update
 helm install littlelink-server \
   --set env.TZ="America/New York" \
-  --set env.META_TITLE="Technotim"
+  --set env.META_TITLE="TechnoTim"
     k8s-at-home/littlelink-server
 ```
 Or use a values.yaml files
