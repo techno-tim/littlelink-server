@@ -45,7 +45,9 @@ services:
       # - MEDIUM=https://medium.com
       # - PINTEREST=https://www.pinterest.com/
       # - EMAIL=you@example.com
+      # - EMAIL_TEXT=Email Me!
       # - EMAIL_ALT=you@example.com
+      # - EMAIL_ALT_TEXT=Email me!
       # - SOUND_CLOUD=https://souncloud.com
       # - FIGMA=https://figma.com
       # - TELEGRAM=https://telegram.org/
@@ -87,6 +89,9 @@ docker run -d \
   -e DISCORD='https://discord.gg/DJKexrJ' \
   -e TIKTOK='https://www.tiktok.com/@technotim' \
   -e KIT='https://kit.co/TechnoTim' \
+  -e EMAIL='someone@example.com' \
+  -e EMAIL_TEXT='Email me!' \
+  -e FOOTER=Thanks for stopping by! \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```

@@ -6,33 +6,40 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "razzle start",
+    "build": "razzle build",
+    "debug": "yarn start --inspect --inspect-port 9230",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "lint": "eslint ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timothystewart6/littlelink.git"
-  },
-  "keywords": [
-    "littlelink",
-    "linktree",
-    "linktr.ee",
-    "javascript",
-    "open",
-    "source",
-    "html",
-    "css",
-    "docker"
-  ],
-  "author": "Timothy Stewart",
-  "bugs": {
-    "url": "https://github.com/timothystewart6/littlelink/issues"
-  },
-  "homepage": "https://github.com/timothystewart6/littlelink#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "jsdom": "^17.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "serialize-javascript": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-preset-razzle": "4.0.6",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "html-webpack-plugin": "^4.5.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^2.3.2",
+    "razzle": "^4.0.6",
+    "razzle-dev-utils": "^4.0.6",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.2"
   }
 }
