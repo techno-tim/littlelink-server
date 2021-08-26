@@ -5,7 +5,7 @@ It takes the same simple approach to a link page and hosts it within a NodeJS se
 
 # 🚀 Getting Started
 
-Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supports buttons!
+Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons!
 ## Docker
 
 `docker-compose.yml`
