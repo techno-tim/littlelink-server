@@ -62,6 +62,7 @@ services:
       - LETTERBOXD=https://letterboxd.com/
       - MASTODON=https://mastodon.social/
       - MICRO_BLOG=https://micro.blog/
+      - WHATSAPP=https://www.whatsapp.com/
     ports:
       - 8080:3000
     restart: unless-stopped

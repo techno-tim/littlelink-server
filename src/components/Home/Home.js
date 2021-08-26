@@ -32,6 +32,7 @@ import mastodonLogo from '../../icons/mastodon.svg';
 import microblogLogo from '../../icons/microblog.svg';
 import emailLogo from '../../icons/email.svg';
 import emailAltLogo from '../../icons/email_alt.svg';
+import whatsappLogo from '../../icons/whatsapp.svg';
 
 function Home(props) {
   return (
@@ -288,6 +289,14 @@ function Home(props) {
                 href={runtimeConfig.MICRO_BLOG}
                 displayName="Microblog"
                 logo={microblogLogo}
+              />
+            )}
+            {runtimeConfig.WHATSAPP && (
+              <Button
+                name="whatsapp"
+                href={runtimeConfig.WHATSAPP}
+                displayName="WhatsAppp"
+                logo={whatsappLogo}
               />
             )}
             <p id="footer">{runtimeConfig.FOOTER}</p>
