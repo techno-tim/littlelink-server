@@ -6,9 +6,7 @@ import './Avatar.css';
 function Avatar(props) {
   const { src, srcSet, alt } = props;
 
-  return (
-    <img id="avatar" className="avatar" src={src} srcSet={srcSet} alt={alt} />
-  );
+  return <img className="avatar" src={src} srcSet={srcSet} alt={alt} />;
 }
 
 export default Avatar;

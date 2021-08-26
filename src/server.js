@@ -58,23 +58,16 @@ server
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
-        <title id="meta-title">${runtimeConfig.META_TITLE}</title>
-        <meta id="meta-description" name="description" content="${
-          runtimeConfig.META_DESCRIPTION
-        }">
-        <meta id="meta-author" name="author" content="${
-          runtimeConfig.META_AUTHOR
-        }">
-
+        <title >${runtimeConfig.META_TITLE}</title>
+        <meta name="description" content="${runtimeConfig.META_DESCRIPTION}">
+        <meta  name="author" content="${runtimeConfig.META_AUTHOR}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link id="theme" rel="stylesheet" href="css/${theme}">
+        <link rel="stylesheet" href="css/${theme}">
         <link rel="stylesheet" href="css/brands.css">
         ${cssLinksFromAssets(assets, 'client')}
-        <link id="favicon" rel="icon" type="image/png" href="${
-          runtimeConfig.FAVICON_URL
-        }">
+        <link rel="icon" type="image/png" href="${runtimeConfig.FAVICON_URL}">
 
     </head>
     <body>

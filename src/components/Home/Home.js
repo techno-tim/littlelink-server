@@ -45,8 +45,8 @@ function Home(props) {
               srcSet={runtimeConfig.AVATAR_2X_URL}
               alt={runtimeConfig.AVATAR_ALT}
             />
-            <h1 id="name">{`${runtimeConfig.NAME}`}</h1>
-            <p id="bio">{runtimeConfig.BIO}</p>
+            <h1>{`${runtimeConfig.NAME}`}</h1>
+            <p>{runtimeConfig.BIO}</p>
             {runtimeConfig.GITHUB && (
               <Button
                 name="github"
@@ -299,7 +299,9 @@ function Home(props) {
                 logo={whatsappLogo}
               />
             )}
-            <p id="footer">{runtimeConfig.FOOTER}</p>
+            <div>
+              <p className="footer">{runtimeConfig.FOOTER}</p>
+            </div>
           </div>
         </div>
       </div>

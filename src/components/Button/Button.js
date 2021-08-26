@@ -7,7 +7,6 @@ function Button(props) {
   return (
     <>
       <a
-        id={name}
         className={`button button-${name}`}
         href={href}
         target="_blank"
