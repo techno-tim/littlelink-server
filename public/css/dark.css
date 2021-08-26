@@ -175,3 +175,8 @@ hr {
   height: 128px;
   border-radius: 50%;
 }
+
+.footer {
+  margin-top: 36px;
+  padding-bottom: 36px;
+}
