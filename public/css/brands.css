@@ -317,3 +317,11 @@ button:hover,
 .button.button-wordpress:hover,
 .button.button-wordpress:focus {
   filter: brightness(90%) }
+
+  /* WhatsApp */
+.button.button-whatsapp {
+  color: #FFFFFF;
+  background-color: #2DB842 }
+.button.button-whatsapp:hover,
+.button.button-whatsapp:focus {
+  filter: brightness(90%) }

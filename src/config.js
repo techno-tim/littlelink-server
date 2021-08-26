@@ -48,6 +48,7 @@ export const runtimeConfig =
         MASTODON: window?.env?.MASTODON,
         MICRO_BLOG: window?.env?.MICRO_BLOG,
         FOOTER: window?.env?.FOOTER,
+        WHATSAPP: window?.env?.WHATSAPP,
       }
     : {
         // server
@@ -162,4 +163,7 @@ export const runtimeConfig =
         FOOTER: nodeIsProduction
           ? process.env.FOOTER
           : process.env.RAZZLE_FOOTER,
+        WHATSAPP: nodeIsProduction
+          ? process.env.WHATSAPP
+          : process.env.RAZZLE_WHATSAPP,
       };
