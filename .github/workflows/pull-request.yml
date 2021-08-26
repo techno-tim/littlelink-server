@@ -23,5 +23,7 @@ jobs:
     - name: Install Dependencies, Test, and Build
       run: |
         yarn install --frozen-lockfile --check-files
+        yarn lint
+        yarn test
       env:
         CI: true
