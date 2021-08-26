@@ -16,7 +16,6 @@ export const runtimeConfig =
         BIO: window?.env?.BIO,
         GITHUB: window?.env?.GITHUB,
         TWITTER: window?.env?.TWITTER,
-        MICRO_BLOG: window?.env?.MICRO_BLOG,
         INSTAGRAM: window?.env?.INSTAGRAM,
         FACEBOOK: window?.env?.FACEBOOK,
         FACEBOOK_MESSENGER: window?.env?.FACEBOOK_MESSENGER,
@@ -47,6 +46,7 @@ export const runtimeConfig =
         SKOOB: window?.env?.SKOOB,
         LETTERBOXD: window?.env?.LETTERBOXD,
         MASTODON: window?.env?.MASTODON,
+        MICRO_BLOG: window?.env?.MICRO_BLOG,
         FOOTER: window?.env?.FOOTER,
       }
     : {
@@ -154,6 +154,9 @@ export const runtimeConfig =
           ? process.env.LETTERBOXD
           : process.env.RAZZLE_LETTERBOXD,
         MASTODON: nodeIsProduction
+          ? process.env.MASTODON
+          : process.env.RAZZLE_MASTODON,
+        MICRO_BLOG: nodeIsProduction
           ? process.env.MICRO_BLOG
           : process.env.RAZZLE_MICRO_BLOG,
         FOOTER: nodeIsProduction

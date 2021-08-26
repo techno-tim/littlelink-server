@@ -1,8 +1,4 @@
 FROM node:14.17.4-alpine AS node-build
-RUN apk --no-cache add \
-    gettext \
-    bash
-
 WORKDIR /usr/src/app
 COPY package.json ./
 COPY yarn.lock ./

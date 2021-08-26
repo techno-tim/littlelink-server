@@ -29,6 +29,9 @@ import goodreadsLogo from '../../icons/goodreads.svg';
 import skoobLogo from '../../icons/skoob.svg';
 import letterboxdLogo from '../../icons/letterboxd.svg';
 import mastodonLogo from '../../icons/mastodon.svg';
+import microblogLogo from '../../icons/microblog.svg';
+import emailLogo from '../../icons/email.svg';
+import emailAltLogo from '../../icons/email_alt.svg';
 
 function Home(props) {
   return (
@@ -176,6 +179,7 @@ function Home(props) {
                 name="default"
                 href={`mailto:${runtimeConfig.EMAIL}`}
                 displayName={runtimeConfig.EMAIL_TEXT}
+                logo={emailLogo}
               />
             )}
 
@@ -184,6 +188,7 @@ function Home(props) {
                 name="default"
                 href={`mailto:${runtimeConfig.EMAIL_ALT_TEXT}`}
                 displayName={runtimeConfig.EMAIL_ALT_TEXT}
+                logo={emailAltLogo}
               />
             )}
 
@@ -275,6 +280,14 @@ function Home(props) {
                 href={runtimeConfig.MASTODON}
                 displayName="Mastodon"
                 logo={mastodonLogo}
+              />
+            )}
+            {runtimeConfig.MICRO_BLOG && (
+              <Button
+                name="microblog"
+                href={runtimeConfig.MICRO_BLOG}
+                displayName="Microblog"
+                logo={microblogLogo}
               />
             )}
             <p id="footer">{runtimeConfig.FOOTER}</p>

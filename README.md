@@ -5,6 +5,7 @@ It takes the same simple approach to a link page and hosts it within a NodeJS se
 
 # 🚀 Getting Started
 
+Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supports buttons!
 ## Docker
 
 `docker-compose.yml`
@@ -27,6 +28,7 @@ services:
       - AVATAR_ALT=Techno Tim Profile Pic
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
+      - FOOTER=Thanks for stopping by!
       - GITHUB=https://github.com/timothystewart6
       - TWITTER=https://twitter.com/TechnoTimLive
       - INSTAGRAM=https://www.instagram.com/techno.tim
@@ -35,29 +37,31 @@ services:
       - DISCORD=https://discord.gg/DJKexrJ
       - TIKTOK=https://www.tiktok.com/@technotim
       - KIT=https://kit.co/TechnoTim
-      # - FACEBOOK=https://facebook.com
-      # - FACEBOOK_MESSENGER=https://facebook.com
-      # - LINKED_IN=https://linkedin.com
-      # - PRODUCT_HUNT=https://www.producthunt.com/
-      # - SNAPCHAT=https://www.snapchat.com/
-      # - SPOTIFY=https://www.spotify.com/
-      # - REDDIT=https://www.reddit.com/
-      # - MEDIUM=https://medium.com
-      # - PINTEREST=https://www.pinterest.com/
-      # - EMAIL=you@example.com
-      # - EMAIL_TEXT=Email Me!
-      # - EMAIL_ALT=you@example.com
-      # - EMAIL_ALT_TEXT=Email me!
-      # - SOUND_CLOUD=https://souncloud.com
-      # - FIGMA=https://figma.com
-      # - TELEGRAM=https://telegram.org/
-      # - TUMBLR=https://www.tumblr.com/
-      # - STEAM=https://steamcommunity.com/
-      # - VIMEO=https://vimeo.com/
-      # - WORDPRESS=https://wordpress.com/
-      # - GOODREADS=https://www.goodreads.com/
-      # - SKOOB=https://www.skoob.com.br/
-      - FOOTER=Thanks for stopping by!
+      - FACEBOOK=https://facebook.com
+      - FACEBOOK_MESSENGER=https://facebook.com
+      - LINKED_IN=https://linkedin.com
+      - PRODUCT_HUNT=https://www.producthunt.com/
+      - SNAPCHAT=https://www.snapchat.com/
+      - SPOTIFY=https://www.spotify.com/
+      - REDDIT=https://www.reddit.com/
+      - MEDIUM=https://medium.com
+      - PINTEREST=https://www.pinterest.com/
+      - EMAIL=you@example.com
+      - EMAIL_TEXT=Email Me!
+      - EMAIL_ALT=you@example.com
+      - EMAIL_ALT_TEXT=Email Us!
+      - SOUND_CLOUD=https://souncloud.com
+      - FIGMA=https://figma.com
+      - TELEGRAM=https://telegram.org/
+      - TUMBLR=https://www.tumblr.com/
+      - STEAM=https://steamcommunity.com/
+      - VIMEO=https://vimeo.com/
+      - WORDPRESS=https://wordpress.com/
+      - GOODREADS=https://www.goodreads.com/
+      - SKOOB=https://www.skoob.com.br/
+      - LETTERBOXD=https://letterboxd.com/
+      - MASTODON=https://mastodon.social/
+      - MICRO_BLOG=https://micro.blog/
     ports:
       - 8080:3000
     restart: unless-stopped
