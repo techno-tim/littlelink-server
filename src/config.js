@@ -80,7 +80,7 @@ export const runtimeConfig =
           ? process.env.GITHUB
           : process.env.RAZZLE_GITHUB,
         TWITTER: nodeIsProduction
-          ? process.env.GITHUB
+          ? process.env.TWITTER
           : process.env.RAZZLE_TWITTER,
         INSTAGRAM: nodeIsProduction
           ? process.env.INSTAGRAM
