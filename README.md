@@ -5,8 +5,11 @@ It takes the same simple approach to a link page and hosts it within a NodeJS se
 
 # 🚀 Getting Started
 
+## Supported Links
 Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons!
 ## Docker
+
+This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
 
 `docker-compose.yml`
 
@@ -16,6 +19,8 @@ version: '3'
 services:
   little-link:
     image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    #image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
     environment:
       - META_TITLE=Techno Tim
