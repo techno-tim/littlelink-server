@@ -187,7 +187,7 @@ function Home(props) {
             {runtimeConfig.EMAIL_ALT && (
               <Button
                 name="default"
-                href={`mailto:${runtimeConfig.EMAIL_ALT_TEXT}`}
+                href={`mailto:${runtimeConfig.EMAIL_ALT}`}
                 displayName={runtimeConfig.EMAIL_ALT_TEXT}
                 logo={emailAltLogo}
               />
