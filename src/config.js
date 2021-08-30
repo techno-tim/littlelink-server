@@ -82,6 +82,9 @@ export const runtimeConfig =
         TWITTER: nodeIsProduction
           ? process.env.TWITTER
           : process.env.RAZZLE_TWITTER,
+        DISCORD: nodeIsProduction
+          ? process.env.DISCORD
+          : process.env.RAZZLE_DISCORD,
         INSTAGRAM: nodeIsProduction
           ? process.env.INSTAGRAM
           : process.env.RAZZLE_INSTAGRAM,
