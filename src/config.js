@@ -40,6 +40,7 @@ export const runtimeConfig =
         TELEGRAM: window?.env?.TELEGRAM,
         TUMBLR: window?.env?.TUMBLR,
         STEAM: window?.env?.STEAM,
+        STRAVA: window?.env?.STRAVA,
         VIMEO: window?.env?.VIMEO,
         WORDPRESS: window?.env?.WORDPRESS,
         GOODREADS: window?.env?.GOODREADS,
@@ -146,6 +147,7 @@ export const runtimeConfig =
           ? process.env.TUMBLR
           : process.env.RAZZLE_TUMBLR,
         STEAM: nodeIsProduction ? process.env.STEAM : process.env.RAZZLE_STEAM,
+        STRAVA: nodeIsProduction ? process.env.STRAVA : process.env.RAZZLE_STRAVA,
         VIMEO: nodeIsProduction ? process.env.VIMEO : process.env.RAZZLE_VIMEO,
         WORDPRESS: nodeIsProduction
           ? process.env.WORDPRESS
