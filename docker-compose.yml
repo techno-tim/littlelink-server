@@ -1,6 +1,6 @@
 ---
 # this is used for local development and testing
-version: '3.0'
+version: "3.0"
 services:
   little-link:
     build:
@@ -51,6 +51,7 @@ services:
       - LETTERBOXD=https://letterboxd.com/
       - MASTODON=https://mastodon.social/
       - MICRO_BLOG=https://micro.blog/
+      - STRAVA=https://strava.com/
 
     ports:
       - 8080:3000

@@ -49,6 +49,7 @@ export const runtimeConfig =
         MICRO_BLOG: window?.env?.MICRO_BLOG,
         FOOTER: window?.env?.FOOTER,
         WHATSAPP: window?.env?.WHATSAPP,
+        STRAVA: window?.env?.STRAVA,
       }
     : {
         // server
@@ -146,6 +147,7 @@ export const runtimeConfig =
           ? process.env.TUMBLR
           : process.env.RAZZLE_TUMBLR,
         STEAM: nodeIsProduction ? process.env.STEAM : process.env.RAZZLE_STEAM,
+
         VIMEO: nodeIsProduction ? process.env.VIMEO : process.env.RAZZLE_VIMEO,
         WORDPRESS: nodeIsProduction
           ? process.env.WORDPRESS
@@ -169,4 +171,7 @@ export const runtimeConfig =
         WHATSAPP: nodeIsProduction
           ? process.env.WHATSAPP
           : process.env.RAZZLE_WHATSAPP,
+        STRAVA: nodeIsProduction
+          ? process.env.STRAVA
+          : process.env.RAZZLE_STRAVA,
       };

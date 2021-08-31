@@ -24,6 +24,7 @@ import figmaLogo from '../../icons/figma.svg';
 import telegramLogo from '../../icons/telegram.svg';
 import tumblrLogo from '../../icons/tumblr.svg';
 import steamLogo from '../../icons/steam.svg';
+import stravaLogo from '../../icons/strava.svg';
 import vimeoLogo from '../../icons/vimeo.svg';
 import wordpressLogo from '../../icons/wordpress.svg';
 import goodreadsLogo from '../../icons/goodreads.svg';
@@ -244,6 +245,7 @@ function Home(props) {
                 logo={steamLogo}
               />
             )}
+
             {runtimeConfig.VIMEO && (
               <Button
                 name="vimeo"
@@ -306,6 +308,14 @@ function Home(props) {
                 href={runtimeConfig.WHATSAPP}
                 displayName="WhatsApp"
                 logo={whatsappLogo}
+              />
+            )}
+            {runtimeConfig.STRAVA && (
+              <Button
+                name="strava"
+                href={runtimeConfig.STRAVA}
+                displayName="Strava"
+                logo={stravaLogo}
               />
             )}
             <div>
