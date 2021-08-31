@@ -245,14 +245,7 @@ function Home(props) {
                 logo={steamLogo}
               />
             )}
-            {runtimeConfig.STRAVA && (
-              <Button
-                name="strava"
-                href={runtimeConfig.STRAVA}
-                displayName="Strava"
-                logo={stravaLogo}
-              />
-            )}
+
             {runtimeConfig.VIMEO && (
               <Button
                 name="vimeo"
@@ -313,8 +306,16 @@ function Home(props) {
               <Button
                 name="whatsapp"
                 href={runtimeConfig.WHATSAPP}
-                displayName="WhatsAppp"
+                displayName="WhatsApp"
                 logo={whatsappLogo}
+              />
+            )}
+            {runtimeConfig.STRAVA && (
+              <Button
+                name="strava"
+                href={runtimeConfig.STRAVA}
+                displayName="Strava"
+                logo={stravaLogo}
               />
             )}
             <div>
