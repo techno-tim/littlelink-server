@@ -8,6 +8,7 @@ import kitLogo from '../../icons/kit.svg';
 import tiktokLogo from '../../icons/tiktok.svg';
 import twitchLogo from '../../icons/twitch.svg';
 import twitterLogo from '../../icons/twitter.svg';
+import discordLogo from '../../icons/discord.svg';
 import youtubeLogo from '../../icons/youtube.svg';
 import facebookLogo from '../../icons/facebook.svg';
 import messengerLogo from '../../icons/messenger.svg';
@@ -61,6 +62,14 @@ function Home(props) {
                 href={runtimeConfig.TWITTER}
                 displayName="Twitter"
                 logo={twitterLogo}
+              />
+            )}
+            {runtimeConfig.DISCORD && (
+              <Button
+                name="discord"
+                href={runtimeConfig.DISCORD}
+                displayName="Discord"
+                logo={discordLogo}
               />
             )}
             {runtimeConfig.INSTAGRAM && (
@@ -187,7 +196,7 @@ function Home(props) {
             {runtimeConfig.EMAIL_ALT && (
               <Button
                 name="default"
-                href={`mailto:${runtimeConfig.EMAIL_ALT_TEXT}`}
+                href={`mailto:${runtimeConfig.EMAIL_ALT}`}
                 displayName={runtimeConfig.EMAIL_ALT_TEXT}
                 logo={emailAltLogo}
               />
