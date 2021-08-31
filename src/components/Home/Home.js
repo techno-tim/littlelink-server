@@ -304,7 +304,7 @@ function Home(props) {
               <Button
                 name="whatsapp"
                 href={runtimeConfig.WHATSAPP}
-                displayName="WhatsAppp"
+                displayName="WhatsApp"
                 logo={whatsappLogo}
               />
             )}
