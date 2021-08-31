@@ -245,6 +245,14 @@ button:hover,
 .button.button-steam:hover,
 .button.button-steam:focus {
   filter: brightness(90%) }
+
+/* Strava */
+.button.button-strava {
+  color: #FFFFFF;
+  background-color: #fd5000 }
+.button.button-strava:hover,
+.button.button-strava:focus {
+  filter: brightness(90%) }
   
 /* Telegram */
 .button.button-telegram {
