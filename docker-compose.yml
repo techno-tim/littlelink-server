@@ -44,6 +44,7 @@ services:
       - TELEGRAM=https://telegram.org/
       - TUMBLR=https://www.tumblr.com/
       - STEAM=https://steamcommunity.com/
+      - STRAVA=https://strava.com/
       - VIMEO=https://vimeo.com/
       - WORDPRESS=https://wordpress.com/
       - GOODREADS=https://www.goodreads.com/
