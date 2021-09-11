@@ -36,6 +36,7 @@ import emailAltLogo from '../../icons/email_alt.svg';
 import whatsappLogo from '../../icons/whatsapp.svg';
 import stravaLogo from '../../icons/strava.svg';
 import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
+import gitlabLogo from '../../icons/gitlab.svg';
 
 function Home(props) {
   return (
@@ -325,6 +326,14 @@ function Home(props) {
                 href={runtimeConfig.BUYMEACOFFEE}
                 displayName="Buy Me a Coffee"
                 logo={buyMeACoffeeLogo}
+              />
+            )}
+            {runtimeConfig.GITLAB && (
+              <Button
+                name="gitlab"
+                href={runtimeConfig.GITLAB}
+                displayName="GitLab"
+                logo={gitlabLogo}
               />
             )}
             <div>

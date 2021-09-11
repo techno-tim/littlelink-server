@@ -51,6 +51,7 @@ export const runtimeConfig =
         WHATSAPP: window?.env?.WHATSAPP,
         STRAVA: window?.env?.STRAVA,
         BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
+        GITLAB: window?.env?.GITLAB,
       }
     : {
         // server
@@ -178,4 +179,7 @@ export const runtimeConfig =
         BUYMEACOFFEE: nodeIsProduction
           ? process.env.BUYMEACOFFEE
           : process.env.RAZZLE_BUYMEACOFFEE,
+        GITLAB: nodeIsProduction
+          ? process.env.GITLAB
+          : process.env.RAZZLE_GITLAB,
       };
