@@ -24,6 +24,7 @@ jobs:
       run: |
         yarn install --frozen-lockfile --check-files
         yarn lint
+        yarn lint:style
         yarn test
       env:
         CI: true

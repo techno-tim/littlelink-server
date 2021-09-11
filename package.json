@@ -11,7 +11,8 @@
     "debug": "yarn start --inspect --inspect-port 9230",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:style": "stylelint ./src/**/*.css ./public/**/*.css"
   },
   "dependencies": {
     "compression": "^1.7.4",
@@ -39,6 +40,8 @@
     "prettier": "^2.3.2",
     "razzle": "^4.0.6",
     "razzle-dev-utils": "^4.0.6",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
     "webpack": "^4.44.1",
     "webpack-dev-server": "^3.11.2"
   }

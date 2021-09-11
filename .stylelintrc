@@ -1,0 +1,35 @@
+{
+    "extends": [
+        "stylelint-config-prettier"
+    ],
+    "rules": {
+        "block-no-empty": null,
+        "comment-empty-line-before": [
+            "always",
+            {
+                "ignore": [
+                    "stylelint-commands",
+                    "after-comment"
+                ]
+            }
+        ],
+        "max-empty-lines": 2,
+        "unit-allowed-list": [
+            "em",
+            "rem",
+            "%",
+            "s",
+            "px",
+            "deg"
+        ],
+        "indentation": [
+            2,
+            {
+                "except": [
+                    "value"
+                ],
+                "severity": "error"
+            }
+        ]
+    }
+}
