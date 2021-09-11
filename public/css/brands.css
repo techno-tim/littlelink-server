@@ -404,3 +404,14 @@ button:hover,
 .button.button-strava:focus {
   filter: brightness(90%);
 }
+
+/* Buy Me a Coffee */
+.button.button-buymeacoffee {
+  color: #000000;
+  background-color: #FFDD00;
+}
+.button.button-strava:hover,
+.button.button-strava:focus {
+  filter: brightness(90%);
+}
+

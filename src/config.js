@@ -50,6 +50,7 @@ export const runtimeConfig =
         FOOTER: window?.env?.FOOTER,
         WHATSAPP: window?.env?.WHATSAPP,
         STRAVA: window?.env?.STRAVA,
+        BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
       }
     : {
         // server
@@ -174,4 +175,7 @@ export const runtimeConfig =
         STRAVA: nodeIsProduction
           ? process.env.STRAVA
           : process.env.RAZZLE_STRAVA,
+        BUYMEACOFFEE: nodeIsProduction
+          ? process.env.BUYMEACOFFEE
+          : process.env.RAZZLE_BUYMEACOFFEE,
       };

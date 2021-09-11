@@ -24,7 +24,6 @@ import figmaLogo from '../../icons/figma.svg';
 import telegramLogo from '../../icons/telegram.svg';
 import tumblrLogo from '../../icons/tumblr.svg';
 import steamLogo from '../../icons/steam.svg';
-import stravaLogo from '../../icons/strava.svg';
 import vimeoLogo from '../../icons/vimeo.svg';
 import wordpressLogo from '../../icons/wordpress.svg';
 import goodreadsLogo from '../../icons/goodreads.svg';
@@ -35,6 +34,8 @@ import microblogLogo from '../../icons/microblog.svg';
 import emailLogo from '../../icons/email.svg';
 import emailAltLogo from '../../icons/email_alt.svg';
 import whatsappLogo from '../../icons/whatsapp.svg';
+import stravaLogo from '../../icons/strava.svg';
+import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
 
 function Home(props) {
   return (
@@ -316,6 +317,14 @@ function Home(props) {
                 href={runtimeConfig.STRAVA}
                 displayName="Strava"
                 logo={stravaLogo}
+              />
+            )}
+            {runtimeConfig.BUYMEACOFFEE && (
+              <Button
+                name="buymeacoffee"
+                href={runtimeConfig.BUYMEACOFFEE}
+                displayName="Buy Me a Coffee"
+                logo={buyMeACoffeeLogo}
               />
             )}
             <div>

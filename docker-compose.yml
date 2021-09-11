@@ -52,6 +52,7 @@ services:
       - MASTODON=https://mastodon.social/
       - MICRO_BLOG=https://micro.blog/
       - STRAVA=https://strava.com/
+      - BUYMEACOFFEE=https://www.buymeacoffee.com/
 
     ports:
       - 8080:3000
