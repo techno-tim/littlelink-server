@@ -415,3 +415,12 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* GitLab */
+.button.button-gitlab {
+  color: #8c929d;
+  background-color: #FFFFFF;
+}
+.button.button-gitlab:hover,
+.button.button-gitlab:focus {
+  filter: brightness(90%) }
+

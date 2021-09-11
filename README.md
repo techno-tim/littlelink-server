@@ -68,6 +68,9 @@ services:
       - MASTODON=https://mastodon.social/
       - MICRO_BLOG=https://micro.blog/
       - WHATSAPP=https://www.whatsapp.com/
+      - STRAVA=https://www.strava.com/
+      - BUYMEACOFFEE=https://www.buymeacoffee.com/
+      - GITLAB=https://www.gitlab.com/
     ports:
       - 8080:3000
     restart: unless-stopped
