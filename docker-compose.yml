@@ -1,11 +1,10 @@
 ---
-version: '3'
+version: "3.0"
 services:
   little-link:
-    image: ghcr.io/techno-tim/littlelink-server:latest
-    # dockerhub is also supported timothystewart6/littlelink-server
-    #image: timothystewart6/littlelink-server:latest
-    container_name: littlelink-server
+    build:
+      context: ./
+      dockerfile: Dockerfile
     environment:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
@@ -39,7 +38,7 @@ services:
       - EMAIL=you@example.com
       - EMAIL_TEXT=Email Me!
       - EMAIL_ALT=you@example.com
-      - EMAIL_ALT_TEXT=Email Us!
+      - EMAIL_ALT_TEXT=Email me!
       - SOUND_CLOUD=https://souncloud.com
       - FIGMA=https://figma.com
       - TELEGRAM=https://telegram.org/
@@ -52,12 +51,13 @@ services:
       - LETTERBOXD=https://letterboxd.com/
       - MASTODON=https://mastodon.social/
       - MICRO_BLOG=https://micro.blog/
-      - WHATSAPP=https://www.whatsapp.com/
-      - STRAVA=https://www.strava.com/
+      - STRAVA=https://strava.com/
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
       - GITLAB=https://www.gitlab.com/
+
     ports:
       - 8080:3000
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
+      
