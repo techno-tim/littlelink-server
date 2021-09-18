@@ -15,17 +15,18 @@ This container image is published on both [GitHub Container Registry](https://gi
 
 ```yml
 ---
-version: '3'
+# this is used for local development and testing
+version: "3.0"
 services:
   little-link:
-    image: ghcr.io/techno-tim/littlelink-server:latest
-    # dockerhub is also supported timothystewart6/littlelink-server
-    #image: timothystewart6/littlelink-server:latest
-    container_name: littlelink-server
+    build:
+      context: ./
+      dockerfile: Dockerfile
     environment:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
       - META_AUTHOR=Techno Tim
+      - META_INDEX_STATUS=noindex
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
       - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
@@ -54,7 +55,7 @@ services:
       - EMAIL=you@example.com
       - EMAIL_TEXT=Email Me!
       - EMAIL_ALT=you@example.com
-      - EMAIL_ALT_TEXT=Email Us!
+      - EMAIL_ALT_TEXT=Email me!
       - SOUND_CLOUD=https://souncloud.com
       - FIGMA=https://figma.com
       - TELEGRAM=https://telegram.org/
@@ -67,10 +68,9 @@ services:
       - LETTERBOXD=https://letterboxd.com/
       - MASTODON=https://mastodon.social/
       - MICRO_BLOG=https://micro.blog/
-      - WHATSAPP=https://www.whatsapp.com/
-      - STRAVA=https://www.strava.com/
+      - STRAVA=https://strava.com/
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
-      - GITLAB=https://www.gitlab.com/
+
     ports:
       - 8080:3000
     restart: unless-stopped
@@ -87,6 +87,7 @@ docker run -d \
   -e META_TITLE='Techno Tim' \
   -e META_DESCRIPTION='Techno Tim Link page' \
   -e META_AUTHOR='Techno Tim' \
+  -e META_INDEX_STATUS='noindex' \
   -e THEME='Dark' \
   -e FAVICON_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
   -e AVATAR_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
