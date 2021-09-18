@@ -1,5 +1,5 @@
 ---
-- # this is used for local development and testing
+# this is used for local development and testing
 version: "3.0"
 services:
   little-link:
