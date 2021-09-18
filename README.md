@@ -29,7 +29,7 @@ services:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
       - META_AUTHOR=Techno Tim
-      - META_INDEX_STATUS=noindex
+      - META_INDEX_STATUS=all
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
       - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
