@@ -7,6 +7,7 @@ export const runtimeConfig =
         META_TITLE: window?.env?.META_TITLE,
         META_DESCRIPTION: window?.env?.META_DESCRIPTION,
         META_AUTHOR: window?.env?.META_AUTHOR,
+        META_INDEX_STATUS: window?.env?.META_INDEX_STATUS,
         THEME: window?.env?.THEME,
         FAVICON_URL: window?.env?.FAVICON_URL,
         AVATAR_URL: window?.env?.AVATAR_URL,
