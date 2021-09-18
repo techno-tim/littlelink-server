@@ -14,6 +14,7 @@ This container image is published on both [GitHub Container Registry](https://gi
 `docker-compose.yml`
 
 ```yml
+---
 version: "3.0"
 services:
   little-link:
