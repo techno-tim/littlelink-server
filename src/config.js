@@ -65,6 +65,9 @@ export const runtimeConfig =
         META_AUTHOR: nodeIsProduction
           ? process.env.META_AUTHOR
           : process.env.RAZZLE_META_AUTHOR,
+        META_INDEX_STATUS: nodeIsProduction
+          ? process.env.META_INDEX_STATUS
+          : process.env.RAZZLE_META_INDEX_STATUS,
         THEME: nodeIsProduction ? process.env.THEME : process.env.RAZZLE_THEME,
         FAVICON_URL: nodeIsProduction
           ? process.env.FAVICON_URL
