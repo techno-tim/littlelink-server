@@ -3,6 +3,10 @@
 version: "3.0"
 services:
   little-link:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    #image: timothystewart6/littlelink-server:latest
+    container_name: littlelink-server
     build:
       context: ./
       dockerfile: Dockerfile
@@ -10,6 +14,7 @@ services:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
       - META_AUTHOR=Techno Tim
+      - META_INDEX_STATUS=all
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
       - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
@@ -51,8 +56,10 @@ services:
       - LETTERBOXD=https://letterboxd.com/
       - MASTODON=https://mastodon.social/
       - MICRO_BLOG=https://micro.blog/
-      - STRAVA=https://strava.com/
+      - WHATSAPP=https://www.whatsapp.com/
+      - STRAVA=https://www.strava.com/
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
+      - GITLAB=https://www.gitlab.com/
 
     ports:
       - 8080:3000

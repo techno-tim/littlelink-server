@@ -61,6 +61,7 @@ server
         <title >${runtimeConfig.META_TITLE}</title>
         <meta name="description" content="${runtimeConfig.META_DESCRIPTION}">
         <meta  name="author" content="${runtimeConfig.META_AUTHOR}">
+        <meta  name="robots" content="${runtimeConfig.META_INDEX_STATUS}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">

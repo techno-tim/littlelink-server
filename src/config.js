@@ -7,6 +7,7 @@ export const runtimeConfig =
         META_TITLE: window?.env?.META_TITLE,
         META_DESCRIPTION: window?.env?.META_DESCRIPTION,
         META_AUTHOR: window?.env?.META_AUTHOR,
+        META_INDEX_STATUS: window?.env?.META_INDEX_STATUS,
         THEME: window?.env?.THEME,
         FAVICON_URL: window?.env?.FAVICON_URL,
         AVATAR_URL: window?.env?.AVATAR_URL,
@@ -64,6 +65,9 @@ export const runtimeConfig =
         META_AUTHOR: nodeIsProduction
           ? process.env.META_AUTHOR
           : process.env.RAZZLE_META_AUTHOR,
+        META_INDEX_STATUS: nodeIsProduction
+          ? process.env.META_INDEX_STATUS
+          : process.env.RAZZLE_META_INDEX_STATUS,
         THEME: nodeIsProduction ? process.env.THEME : process.env.RAZZLE_THEME,
         FAVICON_URL: nodeIsProduction
           ? process.env.FAVICON_URL
