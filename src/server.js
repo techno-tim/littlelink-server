@@ -81,7 +81,7 @@ server
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', ${runtimeConfig.GA_TRACKING_ID});
+        gtag('config', '${runtimeConfig.GA_TRACKING_ID}');
       </script>`
             : ''
         }
