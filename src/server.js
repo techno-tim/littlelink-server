@@ -71,6 +71,20 @@ server
         <link rel="stylesheet" href="css/brands.css">
         ${cssLinksFromAssets(assets, 'client')}
         <link rel="icon" type="image/png" href="${runtimeConfig.FAVICON_URL}">
+        ${
+          runtimeConfig.GA_TRACKING_ID
+            ? `
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=${runtimeConfig.GA_TRACKING_ID}"></script>
+            <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', ${runtimeConfig.GA_TRACKING_ID});
+      </script>`
+            : ''
+        }
 
     </head>
     <body>
@@ -78,7 +92,7 @@ server
         <script>window.env = ${serialize(runtimeConfig)};</script>
         ${jsScriptTagsFromAssets(assets, 'client', ' defer crossorigin')}
     </body>
-</html>`,
+    </html>`,
       );
     }
   });

@@ -12,7 +12,8 @@
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
     "lint": "eslint .",
-    "lint:style": "stylelint ./src/**/*.css ./public/**/*.css"
+    "lint:style": "stylelint ./src/**/*.css ./public/**/*.css",
+    "ci": "yarn lint && yarn lint:style && yarn test"
   },
   "dependencies": {
     "compression": "^1.7.4",
