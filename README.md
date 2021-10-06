@@ -7,6 +7,10 @@ It takes the same simple approach to a link page and hosts it within a NodeJS se
 
 ## Supported Links
 Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons!
+
+## Google Analytics Support
+
+See [Getting Started with Analytics](https://support.google.com/analytics/answer/1008015?hl=en).  After getting your GA Tracking Id, use your tracking Id as environment variable like `GA_TRACKING_ID=G-XXXXXXXXXX`  (See the example below)
 ## Docker
 
 This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
