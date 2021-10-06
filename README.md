@@ -78,7 +78,7 @@ services:
       - WHATSAPP=https://www.whatsapp.com/
       - STRAVA=https://www.strava.com/
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
-      - GITLAB=https://www.gitlab.com/-
+      - GITLAB=https://www.gitlab.com/
       - GA_TRACKING_ID=G-XXXXXXXXXX
     ports:
       - 8080:3000
