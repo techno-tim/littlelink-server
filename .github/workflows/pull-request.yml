@@ -22,7 +22,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Dependencies, Test, and Build
       run: |
-        yarn install --frozen-lockfile --check-files
+        yarn install --frozen-lockfile --check-files --network-timeout 600000
         yarn ci
       env:
         CI: true
