@@ -51,38 +51,6 @@ function Home(props) {
             />
             <h1>{`${runtimeConfig.NAME}`}</h1>
             <p>{runtimeConfig.BIO}</p>
-            {runtimeConfig.GITHUB && (
-              <Button
-                name="github"
-                href={runtimeConfig.GITHUB}
-                displayName="GitHub"
-                logo={githubLogo}
-              />
-            )}
-            {runtimeConfig.TWITTER && (
-              <Button
-                name="twitter"
-                href={runtimeConfig.TWITTER}
-                displayName="Twitter"
-                logo={twitterLogo}
-              />
-            )}
-            {runtimeConfig.DISCORD && (
-              <Button
-                name="discord"
-                href={runtimeConfig.DISCORD}
-                displayName="Discord"
-                logo={discordLogo}
-              />
-            )}
-            {runtimeConfig.INSTAGRAM && (
-              <Button
-                name="instagram"
-                href={runtimeConfig.INSTAGRAM}
-                displayName="Instagram"
-                logo={instagramLogo}
-              />
-            )}
             {runtimeConfig.YOUTUBE && (
               <Button
                 name="youtube"
@@ -99,6 +67,40 @@ function Home(props) {
                 logo={twitchLogo}
               />
             )}
+            {runtimeConfig.TWITTER && (
+              <Button
+                name="twitter"
+                href={runtimeConfig.TWITTER}
+                displayName="Twitter"
+                logo={twitterLogo}
+              />
+            )}
+            {runtimeConfig.INSTAGRAM && (
+              <Button
+                name="instagram"
+                href={runtimeConfig.INSTAGRAM}
+                displayName="Instagram"
+                logo={instagramLogo}
+              />
+            )}
+            {runtimeConfig.GITHUB && (
+              <Button
+                name="github"
+                href={runtimeConfig.GITHUB}
+                displayName="GitHub"
+                logo={githubLogo}
+              />
+            )}
+
+            {runtimeConfig.DISCORD && (
+              <Button
+                name="discord"
+                href={runtimeConfig.DISCORD}
+                displayName="Discord"
+                logo={discordLogo}
+              />
+            )}
+
             {runtimeConfig.TIKTOK && (
               <Button
                 name="tiktok"
