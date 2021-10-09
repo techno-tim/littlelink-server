@@ -33,6 +33,7 @@ services:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
       - META_AUTHOR=Techno Tim
+      - LANG=en
       - META_INDEX_STATUS=all
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
@@ -96,6 +97,7 @@ docker run -d \
   -e META_TITLE='Techno Tim' \
   -e META_DESCRIPTION='Techno Tim Link page' \
   -e META_AUTHOR='Techno Tim' \
+  -e LANG=en \
   -e META_INDEX_STATUS='noindex' \
   -e THEME='Dark' \
   -e FAVICON_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \

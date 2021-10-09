@@ -8,6 +8,8 @@ export const runtimeConfig =
         META_DESCRIPTION: window?.env?.META_DESCRIPTION,
         META_AUTHOR: window?.env?.META_AUTHOR,
         META_INDEX_STATUS: window?.env?.META_INDEX_STATUS,
+        LANG: window?.env?.LANG,
+        GA_TRACKING_ID: window?.env?.GA_TRACKING_ID,
         THEME: window?.env?.THEME,
         FAVICON_URL: window?.env?.FAVICON_URL,
         AVATAR_URL: window?.env?.AVATAR_URL,
@@ -53,7 +55,6 @@ export const runtimeConfig =
         STRAVA: window?.env?.STRAVA,
         BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
         GITLAB: window?.env?.GITLAB,
-        GA_TRACKING_ID: window?.env?.GA_TRACKING_ID,
       }
     : {
         // server
@@ -69,6 +70,10 @@ export const runtimeConfig =
         META_INDEX_STATUS: nodeIsProduction
           ? process.env.META_INDEX_STATUS
           : process.env.RAZZLE_META_INDEX_STATUS,
+        LANG: nodeIsProduction ? process.env.LANG : process.env.RAZZLE_LANG,
+        GA_TRACKING_ID: nodeIsProduction
+          ? process.env.GA_TRACKING_ID
+          : process.env.RAZZLE_GA_TRACKING_ID,
         THEME: nodeIsProduction ? process.env.THEME : process.env.RAZZLE_THEME,
         FAVICON_URL: nodeIsProduction
           ? process.env.FAVICON_URL
@@ -154,7 +159,6 @@ export const runtimeConfig =
           ? process.env.TUMBLR
           : process.env.RAZZLE_TUMBLR,
         STEAM: nodeIsProduction ? process.env.STEAM : process.env.RAZZLE_STEAM,
-
         VIMEO: nodeIsProduction ? process.env.VIMEO : process.env.RAZZLE_VIMEO,
         WORDPRESS: nodeIsProduction
           ? process.env.WORDPRESS
@@ -187,7 +191,4 @@ export const runtimeConfig =
         GITLAB: nodeIsProduction
           ? process.env.GITLAB
           : process.env.RAZZLE_GITLAB,
-        GA_TRACKING_ID: nodeIsProduction
-          ? process.env.GA_TRACKING_ID
-          : process.env.RAZZLE_GA_TRACKING_ID,
       };
