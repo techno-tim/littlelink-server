@@ -11,6 +11,20 @@ Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/s
 ## Google Analytics Support
 
 See [Getting Started with Analytics](https://support.google.com/analytics/answer/1008015?hl=en).  After getting your GA Tracking Id, use your tracking Id as environment variable like `GA_TRACKING_ID=G-XXXXXXXXXX`  (See the example below)
+
+All buttons clicked will be tracked automatically if `GA_TRACKING_ID` exists.
+
+Sample event for YouTube button.
+
+javascript
+```
+  window.gtag('event', 'click', {
+    event_category: 'social',
+    event_label: 'youtube',
+    value: 1,
+  });
+```
+
 ## Docker
 
 This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
@@ -35,6 +49,7 @@ services:
       - META_AUTHOR=Techno Tim
       - LANG=en
       - META_INDEX_STATUS=all
+      - GA_TRACKING_ID=G-XXXXXXXXXX
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
       - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
@@ -80,7 +95,6 @@ services:
       - STRAVA=https://www.strava.com/
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
       - GITLAB=https://www.gitlab.com/
-      - GA_TRACKING_ID=G-XXXXXXXXXX
     ports:
       - 8080:3000
     restart: unless-stopped
@@ -99,6 +113,7 @@ docker run -d \
   -e META_AUTHOR='Techno Tim' \
   -e LANG=en \
   -e META_INDEX_STATUS='noindex' \
+  -e GA_TRACKING_ID='G-XXXXXXXXXX' \
   -e THEME='Dark' \
   -e FAVICON_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
   -e AVATAR_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
