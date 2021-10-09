@@ -16,8 +16,8 @@ All buttons clicked will be tracked automatically if `GA_TRACKING_ID` exists.
 
 Sample event for YouTube button.
 
-javascript
-```
+
+```javascript
   window.gtag('event', 'click', {
     event_category: 'social',
     event_label: 'youtube',
