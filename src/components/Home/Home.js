@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
 import { runtimeConfig } from '../../config';
@@ -107,14 +107,6 @@ function Home(props) {
                 href={runtimeConfig.TIKTOK}
                 displayName="TikTok"
                 logo={tiktokLogo}
-              />
-            )}
-            {runtimeConfig.KIT && (
-              <Button
-                name="kit"
-                href={runtimeConfig.KIT}
-                displayName="Kit"
-                logo={kitLogo}
               />
             )}
             {runtimeConfig.FACEBOOK && (
@@ -314,6 +306,14 @@ function Home(props) {
                 logo={whatsappLogo}
               />
             )}
+            {runtimeConfig.KIT && (
+              <Button
+                name="kit"
+                href={runtimeConfig.KIT}
+                displayName="Kit"
+                logo={kitLogo}
+              />
+            )}
             {runtimeConfig.STRAVA && (
               <Button
                 name="strava"
@@ -348,4 +348,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default memo(Home);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { string } from 'prop-types';
 
 function Button(props) {
@@ -22,7 +22,7 @@ function Button(props) {
   );
 }
 
-export default Button;
+export default memo(Button);
 
 Button.propType = {
   src: string.isRequired,

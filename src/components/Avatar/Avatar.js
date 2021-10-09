@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { string } from 'prop-types';
 
 import './Avatar.css';
@@ -9,7 +9,7 @@ function Avatar(props) {
   return <img className="avatar" src={src} srcSet={srcSet} alt={alt} />;
 }
 
-export default Avatar;
+export default memo(Avatar);
 
 Avatar.propType = {
   src: string,
