@@ -41,7 +41,7 @@ if (process.env.NODE_ENV === 'production') {
 server
   .disable('x-powered-by')
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
-  .get('/*', (req, res) => {
+  .get('/', (req, res) => {
     const context = {};
     const markup = renderToString(
       <StaticRouter context={context} location={req.url}>
