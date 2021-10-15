@@ -422,5 +422,16 @@ button:hover,
 }
 .button.button-gitlab:hover,
 .button.button-gitlab:focus {
-  filter: brightness(90%) }
+  filter: brightness(90%) 
+}
+
+/* Patreon */
+.button.button-patreon {
+  color: #FFFFFF;
+  background-color: #FF424D;
+}
+.button.button-patreon:hover,
+.button.button-patreon:focus {
+  filter: brightness(90%) 
+}
 

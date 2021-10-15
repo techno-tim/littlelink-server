@@ -37,6 +37,7 @@ import whatsappLogo from '../../icons/whatsapp.svg';
 import stravaLogo from '../../icons/strava.svg';
 import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
 import gitlabLogo from '../../icons/gitlab.svg';
+import patreonLogo from '../../icons/patreon.svg';
 
 function Home(props) {
   return (
@@ -336,6 +337,14 @@ function Home(props) {
                 href={runtimeConfig.GITLAB}
                 displayName="GitLab"
                 logo={gitlabLogo}
+              />
+            )}
+            {runtimeConfig.PATREON && (
+              <Button
+                name="patreon"
+                href={runtimeConfig.PATREON}
+                displayName="Patreon"
+                logo={patreonLogo}
               />
             )}
             <div>

@@ -95,6 +95,7 @@ services:
       - STRAVA=https://www.strava.com/
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
       - GITLAB=https://www.gitlab.com/
+      - PATREON=https://www.patreon.com/technotim
     ports:
       - 8080:3000
     restart: unless-stopped

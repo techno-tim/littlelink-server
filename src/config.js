@@ -55,6 +55,7 @@ export const runtimeConfig =
         STRAVA: window?.env?.STRAVA,
         BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
         GITLAB: window?.env?.GITLAB,
+        PATREON: window?.env?.PATREON,
       }
     : {
         // server
@@ -191,4 +192,7 @@ export const runtimeConfig =
         GITLAB: nodeIsProduction
           ? process.env.GITLAB
           : process.env.RAZZLE_GITLAB,
+        PATREON: nodeIsProduction
+          ? process.env.PATREON
+          : process.env.RAZZLE_PATREON,
       };
