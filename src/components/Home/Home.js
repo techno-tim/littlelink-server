@@ -25,6 +25,7 @@ import telegramLogo from '../../icons/telegram.svg';
 import tumblrLogo from '../../icons/tumblr.svg';
 import steamLogo from '../../icons/steam.svg';
 import vimeoLogo from '../../icons/vimeo.svg';
+import devtoLogo from '../../icons/devto.svg';
 import wordpressLogo from '../../icons/wordpress.svg';
 import goodreadsLogo from '../../icons/goodreads.svg';
 import skoobLogo from '../../icons/skoob.svg';
@@ -249,6 +250,14 @@ function Home(props) {
                 href={runtimeConfig.VIMEO}
                 displayName="Vimeo"
                 logo={vimeoLogo}
+              />
+            )}
+            {runtimeConfig.DEVTO && (
+              <Button
+                name="devto"
+                href={runtimeConfig.DEVTO}
+                displayName="Dev.to"
+                logo={devtoLogo}
               />
             )}
             {runtimeConfig.WORDPRESS && (

@@ -85,6 +85,7 @@ services:
       - TUMBLR=https://www.tumblr.com/
       - STEAM=https://steamcommunity.com/
       - VIMEO=https://vimeo.com/
+      - DEVTO=https://dev.to/
       - WORDPRESS=https://wordpress.com/
       - GOODREADS=https://www.goodreads.com/
       - SKOOB=https://www.skoob.com.br/
@@ -154,7 +155,7 @@ Or use a values.yaml files
 `helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
 
 
-# 👇 What is LittleLink? 
+# 👇 What is LittleLink?
 
 ![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
@@ -163,7 +164,7 @@ and [many.link](https://www.google.com). LittleLink was built using [Skeleton](h
 
 ![Themes](https://cdn.cottle.cloud/littlelink/themes.png)
 
-LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go. Not a fan of the colors? Update `skeleton-light.css` or `skeleton-dark.css` to the HEX values of your choosing. 
+LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go. Not a fan of the colors? Update `skeleton-light.css` or `skeleton-dark.css` to the HEX values of your choosing.
 
 ![Performance](https://cdn.cottle.cloud/littlelink/performance.png)
 

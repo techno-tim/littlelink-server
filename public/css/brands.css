@@ -365,6 +365,16 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* Dev.to */
+.button.button-devto {
+  color: #000;
+  background-color: #fff;
+}
+.button.button-devto:hover,
+.button.button-devto:focus {
+  filter: brightness(90%);
+}
+
 /* YouTube */
 .button.button-youtube {
   color: #ffffff;
@@ -422,7 +432,7 @@ button:hover,
 }
 .button.button-gitlab:hover,
 .button.button-gitlab:focus {
-  filter: brightness(90%) 
+  filter: brightness(90%)
 }
 
 /* Patreon */
@@ -432,6 +442,6 @@ button:hover,
 }
 .button.button-patreon:hover,
 .button.button-patreon:focus {
-  filter: brightness(90%) 
+  filter: brightness(90%)
 }
 
