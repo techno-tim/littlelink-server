@@ -58,7 +58,7 @@ export const runtimeConfig =
         PATREON: window?.env?.PATREON,
         DEVTO: window?.env?.DEVTO,
         UMAMI_WEBSITE_ID: window?.env?.UMAMI_WEBSITE_ID,
-        UMAMI_APP_URL: window?.env?.UMAMI_APP,
+        UMAMI_APP_URL: window?.env?.UMAMI_APP_URL,
       }
     : {
         // server
