@@ -16,13 +16,8 @@ All buttons clicked will be tracked automatically if `GA_TRACKING_ID` exists.
 
 Sample event for YouTube button.
 
-
 ```javascript
-  window.gtag('event', 'click', {
-    event_category: 'social',
-    event_label: 'youtube',
-    value: 1,
-  });
+  window.gtag('event', 'youtube-button');
 ```
 
 ## Umami Analytics Support
@@ -36,6 +31,12 @@ Generated tracking code should look like:
 ```
 
 Use `data-website-id` as environment variable `UMAMI_WEBSITE_ID` and `src` as `UMAMI_APP_URL`.
+
+Sample event for YouTube button.
+
+```javascript
+  window.umami('youtube-button');
+```
 
 ## Docker
 

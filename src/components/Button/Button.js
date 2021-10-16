@@ -1,14 +1,20 @@
 import React, { memo } from 'react';
 import { string } from 'prop-types';
-import { trackEvent } from '../../analytics/google';
+import { trackGoogleEvent } from '../../analytics/google';
 import { runtimeConfig } from '../../config';
+import { trackUmamiEvent } from '../../analytics/umami';
 
 function Button(props) {
   const { name, href, displayName, logo } = props;
 
   const handleClick = () => {
+    const eventName = `${name}-button`;
+
     if (runtimeConfig?.GA_TRACKING_ID) {
-      trackEvent('click', 'social', name, 1);
+      trackGoogleEvent(eventName);
+    }
+    if (runtimeConfig?.UMAMI_WEBSITE_ID && runtimeConfig?.UMAMI_APP_URL) {
+      trackUmamiEvent(eventName);
     }
   };
 
