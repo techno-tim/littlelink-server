@@ -196,7 +196,5 @@ export const runtimeConfig =
         PATREON: nodeIsProduction
           ? process.env.PATREON
           : process.env.RAZZLE_PATREON,
-        DEVTO: nodeIsProduction
-          ? process.env.DEVTO
-          : process.env.RAZZLE_DEVTO,
+        DEVTO: nodeIsProduction ? process.env.DEVTO : process.env.RAZZLE_DEVTO,
       };
