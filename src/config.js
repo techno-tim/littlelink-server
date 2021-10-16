@@ -56,6 +56,7 @@ export const runtimeConfig =
         BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
         GITLAB: window?.env?.GITLAB,
         PATREON: window?.env?.PATREON,
+        DEVTO: window?.env?.DEVTO,
       }
     : {
         // server
@@ -195,4 +196,5 @@ export const runtimeConfig =
         PATREON: nodeIsProduction
           ? process.env.PATREON
           : process.env.RAZZLE_PATREON,
+        DEVTO: nodeIsProduction ? process.env.DEVTO : process.env.RAZZLE_DEVTO,
       };

@@ -38,6 +38,7 @@ import stravaLogo from '../../icons/strava.svg';
 import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
 import gitlabLogo from '../../icons/gitlab.svg';
 import patreonLogo from '../../icons/patreon.svg';
+import devtoLogo from '../../icons/devto.svg';
 
 function Home(props) {
   return (
@@ -345,6 +346,14 @@ function Home(props) {
                 href={runtimeConfig.PATREON}
                 displayName="Patreon"
                 logo={patreonLogo}
+              />
+            )}
+            {runtimeConfig.DEVTO && (
+              <Button
+                name="devto"
+                href={runtimeConfig.DEVTO}
+                displayName="Dev.to"
+                logo={devtoLogo}
               />
             )}
             <div>

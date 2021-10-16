@@ -96,6 +96,7 @@ services:
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
       - GITLAB=https://www.gitlab.com/
       - PATREON=https://www.patreon.com/technotim
+      - DEVTO=https://dev.to/
     ports:
       - 8080:3000
     restart: unless-stopped
@@ -154,7 +155,7 @@ Or use a values.yaml files
 `helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
 
 
-# 👇 What is LittleLink? 
+# 👇 What is LittleLink?
 
 ![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
@@ -163,7 +164,7 @@ and [many.link](https://www.google.com). LittleLink was built using [Skeleton](h
 
 ![Themes](https://cdn.cottle.cloud/littlelink/themes.png)
 
-LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go. Not a fan of the colors? Update `skeleton-light.css` or `skeleton-dark.css` to the HEX values of your choosing. 
+LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go. Not a fan of the colors? Update `skeleton-light.css` or `skeleton-dark.css` to the HEX values of your choosing.
 
 ![Performance](https://cdn.cottle.cloud/littlelink/performance.png)
 
