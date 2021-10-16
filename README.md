@@ -25,6 +25,18 @@ Sample event for YouTube button.
   });
 ```
 
+## Umami Analytics Support
+
+See [Adding a website & Collecting data](https://umami.is/docs/collect-data) page to add and generate your tracking code.
+
+Generated tracking code should look like:
+
+```javascript
+<script async defer data-website-id="00000000-1111-2222-3333-444444444444" src="https://your-umami-app.com/umami.js"></script>
+```
+
+Use `data-website-id` as environment variable `UMAMI_WEBSITE_ID` and `src` as `UMAMI_APP_URL`.
+
 ## Docker
 
 This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
@@ -97,6 +109,8 @@ services:
       - GITLAB=https://www.gitlab.com/
       - PATREON=https://www.patreon.com/technotim
       - DEVTO=https://dev.to/
+      - UMAMI_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+      - UMAMI_APP_URL=https://your-umami-app.com
     ports:
       - 8080:3000
     restart: unless-stopped

@@ -57,6 +57,8 @@ export const runtimeConfig =
         GITLAB: window?.env?.GITLAB,
         PATREON: window?.env?.PATREON,
         DEVTO: window?.env?.DEVTO,
+        UMAMI_WEBSITE_ID: window?.env?.UMAMI_WEBSITE_ID,
+        UMAMI_APP_URL: window?.env?.UMAMI_APP,
       }
     : {
         // server
@@ -197,4 +199,10 @@ export const runtimeConfig =
           ? process.env.PATREON
           : process.env.RAZZLE_PATREON,
         DEVTO: nodeIsProduction ? process.env.DEVTO : process.env.RAZZLE_DEVTO,
+        UMAMI_WEBSITE_ID: nodeIsProduction
+          ? process.env.UMAMI_WEBSITE_ID
+          : process.env.RAZZLE_UMAMI_WEBSITE_ID,
+        UMAMI_APP_URL: nodeIsProduction
+          ? process.env.UMAMI_APP_URL
+          : process.env.RAZZLE_UMAMI_APP_URL,
       };
