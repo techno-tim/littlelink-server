@@ -9,7 +9,8 @@
 - [ ] Ran `yarn ci` to test my code
 - [ ] Did not add any unnecessary changes
 - [ ] All my changes appear after other changes in each file
+- [ ] If adding new button, please include screenshot
 - [ ] 🚀
-
+<!--- If adding a new button, please include screenshot -->
 <!--- If you are adding new code, please follow the pattern and add it to the end of the file where appropriate -->
 <!--- please be sure that you are not adding any addition changes including spaces, adding/deleting lines -->
