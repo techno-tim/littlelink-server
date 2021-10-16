@@ -85,7 +85,6 @@ services:
       - TUMBLR=https://www.tumblr.com/
       - STEAM=https://steamcommunity.com/
       - VIMEO=https://vimeo.com/
-      - DEVTO=https://dev.to/
       - WORDPRESS=https://wordpress.com/
       - GOODREADS=https://www.goodreads.com/
       - SKOOB=https://www.skoob.com.br/
@@ -97,6 +96,7 @@ services:
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
       - GITLAB=https://www.gitlab.com/
       - PATREON=https://www.patreon.com/technotim
+      - DEVTO=https://dev.to/
     ports:
       - 8080:3000
     restart: unless-stopped

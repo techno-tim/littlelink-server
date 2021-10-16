@@ -44,7 +44,6 @@ export const runtimeConfig =
         TUMBLR: window?.env?.TUMBLR,
         STEAM: window?.env?.STEAM,
         VIMEO: window?.env?.VIMEO,
-        DEVTO: window?.env?.DEVTO,
         WORDPRESS: window?.env?.WORDPRESS,
         GOODREADS: window?.env?.GOODREADS,
         SKOOB: window?.env?.SKOOB,
@@ -57,6 +56,7 @@ export const runtimeConfig =
         BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
         GITLAB: window?.env?.GITLAB,
         PATREON: window?.env?.PATREON,
+        DEVTO: window?.env?.DEVTO,
       }
     : {
         // server
@@ -162,7 +162,6 @@ export const runtimeConfig =
           : process.env.RAZZLE_TUMBLR,
         STEAM: nodeIsProduction ? process.env.STEAM : process.env.RAZZLE_STEAM,
         VIMEO: nodeIsProduction ? process.env.VIMEO : process.env.RAZZLE_VIMEO,
-        DEVTO: nodeIsProduction ? process.env.DEVTO : process.env.RAZZLE_DEVTO,
         WORDPRESS: nodeIsProduction
           ? process.env.WORDPRESS
           : process.env.RAZZLE_WORDPRESS,
@@ -197,4 +196,7 @@ export const runtimeConfig =
         PATREON: nodeIsProduction
           ? process.env.PATREON
           : process.env.RAZZLE_PATREON,
+        DEVTO: nodeIsProduction
+          ? process.env.DEVTO
+          : process.env.RAZZLE_DEVTO,
       };

@@ -25,7 +25,6 @@ import telegramLogo from '../../icons/telegram.svg';
 import tumblrLogo from '../../icons/tumblr.svg';
 import steamLogo from '../../icons/steam.svg';
 import vimeoLogo from '../../icons/vimeo.svg';
-import devtoLogo from '../../icons/devto.svg';
 import wordpressLogo from '../../icons/wordpress.svg';
 import goodreadsLogo from '../../icons/goodreads.svg';
 import skoobLogo from '../../icons/skoob.svg';
@@ -39,6 +38,7 @@ import stravaLogo from '../../icons/strava.svg';
 import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
 import gitlabLogo from '../../icons/gitlab.svg';
 import patreonLogo from '../../icons/patreon.svg';
+import devtoLogo from '../../icons/devto.svg';
 
 function Home(props) {
   return (
@@ -252,14 +252,6 @@ function Home(props) {
                 logo={vimeoLogo}
               />
             )}
-            {runtimeConfig.DEVTO && (
-              <Button
-                name="devto"
-                href={runtimeConfig.DEVTO}
-                displayName="Dev.to"
-                logo={devtoLogo}
-              />
-            )}
             {runtimeConfig.WORDPRESS && (
               <Button
                 name="wordpress"
@@ -354,6 +346,14 @@ function Home(props) {
                 href={runtimeConfig.PATREON}
                 displayName="Patreon"
                 logo={patreonLogo}
+              />
+            )}
+            {runtimeConfig.DEVTO && (
+              <Button
+                name="devto"
+                href={runtimeConfig.DEVTO}
+                displayName="Dev.to"
+                logo={devtoLogo}
               />
             )}
             <div>
