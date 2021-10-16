@@ -63,6 +63,8 @@ services:
       - GITLAB=https://www.gitlab.com/
       - PATREON=https://www.patreon.com/technotim
       - DEVTO=https://dev.to/
+      - UMAMI_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+      - UMAMI_APP_URL=https://your-umami-app.com
 
     ports:
       - 8080:3000
