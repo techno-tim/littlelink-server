@@ -8,7 +8,7 @@ It takes the same simple approach to a link page and hosts it within a NodeJS se
 ## Supported Links
 Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons!
 
-## Google Analytics Support
+## 📈 Google Analytics Support
 
 See [Getting Started with Analytics](https://support.google.com/analytics/answer/1008015?hl=en).  After getting your GA Tracking Id, use your tracking Id as environment variable like `GA_TRACKING_ID=G-XXXXXXXXXX`  (See the example below)
 
@@ -20,7 +20,7 @@ Sample event for YouTube button.
   window.gtag('event', 'youtube-button');
 ```
 
-## Umami Analytics Support
+## 📈 Umami Analytics Support
 
 See [Adding a website & Collecting data](https://umami.is/docs/collect-data) page to add and generate your tracking code.
 
@@ -38,7 +38,7 @@ Sample event for YouTube button.
   window.umami('youtube-button');
 ```
 
-## Docker
+## 🐳 Docker
 
 This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
 
@@ -153,7 +153,7 @@ docker run -d \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
 
-## Kubernetes
+## ☸ Kubernetes
 
 [Unofficial helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
 
