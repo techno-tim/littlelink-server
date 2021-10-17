@@ -28,7 +28,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.15.0.tgz#2dbaf8b85334796cafbb0f5793a90a2fc010b176"
   integrity sha512-0NqAC1IJE0S0+lL1SWFMxMkz1pKCNCjI4tr2Zx4LJSXxCLAdr6KyArnY+sno5m3yH9g737ygOyPABDsnXkpxiA==
 
-"@babel/core@>=7.9.0", "@babel/core@^7.1.0", "@babel/core@^7.11.1", "@babel/core@^7.7.5":
+"@babel/core@>=7.9.0", "@babel/core@^7.1.0", "@babel/core@^7.11.1", "@babel/core@^7.12.3", "@babel/core@^7.7.5":
   version "7.15.8"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.15.8.tgz#195b9f2bffe995d2c6c159e72fe525b4114e8c10"
   integrity sha512-3UG9dsxvYBMYwRv+gS41WKHno4K60/9GPy1CJaH6xy3Elq8CTtvtjT5R5jmNhXfCYLX2mTw+7/aq5ak/gOE0og==
@@ -274,7 +274,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.15.4", "@babel/parser@^7.15.8":
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.15.4", "@babel/parser@^7.15.8":
   version "7.15.8"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.15.8.tgz#7bacdcbe71bdc3ff936d510c15dcea7cf0b99016"
   integrity sha512-BRYa3wcQnjS/nqI8Ac94pYYpJfojHVvVXJ97+IDCImX4Jc8W8Xv1+47enbruk+q1etOpsQNwnfFcNGw+gtPGxA==
@@ -1411,9 +1411,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "16.11.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.0.tgz#4b95f2327bacd1ef8f08d8ceda193039c5d7f52e"
-  integrity sha512-8MLkBIYQMuhRBQzGN9875bYsOhPnf/0rgXGo66S2FemHkhbn9qtsz9ywV1iCG+vbjigE4WUNVvw37Dx+L0qsPg==
+  version "16.11.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.1.tgz#2e50a649a50fc403433a14f829eface1a3443e97"
+  integrity sha512-PYGcJHL9mwl1Ek3PLiYgyEKtwTMmkMw4vbiyz/ps3pfdRYLVv+SN7qHVAImrjdAXxgluDEw6Ph4lyv+m9UpRmA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -2028,14 +2028,14 @@ babel-plugin-dynamic-import-node@^2.3.3:
     object.assign "^4.1.0"
 
 babel-plugin-istanbul@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-6.0.0.tgz#e159ccdc9af95e0b570c75b4573b7c34d671d765"
-  integrity sha512-AF55rZXpe7trmEylbaE1Gv54wn6rwU03aptvRoVIGP8YykoSxqdVLV1TfwflBCE/QtHmqtP8SWlTENqbK8GCSQ==
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-6.1.1.tgz#fa88ec59232fd9b4e36dbbc540a8ec9a9b47da73"
+  integrity sha512-Y1IQok9821cC9onCx5otgFfRm7Lm+I+wwxOx738M/WLPZ9Q42m4IG5W0FNX8WLL2gYMZo3JkuXIH2DOpWM+qwA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@istanbuljs/load-nyc-config" "^1.0.0"
     "@istanbuljs/schema" "^0.1.2"
-    istanbul-lib-instrument "^4.0.0"
+    istanbul-lib-instrument "^5.0.4"
     test-exclude "^6.0.0"
 
 babel-plugin-jest-hoist@^26.6.2:
@@ -2585,9 +2585,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001264, caniuse-lite@^1.0.30001265:
-  version "1.0.30001267"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001267.tgz#b1cf2937175afc0570e4615fc2d2f9069fa0ed30"
-  integrity sha512-r1mjTzAuJ9W8cPBGbbus8E0SKcUP7gn03R14Wk8FlAlqhH9hroy9nLqmpuXlfKEw/oILW+FGz47ipXV2O7x8lg==
+  version "1.0.30001269"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001269.tgz#3a71bee03df627364418f9fd31adfc7aa1cc2d56"
+  integrity sha512-UOy8okEVs48MyHYgV+RdW1Oiudl1H6KolybD6ZquD0VcrPSgj25omXO1S7rDydjpqaISCwA8Pyx+jUQKZwWO5w==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3637,9 +3637,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.867:
-  version "1.3.869"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.869.tgz#c319171803d796639b1af3ddbf07a5a087037ccb"
-  integrity sha512-mcoyZ2jd691yAx0OHqqGw+aPCcRYVDw/bqPy660aBfcQkUcWcfAVsbL4M9WeevflKH4MfpKCtnOngVLM7HzSzA==
+  version "1.3.871"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.871.tgz#6e87365fd72037a6c898fb46050ad4be3ac9ef62"
+  integrity sha512-qcLvDUPf8DSIMWarHT2ptgcqrYg62n3vPA7vhrOF24d8UNzbUBaHu2CySiENR3nEDzYgaN60071t0F6KLYMQ7Q==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -5649,16 +5649,27 @@ isobject@^3.0.0, isobject@^3.0.1:
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
 istanbul-lib-coverage@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-3.0.2.tgz#36786d4d82aad2ea5911007e255e2da6b5f80d86"
-  integrity sha512-o5+eTUYzCJ11/+JhW5/FUCdfsdoYVdQ/8I/OveE2XsjehYn5DdeSnNQAbjYaO8gQ6hvGTN6GM6ddQqpTVG5j8g==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-3.1.0.tgz#554d3f8adb1101c6aff427d287ed077642a5dcb2"
+  integrity sha512-OFSPP1Csv3GxruycNA1iRJPnc5pon+N4Q89EUz8KYOFbdsqCoHRh0J8jwRdna5thveVcMTdgY27kUl/lZuAWdw==
 
-istanbul-lib-instrument@^4.0.0, istanbul-lib-instrument@^4.0.3:
+istanbul-lib-instrument@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/istanbul-lib-instrument/-/istanbul-lib-instrument-4.0.3.tgz#873c6fff897450118222774696a3f28902d77c1d"
   integrity sha512-BXgQl9kf4WTCPCCpmFGoJkz/+uhvm7h7PFKUYxh7qarQd3ER33vHG//qaE8eN25l07YqZPpHXU9I09l/RD5aGQ==
   dependencies:
     "@babel/core" "^7.7.5"
+    "@istanbuljs/schema" "^0.1.2"
+    istanbul-lib-coverage "^3.0.0"
+    semver "^6.3.0"
+
+istanbul-lib-instrument@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-instrument/-/istanbul-lib-instrument-5.0.4.tgz#e976f2aa66ebc6737f236d3ab05b76e36f885c80"
+  integrity sha512-W6jJF9rLGEISGoCyXRqa/JCGQGmmxPO10TMu7izaUTynxvBvTjqzAIIGCK9USBmIbQAaSWD6XJPrM9Pv5INknw==
+  dependencies:
+    "@babel/core" "^7.12.3"
+    "@babel/parser" "^7.14.7"
     "@istanbuljs/schema" "^0.1.2"
     istanbul-lib-coverage "^3.0.0"
     semver "^6.3.0"
@@ -8228,9 +8239,9 @@ raw-body@2.4.0:
     unpipe "1.0.0"
 
 razzle-dev-utils@^4.0.6:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/razzle-dev-utils/-/razzle-dev-utils-4.1.0.tgz#ce263b1487c771148cb1dfeb2b4759b65e56d2e1"
-  integrity sha512-uvY+AoKVpUlf4oUNPu92QVzbJ5DrlqgRp1xQ13X6ILw+Shc2YCXOSdXLGcZumYNoFXa5wz7vwlhCEFzZ7z5oYg==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/razzle-dev-utils/-/razzle-dev-utils-4.2.2.tgz#d7c326b2d0bf2157c031e5e1b7b3a94492b8c704"
+  integrity sha512-a6tQI0zCR4VEIZeDLJ6E4u0iaFYOqFk14Id8dUXFt73jZSPEm4Fz/TGwBAqP3C63UGxUHnpb6JQGCaKiwiezpA==
   dependencies:
     "@babel/code-frame" "^7.8.3"
     chalk "^4.1.0"
@@ -8244,15 +8255,15 @@ razzle-dev-utils@^4.0.6:
     sockjs-client "~1.4.0"
     strip-ansi "^6.0.0"
 
-razzle-start-server-webpack-plugin@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/razzle-start-server-webpack-plugin/-/razzle-start-server-webpack-plugin-4.1.0.tgz#ef3df71054a8a7fb07aae0ea42c00375e11840a5"
-  integrity sha512-LEpxYajYgsa17FbBNtg8O3eRez9U2xSEK0GiTamZjh8z6e0udbVq7WQthgLkLjlzIPSC1L1FCJ1a2klasmxKZA==
+razzle-start-server-webpack-plugin@4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/razzle-start-server-webpack-plugin/-/razzle-start-server-webpack-plugin-4.2.2.tgz#d71530d84b4370de26e2a49f6e5b4e281081b6ff"
+  integrity sha512-Gi/1DH/Hg1hBRz9dTtH6Vnj4tH6EEa1sWv81KZHaP2h4zWqWC45uJVixvGZhDuNjnaoNIE9PFKNvy/jQusnrKA==
 
 razzle@^4.0.6:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/razzle/-/razzle-4.1.0.tgz#b6e462c50193fbc8fc2a531cfe0e44be56645bac"
-  integrity sha512-zovSEFkvRfG05uQd3HE5ZtssTAhJXUqjJy6IwDpAevuwBgvEVWvbKeURFjECNTEUm1IuPO2A/MapgqqE62+LgQ==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/razzle/-/razzle-4.2.2.tgz#e960dc72d349584349711117f12498f5db07fabb"
+  integrity sha512-h3l8A70ACzoNUr+MYK9ldmASNJX9ASDxnXekh05twtgzI/811+YBDk/mCybTWUU56rkvR9hJZfPryO2mQdCdxg==
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "^7.12.1"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
@@ -8280,7 +8291,7 @@ razzle@^4.0.6:
     postcss-load-config "^3.0.0"
     postcss-loader "^4.2.0"
     process "^0.11.10"
-    razzle-start-server-webpack-plugin "4.1.0"
+    razzle-start-server-webpack-plugin "4.2.2"
     react-dev-utils "^11.0.4"
     react-refresh "^0.9.0"
     resolve "^1.17.0"
