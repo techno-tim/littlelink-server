@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "lint:style": "stylelint ./src/**/*.css ./public/**/*.css",
     "ci": "yarn lint && yarn lint:style && yarn lint:markdown && yarn test",
-    "lint:markdown": "markdownlint .github/*.md&& markdownlint README.md"
+    "lint:markdown": "markdownlint .github/*.md && markdownlint README.md"
   },
   "dependencies": {
     "compression": "^1.7.4",
