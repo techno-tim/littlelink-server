@@ -53,9 +53,6 @@ services:
     # dockerhub is also supported timothystewart6/littlelink-server
     #image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
-    build:
-      context: ./
-      dockerfile: Dockerfile
     environment:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
