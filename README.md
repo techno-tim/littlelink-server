@@ -3,14 +3,16 @@
 This project is based on the great work from [littlelink](https://github.com/sethcottle/littlelink)
 It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.  If you need help configuring this, please see [this video that explains everything](https://www.youtube.com/watch?v=42SqfI_AjXU) and a live example at [technotim.live](https://technotim.live/).
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-# 📍 Supported Links & Buttons
+## 📍 Supported Links & Buttons
+
 Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons!
 
-# 📈 Analytics Support
+## 📈 Analytics Support
 
-## Google Analytics
+### Google Analytics
+
 See [Getting Started with Analytics](https://support.google.com/analytics/answer/1008015?hl=en).  After getting your GA Tracking Id, use your tracking Id as environment variable like `GA_TRACKING_ID=G-XXXXXXXXXX`  (See the example below)
 
 All buttons clicked will be tracked automatically if `GA_TRACKING_ID` exists.
@@ -20,7 +22,8 @@ Sample event for YouTube button.
 ```javascript
   window.gtag('event', 'youtube-button');
 ```
-## Umami
+
+### Umami
 
 See [Adding a website & Collecting data](https://umami.is/docs/collect-data) page to add and generate your tracking code.
 
@@ -38,7 +41,7 @@ Sample event for YouTube button.
   window.umami('youtube-button');
 ```
 
-# 🐳 Docker
+## 🐳 Docker
 
 This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
 
@@ -118,7 +121,7 @@ services:
 
 Docker command
 
-```
+```bash
 docker run -d \
   --name=littlelink-server \
   -p 8080:3000 \
@@ -150,11 +153,11 @@ docker run -d \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
 
-# ☸ Kubernetes
+## ☸ Kubernetes
 
 [Unofficial helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
 
-```
+```bash
 helm repo add k8s-at-home https://k8s-at-home.com/charts/
 helm repo update
 helm install littlelink-server \
@@ -162,12 +165,12 @@ helm install littlelink-server \
   --set env.META_TITLE="TechnoTim"
     k8s-at-home/littlelink-server
 ```
+
 Or use a values.yaml files
 
 `helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
 
-
-# 👇 What is LittleLink?
+## 👇 What is LittleLink?
 
 ![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
@@ -181,5 +184,3 @@ LittleLink has more than 20 company button styles you can use and we'll be throw
 ![Performance](https://cdn.cottle.cloud/littlelink/performance.png)
 
 Using [Skeleton](http://getskeleton.com/) let us build something that loads quickly & doesn't have any of the unnecessary bloat you would get from using a large framework for a page that requires nothing more than simplicity. LittleLink scored a 99/100 in performance when tested with [Google Lighthouse](https://developers.google.com/web/tools/lighthouse).
-
-

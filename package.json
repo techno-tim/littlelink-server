@@ -13,7 +13,8 @@
     "start:prod": "NODE_ENV=production node build/server.js",
     "lint": "eslint .",
     "lint:style": "stylelint ./src/**/*.css ./public/**/*.css",
-    "ci": "yarn lint && yarn lint:style && yarn test"
+    "ci": "yarn lint && yarn lint:style && yarn lint:markdown && yarn test",
+    "lint:markdown": "markdownlint .github/*.md&& markdownlint README.md"
   },
   "dependencies": {
     "compression": "^1.7.4",
@@ -37,6 +38,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
     "html-webpack-plugin": "^4.5.2",
+    "markdownlint-cli": "^0.29.0",
     "mini-css-extract-plugin": "^0.9.0",
     "prettier": "^2.3.2",
     "razzle": "^4.0.6",

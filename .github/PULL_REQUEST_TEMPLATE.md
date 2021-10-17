@@ -1,10 +1,12 @@
+# Proposed Changes
 <!--- Provide a general summary of your changes -->
-## Proposed Changes
+
 -
 -
 -
 
 ## Checklist
+
 - [ ] Tested locally
 - [ ] Ran `yarn ci` to test my code
 - [ ] Did not add any unnecessary changes
