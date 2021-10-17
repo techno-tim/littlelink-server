@@ -1,6 +1,6 @@
 import { trackGoogleEvent } from './google';
 
-it('should call gtag with event', () => {
+describe('google.js', () => {
   const mockedGtag = jest.fn();
   const originalWindow = { ...window };
   const windowSpy = jest.spyOn(global, 'window', 'get');
@@ -8,9 +8,9 @@ it('should call gtag with event', () => {
     ...originalWindow,
     gtag: mockedGtag,
   }));
-
-  trackGoogleEvent('youtube-button');
-  expect(mockedGtag).toBeCalledWith('event', 'youtube-button');
-
-  windowSpy.mockRestore();
+  it('should call gtag with event', () => {
+    trackGoogleEvent('youtube-button');
+    expect(mockedGtag).toBeCalledWith('event', 'youtube-button');
+    windowSpy.mockRestore();
+  });
 });

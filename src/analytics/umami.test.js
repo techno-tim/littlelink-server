@@ -1,16 +1,16 @@
 import { trackUmamiEvent } from './umami';
 
-it('should call gtag with event', () => {
+describe('umami.js', () => {
+  const windowSpy = jest.spyOn(global, 'window', 'get');
   const mockedUmami = jest.fn();
   const originalWindow = { ...window };
-  const windowSpy = jest.spyOn(global, 'window', 'get');
   windowSpy.mockImplementation(() => ({
     ...originalWindow,
     umami: mockedUmami,
   }));
-
-  trackUmamiEvent('youtube-button');
-  expect(mockedUmami).toBeCalledWith('youtube-button');
-
-  windowSpy.mockRestore();
+  it('should call umami with event', () => {
+    trackUmamiEvent('youtube-button');
+    expect(mockedUmami).toBeCalledWith('youtube-button');
+    windowSpy.mockRestore();
+  });
 });
