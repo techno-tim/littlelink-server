@@ -51,7 +51,7 @@ This container image is published on both [GitHub Container Registry](https://gi
 ---
 version: "3.0"
 services:
-  little-link:
+  littlelink-server:
     image: ghcr.io/techno-tim/littlelink-server:latest
     # dockerhub is also supported timothystewart6/littlelink-server
     #image: timothystewart6/littlelink-server:latest
