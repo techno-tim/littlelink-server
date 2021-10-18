@@ -105,7 +105,7 @@ button:hover,
 }
 
 /* Facebook Messenger */
-.button.button-messenger {
+.button.button-facebookmessenger {
   color: #ffffff;
   background-image: linear-gradient(
   25deg,
@@ -117,8 +117,8 @@ button:hover,
   #ff7061
 );
 }
-.button.button-messenger:hover,
-.button.button-messenger:focus {
+.button.button-facebookmessenger:hover,
+.button.button-facebookmessenger:focus {
   filter: brightness(90%);
 }
 
