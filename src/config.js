@@ -59,6 +59,7 @@ export const runtimeConfig =
         DEVTO: window?.env?.DEVTO,
         UMAMI_WEBSITE_ID: window?.env?.UMAMI_WEBSITE_ID,
         UMAMI_APP_URL: window?.env?.UMAMI_APP_URL,
+        BUTTON_ORDER: window?.env?.BUTTON_ORDER,
       }
     : {
         // server
@@ -205,4 +206,7 @@ export const runtimeConfig =
         UMAMI_APP_URL: nodeIsProduction
           ? process.env.UMAMI_APP_URL
           : process.env.RAZZLE_UMAMI_APP_URL,
+        BUTTON_ORDER: nodeIsProduction
+          ? process.env.BUTTON_ORDER
+          : process.env.BUTTON_ORDER,
       };

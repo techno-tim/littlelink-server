@@ -39,8 +39,18 @@ import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
 import gitlabLogo from '../../icons/gitlab.svg';
 import patreonLogo from '../../icons/patreon.svg';
 import devtoLogo from '../../icons/devto.svg';
+import Sort from '../Sort/Sort';
 
 function Home(props) {
+  let order = [];
+  if (runtimeConfig?.BUTTON_ORDER) {
+    order = runtimeConfig.BUTTON_ORDER.split(',').reverse();
+  }
+
+  const buttonOrder = button => {
+    return order.indexOf(button);
+  };
+
   return (
     <>
       <div className="container">
@@ -53,309 +63,348 @@ function Home(props) {
             />
             <h1>{`${runtimeConfig.NAME}`}</h1>
             <p>{runtimeConfig.BIO}</p>
-            {runtimeConfig.YOUTUBE && (
-              <Button
-                name="youtube"
-                href={runtimeConfig.YOUTUBE}
-                displayName="YouTube"
-                logo={youtubeLogo}
-              />
-            )}
-            {runtimeConfig.TWITCH && (
-              <Button
-                name="twitch"
-                href={runtimeConfig.TWITCH}
-                displayName="Twitch"
-                logo={twitchLogo}
-              />
-            )}
-            {runtimeConfig.TWITTER && (
-              <Button
-                name="twitter"
-                href={runtimeConfig.TWITTER}
-                displayName="Twitter"
-                logo={twitterLogo}
-              />
-            )}
-            {runtimeConfig.INSTAGRAM && (
-              <Button
-                name="instagram"
-                href={runtimeConfig.INSTAGRAM}
-                displayName="Instagram"
-                logo={instagramLogo}
-              />
-            )}
-            {runtimeConfig.GITHUB && (
-              <Button
-                name="github"
-                href={runtimeConfig.GITHUB}
-                displayName="GitHub"
-                logo={githubLogo}
-              />
-            )}
+            <Sort>
+              {runtimeConfig.YOUTUBE && (
+                <Button
+                  name="youtube"
+                  href={runtimeConfig.YOUTUBE}
+                  displayName="YouTube"
+                  logo={youtubeLogo}
+                  order={buttonOrder('YOUTUBE')}
+                />
+              )}
+              {runtimeConfig.TWITCH && (
+                <Button
+                  name="twitch"
+                  href={runtimeConfig.TWITCH}
+                  displayName="Twitch"
+                  logo={twitchLogo}
+                  order={buttonOrder('TWITCH')}
+                />
+              )}
+              {runtimeConfig.TWITTER && (
+                <Button
+                  name="twitter"
+                  href={runtimeConfig.TWITTER}
+                  displayName="Twitter"
+                  logo={twitterLogo}
+                  order={buttonOrder('TWITTER')}
+                />
+              )}
+              {runtimeConfig.INSTAGRAM && (
+                <Button
+                  name="instagram"
+                  href={runtimeConfig.INSTAGRAM}
+                  displayName="Instagram"
+                  logo={instagramLogo}
+                  order={buttonOrder('INSTAGRAM')}
+                />
+              )}
+              {runtimeConfig.GITHUB && (
+                <Button
+                  name="github"
+                  href={runtimeConfig.GITHUB}
+                  displayName="GitHub"
+                  logo={githubLogo}
+                  order={buttonOrder('GITHUB')}
+                />
+              )}
 
-            {runtimeConfig.DISCORD && (
-              <Button
-                name="discord"
-                href={runtimeConfig.DISCORD}
-                displayName="Discord"
-                logo={discordLogo}
-              />
-            )}
+              {runtimeConfig.DISCORD && (
+                <Button
+                  name="discord"
+                  href={runtimeConfig.DISCORD}
+                  displayName="Discord"
+                  logo={discordLogo}
+                  order={buttonOrder('DISCORD')}
+                />
+              )}
 
-            {runtimeConfig.TIKTOK && (
-              <Button
-                name="tiktok"
-                href={runtimeConfig.TIKTOK}
-                displayName="TikTok"
-                logo={tiktokLogo}
-              />
-            )}
-            {runtimeConfig.FACEBOOK && (
-              <Button
-                name="facebook"
-                href={runtimeConfig.FACEBOOK}
-                displayName="Facebook"
-                logo={facebookLogo}
-              />
-            )}
-            {runtimeConfig.FACEBOOK_MESSENGER && (
-              <Button
-                name="messenger"
-                href={runtimeConfig.FACEBOOK_MESSENGER}
-                displayName="Messenger"
-                logo={messengerLogo}
-              />
-            )}
-            {runtimeConfig.LINKED_IN && (
-              <Button
-                name="linkedin"
-                href={runtimeConfig.LINKED_IN}
-                displayName="LinkedIn"
-                logo={linkedinLogo}
-              />
-            )}
-            {runtimeConfig.PRODUCT_HUNT && (
-              <Button
-                name="producthunt"
-                href={runtimeConfig.PRODUCT_HUNT}
-                displayName="Product Hunt"
-                logo={producthuntLogo}
-              />
-            )}
-            {runtimeConfig.SNAPCHAT && (
-              <Button
-                name="snapchat"
-                href={runtimeConfig.SNAPCHAT}
-                displayName="SnapChat"
-                logo={snapchatLogo}
-              />
-            )}
-            {runtimeConfig.SPOTIFY && (
-              <Button
-                name="spotify"
-                href={runtimeConfig.SPOTIFY}
-                displayName="Spotify"
-                logo={spotifyLogo}
-              />
-            )}
-            {runtimeConfig.REDDIT && (
-              <Button
-                name="reddit"
-                href={runtimeConfig.REDDIT}
-                displayName="Reddit"
-                logo={redditLogo}
-              />
-            )}
-            {runtimeConfig.MEDIUM && (
-              <Button
-                name="medium"
-                href={runtimeConfig.MEDIUM}
-                displayName="Medium"
-                logo={mediumLogo}
-              />
-            )}
-            {runtimeConfig.PINTEREST && (
-              <Button
-                name="pinterest"
-                href={runtimeConfig.PINTEREST}
-                displayName="Pinterest"
-                logo={pinterestLogo}
-              />
-            )}
-            {runtimeConfig.EMAIL && (
-              <Button
-                name="default"
-                href={`mailto:${runtimeConfig.EMAIL}`}
-                displayName={runtimeConfig.EMAIL_TEXT}
-                logo={emailLogo}
-              />
-            )}
+              {runtimeConfig.TIKTOK && (
+                <Button
+                  name="tiktok"
+                  href={runtimeConfig.TIKTOK}
+                  displayName="TikTok"
+                  logo={tiktokLogo}
+                  order={buttonOrder('TIKTOK')}
+                />
+              )}
+              {runtimeConfig.FACEBOOK && (
+                <Button
+                  name="facebook"
+                  href={runtimeConfig.FACEBOOK}
+                  displayName="Facebook"
+                  logo={facebookLogo}
+                  order={buttonOrder('FACEBOOK')}
+                />
+              )}
+              {runtimeConfig.FACEBOOK_MESSENGER && (
+                <Button
+                  name="facebookmessenger"
+                  href={runtimeConfig.FACEBOOK_MESSENGER}
+                  displayName="Messenger"
+                  logo={messengerLogo}
+                  order={buttonOrder('FACEBOOK_MESSENGER')}
+                />
+              )}
+              {runtimeConfig.LINKED_IN && (
+                <Button
+                  name="linkedin"
+                  href={runtimeConfig.LINKED_IN}
+                  displayName="LinkedIn"
+                  logo={linkedinLogo}
+                  order={buttonOrder('LINKED_IN')}
+                />
+              )}
+              {runtimeConfig.PRODUCT_HUNT && (
+                <Button
+                  name="producthunt"
+                  href={runtimeConfig.PRODUCT_HUNT}
+                  displayName="Product Hunt"
+                  logo={producthuntLogo}
+                  order={buttonOrder('PRODUCT_HUNT')}
+                />
+              )}
+              {runtimeConfig.SNAPCHAT && (
+                <Button
+                  name="snapchat"
+                  href={runtimeConfig.SNAPCHAT}
+                  displayName="SnapChat"
+                  logo={snapchatLogo}
+                  order={buttonOrder('SNAPCHAT')}
+                />
+              )}
+              {runtimeConfig.SPOTIFY && (
+                <Button
+                  name="spotify"
+                  href={runtimeConfig.SPOTIFY}
+                  displayName="Spotify"
+                  logo={spotifyLogo}
+                  order={buttonOrder('SPOTIFY')}
+                />
+              )}
+              {runtimeConfig.REDDIT && (
+                <Button
+                  name="reddit"
+                  href={runtimeConfig.REDDIT}
+                  displayName="Reddit"
+                  logo={redditLogo}
+                  order={buttonOrder('REDDIT')}
+                />
+              )}
+              {runtimeConfig.MEDIUM && (
+                <Button
+                  name="medium"
+                  href={runtimeConfig.MEDIUM}
+                  displayName="Medium"
+                  logo={mediumLogo}
+                  order={buttonOrder('MEDIUM')}
+                />
+              )}
+              {runtimeConfig.PINTEREST && (
+                <Button
+                  name="pinterest"
+                  href={runtimeConfig.PINTEREST}
+                  displayName="Pinterest"
+                  logo={pinterestLogo}
+                  order={buttonOrder('PINTEREST')}
+                />
+              )}
+              {runtimeConfig.EMAIL && (
+                <Button
+                  name="default"
+                  href={`mailto:${runtimeConfig.EMAIL}`}
+                  displayName={runtimeConfig.EMAIL_TEXT}
+                  logo={emailLogo}
+                  order={buttonOrder('EMAIL')}
+                />
+              )}
 
-            {runtimeConfig.EMAIL_ALT && (
-              <Button
-                name="default"
-                href={`mailto:${runtimeConfig.EMAIL_ALT}`}
-                displayName={runtimeConfig.EMAIL_ALT_TEXT}
-                logo={emailAltLogo}
-              />
-            )}
+              {runtimeConfig.EMAIL_ALT && (
+                <Button
+                  name="default"
+                  href={`mailto:${runtimeConfig.EMAIL_ALT}`}
+                  displayName={runtimeConfig.EMAIL_ALT_TEXT}
+                  logo={emailAltLogo}
+                  order={buttonOrder('EMAIL_ALT')}
+                />
+              )}
 
-            {runtimeConfig.SOUND_CLOUD && (
-              <Button
-                name="soundcloud"
-                href={runtimeConfig.SOUND_CLOUD}
-                displayName="SoundCloud"
-                logo={soundcloudLogo}
-              />
-            )}
-            {runtimeConfig.FIGMA && (
-              <Button
-                name="figma"
-                href={runtimeConfig.FIGMA}
-                displayName="Figma"
-                logo={figmaLogo}
-              />
-            )}
+              {runtimeConfig.SOUND_CLOUD && (
+                <Button
+                  name="soundcloud"
+                  href={runtimeConfig.SOUND_CLOUD}
+                  displayName="SoundCloud"
+                  logo={soundcloudLogo}
+                  order={buttonOrder('SOUND_CLOUD')}
+                />
+              )}
+              {runtimeConfig.FIGMA && (
+                <Button
+                  name="figma"
+                  href={runtimeConfig.FIGMA}
+                  displayName="Figma"
+                  logo={figmaLogo}
+                  order={buttonOrder('FIGMA')}
+                />
+              )}
 
-            {runtimeConfig.TELEGRAM && (
-              <Button
-                name="telegram"
-                href={runtimeConfig.TELEGRAM}
-                displayName="Telegram"
-                logo={telegramLogo}
-              />
-            )}
+              {runtimeConfig.TELEGRAM && (
+                <Button
+                  name="telegram"
+                  href={runtimeConfig.TELEGRAM}
+                  displayName="Telegram"
+                  logo={telegramLogo}
+                  order={buttonOrder('TELEGRAM')}
+                />
+              )}
 
-            {runtimeConfig.TUMBLR && (
-              <Button
-                name="tumblr"
-                href={runtimeConfig.TUMBLR}
-                displayName="Tumblr"
-                logo={tumblrLogo}
-              />
-            )}
-            {runtimeConfig.STEAM && (
-              <Button
-                name="steam"
-                href={runtimeConfig.STEAM}
-                displayName="Steam"
-                logo={steamLogo}
-              />
-            )}
+              {runtimeConfig.TUMBLR && (
+                <Button
+                  name="tumblr"
+                  href={runtimeConfig.TUMBLR}
+                  displayName="Tumblr"
+                  logo={tumblrLogo}
+                  order={buttonOrder('TUMBLR')}
+                />
+              )}
+              {runtimeConfig.STEAM && (
+                <Button
+                  name="steam"
+                  href={runtimeConfig.STEAM}
+                  displayName="Steam"
+                  logo={steamLogo}
+                  order={buttonOrder('STEAM')}
+                />
+              )}
 
-            {runtimeConfig.VIMEO && (
-              <Button
-                name="vimeo"
-                href={runtimeConfig.VIMEO}
-                displayName="Vimeo"
-                logo={vimeoLogo}
-              />
-            )}
-            {runtimeConfig.WORDPRESS && (
-              <Button
-                name="wordpress"
-                href={runtimeConfig.WORDPRESS}
-                displayName="Wordpress"
-                logo={wordpressLogo}
-              />
-            )}
-            {runtimeConfig.GOODREADS && (
-              <Button
-                name="goodreads"
-                href={runtimeConfig.GOODREADS}
-                displayName="Goodreads"
-                logo={goodreadsLogo}
-              />
-            )}
-            {runtimeConfig.SKOOB && (
-              <Button
-                name="skoob"
-                href={runtimeConfig.SKOOB}
-                displayName="Skoob"
-                logo={skoobLogo}
-              />
-            )}
-            {runtimeConfig.LETTERBOXD && (
-              <Button
-                name="letterboxd"
-                href={runtimeConfig.LETTERBOXD}
-                displayName="LetterBoxd"
-                logo={letterboxdLogo}
-              />
-            )}
-            {runtimeConfig.MASTODON && (
-              <Button
-                name="mastodon"
-                href={runtimeConfig.MASTODON}
-                displayName="Mastodon"
-                logo={mastodonLogo}
-              />
-            )}
-            {runtimeConfig.MICRO_BLOG && (
-              <Button
-                name="microblog"
-                href={runtimeConfig.MICRO_BLOG}
-                displayName="Microblog"
-                logo={microblogLogo}
-              />
-            )}
-            {runtimeConfig.WHATSAPP && (
-              <Button
-                name="whatsapp"
-                href={runtimeConfig.WHATSAPP}
-                displayName="WhatsApp"
-                logo={whatsappLogo}
-              />
-            )}
-            {runtimeConfig.KIT && (
-              <Button
-                name="kit"
-                href={runtimeConfig.KIT}
-                displayName="Kit"
-                logo={kitLogo}
-              />
-            )}
-            {runtimeConfig.STRAVA && (
-              <Button
-                name="strava"
-                href={runtimeConfig.STRAVA}
-                displayName="Strava"
-                logo={stravaLogo}
-              />
-            )}
-            {runtimeConfig.BUYMEACOFFEE && (
-              <Button
-                name="buymeacoffee"
-                href={runtimeConfig.BUYMEACOFFEE}
-                displayName="Buy Me a Coffee"
-                logo={buyMeACoffeeLogo}
-              />
-            )}
-            {runtimeConfig.GITLAB && (
-              <Button
-                name="gitlab"
-                href={runtimeConfig.GITLAB}
-                displayName="GitLab"
-                logo={gitlabLogo}
-              />
-            )}
-            {runtimeConfig.PATREON && (
-              <Button
-                name="patreon"
-                href={runtimeConfig.PATREON}
-                displayName="Patreon"
-                logo={patreonLogo}
-              />
-            )}
-            {runtimeConfig.DEVTO && (
-              <Button
-                name="devto"
-                href={runtimeConfig.DEVTO}
-                displayName="Dev.to"
-                logo={devtoLogo}
-              />
-            )}
+              {runtimeConfig.VIMEO && (
+                <Button
+                  name="vimeo"
+                  href={runtimeConfig.VIMEO}
+                  displayName="Vimeo"
+                  logo={vimeoLogo}
+                  order={buttonOrder('VIMEO')}
+                />
+              )}
+              {runtimeConfig.WORDPRESS && (
+                <Button
+                  name="wordpress"
+                  href={runtimeConfig.WORDPRESS}
+                  displayName="Wordpress"
+                  logo={wordpressLogo}
+                  order={buttonOrder('WORDPRESS')}
+                />
+              )}
+              {runtimeConfig.GOODREADS && (
+                <Button
+                  name="goodreads"
+                  href={runtimeConfig.GOODREADS}
+                  displayName="Goodreads"
+                  logo={goodreadsLogo}
+                  order={buttonOrder('GOODREADS')}
+                />
+              )}
+              {runtimeConfig.SKOOB && (
+                <Button
+                  name="skoob"
+                  href={runtimeConfig.SKOOB}
+                  displayName="Skoob"
+                  logo={skoobLogo}
+                  order={buttonOrder('SKOOB')}
+                />
+              )}
+              {runtimeConfig.LETTERBOXD && (
+                <Button
+                  name="letterboxd"
+                  href={runtimeConfig.LETTERBOXD}
+                  displayName="LetterBoxd"
+                  logo={letterboxdLogo}
+                  order={buttonOrder('LETTERBOXD')}
+                />
+              )}
+              {runtimeConfig.MASTODON && (
+                <Button
+                  name="mastodon"
+                  href={runtimeConfig.MASTODON}
+                  displayName="Mastodon"
+                  logo={mastodonLogo}
+                  order={buttonOrder('MASTODON')}
+                />
+              )}
+              {runtimeConfig.MICRO_BLOG && (
+                <Button
+                  name="microblog"
+                  href={runtimeConfig.MICRO_BLOG}
+                  displayName="Microblog"
+                  logo={microblogLogo}
+                  order={buttonOrder('MICRO_BLOG')}
+                />
+              )}
+              {runtimeConfig.WHATSAPP && (
+                <Button
+                  name="whatsapp"
+                  href={runtimeConfig.WHATSAPP}
+                  displayName="WhatsApp"
+                  logo={whatsappLogo}
+                  order={buttonOrder('WHATSAPP')}
+                />
+              )}
+              {runtimeConfig.KIT && (
+                <Button
+                  name="kit"
+                  href={runtimeConfig.KIT}
+                  displayName="Kit"
+                  logo={kitLogo}
+                  order={buttonOrder('KIT')}
+                />
+              )}
+              {runtimeConfig.STRAVA && (
+                <Button
+                  name="strava"
+                  href={runtimeConfig.STRAVA}
+                  displayName="Strava"
+                  logo={stravaLogo}
+                  order={buttonOrder('STRAVA')}
+                />
+              )}
+              {runtimeConfig.BUYMEACOFFEE && (
+                <Button
+                  name="buymeacoffee"
+                  href={runtimeConfig.BUYMEACOFFEE}
+                  displayName="Buy Me a Coffee"
+                  logo={buyMeACoffeeLogo}
+                  order={buttonOrder('BUYMEACOFFEE')}
+                />
+              )}
+              {runtimeConfig.GITLAB && (
+                <Button
+                  name="gitlab"
+                  href={runtimeConfig.GITLAB}
+                  displayName="GitLab"
+                  logo={gitlabLogo}
+                  order={buttonOrder('GITLAB')}
+                />
+              )}
+              {runtimeConfig.PATREON && (
+                <Button
+                  name="patreon"
+                  href={runtimeConfig.PATREON}
+                  displayName="Patreon"
+                  logo={patreonLogo}
+                  order={buttonOrder('PATREON')}
+                />
+              )}
+              {runtimeConfig.DEVTO && (
+                <Button
+                  name="devto"
+                  href={runtimeConfig.DEVTO}
+                  displayName="Dev.to"
+                  logo={devtoLogo}
+                  order={buttonOrder('DEVTO')}
+                />
+              )}
+            </Sort>
             <div>
               <p className="footer">{runtimeConfig.FOOTER}</p>
             </div>
