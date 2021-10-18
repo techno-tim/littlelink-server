@@ -110,6 +110,7 @@ services:
       - GITLAB=https://www.gitlab.com/
       - PATREON=https://www.patreon.com/technotim
       - DEVTO=https://dev.to/
+      - PAYPAL=https://www.paypal.me/enmanuelmoreira
       - UMAMI_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
       - UMAMI_APP_URL=https://your-umami-app.com
       - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON # use ENV variable names for order, listed buttons will be boosted to the top

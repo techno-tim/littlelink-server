@@ -445,3 +445,13 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* Paypal */
+.button.button-paypal {
+  color: #ffffff;
+  background-color: #1F264F;
+}
+.button.button-paypal:hover,
+.button.button-paypal:focus {
+  filter: brightness(90%);
+}
+
