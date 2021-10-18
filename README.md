@@ -112,7 +112,7 @@ services:
       - DEVTO=https://dev.to/
       - UMAMI_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
       - UMAMI_APP_URL=https://your-umami-app.com
-      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON # use ENV variable names for order
+      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON # use ENV variable names for order, listed buttons will be boosted to the top
     ports:
       - 8080:3000
     restart: unless-stopped
