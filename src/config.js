@@ -208,5 +208,5 @@ export const runtimeConfig =
           : process.env.RAZZLE_UMAMI_APP_URL,
         BUTTON_ORDER: nodeIsProduction
           ? process.env.BUTTON_ORDER
-          : process.env.BUTTON_ORDER,
+          : process.env.RAZZLE_BUTTON_ORDER,
       };
