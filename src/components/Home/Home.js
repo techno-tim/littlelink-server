@@ -39,8 +39,8 @@ import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
 import gitlabLogo from '../../icons/gitlab.svg';
 import patreonLogo from '../../icons/patreon.svg';
 import devtoLogo from '../../icons/devto.svg';
-import paypalLogo from '../../icons/paypal.svg';
 import Sort from '../Sort/Sort';
+import paypalLogo from '../../icons/paypal.svg';
 
 function Home(props) {
   let order = [];

@@ -59,8 +59,8 @@ export const runtimeConfig =
         DEVTO: window?.env?.DEVTO,
         UMAMI_WEBSITE_ID: window?.env?.UMAMI_WEBSITE_ID,
         UMAMI_APP_URL: window?.env?.UMAMI_APP_URL,
-        PAYPAL: window?.env?.PAYPAL,
         BUTTON_ORDER: window?.env?.BUTTON_ORDER,
+        PAYPAL: window?.env?.PAYPAL,
       }
     : {
         // server
@@ -207,10 +207,10 @@ export const runtimeConfig =
         UMAMI_APP_URL: nodeIsProduction
           ? process.env.UMAMI_APP_URL
           : process.env.RAZZLE_UMAMI_APP_URL,
-        PAYPAL: nodeIsProduction
-          ? process.env.PAYPAL
-          : process.env.RAZZLE_PAYPAL,
         BUTTON_ORDER: nodeIsProduction
           ? process.env.BUTTON_ORDER
           : process.env.RAZZLE_BUTTON_ORDER,
+        PAYPAL: nodeIsProduction
+          ? process.env.PAYPAL
+          : process.env.RAZZLE_PAYPAL,
       };
