@@ -1,7 +1,8 @@
-import App from './App';
+import App from '../App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { MemoryRouter } from 'react-router-dom';
+import renderer from 'react-test-renderer';
 
 describe('<App />', () => {
   test('renders without exploding', () => {
@@ -12,5 +13,15 @@ describe('<App />', () => {
       </MemoryRouter>,
       div,
     );
+  });
+  test('<App /> snapshot', () => {
+    const tree = renderer
+      .create(
+        <MemoryRouter>
+          <App />
+        </MemoryRouter>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

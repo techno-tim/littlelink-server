@@ -43,6 +43,7 @@
     "prettier": "^2.3.2",
     "razzle": "^4.0.6",
     "razzle-dev-utils": "^4.0.6",
+    "react-test-renderer": "^17.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "webpack": "^4.44.1",

@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { memo } from 'react';
+// this will sort in descending order because data is reverse sorted before it is rendered
 const Sort = ({ children }) => {
   const sorted = React.Children.toArray(children).sort((a, b) => {
     return b.props.order - a.props.order;
@@ -8,4 +8,4 @@ const Sort = ({ children }) => {
   return sorted;
 };
 
-export default Sort;
+export default memo(Sort);
