@@ -67,6 +67,7 @@ services:
       - UMAMI_APP_URL=https://your-umami-app.com
       - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON
       - PAYPAL=https://www.paypal.me/user
+      - SLACK=https://slack.com/
 
     ports:
       - 8080:3000

@@ -61,6 +61,7 @@ export const runtimeConfig =
         UMAMI_APP_URL: window?.env?.UMAMI_APP_URL,
         BUTTON_ORDER: window?.env?.BUTTON_ORDER,
         PAYPAL: window?.env?.PAYPAL,
+        SLACK: window?.env?.SLACK,
       }
     : {
         // server
@@ -213,4 +214,5 @@ export const runtimeConfig =
         PAYPAL: nodeIsProduction
           ? process.env.PAYPAL
           : process.env.RAZZLE_PAYPAL,
+        SLACK: nodeIsProduction ? process.env.SLACK : process.env.RAZZLE_SLACK,
       };

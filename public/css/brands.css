@@ -455,3 +455,11 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* Slack */
+.button.button-slack {
+  color: #fff;
+  background-color: #4a154b;
+}
+.button.button-slack:hover,
+.button.button-slack:focus {
+  filter: brightness(90%) }
