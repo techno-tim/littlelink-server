@@ -40,6 +40,7 @@ import gitlabLogo from '../../icons/gitlab.svg';
 import patreonLogo from '../../icons/patreon.svg';
 import devtoLogo from '../../icons/devto.svg';
 import Sort from '../Sort/Sort';
+import paypalLogo from '../../icons/paypal.svg';
 
 function Home(props) {
   let order = [];
@@ -402,6 +403,15 @@ function Home(props) {
                   displayName="Dev.to"
                   logo={devtoLogo}
                   order={buttonOrder('DEVTO')}
+                />
+              )}
+              {runtimeConfig.PAYPAL && (
+                <Button
+                  name="paypal"
+                  href={runtimeConfig.PAYPAL}
+                  displayName="Paypal"
+                  logo={paypalLogo}
+                  order={buttonOrder('PAYPAL')}
                 />
               )}
             </Sort>
