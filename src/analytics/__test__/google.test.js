@@ -1,4 +1,4 @@
-import { trackGoogleEvent } from './google';
+import { trackGoogleEvent } from '../google';
 
 describe('google.js', () => {
   const mockedGtag = jest.fn();

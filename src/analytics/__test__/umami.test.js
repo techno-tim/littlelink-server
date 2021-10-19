@@ -1,4 +1,4 @@
-import { trackUmamiEvent } from './umami';
+import { trackUmamiEvent } from '../umami';
 
 describe('umami.js', () => {
   const windowSpy = jest.spyOn(global, 'window', 'get');
