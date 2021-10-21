@@ -102,7 +102,7 @@ services:
       - EMAIL_TEXT=Email Me!
       - EMAIL_ALT=you@example.com
       - EMAIL_ALT_TEXT=Email me!
-      - SOUND_CLOUD=https://souncloud.com
+      - SOUND_CLOUD=https://soundcloud.com
       - FIGMA=https://figma.com
       - TELEGRAM=https://telegram.org/
       - TUMBLR=https://www.tumblr.com/
