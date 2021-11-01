@@ -821,9 +821,9 @@
     "@babel/helper-plugin-utils" "^7.14.5"
 
 "@babel/plugin-transform-typescript@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.16.0.tgz#6af3352077c7c11ba65a4d3e4666bd9fecb2183e"
-  integrity sha512-dNUn7RSt1dykzFTquwm7qND+dQ8u0SRhZpPFsm1GYAad+EEAirNTjqu/fnqB0zVPwjcZQd//DYWszVKoCrQuoQ==
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.16.1.tgz#cc0670b2822b0338355bc1b3d2246a42b8166409"
+  integrity sha512-NO4XoryBng06jjw/qWEU2LhcLJr1tWkhpMam/H4eas/CDKMX/b2/Ylb6EI256Y7+FVPCawwSM1rrJNOpDiz+Lg==
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.16.0"
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -1991,9 +1991,9 @@ babel-preset-jest@^26.6.2:
     babel-preset-current-node-syntax "^1.0.0"
 
 babel-preset-razzle@^4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/babel-preset-razzle/-/babel-preset-razzle-4.2.5.tgz#8893c2a9686d87394624e6ad6323624e84ff87bd"
-  integrity sha512-Al0n3htVELQHUz23Gjpva5P+doQlZgciQESo1CULwbd4+iU0Y7D3xHXcAoMfcPDmx8+waZoBWoqCFMiGi9WIeA==
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/babel-preset-razzle/-/babel-preset-razzle-4.2.6.tgz#3bad9bdc7fdb6d8d19549f8917faf54ac788c673"
+  integrity sha512-ahXKOYRcwAl7TzYcIQ+3wJ8ePZBkUAMOfLgXpeq6HeqkvAYgccwLH88+jm46cTnj2fpeIvg87Zk9bJ4Ut31b5A==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
@@ -2321,9 +2321,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001271, caniuse-lite@^1.0.30001272:
-  version "1.0.30001272"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001272.tgz#8e9790ff995e9eb6e1f4c45cd07ddaa87cddbb14"
-  integrity sha512-DV1j9Oot5dydyH1v28g25KoVm7l8MTxazwuiH3utWiAS6iL/9Nh//TGwqFEeqqN8nnWYQ8HHhUq+o4QPt9kvYw==
+  version "1.0.30001274"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001274.tgz#26ca36204d15b17601ba6fc35dbdad950a647cc7"
+  integrity sha512-+Nkvv0fHyhISkiMIjnyjmf5YJcQ1IQHZN6U9TLUMroWR38FNwpsC51Gb68yueafX1V6ifOisInSgP9WJFS13ew==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3972,9 +3972,9 @@ flatted@^3.1.0:
   integrity sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==
 
 follow-redirects@^1.0.0:
-  version "1.14.4"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
-  integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
+  version "1.14.5"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -7426,9 +7426,9 @@ raw-body@2.4.0:
     unpipe "1.0.0"
 
 razzle-dev-utils@^4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/razzle-dev-utils/-/razzle-dev-utils-4.2.5.tgz#5d0edfc78873e12a53d4b3f1c3461d7baab82910"
-  integrity sha512-zh7FBKMWZe1dAJqt+oU+5LL8LHNYShW/nz8tISUW1dpY6QM95ZVjTli4guvXUDLWa5JGtalHrc9j+LZmK7a44Q==
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/razzle-dev-utils/-/razzle-dev-utils-4.2.6.tgz#52ff899fa9a5251d078002ba4f795f51141eb7de"
+  integrity sha512-WPsJi5UF6q/AqWTssXlVnKTace0V3w1e7rFtYHEARUktYca1WNzBpZvI24EKhrh4r86VvahSasFD6HMAr4dXdQ==
   dependencies:
     "@babel/code-frame" "^7.8.3"
     chalk "^4.1.0"
@@ -7442,15 +7442,15 @@ razzle-dev-utils@^4.2.5:
     sockjs-client "~1.4.0"
     strip-ansi "^6.0.0"
 
-razzle-start-server-webpack-plugin@4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/razzle-start-server-webpack-plugin/-/razzle-start-server-webpack-plugin-4.2.5.tgz#6280cd3050085a055b96e3c27f14ba96ebc3dcc2"
-  integrity sha512-b58ekOnHwLoGyBcD085MbK1TK2QRNFgTVRCp1VChwU2z/Q8MQViWU7v0vFt+zTFKTvNVZOpfOVejFzbxc4ZFZw==
+razzle-start-server-webpack-plugin@4.2.6:
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/razzle-start-server-webpack-plugin/-/razzle-start-server-webpack-plugin-4.2.6.tgz#b4b4b5cf1b7f66c284266e9474ecab8a148419ce"
+  integrity sha512-2u4PFutykf7xmRV/5E/f+vYCIeyT9hvBnQQMXUJZI2Zs6kpd0Na7L7m5C2AckXajWpcUNTG3So2e7bxXkn3c5g==
 
 razzle@^4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/razzle/-/razzle-4.2.5.tgz#592fbeab0bd7c0e607e36dc9a56fc335e082fb1f"
-  integrity sha512-JoLswtZEhyA6lPcuUI+KkMz+90BocCclg1qQ2j16Kj+GtMxfpa2taR8RzLbVc4xy2e/qfMURMHAZXjZJqobuQg==
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/razzle/-/razzle-4.2.6.tgz#7189bcea7eb766ca0f9f9d33ed1c7e512d887242"
+  integrity sha512-wA7i8gEu8TlOjSVwqykBtpPWHDzHQnQ3w9IEBTuMjyJNdyqURc1Fiym8E2xRi7XbGUiGh20OnntdpUC3+z31fw==
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "^7.12.1"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
@@ -7478,7 +7478,7 @@ razzle@^4.2.5:
     postcss-load-config "^3.0.0"
     postcss-loader "^4.2.0"
     process "^0.11.10"
-    razzle-start-server-webpack-plugin "4.2.5"
+    razzle-start-server-webpack-plugin "4.2.6"
     react-dev-utils "^11.0.4"
     react-refresh "^0.9.0"
     resolve "^1.17.0"
@@ -8821,9 +8821,9 @@ tiny-async-pool@^1.1.0:
     yaassertion "^1.0.0"
 
 tiny-invariant@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
-  integrity sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.2.0.tgz#a1141f86b672a9148c72e978a19a73b9b94a15a9"
+  integrity sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==
 
 tiny-warning@^1.0.0, tiny-warning@^1.0.3:
   version "1.0.3"
