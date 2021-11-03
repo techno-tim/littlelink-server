@@ -462,4 +462,5 @@ button:hover,
 }
 .button.button-slack:hover,
 .button.button-slack:focus {
-  filter: brightness(90%) }
+  filter: brightness(90%) 
+}
