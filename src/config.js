@@ -10,6 +10,8 @@ export const runtimeConfig =
         META_INDEX_STATUS: window?.env?.META_INDEX_STATUS,
         LANG: window?.env?.LANG,
         GA_TRACKING_ID: window?.env?.GA_TRACKING_ID,
+        UMAMI_WEBSITE_ID: window?.env?.UMAMI_WEBSITE_ID,
+        SKIP_HEALTH_CHECK_LOGS: window?.env?.SKIP_HEALTH_CHECK_LOGS,
         THEME: window?.env?.THEME,
         FAVICON_URL: window?.env?.FAVICON_URL,
         AVATAR_URL: window?.env?.AVATAR_URL,
@@ -57,7 +59,6 @@ export const runtimeConfig =
         GITLAB: window?.env?.GITLAB,
         PATREON: window?.env?.PATREON,
         DEVTO: window?.env?.DEVTO,
-        UMAMI_WEBSITE_ID: window?.env?.UMAMI_WEBSITE_ID,
         UMAMI_APP_URL: window?.env?.UMAMI_APP_URL,
         BUTTON_ORDER: window?.env?.BUTTON_ORDER,
         PAYPAL: window?.env?.PAYPAL,
@@ -81,6 +82,12 @@ export const runtimeConfig =
         GA_TRACKING_ID: nodeIsProduction
           ? process.env.GA_TRACKING_ID
           : process.env.RAZZLE_GA_TRACKING_ID,
+        UMAMI_WEBSITE_ID: nodeIsProduction
+          ? process.env.UMAMI_WEBSITE_ID
+          : process.env.RAZZLE_UMAMI_WEBSITE_ID,
+        SKIP_HEALTH_CHECK_LOGS: nodeIsProduction
+          ? process.env.SKIP_HEALTH_CHECK_LOGS
+          : process.env.RAZZLE_SKIP_HEALTH_CHECK_LOGS,
         THEME: nodeIsProduction ? process.env.THEME : process.env.RAZZLE_THEME,
         FAVICON_URL: nodeIsProduction
           ? process.env.FAVICON_URL
@@ -202,9 +209,6 @@ export const runtimeConfig =
           ? process.env.PATREON
           : process.env.RAZZLE_PATREON,
         DEVTO: nodeIsProduction ? process.env.DEVTO : process.env.RAZZLE_DEVTO,
-        UMAMI_WEBSITE_ID: nodeIsProduction
-          ? process.env.UMAMI_WEBSITE_ID
-          : process.env.RAZZLE_UMAMI_WEBSITE_ID,
         UMAMI_APP_URL: nodeIsProduction
           ? process.env.UMAMI_APP_URL
           : process.env.RAZZLE_UMAMI_APP_URL,
