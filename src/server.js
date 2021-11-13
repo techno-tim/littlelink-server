@@ -33,8 +33,23 @@ const jsScriptTagsFromAssets = (assets, entrypoint, extra = '') => {
 const theme = runtimeConfig.THEME === 'Dark' ? 'dark.css' : 'light.css';
 
 const server = express();
+
 if (process.env.NODE_ENV === 'production') {
-  server.use(morgan('combined'));
+  server.use(
+    morgan('combined', {
+      skip: (req, res) => {
+        if (
+          req?.originalUrl?.includes('/healthcheck') &&
+          runtimeConfig?.SKIP_HEALTH_CHECK_LOGS &&
+          runtimeConfig.SKIP_HEALTH_CHECK_LOGS === 'true'
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+    }),
+  );
   server.use(compression());
 }
 

@@ -51,6 +51,12 @@ A health check endpoint exists on `/healthcheck`.  If healthy, it will return wi
 }
 ```
 
+To skip express from logging these calls, add the environment variable:
+
+```bash
+SKIP_HEALTH_CHECK_LOGS=true
+``` 
+
 ## 🐳 Docker
 
 This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
