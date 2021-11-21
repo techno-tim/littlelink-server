@@ -39,7 +39,8 @@ if (process.env.NODE_ENV === 'production') {
     morgan('combined', {
       skip: (req, res) => {
         if (
-          req?.originalUrl?.includes('/healthcheck') &&
+          (req?.originalUrl?.includes('/healthcheck') ||
+            req?.baseUrl?.includes('/healthcheck')) &&
           runtimeConfig?.SKIP_HEALTH_CHECK_LOGS &&
           runtimeConfig.SKIP_HEALTH_CHECK_LOGS === 'true'
         ) {
