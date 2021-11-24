@@ -128,10 +128,12 @@ services:
       - DEVTO=https://dev.to/
       - UMAMI_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
       - UMAMI_APP_URL=https://your-umami-app.com
-      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON # use ENV variable names for order, listed buttons will be boosted to the top
+      # use ENV variable names for order, listed buttons will be boosted to the top
+      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON 
       - PAYPAL=https://www.paypal.me/user
       - SLACK=https://slack.com/
-      # you can render an unlimited amount of custom buttons by adding the CUSTOM_BUTTON_* variables and by using a comma as a separator.
+      # you can render an unlimited amount of custom buttons by adding 
+      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
       - CUSTOM_BUTTON_TEXT=Visit My Site,Visit My OTHER Site
       - CUSTOM_BUTTON_URL=https://technotim.live,https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
       - CUSTOM_BUTTON_COLOR=#ED2756,#0085FF
