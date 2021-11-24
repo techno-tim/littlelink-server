@@ -84,7 +84,7 @@ function Home(props) {
                 displayName={texts[i]?.trim()}
                 styles={{
                   backgroundColor: buttonColors[i]?.trim(),
-                  color: textColors[i].trim(),
+                  color: textColors[i]?.trim(),
                 }}
                 alt={altTexts[i]?.trim()}
               />
