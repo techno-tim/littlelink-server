@@ -53,6 +53,29 @@ function Home(props) {
     return order.indexOf(button);
   };
 
+  const renderCustomButtons = () => {
+    const names = runtimeConfig.CUSTOM_BUTTON_NAME?.split(',');
+    const urls = runtimeConfig.CUSTOM_BUTTON_URL?.split(',');
+    const altTexts = runtimeConfig.CUSTOM_BUTTON_ALT_TEXT?.split(',');
+    const texts = runtimeConfig.CUSTOM_BUTTON_TEXT?.split(',');
+    const buttonColors = runtimeConfig.CUSTOM_BUTTON_COLOR?.split(',');
+    const textColors = runtimeConfig.CUSTOM_BUTTON_TEXT_COLOR?.split(',');
+    // have to clean up some of the strings to standardize for analytics
+    return texts.map((t, i) => (
+      <Button
+        key={i}
+        name={names[i].trim().toLowerCase()}
+        href={urls[i].trim()}
+        displayName={altTexts[i].trim()}
+        styles={{
+          backgroundColor: buttonColors[i].trim(),
+          color: textColors[i].trim(),
+        }}
+        order={buttonOrder(names[i].trim())}
+      />
+    ));
+  };
+
   return (
     <>
       <div className="container">
@@ -66,6 +89,7 @@ function Home(props) {
             <h1>{`${runtimeConfig.NAME}`}</h1>
             <p>{runtimeConfig.BIO}</p>
             <Sort>
+              {runtimeConfig.CUSTOM_BUTTON_TEXT && renderCustomButtons()}
               {runtimeConfig.YOUTUBE && (
                 <Button
                   name="youtube"

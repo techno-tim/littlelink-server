@@ -70,7 +70,7 @@ services:
   littlelink-server:
     image: ghcr.io/techno-tim/littlelink-server:latest
     # dockerhub is also supported timothystewart6/littlelink-server
-    #image: timothystewart6/littlelink-server:latest
+    # image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
     environment:
       - META_TITLE=Techno Tim
@@ -131,6 +131,13 @@ services:
       - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON # use ENV variable names for order, listed buttons will be boosted to the top
       - PAYPAL=https://www.paypal.me/user
       - SLACK=https://slack.com/
+      # you can render an unlimited amount of custom buttons by adding the CUSTOM_BUTTON_* variables and by using a comma as a separator.
+      - CUSTOM_BUTTON_TEXT=Visit My Site,Visit My OTHER Site
+      - CUSTOM_BUTTON_URL=https://technotim.live,https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
+      - CUSTOM_BUTTON_COLOR=#ED2756,#0085FF
+      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff
+      - CUSTOM_BUTTON_ALT_TEXT=Visit my site!,Visit my OTHER Site!
+      - CUSTOM_BUTTON_NAME=HOMEPAGE,HOMEPAGE2
     ports:
       - 8080:3000
     restart: unless-stopped
