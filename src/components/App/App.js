@@ -1,12 +1,12 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from '../Home/Home';
 
 const App = () => (
   <div className="container">
-    <Switch>
-      <Route exact path="/" component={Home} />
-    </Switch>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
   </div>
 );
 
