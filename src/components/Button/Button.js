@@ -5,7 +5,7 @@ import { runtimeConfig } from '../../config';
 import { trackUmamiEvent } from '../../analytics/umami';
 
 function Button(props) {
-  const { name, href, displayName, logo, styles } = props;
+  const { name, href, displayName, logo, styles, alt } = props;
 
   const handleClick = () => {
     const eventName = `${name}-button`;
@@ -27,6 +27,7 @@ function Button(props) {
         rel="noopener noreferrer"
         onClick={handleClick}
         style={styles ? styles : undefined}
+        title={alt || displayName}
       >
         {logo && (
           <img className="icon" src={logo} alt={`${displayName} logo`} />

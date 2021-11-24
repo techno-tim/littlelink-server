@@ -8,6 +8,7 @@ Array [
     onClick={[Function]}
     rel="noopener noreferrer"
     target="_blank"
+    title="LinkedIn"
   >
     <img
       alt="LinkedIn logo"
@@ -22,6 +23,7 @@ Array [
     onClick={[Function]}
     rel="noopener noreferrer"
     target="_blank"
+    title="GitHub"
   >
     <img
       alt="GitHub logo"
@@ -36,6 +38,7 @@ Array [
     onClick={[Function]}
     rel="noopener noreferrer"
     target="_blank"
+    title="Twitch"
   >
     <img
       alt="Twitch logo"
@@ -50,6 +53,7 @@ Array [
     onClick={[Function]}
     rel="noopener noreferrer"
     target="_blank"
+    title="YouTube"
   >
     <img
       alt="YouTube logo"

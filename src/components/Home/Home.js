@@ -61,19 +61,38 @@ function Home(props) {
     const buttonColors = runtimeConfig.CUSTOM_BUTTON_COLOR?.split(',');
     const textColors = runtimeConfig.CUSTOM_BUTTON_TEXT_COLOR?.split(',');
     // have to clean up some of the strings to standardize for analytics
-    return texts.map((t, i) => (
-      <Button
-        key={i}
-        name={names[i].trim().toLowerCase()}
-        href={urls[i].trim()}
-        displayName={altTexts[i].trim()}
-        styles={{
-          backgroundColor: buttonColors[i].trim(),
-          color: textColors[i].trim(),
-        }}
-        order={buttonOrder(names[i].trim())}
-      />
-    ));
+
+    return texts.map((t, i) => {
+      // do not try to render button unless it has all of the required props
+      return (
+        <React.Fragment key={i}>
+          {names &&
+            names[i] &&
+            urls &&
+            urls[i] &&
+            texts &&
+            texts[i] &&
+            buttonColors &&
+            buttonColors[i] &&
+            textColors &&
+            textColors[i] &&
+            altTexts &&
+            altTexts[i] && (
+              <Button
+                name={names[i]?.trim().toLowerCase()}
+                href={urls[i]?.trim()}
+                displayName={texts[i]?.trim()}
+                styles={{
+                  backgroundColor: buttonColors[i]?.trim(),
+                  color: textColors[i].trim(),
+                }}
+                order={buttonOrder(names[i]?.trim())}
+                alt={altTexts[i]?.trim()}
+              />
+            )}
+        </React.Fragment>
+      );
+    });
   };
 
   return (
