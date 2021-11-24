@@ -65,7 +65,7 @@ function Home(props) {
     return texts.map((t, i) => {
       // do not try to render button unless it has all of the required props
       return (
-        <React.Fragment key={i}>
+        <div key={i} order={buttonOrder(names[i]?.trim())}>
           {names &&
             names[i] &&
             urls &&
@@ -86,11 +86,10 @@ function Home(props) {
                   backgroundColor: buttonColors[i]?.trim(),
                   color: textColors[i].trim(),
                 }}
-                order={buttonOrder(names[i]?.trim())}
                 alt={altTexts[i]?.trim()}
               />
             )}
-        </React.Fragment>
+        </div>
       );
     });
   };
