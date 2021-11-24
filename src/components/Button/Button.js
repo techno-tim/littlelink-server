@@ -1,11 +1,11 @@
 import React, { memo } from 'react';
-import { string, number } from 'prop-types';
+import { string, number, object } from 'prop-types';
 import { trackGoogleEvent } from '../../analytics/google';
 import { runtimeConfig } from '../../config';
 import { trackUmamiEvent } from '../../analytics/umami';
 
 function Button(props) {
-  const { name, href, displayName, logo } = props;
+  const { name, href, displayName, logo, styles } = props;
 
   const handleClick = () => {
     const eventName = `${name}-button`;
@@ -21,11 +21,12 @@ function Button(props) {
   return (
     <>
       <a
-        className={`button button-${name}`}
+        className={styles ? 'button' : `button button-${name}`}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
+        style={styles ? styles : undefined}
       >
         {logo && (
           <img className="icon" src={logo} alt={`${displayName} logo`} />
@@ -41,9 +42,11 @@ export default memo(Button);
 
 Button.propType = {
   src: string.isRequired,
-  srcSet: string,
   alt: string.isRequired,
-  href: string,
-  name: string,
-  order: number,
+  displayName: string.isRequired,
+  href: string.isRequired,
+  name: string.isRequired,
+  order: number.isRequired,
+  logo: string,
+  styles: object,
 };

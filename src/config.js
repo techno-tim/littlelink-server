@@ -63,6 +63,12 @@ export const runtimeConfig =
         BUTTON_ORDER: window?.env?.BUTTON_ORDER,
         PAYPAL: window?.env?.PAYPAL,
         SLACK: window?.env?.SLACK,
+        CUSTOM_BUTTON_TEXT: window?.env?.CUSTOM_BUTTON_TEXT,
+        CUSTOM_BUTTON_URL: window?.env?.CUSTOM_BUTTON_URL,
+        CUSTOM_BUTTON_COLOR: window?.env?.CUSTOM_BUTTON_COLOR,
+        CUSTOM_BUTTON_TEXT_COLOR: window?.env?.CUSTOM_BUTTON_TEXT_COLOR,
+        CUSTOM_BUTTON_ALT_TEXT: window?.env?.CUSTOM_BUTTON_ALT_TEXT,
+        CUSTOM_BUTTON_NAME: window?.env?.CUSTOM_BUTTON_NAME,
       }
     : {
         // server
@@ -219,4 +225,22 @@ export const runtimeConfig =
           ? process.env.PAYPAL
           : process.env.RAZZLE_PAYPAL,
         SLACK: nodeIsProduction ? process.env.SLACK : process.env.RAZZLE_SLACK,
+        CUSTOM_BUTTON_TEXT: nodeIsProduction
+          ? process.env.CUSTOM_BUTTON_TEXT
+          : process.env.RAZZLE_CUSTOM_BUTTON_TEXT,
+        CUSTOM_BUTTON_URL: nodeIsProduction
+          ? process.env.CUSTOM_BUTTON_URL
+          : process.env.RAZZLE_CUSTOM_BUTTON_URL,
+        CUSTOM_BUTTON_COLOR: nodeIsProduction
+          ? process.env.CUSTOM_BUTTON_COLOR
+          : process.env.RAZZLE_CUSTOM_BUTTON_COLOR,
+        CUSTOM_BUTTON_TEXT_COLOR: nodeIsProduction
+          ? process.env.CUSTOM_BUTTON_TEXT_COLOR
+          : process.env.RAZZLE_CUSTOM_BUTTON_TEXT_COLOR,
+        CUSTOM_BUTTON_ALT_TEXT: nodeIsProduction
+          ? process.env.CUSTOM_BUTTON_ALT_TEXT
+          : process.env.RAZZLE_CUSTOM_BUTTON_ALT_TEXT,
+        CUSTOM_BUTTON_NAME: nodeIsProduction
+          ? process.env.CUSTOM_BUTTON_NAME
+          : process.env.RAZZLE_CUSTOM_BUTTON_NAME,
       };
