@@ -42,6 +42,7 @@ import devtoLogo from '../../icons/devto.svg';
 import Sort from '../Sort/Sort';
 import paypalLogo from '../../icons/paypal.svg';
 import slackLogo from '../../icons/slack.svg';
+import stackoverflowLogo from '../../icons/stackoverflow.svg';
 
 function Home(props) {
   let order = [];
@@ -464,6 +465,15 @@ function Home(props) {
                   displayName="Slack"
                   logo={slackLogo}
                   order={buttonOrder('SLACK')}
+                />
+              )}
+              {runtimeConfig.STACKOVERFLOW && (
+                <Button
+                  name="stackoverflow"
+                  href={runtimeConfig.STACKOVERFLOW}
+                  displayName="stack"
+                  logo={stackoverflowLogo}
+                  order={buttonOrder('STACKOVERFLOW')}
                 />
               )}
             </Sort>

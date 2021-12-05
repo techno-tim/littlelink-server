@@ -45,7 +45,7 @@ services:
       - EMAIL_TEXT=Email Me!
       - EMAIL_ALT=you@example.com
       - EMAIL_ALT_TEXT=Email me!
-      - SOUND_CLOUD=https://souncloud.com
+      - SOUND_CLOUD=https://soundcloud.com
       - FIGMA=https://figma.com
       - TELEGRAM=https://telegram.org/
       - TUMBLR=https://www.tumblr.com/
@@ -68,6 +68,7 @@ services:
       - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON
       - PAYPAL=https://www.paypal.me/user
       - SLACK=https://slack.com/
+      - STACKOVERFLOW=https://stackoverflow.com/
 
     ports:
       - 8080:3000

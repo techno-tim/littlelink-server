@@ -464,3 +464,18 @@ button:hover,
 .button.button-slack:focus {
   filter: brightness(90%) 
 }
+
+/* Stack Overflow */
+.button.button-stackoverflow {
+  color: #000;
+  background-color: #f8f9f9;
+  font-weight: 100;
+}
+.button.button-stackoverflow:after {
+  content: "overflow";
+  font-weight: 700;
+}
+.button.button-stackoverflow:hover,
+.button.button-stackoverflow:focus {
+  filter: brightness(90%)
+}
