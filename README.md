@@ -140,6 +140,7 @@ services:
       - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff
       - CUSTOM_BUTTON_ALT_TEXT=Visit my site!,Visit my OTHER Site!
       - CUSTOM_BUTTON_NAME=HOMEPAGE,HOMEPAGE2
+      - STACKOVERFLOW=https://stackoverflow.com/
     ports:
       - 8080:3000
     restart: unless-stopped
