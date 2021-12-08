@@ -70,6 +70,7 @@ export const runtimeConfig =
         CUSTOM_BUTTON_ALT_TEXT: window?.env?.CUSTOM_BUTTON_ALT_TEXT,
         CUSTOM_BUTTON_NAME: window?.env?.CUSTOM_BUTTON_NAME,
         STACKOVERFLOW: window?.env?.STACKOVERFLOW,
+        LASTFM: window?.env?.LASTFM,
       }
     : {
         // server
@@ -247,4 +248,7 @@ export const runtimeConfig =
         STACKOVERFLOW: nodeIsProduction
           ? process.env.STACKOVERFLOW
           : process.env.RAZZLE_STACKOVERFLOW,
+        LASTFM: nodeIsProduction
+          ? process.env.LASTFM
+          : process.env.RAZZLE_LASTFM,
       };

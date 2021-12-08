@@ -132,6 +132,7 @@ services:
       - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON 
       - PAYPAL=https://www.paypal.me/user
       - SLACK=https://slack.com/
+      - LASTFM=https://last.fm/
       # you can render an unlimited amount of custom buttons by adding 
       # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
       - CUSTOM_BUTTON_TEXT=Visit My Site,Visit My OTHER Site
