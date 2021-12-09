@@ -69,6 +69,7 @@ export const runtimeConfig =
         CUSTOM_BUTTON_TEXT_COLOR: window?.env?.CUSTOM_BUTTON_TEXT_COLOR,
         CUSTOM_BUTTON_ALT_TEXT: window?.env?.CUSTOM_BUTTON_ALT_TEXT,
         CUSTOM_BUTTON_NAME: window?.env?.CUSTOM_BUTTON_NAME,
+        CUSTOM_BUTTON_ICON: window?.env?.CUSTOM_BUTTON_ICON,
         STACKOVERFLOW: window?.env?.STACKOVERFLOW,
       }
     : {
@@ -244,6 +245,9 @@ export const runtimeConfig =
         CUSTOM_BUTTON_NAME: nodeIsProduction
           ? process.env.CUSTOM_BUTTON_NAME
           : process.env.RAZZLE_CUSTOM_BUTTON_NAME,
+        CUSTOM_BUTTON_ICON: nodeIsProduction
+          ? process.env.CUSTOM_BUTTON_ICON
+          : process.env.RAZZLE_CUSTOM_BUTTON_ICON,
         STACKOVERFLOW: nodeIsProduction
           ? process.env.STACKOVERFLOW
           : process.env.RAZZLE_STACKOVERFLOW,
