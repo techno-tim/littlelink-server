@@ -43,7 +43,7 @@ import Sort from '../Sort/Sort';
 import paypalLogo from '../../icons/paypal.svg';
 import slackLogo from '../../icons/slack.svg';
 import stackoverflowLogo from '../../icons/stackoverflow.svg';
-import lastfmLogo from '../../icons/lastfm.svg'
+import lastfmLogo from '../../icons/lastfm.svg';
 
 function Home(props) {
   let order = [];
