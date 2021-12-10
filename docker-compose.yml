@@ -69,7 +69,7 @@ services:
       - PAYPAL=https://www.paypal.me/user
       - SLACK=https://slack.com/
       - STACKOVERFLOW=https://stackoverflow.com/
-
+      - LASTFM=https://last.fm/
     ports:
       - 8080:3000
     restart: unless-stopped

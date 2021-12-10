@@ -71,6 +71,7 @@ export const runtimeConfig =
         CUSTOM_BUTTON_NAME: window?.env?.CUSTOM_BUTTON_NAME,
         CUSTOM_BUTTON_ICON: window?.env?.CUSTOM_BUTTON_ICON,
         STACKOVERFLOW: window?.env?.STACKOVERFLOW,
+        LASTFM: window?.env?.LASTFM,
       }
     : {
         // server
@@ -251,4 +252,7 @@ export const runtimeConfig =
         STACKOVERFLOW: nodeIsProduction
           ? process.env.STACKOVERFLOW
           : process.env.RAZZLE_STACKOVERFLOW,
+        LASTFM: nodeIsProduction
+          ? process.env.LASTFM
+          : process.env.RAZZLE_LASTFM,
       };
