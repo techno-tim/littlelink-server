@@ -44,6 +44,9 @@ import paypalLogo from '../../icons/paypal.svg';
 import slackLogo from '../../icons/slack.svg';
 import stackoverflowLogo from '../../icons/stackoverflow.svg';
 import lastfmLogo from '../../icons/lastfm.svg';
+import giteaLogo from '../../icons/gitea.svg';
+import polyworkLogo from '../../icons/polywork.svg';
+import signalLogo from '../../icons/signal.svg';
 
 function Home(props) {
   let order = [];
@@ -486,6 +489,33 @@ function Home(props) {
                   displayName="Last.fm"
                   logo={lastfmLogo}
                   order={buttonOrder('LASTFM')}
+                />
+              )}
+              {runtimeConfig.GITEA && (
+                <Button
+                  name="gitea"
+                  href={runtimeConfig.GITEA}
+                  displayName="Gitea"
+                  logo={giteaLogo}
+                  order={buttonOrder('GITEA')}
+                />
+              )}
+              {runtimeConfig.POLYWORK && (
+                <Button
+                  name="polywork"
+                  href={runtimeConfig.POLYWORK}
+                  displayName="Polywork"
+                  logo={polyworkLogo}
+                  order={buttonOrder('POLYWORK')}
+                />
+              )}
+              {runtimeConfig.SIGNAL && (
+                <Button
+                  name="signal"
+                  href={runtimeConfig.SIGNAL}
+                  displayName="Signal"
+                  logo={signalLogo}
+                  order={buttonOrder('SIGNAL')}
                 />
               )}
             </Sort>

@@ -70,6 +70,9 @@ services:
       - SLACK=https://slack.com/
       - STACKOVERFLOW=https://stackoverflow.com/
       - LASTFM=https://last.fm/
+      - GITEA=https://gitea.io/
+      - POLYWORK=https://www.polywork.com/
+      - SIGNAL=https://signal.org/
     ports:
       - 8080:3000
     restart: unless-stopped
