@@ -17,6 +17,11 @@
     "lint:markdown": "markdownlint .github/*.md && markdownlint README.md"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "morgan": "^1.10.0",

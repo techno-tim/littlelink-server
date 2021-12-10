@@ -61,6 +61,7 @@ function Home(props) {
     const texts = runtimeConfig.CUSTOM_BUTTON_TEXT?.split(',');
     const buttonColors = runtimeConfig.CUSTOM_BUTTON_COLOR?.split(',');
     const textColors = runtimeConfig.CUSTOM_BUTTON_TEXT_COLOR?.split(',');
+    const icons = runtimeConfig.CUSTOM_BUTTON_ICON?.split(',');
     // have to clean up some of the strings to standardize for analytics
 
     return texts.map((t, i) => {
@@ -88,6 +89,7 @@ function Home(props) {
                   color: textColors[i]?.trim(),
                 }}
                 alt={altTexts[i]?.trim()}
+                icon={icons && icons[i]?.trim()}
               />
             )}
         </div>

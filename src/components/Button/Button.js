@@ -3,9 +3,10 @@ import { string, number, object } from 'prop-types';
 import { trackGoogleEvent } from '../../analytics/google';
 import { runtimeConfig } from '../../config';
 import { trackUmamiEvent } from '../../analytics/umami';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Button(props) {
-  const { name, href, displayName, logo, styles, alt } = props;
+  const { name, href, displayName, logo, styles, alt, icon } = props;
 
   const handleClick = () => {
     const eventName = `${name}-button`;
@@ -33,6 +34,8 @@ function Button(props) {
           <img className="icon" src={logo} alt={`${displayName} logo`} />
         )}
 
+        {icon && <FontAwesomeIcon className="icon" icon={icon.split(' ')} />}
+
         {displayName}
       </a>
     </>
@@ -49,5 +52,6 @@ Button.propType = {
   name: string.isRequired,
   order: number.isRequired,
   logo: string,
+  icon: string,
   styles: object,
 };
