@@ -72,6 +72,9 @@ export const runtimeConfig =
         CUSTOM_BUTTON_ICON: window?.env?.CUSTOM_BUTTON_ICON,
         STACKOVERFLOW: window?.env?.STACKOVERFLOW,
         LASTFM: window?.env?.LASTFM,
+        GITEA: window?.env?.GITEA,
+        POLYWORK: window?.env?.POLYWORK,
+        SIGNAL: window?.env?.SIGNAL,
       }
     : {
         // server
@@ -255,4 +258,11 @@ export const runtimeConfig =
         LASTFM: nodeIsProduction
           ? process.env.LASTFM
           : process.env.RAZZLE_LASTFM,
+        GITEA: nodeIsProduction ? process.env.GITEA : process.env.RAZZLE_GITEA,
+        POLYWORK: nodeIsProduction
+          ? process.env.POLYWORK
+          : process.env.RAZZLE_POLYWORK,
+        SIGNAL: nodeIsProduction
+          ? process.env.SIGNAL
+          : process.env.RAZZLE_SIGNAL,
       };

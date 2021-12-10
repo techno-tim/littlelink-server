@@ -143,6 +143,9 @@ services:
       - CUSTOM_BUTTON_NAME=HOMEPAGE,HOMEPAGE2
       - CUSTOM_BUTTON_ICON=fas link,fab youtube
       - STACKOVERFLOW=https://stackoverflow.com/
+      - GITEA=https://gitea.io/
+      - POLYWORK=https://www.polywork.com/
+      - SIGNAL=https://signal.org/
     ports:
       - 8080:3000
     restart: unless-stopped

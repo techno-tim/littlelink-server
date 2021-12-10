@@ -462,7 +462,7 @@ button:hover,
 }
 .button.button-slack:hover,
 .button.button-slack:focus {
-  filter: brightness(90%) 
+  filter: brightness(90%)
 }
 
 /* Stack Overflow */
@@ -487,5 +487,35 @@ button:hover,
 }
 .button.button-lastfm:hover,
 .button.button-lastfm:focus {
+  filter: brightness(90%)
+}
+
+/* Gitea */
+.button.button-gitea {
+  color: #000;
+  background-color: #ffffff;
+}
+.button.button-gitea:hover,
+.button.button-gitea:focus {
+  filter: brightness(90%)
+}
+
+/* Polywork */
+.button.button-polywork {
+  color: #fff;
+  background-color: #543DE0;
+}
+.button.button-polywork:hover,
+.button.button-polywork:focus {
+  filter: brightness(90%)
+}
+
+/* Signal */
+.button.button-signal {
+  color: #000;
+  background-color: #fff;
+}
+.button.button-signal:hover,
+.button.button-signal:focus {
   filter: brightness(90%)
 }
