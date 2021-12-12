@@ -133,6 +133,7 @@ services:
       - PAYPAL=https://www.paypal.me/user
       - SLACK=https://slack.com/
       - LASTFM=https://last.fm/
+      - UNTAPPD=https://untappd.com/
       # you can render an unlimited amount of custom buttons by adding 
       # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
       - CUSTOM_BUTTON_TEXT=Visit My Site,Visit My OTHER Site

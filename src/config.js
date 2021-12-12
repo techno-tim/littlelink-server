@@ -75,6 +75,7 @@ export const runtimeConfig =
         GITEA: window?.env?.GITEA,
         POLYWORK: window?.env?.POLYWORK,
         SIGNAL: window?.env?.SIGNAL,
+        UNTAPPD: window?.env?.UNTAPPD,
       }
     : {
         // server
@@ -265,4 +266,7 @@ export const runtimeConfig =
         SIGNAL: nodeIsProduction
           ? process.env.SIGNAL
           : process.env.RAZZLE_SIGNAL,
+        UNTAPPD: nodeIsProduction
+          ? process.env.UNTAPPD
+          : process.env.RAZZLE_UNTAPPD,
       };
