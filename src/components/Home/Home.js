@@ -47,6 +47,7 @@ import lastfmLogo from '../../icons/lastfm.svg';
 import giteaLogo from '../../icons/gitea.svg';
 import polyworkLogo from '../../icons/polywork.svg';
 import signalLogo from '../../icons/signal.svg';
+import untappdLogo from '../../icons/untappd.svg';
 
 function Home(props) {
   let order = [];
@@ -516,6 +517,15 @@ function Home(props) {
                   displayName="Signal"
                   logo={signalLogo}
                   order={buttonOrder('SIGNAL')}
+                />
+              )}
+              {runtimeConfig.UNTAPPD && (
+                <Button
+                  name="untappd"
+                  href={runtimeConfig.UNTAPPD}
+                  displayName="Untappd"
+                  logo={untappdLogo}
+                  order={buttonOrder('UNTAPPD')}
                 />
               )}
             </Sort>

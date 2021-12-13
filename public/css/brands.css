@@ -519,3 +519,13 @@ button:hover,
 .button.button-signal:focus {
   filter: brightness(90%)
 }
+
+/* Untappd */
+.button.button-untappd {
+  color: #000;
+  background-color: #FFCE0D;
+}
+.button.button-signal:hover,
+.button.button-signal:focus {
+  filter: brightness(90%)
+}
