@@ -76,6 +76,7 @@ export const runtimeConfig =
         POLYWORK: window?.env?.POLYWORK,
         SIGNAL: window?.env?.SIGNAL,
         UNTAPPD: window?.env?.UNTAPPD,
+        BUTTON_TARGET: window?.env?.BUTTON_TARGET,
       }
     : {
         // server
@@ -269,4 +270,7 @@ export const runtimeConfig =
         UNTAPPD: nodeIsProduction
           ? process.env.UNTAPPD
           : process.env.RAZZLE_UNTAPPD,
+        BUTTON_TARGET: nodeIsProduction
+          ? process.env.BUTTON_TARGET
+          : process.env.RAZZLE_BUTTON_TARGET,
       };

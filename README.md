@@ -87,6 +87,19 @@ services:
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
       - FOOTER=Thanks for stopping by!
+      # use ENV variable names for order, listed buttons will be boosted to the top
+      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON
+      # you can render an unlimited amount of custom buttons by adding 
+      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
+      - CUSTOM_BUTTON_TEXT=Visit My Site,Visit My OTHER Site
+      - CUSTOM_BUTTON_URL=https://technotim.live,https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
+      - CUSTOM_BUTTON_COLOR=#ED2756,#0085FF
+      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff
+      - CUSTOM_BUTTON_ALT_TEXT=Visit my site!,Visit my OTHER Site!
+      - CUSTOM_BUTTON_NAME=HOMEPAGE,HOMEPAGE2
+      - CUSTOM_BUTTON_ICON=fas link,fab youtube
+      - BUTTON_TARGET=_blank # controls the button target html attribute
+      - STACKOVERFLOW=https://stackoverflow.com/
       - GITHUB=https://github.com/timothystewart6
       - TWITTER=https://twitter.com/TechnoTimLive
       - INSTAGRAM=https://www.instagram.com/techno.tim
@@ -128,22 +141,10 @@ services:
       - DEVTO=https://dev.to/
       - UMAMI_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
       - UMAMI_APP_URL=https://your-umami-app.com
-      # use ENV variable names for order, listed buttons will be boosted to the top
-      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON 
       - PAYPAL=https://www.paypal.me/user
       - SLACK=https://slack.com/
       - LASTFM=https://last.fm/
       - UNTAPPD=https://untappd.com/
-      # you can render an unlimited amount of custom buttons by adding 
-      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
-      - CUSTOM_BUTTON_TEXT=Visit My Site,Visit My OTHER Site
-      - CUSTOM_BUTTON_URL=https://technotim.live,https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
-      - CUSTOM_BUTTON_COLOR=#ED2756,#0085FF
-      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff
-      - CUSTOM_BUTTON_ALT_TEXT=Visit my site!,Visit my OTHER Site!
-      - CUSTOM_BUTTON_NAME=HOMEPAGE,HOMEPAGE2
-      - CUSTOM_BUTTON_ICON=fas link,fab youtube
-      - STACKOVERFLOW=https://stackoverflow.com/
       - GITEA=https://gitea.io/
       - POLYWORK=https://www.polywork.com/
       - SIGNAL=https://signal.org/
