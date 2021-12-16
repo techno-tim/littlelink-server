@@ -24,7 +24,7 @@ function Button(props) {
       <a
         className={styles ? 'button' : `button button-${name}`}
         href={href}
-        target="_blank"
+        target={runtimeConfig?.BUTTON_TARGET || '_blank'}
         rel="noopener noreferrer"
         onClick={handleClick}
         style={styles ? styles : undefined}

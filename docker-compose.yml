@@ -74,6 +74,7 @@ services:
       - POLYWORK=https://www.polywork.com/
       - SIGNAL=https://signal.org/
       - UNTAPPD=https://untappd.com/
+      - BUTTON_TARGET=_blank
     ports:
       - 8080:3000
     restart: unless-stopped
