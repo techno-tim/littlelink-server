@@ -29,7 +29,7 @@ services:
       - INSTAGRAM=https://www.instagram.com/techno.tim
       - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
       - TWITCH=https://www.twitch.tv/technotim/
-      - DISCORD=https://discord.gg/DJKexrJ
+      - DISCORD=https://l.technotim.live/discord
       - TIKTOK=https://www.tiktok.com/@technotim
       - KIT=https://kit.co/TechnoTim
       - FACEBOOK=https://facebook.com
