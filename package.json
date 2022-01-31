@@ -24,6 +24,7 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "compression": "^1.7.4",
     "express": "^4.17.2",
+    "helmet": "^5.0.2",
     "morgan": "^1.10.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",

@@ -7,6 +7,7 @@ import { runtimeConfig } from './config';
 import serialize from 'serialize-javascript'; // Safer stringify, prevents XSS attacks
 import morgan from 'morgan';
 import compression from 'compression';
+import helmet from 'helmet';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
@@ -51,6 +52,25 @@ if (process.env.NODE_ENV === 'production') {
       },
     }),
   );
+  server.use(
+    helmet.contentSecurityPolicy({
+      useDefaults: true,
+      directives: {
+        'img-src': ["'self'", 'https: data:'],
+        'font-src': ["'self'", 'https: data:'],
+        'script-src-elem': [
+          "'self'",
+          "'unsafe-inline'",
+          runtimeConfig?.GA_TRACKING_ID
+            ? 'https://www.googletagmanager.com'
+            : undefined,
+          runtimeConfig?.UMAMI_APP_URL,
+        ],
+        'connect-src': ["'self'", 'https: data:'],
+      },
+    }),
+  );
+
   server.use(compression());
 }
 
