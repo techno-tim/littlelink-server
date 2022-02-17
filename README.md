@@ -148,6 +148,7 @@ services:
       - GITEA=https://gitea.io/
       - POLYWORK=https://www.polywork.com/
       - SIGNAL=https://signal.org/
+      - INSTANTGAMING=https://www.instant-gaming.com/
     ports:
       - 8080:3000
     restart: unless-stopped

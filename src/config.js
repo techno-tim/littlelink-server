@@ -77,6 +77,7 @@ export const runtimeConfig =
         SIGNAL: window?.env?.SIGNAL,
         UNTAPPD: window?.env?.UNTAPPD,
         BUTTON_TARGET: window?.env?.BUTTON_TARGET,
+        INSTANTGAMING: window?.env?.INSTANTGAMING,
       }
     : {
         // server
@@ -273,4 +274,7 @@ export const runtimeConfig =
         BUTTON_TARGET: nodeIsProduction
           ? process.env.BUTTON_TARGET
           : process.env.RAZZLE_BUTTON_TARGET,
+        INSTANTGAMING: nodeIsProduction
+          ? process.env.INSTANTGAMING
+          : process.env.RAZZLE_INSTANTGAMING,
       };
