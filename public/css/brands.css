@@ -525,7 +525,17 @@ button:hover,
   color: #000;
   background-color: #FFCE0D;
 }
-.button.button-signal:hover,
-.button.button-signal:focus {
+.button.button-untappd:hover,
+.button.button-untappd:focus {
+  filter: brightness(90%)
+}
+
+/* Instant Gaming */
+.button.button-instantgaming {
+  color: #f50;
+  background-color: #000;
+}
+.button.button-instantgaming:hover,
+.button.button-instantgaming:focus {
   filter: brightness(90%)
 }

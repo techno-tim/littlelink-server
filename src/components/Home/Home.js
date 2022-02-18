@@ -48,6 +48,7 @@ import giteaLogo from '../../icons/gitea.svg';
 import polyworkLogo from '../../icons/polywork.svg';
 import signalLogo from '../../icons/signal.svg';
 import untappdLogo from '../../icons/untappd.svg';
+import instantGamingLogo from '../../icons/instantgaming.svg';
 
 function Home(props) {
   let order = [];
@@ -526,6 +527,15 @@ function Home(props) {
                   displayName="Untappd"
                   logo={untappdLogo}
                   order={buttonOrder('UNTAPPD')}
+                />
+              )}
+              {runtimeConfig.INSTANTGAMING && (
+                <Button
+                  name="instantgaming"
+                  href={runtimeConfig.INSTANTGAMING}
+                  displayName="Instant Gaming"
+                  logo={instantGamingLogo}
+                  order={buttonOrder('INSTANTGAMING')}
                 />
               )}
             </Sort>

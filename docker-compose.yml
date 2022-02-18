@@ -75,6 +75,7 @@ services:
       - SIGNAL=https://signal.org/
       - UNTAPPD=https://untappd.com/
       - BUTTON_TARGET=_blank
+      - INSTANTGAMING=https://www.instant-gaming.com/
     ports:
       - 8080:3000
     restart: unless-stopped
