@@ -149,6 +149,17 @@ services:
       - POLYWORK=https://www.polywork.com/
       - SIGNAL=https://signal.org/
       - INSTANTGAMING=https://www.instant-gaming.com/
+      - OG_SITE_NAME=Techno Tim Live (OG)
+      - OG_TITLE=Techno Tim (OG)
+      - OG_DESCRIPTION=Techno Tim Link page (OG)
+      - OG_URL=https://technotim.live/
+      - OG_IMAGE=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
+      - OG_IMAGE_WIDTH=400
+      - OG_IMAGE_HEIGHT=400
+      - TWITTER_CARD=summary_large_image
+      - TWITTER_IMAGE=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
+      - TWITTER_SITE=@TechnoTimLive
+      - TWITTER_CREATOR=@TechnoTimLive
     ports:
       - 8080:3000
     restart: unless-stopped
