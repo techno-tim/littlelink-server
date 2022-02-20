@@ -160,6 +160,7 @@ services:
       - TWITTER_IMAGE=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
       - TWITTER_SITE=@TechnoTimLive
       - TWITTER_CREATOR=@TechnoTimLive
+      - GHOST=https://ghost.org/
     ports:
       - 8080:3000
     restart: unless-stopped
