@@ -81,6 +81,65 @@ server
           runtimeConfig.META_INDEX_STATUS || 'noindex'
         }">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        ${
+          runtimeConfig.OG_SITE_NAME
+            ? `<meta property="og:site_name" content="${runtimeConfig.OG_SITE_NAME}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.OG_TITLE
+            ? `<meta property="og:title" content="${runtimeConfig.OG_TITLE}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.OG_DESCRIPTION
+            ? `<meta property="og:description" content="${runtimeConfig.OG_DESCRIPTION}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.OG_URL
+            ? `<meta property="og:url" content="${runtimeConfig.OG_URL}" />`
+            : ''
+        }
+        <meta property="og:type" content="siteweb" />
+        ${
+          runtimeConfig.OG_IMAGE
+            ? `
+                <meta property="og:image" content="${runtimeConfig.OG_IMAGE}" />
+                <meta property="og:image:secure_url" content="${runtimeConfig.OG_IMAGE}" />
+            `
+            : ''
+        }
+        ${
+          runtimeConfig.OG_IMAGE_WIDTH
+            ? `<meta property="og:image:width" content="${runtimeConfig.OG_IMAGE_WIDTH}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.OG_IMAGE_HEIGHT
+            ? `<meta property="og:image:height" content="${runtimeConfig.OG_IMAGE_HEIGHT}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.TWITTER_CARD
+            ? `<meta property="twitter:card" content="${runtimeConfig.TWITTER_CARD}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.TWITTER_IMAGE
+            ? `<meta property="twitter:image" content="${runtimeConfig.TWITTER_IMAGE}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.TWITTER_SITE
+            ? `<meta property="twitter:site" content="${runtimeConfig.TWITTER_SITE}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.TWITTER_CREATOR
+            ? `<meta property="twitter:creator" content="${runtimeConfig.TWITTER_CREATOR}" />`
+            : ''
+        }
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/${theme}">

@@ -277,4 +277,37 @@ export const runtimeConfig =
         INSTANTGAMING: nodeIsProduction
           ? process.env.INSTANTGAMING
           : process.env.RAZZLE_INSTANTGAMING,
+        OG_SITE_NAME: nodeIsProduction
+          ? process.env.OG_SITE_NAME
+          : process.env.RAZZLE_OG_SITE_NAME,
+        OG_TITLE: nodeIsProduction
+          ? process.env.OG_TITLE
+          : process.env.RAZZLE_OG_TITLE,
+        OG_DESCRIPTION: nodeIsProduction
+          ? process.env.OG_DESCRIPTION
+          : process.env.RAZZLE_OG_DESCRIPTION,
+        OG_URL: nodeIsProduction
+          ? process.env.OG_URL
+          : process.env.RAZZLE_OG_URL,
+        OG_IMAGE: nodeIsProduction
+          ? process.env.OG_IMAGE
+          : process.env.RAZZLE_OG_IMAGE,
+        OG_IMAGE_WIDTH: nodeIsProduction
+          ? process.env.OG_IMAGE_WIDTH
+          : process.env.RAZZLE_OG_IMAGE_WIDTH,
+        OG_IMAGE_HEIGHT: nodeIsProduction
+          ? process.env.OG_IMAGE_HEIGHT
+          : process.env.RAZZLE_OG_IMAGE_HEIGHT,
+        TWITTER_CARD: nodeIsProduction
+          ? process.env.TWITTER_CARD
+          : process.env.RAZZLE_TWITTER_CARD,
+        TWITTER_IMAGE: nodeIsProduction
+          ? process.env.TWITTER_IMAGE
+          : process.env.RAZZLE_TWITTER_IMAGE,
+        TWITTER_SITE: nodeIsProduction
+          ? process.env.TWITTER_SITE
+          : process.env.RAZZLE_TWITTER_SITE,
+        TWITTER_CREATOR: nodeIsProduction
+          ? process.env.TWITTER_CREATOR
+          : process.env.RAZZLE_TWITTER_CREATOR,
       };
