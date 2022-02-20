@@ -78,6 +78,18 @@ export const runtimeConfig =
         UNTAPPD: window?.env?.UNTAPPD,
         BUTTON_TARGET: window?.env?.BUTTON_TARGET,
         INSTANTGAMING: window?.env?.INSTANTGAMING,
+        OG_SITE_NAME: window?.env?.OG_SITE_NAME,
+        OG_TITLE: window?.env?.OG_TITLE,
+        OG_DESCRIPTION: window?.env?.OG_DESCRIPTION,
+        OG_URL: window?.env?.OG_URL,
+        OG_IMAGE: window?.env?.OG_IMAGE,
+        OG_IMAGE_WIDTH: window?.env?.OG_IMAGE_WIDTH,
+        OG_IMAGE_HEIGHT: window?.env?.OG_IMAGE_HEIGHT,
+        TWITTER_CARD: window?.env?.TWITTER_CARD,
+        TWITTER_IMAGE: window?.env?.TWITTER_IMAGE,
+        TWITTER_SITE: window?.env?.TWITTER_SITE,
+        TWITTER_CREATOR: window?.env?.TWITTER_CREATOR,
+        GHOST: window?.env?.GHOST,
       }
     : {
         // server
@@ -310,4 +322,5 @@ export const runtimeConfig =
         TWITTER_CREATOR: nodeIsProduction
           ? process.env.TWITTER_CREATOR
           : process.env.RAZZLE_TWITTER_CREATOR,
+        GHOST: nodeIsProduction ? process.env.GHOST : process.env.RAZZLE_GHOST,
       };

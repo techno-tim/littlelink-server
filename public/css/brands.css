@@ -539,3 +539,13 @@ button:hover,
 .button.button-instantgaming:focus {
   filter: brightness(90%)
 }
+
+/* ghost */
+.button.button-ghost {
+  color: #000;
+  background-color: #fff;
+}
+.button.button-ghost:hover,
+.button.button-ghost:focus {
+  filter: brightness(90%)
+}
