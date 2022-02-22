@@ -177,3 +177,17 @@ hr {
   margin-top: 36px;
   padding-bottom: 36px;
 }
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button.button-gitlab,
+.button.button-devto,
+.button.button-stackoverflow,
+.button.button-gitea,
+.button.button-signal,
+.button.button-ghost {
+  border-style: solid;
+  border-color: #292929;
+  border-width: 1px;
+}
