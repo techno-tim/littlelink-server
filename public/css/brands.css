@@ -63,6 +63,12 @@ button {
 /* Brand Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* Default */
+.button.button-default {
+  color: #ffffff;
+  background-color: #0085ff;
+}
+
 /* Discord */
 .button.button-discord {
   color: #ffffff;
