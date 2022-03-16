@@ -90,6 +90,8 @@ export const runtimeConfig =
         TWITTER_SITE: window?.env?.TWITTER_SITE,
         TWITTER_CREATOR: window?.env?.TWITTER_CREATOR,
         GHOST: window?.env?.GHOST,
+        MATOMO_URL: window?.env?.MATOMO_URL,
+        MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
     : {
         // server
@@ -323,4 +325,10 @@ export const runtimeConfig =
           ? process.env.TWITTER_CREATOR
           : process.env.RAZZLE_TWITTER_CREATOR,
         GHOST: nodeIsProduction ? process.env.GHOST : process.env.RAZZLE_GHOST,
+        MATOMO_URL: nodeIsProduction
+          ? process.env.MATOMO_URL
+          : process.env.RAZZLE_MATOMO_URL,
+        MATOMO_SITE_ID: nodeIsProduction
+          ? process.env.MATOMO_SITE_ID
+          : process.env.RAZZLE_MATOMO_SITE_ID,
       };
