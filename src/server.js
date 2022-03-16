@@ -195,6 +195,14 @@ server
 
     </head>
     <body>
+        ${
+          runtimeConfig.MATOMO_URL && runtimeConfig.MATOMO_SITE_ID
+            ? `
+            <!-- Matomo Image Tracker-->
+            <img referrerpolicy="no-referrer-when-downgrade" src="${runtimeConfig.MATOMO_URL}matomo.php?idsite=${runtimeConfig.MATOMO_SITE_ID}&amp;rec=1" style="border:0" alt="" />
+            <!-- End Matomo -->`
+            : ''
+        }
         <div id="root">${markup}</div>
         <script>window.env = ${serialize(runtimeConfig)};</script>
         ${jsScriptTagsFromAssets(assets, 'client', ' defer crossorigin')}
