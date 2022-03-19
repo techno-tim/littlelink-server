@@ -41,6 +41,18 @@ Sample event for YouTube button.
   window.umami('youtube-button');
 ```
 
+### Matomo 
+
+See [Installing Matomo fo how to configure analytics](https://matomo.org/docs/installation/) and [how to find your site id](https://matomo.org/faq/general/faq_19212/)
+
+Use `MATOMO_URL` for your URL and `MATOMO_SITE_ID` for your site id
+
+Sample event for YouTube button.
+
+```javascript
+  window._paq.push(['trackEvent', 'youtube-button]]);
+```
+
 ## 🩺 Health Check
 
 A health check endpoint exists on `/healthcheck`.  If healthy, it will return with a `200` and the following response:
