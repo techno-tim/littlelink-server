@@ -168,9 +168,41 @@ server
             </script>`
             : ''
         }
+        ${
+          runtimeConfig.MATOMO_URL && runtimeConfig.MATOMO_SITE_ID
+            ? `
+            <!-- Matomo -->
+            <script type="text/javascript">
+                var _paq = window._paq || [];
+                /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+                (function () {
+                    var u = "${runtimeConfig.MATOMO_URL}/";
+                    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                    _paq.push(['setSiteId', '${runtimeConfig.MATOMO_SITE_ID}']);
+                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = u + 'matomo.js';
+                    s.parentNode.insertBefore(g, s);
+                })();
+            </script>
+            <!-- Matomo End -->`
+            : ''
+        }
 
     </head>
     <body>
+        ${
+          runtimeConfig.MATOMO_URL && runtimeConfig.MATOMO_SITE_ID
+            ? `
+            <!-- Matomo Image Tracker-->
+            <img referrerpolicy="no-referrer-when-downgrade" src="${runtimeConfig.MATOMO_URL}/matomo.php?idsite=${runtimeConfig.MATOMO_SITE_ID}&amp;rec=1" style="border:0" alt="" />
+            <!-- End Matomo -->`
+            : ''
+        }
         <div id="root">${markup}</div>
         <script>window.env = ${serialize(runtimeConfig)};</script>
         ${jsScriptTagsFromAssets(assets, 'client', ' defer crossorigin')}
