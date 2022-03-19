@@ -50,7 +50,7 @@ Use `MATOMO_URL` for your URL and `MATOMO_SITE_ID` for your site id
 Sample event for YouTube button.
 
 ```javascript
-  window._paq.push(['trackEvent', 'youtube-button]]);
+  window._paq.push(['trackEvent', 'youtube-button']]);
 ```
 
 ## 🩺 Health Check
