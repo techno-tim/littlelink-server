@@ -139,7 +139,9 @@ export const runtimeConfig =
         BIO_2: nodeIsProduction ? process.env.BIO_2 : process.env.RAZZLE_BIO_2,
         BIO_3: nodeIsProduction ? process.env.BIO_3 : process.env.RAZZLE_BIO_3,
         BIO_4: nodeIsProduction ? process.env.BIO_4 : process.env.RAZZLE_BIO_4,
-        BIO_LINK: nodeIsProduction ? process.env.BIO_LINK : process.env.RAZZLE_BIO_LINK,
+        BIO_LINK: nodeIsProduction
+          ? process.env.BIO_LINK
+          : process.env.RAZZLE_BIO_LINK,
         GITHUB: nodeIsProduction
           ? process.env.GITHUB
           : process.env.RAZZLE_GITHUB,
