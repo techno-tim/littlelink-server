@@ -23,6 +23,10 @@ services:
       - AVATAR_ALT=Techno Tim Profile Pic
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
+      - BIO_2=
+      - BIO_3=
+      - BIO_4=
+      - BIO_LINK=
       - FOOTER=Thanks for stopping by!
       - GITHUB=https://github.com/timothystewart6
       - TWITTER=https://twitter.com/TechnoTimLive
