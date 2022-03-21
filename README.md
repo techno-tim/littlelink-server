@@ -124,7 +124,7 @@ services:
       - YOUTUBE=https://l.technotim.live/subscribe
       - TWITCH=https://l.technotim.live/twitch
       - DISCORD=https://l.technotim.live/discord
-      - TIKTOK=https://l.technotim.live/discordhttps://l.technotim.live/discord
+      - TIKTOK=https://l.technotim.live/tiktok
       - FACEBOOK=https://l.technotim.live/facebook
       - PATREON=https://l.technotim.live/patreon
       - FOOTER=Techno Tim © 2022
