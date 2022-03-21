@@ -120,7 +120,7 @@ function Home(props) {
               <p>{runtimeConfig.BIO_2}</p>
               <p>{runtimeConfig.BIO_3}</p>
               <p>{runtimeConfig.BIO_4}</p>
-              <a href={`${runtimeConfig.BIO_LINK}`}>{runtimeConfig.BIO_LINK}</a>
+              <a href={runtimeConfig.BIO_LINK}>{runtimeConfig.BIO_LINK}</a>
             </div>
             <Sort>
               {runtimeConfig.CUSTOM_BUTTON_TEXT && renderCustomButtons()}
