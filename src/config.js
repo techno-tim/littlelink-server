@@ -19,6 +19,10 @@ export const runtimeConfig =
         AVATAR_2X_URL: window?.env?.AVATAR_2X_URL,
         NAME: window?.env?.NAME,
         BIO: window?.env?.BIO,
+        BIO_2: window?.env?.BIO_2,
+        BIO_3: window?.env?.BIO_3,
+        BIO_4: window?.env?.BIO_4,
+        BIO_LINK: window?.env?.BIO_LINK,
         GITHUB: window?.env?.GITHUB,
         TWITTER: window?.env?.TWITTER,
         INSTAGRAM: window?.env?.INSTAGRAM,
@@ -132,6 +136,10 @@ export const runtimeConfig =
           : process.env.RAZZLE_AVATAR_2X_URL,
         NAME: nodeIsProduction ? process.env.NAME : process.env.RAZZLE_NAME,
         BIO: nodeIsProduction ? process.env.BIO : process.env.RAZZLE_BIO,
+        BIO_2: nodeIsProduction ? process.env.BIO_2 : process.env.RAZZLE_BIO_2,
+        BIO_3: nodeIsProduction ? process.env.BIO_3 : process.env.RAZZLE_BIO_3,
+        BIO_4: nodeIsProduction ? process.env.BIO_4 : process.env.RAZZLE_BIO_4,
+        BIO_LINK: nodeIsProduction ? process.env.BIO_LINK : process.env.RAZZLE_BIO_LINK,
         GITHUB: nodeIsProduction
           ? process.env.GITHUB
           : process.env.RAZZLE_GITHUB,

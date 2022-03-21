@@ -181,3 +181,14 @@ hr {
   margin-top: 36px;
   padding-bottom: 36px;
 }
+
+
+/* Bio
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bio {
+  margin-bottom: 2.5rem;
+}
+
+.bio p {
+  margin-bottom: 0px;
+}

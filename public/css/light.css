@@ -191,3 +191,14 @@ hr {
   border-color: #292929;
   border-width: 1px;
 }
+
+
+/* Bio
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bio {
+  margin-bottom: 2.5rem;
+}
+
+.bio p {
+  margin-bottom: 0px;
+}
