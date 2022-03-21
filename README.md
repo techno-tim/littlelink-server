@@ -5,9 +5,9 @@ It takes the same simple approach to a link page and hosts it within a NodeJS se
 
 ## 🚀 Getting Started
 
-## 📍 Supported Links & Buttons
+## 📍 Supported Links & Buttons & Config
 
-Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons!
+Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons and configuration!
 
 ## 📈 Analytics Support
 
@@ -41,6 +41,18 @@ Sample event for YouTube button.
   window.umami('youtube-button');
 ```
 
+### Matomo 
+
+See [Installing Matomo fo how to configure analytics](https://matomo.org/docs/installation/) and [how to find your site id](https://matomo.org/faq/general/faq_19212/)
+
+Use `MATOMO_URL` for your URL and `MATOMO_SITE_ID` for your site id
+
+Sample event for YouTube button.
+
+```javascript
+  window._paq.push(['trackEvent', 'youtube-button']]);
+```
+
 ## 🩺 Health Check
 
 A health check endpoint exists on `/healthcheck`.  If healthy, it will return with a `200` and the following response:
@@ -61,6 +73,8 @@ SKIP_HEALTH_CHECK_LOGS=true
 
 This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
 
+The example below will generate a site exactly like <https://technotim.live>
+
 `docker-compose.yml`
 
 ```yml
@@ -74,10 +88,17 @@ services:
     container_name: littlelink-server
     environment:
       - META_TITLE=Techno Tim
-      - META_DESCRIPTION=Techno Tim Link page
+      - META_DESCRIPTION=Software Engineer | Gamer | Twitch Streamer | Content Creator on YouTube | Homelab | 🇺🇸 🇯🇵  | Full Nerd
       - META_AUTHOR=Techno Tim
       - LANG=en
       - META_INDEX_STATUS=all
+      - OG_SITE_NAME=Techno Tim
+      - OG_TITLE=Techno Tim
+      - OG_DESCRIPTION=The home of Techno Tim
+      - OG_URL=https://technotim.live
+      - OG_IMAGE=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
+      - OG_IMAGE_WIDTH=400
+      - OG_IMAGE_HEIGHT=400
       - GA_TRACKING_ID=G-XXXXXXXXXX
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
@@ -86,81 +107,27 @@ services:
       - AVATAR_ALT=Techno Tim Profile Pic
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
-      - FOOTER=Thanks for stopping by!
       # use ENV variable names for order, listed buttons will be boosted to the top
-      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON
+      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,PATREON,GEAR,DOCUMENTATION
       # you can render an unlimited amount of custom buttons by adding 
       # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
-      - CUSTOM_BUTTON_TEXT=Visit My Site,Visit My OTHER Site
-      - CUSTOM_BUTTON_URL=https://technotim.live,https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
-      - CUSTOM_BUTTON_COLOR=#ED2756,#0085FF
+      - CUSTOM_BUTTON_TEXT=Documentation,Recommended Gear
+      - CUSTOM_BUTTON_URL=https://l.technotim.live/docs,https://l.technotim.live/gear
+      - CUSTOM_BUTTON_COLOR=#000000,#000000
       - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff
-      - CUSTOM_BUTTON_ALT_TEXT=Visit my site!,Visit my OTHER Site!
-      - CUSTOM_BUTTON_NAME=HOMEPAGE,HOMEPAGE2
-      - CUSTOM_BUTTON_ICON=fas link,fab youtube
-      - BUTTON_TARGET=_blank # controls the button target html attribute
-      - STACKOVERFLOW=https://stackoverflow.com/
-      - GITHUB=https://github.com/timothystewart6
-      - TWITTER=https://twitter.com/TechnoTimLive
-      - INSTAGRAM=https://www.instagram.com/techno.tim
-      - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
-      - TWITCH=https://www.twitch.tv/technotim/
+      - CUSTOM_BUTTON_ALT_TEXT=Tech documentation site for my videos and more,Recommended Gear
+      - CUSTOM_BUTTON_NAME=DOCUMENTATION,GEAR
+      - CUSTOM_BUTTON_ICON=fas file-alt,fas fa-cog
+      - GITHUB=https://l.technotim.live/github
+      - TWITTER=https://l.technotim.live/twitter
+      - INSTAGRAM=https://l.technotim.live/instagram
+      - YOUTUBE=https://l.technotim.live/subscribe
+      - TWITCH=https://l.technotim.live/twitch
       - DISCORD=https://l.technotim.live/discord
-      - TIKTOK=https://www.tiktok.com/@technotim
-      - KIT=https://kit.co/TechnoTim
-      - FACEBOOK=https://facebook.com
-      - FACEBOOK_MESSENGER=https://facebook.com
-      - LINKED_IN=https://linkedin.com
-      - PRODUCT_HUNT=https://www.producthunt.com/
-      - SNAPCHAT=https://www.snapchat.com/
-      - SPOTIFY=https://www.spotify.com/
-      - REDDIT=https://www.reddit.com/
-      - MEDIUM=https://medium.com
-      - PINTEREST=https://www.pinterest.com/
-      - EMAIL=you@example.com
-      - EMAIL_TEXT=Email Me!
-      - EMAIL_ALT=you@example.com
-      - EMAIL_ALT_TEXT=Email me!
-      - SOUND_CLOUD=https://soundcloud.com
-      - FIGMA=https://figma.com
-      - TELEGRAM=https://telegram.org/
-      - TUMBLR=https://www.tumblr.com/
-      - STEAM=https://steamcommunity.com/
-      - VIMEO=https://vimeo.com/
-      - WORDPRESS=https://wordpress.com/
-      - GOODREADS=https://www.goodreads.com/
-      - SKOOB=https://www.skoob.com.br/
-      - LETTERBOXD=https://letterboxd.com/
-      - MASTODON=https://mastodon.social/
-      - MICRO_BLOG=https://micro.blog/
-      - WHATSAPP=https://www.whatsapp.com/
-      - STRAVA=https://www.strava.com/
-      - BUYMEACOFFEE=https://www.buymeacoffee.com/
-      - GITLAB=https://www.gitlab.com/
-      - PATREON=https://www.patreon.com/technotim
-      - DEVTO=https://dev.to/
-      - UMAMI_WEBSITE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-      - UMAMI_APP_URL=https://your-umami-app.com
-      - PAYPAL=https://www.paypal.me/user
-      - SLACK=https://slack.com/
-      - LASTFM=https://last.fm/
-      - UNTAPPD=https://untappd.com/
-      - GITEA=https://gitea.io/
-      - POLYWORK=https://www.polywork.com/
-      - SIGNAL=https://signal.org/
-      - INSTANTGAMING=https://www.instant-gaming.com/
-      - OG_SITE_NAME=Techno Tim Live (OG)
-      - OG_TITLE=Techno Tim (OG)
-      - OG_DESCRIPTION=Techno Tim Link page (OG)
-      - OG_URL=https://technotim.live/
-      - OG_IMAGE=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
-      - OG_IMAGE_WIDTH=400
-      - OG_IMAGE_HEIGHT=400
-      - TWITTER_CARD=summary_large_image
-      - TWITTER_IMAGE=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
-      - TWITTER_SITE=@TechnoTimLive
-      - TWITTER_CREATOR=@TechnoTimLive
-      - GHOST=https://ghost.org/
+      - TIKTOK=https://l.technotim.live/tiktok
+      - FACEBOOK=https://l.technotim.live/facebook
+      - PATREON=https://l.technotim.live/patreon
+      - FOOTER=Techno Tim © 2022
     ports:
       - 8080:3000
     restart: unless-stopped
@@ -179,7 +146,6 @@ docker run -d \
   -e META_AUTHOR='Techno Tim' \
   -e LANG=en \
   -e META_INDEX_STATUS='noindex' \
-  -e GA_TRACKING_ID='G-XXXXXXXXXX' \
   -e THEME='Dark' \
   -e FAVICON_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
   -e AVATAR_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
@@ -187,17 +153,15 @@ docker run -d \
   -e AVATAR_ALT='Techno Tim Profile Pic' \
   -e NAME='TechnoTim' \
   -e BIO='Hey! Just a place where you can connect with me!' \
-  -e GITHUB='https://github.com/timothystewart6' \
-  -e TWITTER='https://twitter.com/TechnoTimLive' \
+  -e GITHUB='https://l.technotim.live/github' \
+  -e TWITTER='https://l.technotim.live/twitter' \
   -e INSTAGRAM='https://www.instagram.com/techno.tim' \
-  -e YOUTUBE='https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A' \
-  -e TWITCH='https://www.twitch.tv/technotim' \
+  -e YOUTUBE='https://l.technotim.live/subscribe' \
+  -e TWITCH='https://l.technotim.live/twitch' \
   -e DISCORD='https://l.technotim.live/discord' \
-  -e TIKTOK='https://www.tiktok.com/@technotim' \
-  -e KIT='https://kit.co/TechnoTim' \
-  -e EMAIL='someone@example.com' \
-  -e EMAIL_TEXT='Email me!' \
-  -e FOOTER=Thanks for stopping by! \
+  -e TIKTOK='https://l.technotim.live/discord' \
+  -e KIT='https://l.technotim.live/gear' \
+  -e FOOTER=Techno Tim © 2022 \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
