@@ -76,11 +76,12 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 100%; }
 body {
+  background: linear-gradient(to right, env(CUSTOM_THEME_COLOUR, #838383), env(CUSTOM_THEME_COLOUR, #838383)), url(common-bg.svg);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #FFFFFF; }
 
 
 /* Typography
@@ -116,7 +117,7 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: linear-gradient(to right, rgba(221, 103, 114, 0.8), rgba(221, 103, 114, 0.8)), url(common-bg.svg);
+  background: #F1F1F1;
   border: 1px solid #E1E1E1;
   border-radius: 4px; }
 pre > code {
