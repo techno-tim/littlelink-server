@@ -43,6 +43,16 @@ switch (runtimeConfig.THEME.toLowerCase()) {
     break;
   case 'custom':
     theme = 'custom.css';
+    var newStyles = document.createElement('style')
+    document.body.append(newStyles)
+    newStyles.innerHTML = "body {" +
+    "background: linear-gradient(to right, env(" + runtimeConfig.CUSTOM_THEME_COLOUR + ", #838383d9), env(" + runtimeConfig.CUSTOM_THEME_COLOUR + ", #838383d9)), url(css/common-bg.svg);" +
+    "font-size: 18px;" +
+    "line-height: 24px;" +
+    "font-weight: 400;" +
+    "font-family: \"Open Sans\", \"HelveticaNeue\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;" +
+    "color: #FFFFFF;" +
+    "}"
     break;
 }
 

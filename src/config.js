@@ -119,6 +119,7 @@ export const runtimeConfig =
           ? process.env.SKIP_HEALTH_CHECK_LOGS
           : process.env.RAZZLE_SKIP_HEALTH_CHECK_LOGS,
         THEME: nodeIsProduction ? process.env.THEME : process.env.RAZZLE_THEME,
+        CUSTOM_THEME_COLOUR: nodeIsProduction ? process.env.CUSTOM_THEME_COLOUR : process.env.RAZZLE_THEME,
         FAVICON_URL: nodeIsProduction
           ? process.env.FAVICON_URL
           : process.env.RAZZLE_FAVICON_URL,
