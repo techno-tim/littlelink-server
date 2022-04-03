@@ -13,6 +13,7 @@ export const runtimeConfig =
         UMAMI_WEBSITE_ID: window?.env?.UMAMI_WEBSITE_ID,
         SKIP_HEALTH_CHECK_LOGS: window?.env?.SKIP_HEALTH_CHECK_LOGS,
         THEME: window?.env?.THEME,
+        CUSTOM_THEME_COLOUR: window?.env?.CUSTOM_THEME_COLOUR,
         FAVICON_URL: window?.env?.FAVICON_URL,
         AVATAR_URL: window?.env?.AVATAR_URL,
         AVATAR_ALT: window?.env?.AVATAR_ALT,

@@ -30,7 +30,22 @@ const jsScriptTagsFromAssets = (assets, entrypoint, extra = '') => {
     : '';
 };
 
-const theme = runtimeConfig.THEME === 'Dark' ? 'dark.css' : 'light.css';
+// const theme = runtimeConfig.THEME.toLowerCase() === 'dark' ? 'dark.css' : 'light.css';
+
+var theme = '';
+
+switch (runtimeConfig.THEME.toLowerCase()) {
+  case 'dark':
+    theme = 'dark.css';
+    break;
+  case 'light':
+    theme = 'light.css';
+    break;
+  case 'custom':
+    theme = 'custom.css';
+    break;
+}
+
 
 const server = express();
 
