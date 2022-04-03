@@ -211,14 +211,14 @@ server
           runtimeConfig.THEME.toLowerCase() == 'custom'
             ? `
             <style>
-            "body {" +
-              "background: linear-gradient(to right, ${runtimeConfig.CUSTOM_THEME_COLOUR }, ${runtimeConfig.CUSTOM_THEME_COLOUR }), url(css/common-bg.svg);" +
-              "font-size: 18px;" +
-              "line-height: 24px;" +
-              "font-weight: 400;" +
-              "font-family: \"Open Sans\", \"HelveticaNeue\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;" +
-              "color: #FFFFFF;" +
-            "}"
+            body {
+              background: linear-gradient(to right, ${runtimeConfig.CUSTOM_THEME_COLOUR }, ${runtimeConfig.CUSTOM_THEME_COLOUR }), url(css/common-bg.svg);
+              font-size: 18px;
+              line-height: 24px;
+              font-weight: 400;
+              font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+              color: #FFFFFF;
+            }
             </style>`
             : ''
         }
