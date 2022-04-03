@@ -116,7 +116,7 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: linear-gradient(to right, env(CUSTOM_THEME_COLOUR, #838383), env(CUSTOM_THEME_COLOUR, #838383)), url(common-bg.svg);
+  background: linear-gradient(to right, rgba(221, 103, 114, 0.8), rgba(221, 103, 114, 0.8)), url(common-bg.svg);
   border: 1px solid #E1E1E1;
   border-radius: 4px; }
 pre > code {
