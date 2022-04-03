@@ -207,6 +207,21 @@ server
             <!-- Matomo End -->`
             : ''
         }
+        ${
+          runtimeConfig.THEME.toLowerCase() == 'custom'
+            ? `
+            <style>
+            "body {" +
+              "background: linear-gradient(to right, ${runtimeConfig.CUSTOM_THEME_COLOUR }, ${runtimeConfig.CUSTOM_THEME_COLOUR }), url(css/common-bg.svg);" +
+              "font-size: 18px;" +
+              "line-height: 24px;" +
+              "font-weight: 400;" +
+              "font-family: \"Open Sans\", \"HelveticaNeue\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;" +
+              "color: #FFFFFF;" +
+            "}"
+            </style>`
+            : ''
+        }
 
     </head>
     <body>
@@ -226,20 +241,6 @@ server
       );
     }
   });
-  
-  if (theme == 'custom') {
-    var newStyles = document.createElement('style')
-    document.body.append(newStyles)
-    newStyles.innerHTML = "body {" +
-    "background: linear-gradient(to right, env(" + runtimeConfig.CUSTOM_THEME_COLOUR + ", #838383d9), env(" + runtimeConfig.CUSTOM_THEME_COLOUR + ", #838383d9)), url(css/common-bg.svg);" +
-    "font-size: 18px;" +
-    "line-height: 24px;" +
-    "font-weight: 400;" +
-    "font-family: \"Open Sans\", \"HelveticaNeue\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;" +
-    "color: #FFFFFF;" +
-    "}"
-  }
-  
 
 server.get('/healthcheck', (req, res) => {
   res.status(200).json({ status: 'ok' });
