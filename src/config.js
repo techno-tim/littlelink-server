@@ -7,6 +7,7 @@ export const runtimeConfig =
         META_TITLE: window?.env?.META_TITLE,
         META_DESCRIPTION: window?.env?.META_DESCRIPTION,
         META_AUTHOR: window?.env?.META_AUTHOR,
+        META_KEYWORDS: window?.env?.META_KEYWORDS,
         META_INDEX_STATUS: window?.env?.META_INDEX_STATUS,
         LANG: window?.env?.LANG,
         GA_TRACKING_ID: window?.env?.GA_TRACKING_ID,
@@ -104,6 +105,9 @@ export const runtimeConfig =
         META_AUTHOR: nodeIsProduction
           ? process.env.META_AUTHOR
           : process.env.RAZZLE_META_AUTHOR,
+        META_KEYWORDS: nodeIsProduction
+          ? process.env.META_KEYWORDS
+          : process.env.RAZZLE_META_KEYWORDS,
         META_INDEX_STATUS: nodeIsProduction
           ? process.env.META_INDEX_STATUS
           : process.env.RAZZLE_META_INDEX_STATUS,

@@ -90,6 +90,7 @@ services:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Software Engineer | Gamer | Twitch Streamer | Content Creator on YouTube | Homelab | 🇺🇸 🇯🇵  | Full Nerd
       - META_AUTHOR=Techno Tim
+      - META_KEYWORDS=HomeLab, HTML, CSS, Engineering
       - LANG=en
       - META_INDEX_STATUS=all
       - OG_SITE_NAME=Techno Tim
@@ -144,6 +145,7 @@ docker run -d \
   -e META_TITLE='Techno Tim' \
   -e META_DESCRIPTION='Techno Tim Link page' \
   -e META_AUTHOR='Techno Tim' \
+  -e META_KEYWORDS='HomeLab, HTML, CSS, Engineering \
   -e LANG=en \
   -e META_INDEX_STATUS='noindex' \
   -e THEME='Dark' \
