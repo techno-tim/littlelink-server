@@ -77,6 +77,7 @@ server
         <title >${runtimeConfig.META_TITLE}</title>
         <meta name="description" content="${runtimeConfig.META_DESCRIPTION}">
         <meta name="author" content="${runtimeConfig.META_AUTHOR}">
+        <meta name="keywords" content="${runtimeConfig.META_KEYWORDS}">
         <meta name="robots" content="${
           runtimeConfig.META_INDEX_STATUS || 'noindex'
         }">

@@ -14,6 +14,7 @@ services:
       - META_TITLE=Techno Tim
       - META_DESCRIPTION=Techno Tim Link page
       - META_AUTHOR=Techno Tim
+      - META_KEYWORDS=HomeLab, CSS, HTML, Engineering
       - LANG=en
       - META_INDEX_STATUS=all
       - THEME=Dark
