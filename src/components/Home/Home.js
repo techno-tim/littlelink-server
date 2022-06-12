@@ -51,6 +51,8 @@ import untappdLogo from '../../icons/untappd.svg';
 import instantGamingLogo from '../../icons/instantgaming.svg';
 import ghostLogo from '../../icons/ghost.svg';
 
+import avatarLogo from '../../icons/20220529_123314.jpg';
+
 function Home(props) {
   let order = [];
   if (runtimeConfig?.BUTTON_ORDER) {
@@ -110,8 +112,8 @@ function Home(props) {
         <div className="row">
           <div className="column" style={{ marginTop: '12%' }}>
             <Avatar
-              src={runtimeConfig.AVATAR_URL}
-              srcSet={runtimeConfig.AVATAR_2X_URL}
+              src={avatarLogo}
+              srcSet={avatarLogo}
               alt={runtimeConfig.AVATAR_ALT}
             />
             <h1>{`${runtimeConfig.NAME}`}</h1>
