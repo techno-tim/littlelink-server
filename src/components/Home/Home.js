@@ -50,6 +50,7 @@ import signalLogo from '../../icons/signal.svg';
 import untappdLogo from '../../icons/untappd.svg';
 import instantGamingLogo from '../../icons/instantgaming.svg';
 import ghostLogo from '../../icons/ghost.svg';
+import '../../assets';
 
 function Home(props) {
   let order = [];
