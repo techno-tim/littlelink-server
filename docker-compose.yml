@@ -23,8 +23,8 @@ services:
       - AVATAR_2X_URL=https://lh3.googleusercontent.com/LuuYJ58UrvTg5G5PZlYUSU3oCuY5GYl5XhKGoURAIqkWA4weQP-Z4O_2XxUM91TMzYpHaskF4_7vQR6OMInzZmIHhgGJk8tRy5OzttM0xQkQ4iSOQm6GIT1I87ICNL6ra5CTDUo_N0KHfMkJpAKbivxV1EnnXeB5McOvaDvMc8oc7rZavee_LcvRHftWMZvJDl4iVEQcoDMg6nJBQsLKlvXwACSb3TDuT8umZRIzY-YbmfWGirwU7SwyUWn2uAgb9-thSPxvylg21LnKpaNRwMFoZ9QC5A5ZUtSKvD6gchHRQY2lcmWL2gsh1w2ojndZirOdIojJKbinOCCZJoAV2I_IZKTS6b2s6rcgd5n3DOjiolqTgds0iNHBaJA1Jd5-KSjLMIcAE3ZGDVNxHWD2dpwv7TEjLE-pP3BS_zuRcMyowIUMgP5PND4QjqhZAdrRCPSFH7b4tIv0o7l7encif_3HS2clwU2PPOrcU11qX8moHFpXn5hUR7ilbwTTJs-M-M0JxXFkRX6V0RvWsrvouWAoHPr68WUF67VBhI60QS8lGL6aQfn4Wc08c-meYY-Iiyl8PG1AuaiVvAdgojDwiPbrArbexUz4T6n3eDvxNTPkpG4rOoalO_1mnOC6NQib8XqvYwZCr8K4o4VnODzv4MShuLE-fRSOBe43OoSpqIzyewsD1kokorBZqmb_lNfHFhZzDLxdft5RP_Fy8zhvqSDjnrMu8YLkZp41zOFbcXgEf5_yjf6s3TKmVcY=s400-no?authuser=0
       - AVATAR_ALT=Georgie Loves Music Profile Pic
       - NAME=@GeorgieLovesMusic
-      - BIO=Who needs Linktree when you have opensource solutions?
-      - FOOTER=Thanks for stopping by!
+      - BIO=Software Developer from Dallas, TX \\nLover of Vinyl 
+      - FOOTER="Squeeze the juice out of all the suckers with power and pour some back out, so as to water the flowers. This world is ours." \\n- Guru of Gang Starr
       #- GITHUB=https://github.com/timothystewart6
       #- TWITTER=https://twitter.com/TechnoTimLive
       - INSTAGRAM=https://www.instagram.com/georgielovesmusic
