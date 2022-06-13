@@ -330,9 +330,7 @@ export const runtimeConfig =
           ? process.env.TWITTER_CREATOR
           : process.env.RAZZLE_TWITTER_CREATOR,
         GHOST: nodeIsProduction ? process.env.GHOST : process.env.RAZZLE_GHOST,
-        TRAKT: nodeIsProduction 
-          ? process.env.TRAKT 
-          : process.env.RAZZLE_TRAKT,
+        TRAKT: nodeIsProduction ? process.env.TRAKT : process.env.RAZZLE_TRAKT,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
