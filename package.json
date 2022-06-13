@@ -51,7 +51,7 @@
     "razzle": "^4.2.14",
     "razzle-dev-utils": "^4.2.14",
     "react-test-renderer": "^18.1.0",
-    "stylelint": "^14.9.0",
+    "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
     "url": "^0.11.0",
     "webpack": "^5.68.0",
