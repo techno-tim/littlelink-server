@@ -38,7 +38,7 @@ services:
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
       - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON
     ports:
-      - 8080:3000
+      - 80:3000
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
