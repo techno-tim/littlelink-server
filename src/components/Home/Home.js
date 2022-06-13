@@ -50,6 +50,7 @@ import signalLogo from '../../icons/signal.svg';
 import untappdLogo from '../../icons/untappd.svg';
 import instantGamingLogo from '../../icons/instantgaming.svg';
 import ghostLogo from '../../icons/ghost.svg';
+import traktLogo from '../../icons/trakt.svg';
 
 function Home(props) {
   let order = [];
@@ -546,6 +547,15 @@ function Home(props) {
                   displayName="ghost"
                   logo={ghostLogo}
                   order={buttonOrder('GHOST')}
+                />
+              )}
+              {runtimeConfig.TRAKT && (
+                <Button
+                  name="trakt"
+                  href={runtimeConfig.TRAKT}
+                  displayName="Trakt"
+                  logo={traktLogo}
+                  order={buttonOrder('TRAKT')}
                 />
               )}
             </Sort>
