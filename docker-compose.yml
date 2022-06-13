@@ -18,9 +18,9 @@ services:
       - LANG=en
       - META_INDEX_STATUS=all
       - THEME=Dark
-      - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
-      - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
-      - AVATAR_2X_URL=https://photos.app.goo.gl/bbBWwwj76QwunRdY8
+      - FAVICON_URL=20220529_123314_me_200x200.jpg
+      - AVATAR_URL=20220529_123314_me_200x200.jpg
+      - AVATAR_2X_URL=20220529_123314_me_400x400.jpg
       - AVATAR_ALT=Georgie Loves Music Profile Pic
       - NAME=@GeorgieLovesMusic
       - BIO=Hey! Just a place where you can connect with me!
