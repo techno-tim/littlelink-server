@@ -19,8 +19,8 @@ services:
       - META_INDEX_STATUS=all
       - THEME=Dark
       - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
-      - AVATAR_URL=assets/20220529_123314.jpg
-      - AVATAR_2X_URL=assets/20220529_123314.jpg
+      - AVATAR_URL=https://ipfs.io/ipfs/QmUUBKqd31Z3Z7eQoHjA4Upjsa6bGKPLfKEkKpsK7SKQp1?filename=20220529_123314.jpg
+      - AVATAR_2X_URL=https://ipfs.io/ipfs/QmUUBKqd31Z3Z7eQoHjA4Upjsa6bGKPLfKEkKpsK7SKQp1?filename=20220529_123314.jpg
       - AVATAR_ALT=Techno Tim Profile Pic
       - NAME=@GeorgieLovesMusic
       - BIO=Hey! Just a place where you can connect with me!
