@@ -170,7 +170,7 @@ hr {
 
 
 .avatar {
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   width: 128px;
   height: 128px;
   border-radius: 50%;

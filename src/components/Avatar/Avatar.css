@@ -1,6 +1,15 @@
 .avatar {
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   width: 128px;
   height: 128px;
   border-radius: 50%;
+}
+
+.spin {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

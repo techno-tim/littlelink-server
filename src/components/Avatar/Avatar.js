@@ -6,7 +6,7 @@ import './Avatar.css';
 function Avatar(props) {
   const { src, srcSet, alt } = props;
 
-  return <img className="avatar" src={src} srcSet={srcSet} alt={alt} />;
+  return <img className="avatar spin" src={src} srcSet={srcSet} alt={alt} />
 }
 
 export default memo(Avatar);
