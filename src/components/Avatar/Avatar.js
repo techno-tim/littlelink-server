@@ -3,6 +3,8 @@ import { string } from 'prop-types';
 
 import './Avatar.css';
 
+//Baby Coby Love Squirrels
+
 function Avatar(props) {
   const { src, srcSet, alt } = props;
 
