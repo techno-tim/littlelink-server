@@ -50,6 +50,7 @@ import signalLogo from '../../icons/signal.svg';
 import untappdLogo from '../../icons/untappd.svg';
 import instantGamingLogo from '../../icons/instantgaming.svg';
 import ghostLogo from '../../icons/ghost.svg';
+import { runtime } from 'webpack';
 
 function Home(props) {
   let order = [];
@@ -115,7 +116,7 @@ function Home(props) {
               alt={runtimeConfig.AVATAR_ALT}
             />
             <h1>{`${runtimeConfig.NAME}`}</h1>
-            <p>{runtimeConfig.BIO}</p>
+            <p><img className='avatar' src={runtimeConfig.BIO} srcSet={runtimeConfig.BIO_2X} alt={runtimeConfig.BIO_ALT} /></p>
             <Sort>
               {runtimeConfig.CUSTOM_BUTTON_TEXT && renderCustomButtons()}
               {runtimeConfig.YOUTUBE && (
