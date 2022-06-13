@@ -2,7 +2,6 @@ import React, { memo } from 'react';
 import { string } from 'prop-types';
 
 import './Avatar.css';
-import '../../assets';
 
 function Avatar(props) {
   const { src, srcSet, alt } = props;
