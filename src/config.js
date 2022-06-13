@@ -20,8 +20,6 @@ export const runtimeConfig =
       AVATAR_2X_URL: window?.env?.AVATAR_2X_URL,
       NAME: window?.env?.NAME,
       BIO: window?.env?.BIO,
-      BIO_2X: window?.env?.BIO_2X,
-      BIO_ALT: window?.env?.BIO_ALT,
       GITHUB: window?.env?.GITHUB,
       TWITTER: window?.env?.TWITTER,
       INSTAGRAM: window?.env?.INSTAGRAM,
@@ -56,6 +54,8 @@ export const runtimeConfig =
       MASTODON: window?.env?.MASTODON,
       MICRO_BLOG: window?.env?.MICRO_BLOG,
       FOOTER: window?.env?.FOOTER,
+      FOOTER_2X: window?.env?.FOOTER_2X,
+      FOOTER_ALT: window?.env?.FOOTER_ALT,
       WHATSAPP: window?.env?.WHATSAPP,
       STRAVA: window?.env?.STRAVA,
       BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
@@ -138,8 +138,6 @@ export const runtimeConfig =
         : process.env.RAZZLE_AVATAR_2X_URL,
       NAME: nodeIsProduction ? process.env.NAME : process.env.RAZZLE_NAME,
       BIO: nodeIsProduction ? process.env.BIO : process.env.RAZZLE_BIO,
-      BIO_2X: nodeIsProduction ? process.env.BIO_2X : process.env.RAZZLE_BIO_2X,
-      BIO_ALT: nodeIsProduction ? process.env.BIO_ALT : process.env.RAZZLE_BIO_ALT,
       GITHUB: nodeIsProduction
         ? process.env.GITHUB
         : process.env.RAZZLE_GITHUB,
@@ -230,6 +228,8 @@ export const runtimeConfig =
       FOOTER: nodeIsProduction
         ? process.env.FOOTER
         : process.env.RAZZLE_FOOTER,
+      FOOTER_2X: nodeIsProduction ? process.env.FOOTER_2X : process.env.RAZZLE_FOOTER_2X,
+      FOOTER_ALT: nodeIsProduction ? process.env.FOOTER_ALT : process.env.RAZZLE_FOOTER_ALT,
       WHATSAPP: nodeIsProduction
         ? process.env.WHATSAPP
         : process.env.RAZZLE_WHATSAPP,

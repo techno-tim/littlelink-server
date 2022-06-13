@@ -116,7 +116,7 @@ function Home(props) {
               alt={runtimeConfig.AVATAR_ALT}
             />
             <h1>{`${runtimeConfig.NAME}`}</h1>
-            <p><img className='avatar' src={runtimeConfig.BIO} srcSet={runtimeConfig.BIO_2X} alt={runtimeConfig.BIO_ALT} /></p>
+            <p>{runtimeConfig.BIO}</p>
             <Sort>
               {runtimeConfig.CUSTOM_BUTTON_TEXT && renderCustomButtons()}
               {runtimeConfig.YOUTUBE && (
@@ -551,7 +551,7 @@ function Home(props) {
               )}
             </Sort>
             <div>
-              <p className="footer">{runtimeConfig.FOOTER}</p>
+              <p className="footer"><img className='avatar' src={runtimeConfig.FOOTER} srcSet={runtimeConfig.FOOTER_2X} alt={runtimeConfig.FOOTER_ALT} /></p>
             </div>
           </div>
         </div>
