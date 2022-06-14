@@ -73,6 +73,16 @@ server
         `<!doctype html>
     <html lang="${runtimeConfig.LANG || 'en'}">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D77608TT6E"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-D77608TT6E');
+        </script>
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
         <title >${runtimeConfig.META_TITLE}</title>
