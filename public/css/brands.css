@@ -392,3 +392,9 @@ button {
   color: #008ccf;
   background-color: #fff;
 }
+
+/* Session */
+.button.button-session {
+  color: #04f383;
+  background-color: #000;
+}

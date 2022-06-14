@@ -56,6 +56,7 @@ import teespringLogo from '../../icons/teespring.svg';
 import xingLogo from '../../icons/xing.svg';
 import keybaseLogo from '../../icons/keybase.svg';
 import onlyfansLogo from '../../icons/onlyfans.svg';
+import sessionLogo from '../../icons/session.svg';
 
 function Home(props) {
   let order = [];
@@ -606,6 +607,15 @@ function Home(props) {
                   displayName="OnlyFans"
                   logo={onlyfansLogo}
                   order={buttonOrder('ONLYFANS')}
+                />
+              )}
+              {runtimeConfig.SESSION && (
+                <Button
+                  name="session"
+                  href={runtimeConfig.SESSION}
+                  displayName="Session"
+                  logo={sessionLogo}
+                  order={buttonOrder('SESSION')}
                 />
               )}
             </Sort>
