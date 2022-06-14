@@ -15,12 +15,12 @@
     border-style: solid;
     border-color: rgb(0, 0, 0, .85);
     margin: 3rem 0 3rem 0;
-    border-radius: 8rem;
+    border-radius: .5rem;
 }
 
 .me {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     margin-bottom: -3.5rem;
 }
@@ -65,6 +65,13 @@
 
 }
 
+@media (min-width: 550px) {
+    .me {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
 
 /* Base Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -98,6 +105,8 @@ h1 {
     margin-bottom: 1rem;
     font-weight: 800;
     letter-spacing: 0;
+    font-size: 1.4rem;
+    line-height: 4rem;
 }
 
 /* Larger than phablet */
@@ -106,10 +115,15 @@ h1 {
         font-size: 2.25rem;
         line-height: 6.5rem;
     }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 p {
     margin-top: 0;
+    font-size: 1rem;
 }
 
 
@@ -145,10 +159,6 @@ pre>code {
 
 /* Spacing
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-    margin-bottom: 1rem;
-}
 
 input,
 textarea,

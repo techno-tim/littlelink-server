@@ -33,17 +33,26 @@
 button {
   display: inline-block;
   text-decoration: none;
-  height: 48px;
+  height: 3rem;
   text-align: center;
   vertical-align: middle;
-  font-size: 18px;
-  width: 300px;
+  font-size: 1.1rem;
+  width: 15rem;
   font-weight: 700;
-  line-height: 48px;
-  letter-spacing: 0.1px;
+  line-height: 3rem;
   white-space: wrap;
-  border-radius: 8px;
+  border-radius: .5rem;
   cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 550px) {
+  .button,
+  button { 
+    font-size: 1.3rem;
+    width: 23rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .button:hover {
