@@ -1,6 +1,6 @@
 FROM alpine:3.10
 RUN apk add --update docker docker-compose vim openrc
-RUN rc-update add docker docker-compose vim
+RUN rc-update add docker
 CMD ["docker build -t alpine-docker .", "docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock alpine-docker docker ps"]
 
 
