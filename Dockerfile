@@ -1,4 +1,8 @@
-RUN apk update && apk add docker docker-compose vim
+FROM alpine:3.10
+RUN apk add --update docker docker-compose vim openrc
+RUN rc-update add docker docker-compose vim
+CMD ["docker build -t alpine-docker .", "docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock alpine-docker docker ps"]
+
 
 FROM node:16.15.0-alpine AS node-build
 WORKDIR /usr/src/app
