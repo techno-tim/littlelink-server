@@ -86,6 +86,7 @@ services:
       - SESSION=https://getsession.org/
       - THREEMA=https://threema.ch/en/
       - STREAMLABS=https://streamlabs.com/
+      - PRIVATEBIN=https://privatebin.net/ 
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)

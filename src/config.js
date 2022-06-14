@@ -100,6 +100,7 @@ export const runtimeConfig =
         SESSION: window?.env?.SESSION,
         THREEMA: window?.env?.THREEMA,
         STREAMLABS: window?.env?.STREAMLABS,
+        PRIVATEBIN: window?.env?.PRIVATEBIN,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -353,6 +354,9 @@ export const runtimeConfig =
         STREAMLABS: nodeIsProduction
           ? process.env.KEYBASE
           : process.env.STREAMLABS,
+        PRIVATEBIN: nodeIsProduction
+          ? process.env.PRIVATEBIN
+          : process.env.PRIVATEBIN,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

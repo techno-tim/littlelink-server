@@ -59,6 +59,7 @@ import onlyfansLogo from '../../icons/onlyfans.svg';
 import sessionLogo from '../../icons/session.svg';
 import threemaLogo from '../../icons/threema.svg';
 import streamlabsLogo from '../../icons/streamlabs.svg';
+import privatebinLogo from '../../icons/privatebin.svg';
 
 function Home(props) {
   let order = [];
@@ -636,6 +637,15 @@ function Home(props) {
                   displayName="Streamlabs"
                   logo={streamlabsLogo}
                   order={buttonOrder('STREAMLABS')}
+                />
+              )}
+              {runtimeConfig.PRIVATEBIN && (
+                <Button
+                  name="privatebin"
+                  href={runtimeConfig.PRIVATEBIN}
+                  displayName="Private Bin"
+                  logo={privatebinLogo}
+                  order={buttonOrder('PRIVATEBIN')}
                 />
               )}
             </Sort>

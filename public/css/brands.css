@@ -410,3 +410,10 @@ button {
   color: #000;
   background-color: #88f4d4;
 }
+
+/* Privatebin */
+.button.button-privatebin {
+  color: #f19d13;
+  background-color: #000;
+}
+
