@@ -15,13 +15,14 @@
     border-style: solid;
     border-color: rgb(0, 0, 0, .85);
     margin: 3rem 0 3rem 0;
+    border-radius: 8rem;
 }
 
 .me {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    margin-top: 1rem;
+    margin-bottom: -3.5rem;
 }
 
 .avatar {
