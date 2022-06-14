@@ -82,6 +82,7 @@ services:
       - TEESPRING=https://teespring.com/
       - XING=https://www.xing.com/en
       - KEYBASE=https://keybase.io/
+      - ONLYFANS=https://onlyfans.com/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)

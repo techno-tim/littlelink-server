@@ -55,6 +55,7 @@ import cashappLogo from '../../icons/cashapp.svg';
 import teespringLogo from '../../icons/teespring.svg';
 import xingLogo from '../../icons/xing.svg';
 import keybaseLogo from '../../icons/keybase.svg';
+import onlyfansLogo from '../../icons/onlyfans.svg';
 
 function Home(props) {
   let order = [];
@@ -596,6 +597,15 @@ function Home(props) {
                   displayName="Keybase"
                   logo={keybaseLogo}
                   order={buttonOrder('KEYBASE')}
+                />
+              )}
+              {runtimeConfig.ONLYFANS && (
+                <Button
+                  name="onlyfans"
+                  href={runtimeConfig.ONLYFANS}
+                  displayName="OnlyFans"
+                  logo={onlyfansLogo}
+                  order={buttonOrder('ONLYFANS')}
                 />
               )}
             </Sort>

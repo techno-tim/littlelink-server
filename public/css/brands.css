@@ -386,3 +386,9 @@ button {
   color: #fff;
   background-color: #3663ea;
 }
+
+/* Onlyfans */
+.button.button-onlyfans {
+  color: #008ccf;
+  background-color: #fff;
+}
