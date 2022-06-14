@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticRouter } from 'react-router-dom/server';
 import express from 'express';
 import { renderToString } from 'react-dom/server';
-import { runtimeConfig } from './config';
+import { runtimeConfig } from './components/Home/config'
 import serialize from 'serialize-javascript'; // Safer stringify, prevents XSS attacks
 import morgan from 'morgan';
 import compression from 'compression';
