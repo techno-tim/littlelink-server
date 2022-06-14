@@ -93,6 +93,7 @@ export const runtimeConfig =
         GHOST: window?.env?.GHOST,
         TRAKT: window?.env?.TRAKT,
         CASHAPP: window?.env?.CASHAPP,
+        TEESPRING: window?.env?.TEESPRING,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -335,6 +336,9 @@ export const runtimeConfig =
         CASHAPP: nodeIsProduction
           ? process.env.CASHAPP
           : process.env.RAZZLE_CASHAPP,
+        TEESPRING: nodeIsProduction
+          ? process.env.TEESPRING
+          : process.env.TEESPRING,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

@@ -366,5 +366,11 @@ button {
 /* CashApp */
 .button.button-cashapp {
   color: #000;
-  background-color: #f8f9f9;
+  background-color: #fff;
+}
+
+/* Teespring */
+.button.button-teespring {
+  color: #eb4373;
+  background-color: #2f2464;
 }

@@ -52,6 +52,7 @@ import instantGamingLogo from '../../icons/instantgaming.svg';
 import ghostLogo from '../../icons/ghost.svg';
 import traktLogo from '../../icons/trakt.svg';
 import cashappLogo from '../../icons/cashapp.svg';
+import teespringLogo from '../../icons/teespring.svg';
 
 function Home(props) {
   let order = [];
@@ -566,6 +567,15 @@ function Home(props) {
                   displayName="Cash App"
                   logo={cashappLogo}
                   order={buttonOrder('CASHAPP')}
+                />
+              )}
+              {runtimeConfig.TEESPRING && (
+                <Button
+                  name="teespring"
+                  href={runtimeConfig.TEESPRING}
+                  displayName="Teespring"
+                  logo={teespringLogo}
+                  order={buttonOrder('TEESPRING')}
                 />
               )}
             </Sort>
