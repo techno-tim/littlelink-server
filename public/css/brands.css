@@ -380,3 +380,9 @@ button {
   color: #0b6162;
   background-color: #c6f16d;
 }
+
+/* Keybase */
+.button.button-keybase {
+  color: #fff;
+  background-color: #3663ea;
+}

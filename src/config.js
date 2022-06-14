@@ -95,6 +95,7 @@ export const runtimeConfig =
         CASHAPP: window?.env?.CASHAPP,
         TEESPRING: window?.env?.TEESPRING,
         XING: window?.env?.XING,
+        KEYBASE: window?.env?.KEYBASE,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -341,6 +342,7 @@ export const runtimeConfig =
           ? process.env.TEESPRING
           : process.env.TEESPRING,
         XING: nodeIsProduction ? process.env.XING : process.env.XING,
+        KEYBASE: nodeIsProduction ? process.env.KEYBASE : process.env.KEYBASE,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

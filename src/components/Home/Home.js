@@ -54,6 +54,7 @@ import traktLogo from '../../icons/trakt.svg';
 import cashappLogo from '../../icons/cashapp.svg';
 import teespringLogo from '../../icons/teespring.svg';
 import xingLogo from '../../icons/xing.svg';
+import keybaseLogo from '../../icons/keybase.svg';
 
 function Home(props) {
   let order = [];
@@ -586,6 +587,15 @@ function Home(props) {
                   displayName="Xing"
                   logo={xingLogo}
                   order={buttonOrder('XING')}
+                />
+              )}
+              {runtimeConfig.KEYBASE && (
+                <Button
+                  name="keybase"
+                  href={runtimeConfig.KEYBASE}
+                  displayName="Keybase"
+                  logo={keybaseLogo}
+                  order={buttonOrder('KEYBASE')}
                 />
               )}
             </Sort>
