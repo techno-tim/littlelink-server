@@ -109,7 +109,7 @@ function Home(props) {
     <>
       <div className="container">
         <div className="row">
-          <div className="column" style={{ marginTop: '12%' }}>
+          <div className="column" >
             <Avatar
               src={runtimeConfig.AVATAR_URL}
               srcSet={runtimeConfig.AVATAR_2X_URL}

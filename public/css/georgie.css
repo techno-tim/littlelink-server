@@ -12,7 +12,8 @@
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0, .85);
-    border-style: inset;
+    border-style: solid;
+    border-color: rgb(0, 0, 0, .85);
 }
 
 .me {
