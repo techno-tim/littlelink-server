@@ -30,6 +30,7 @@ services:
       #- GITHUB=https://github.com/timothystewart6
       #- TWITTER=https://twitter.com/TechnoTimLive
             INSTAGRAM: https://www.instagram.com/georgielovesmusic
+            INSTAGRAM_ALT: https://www.instagram.com/whosthatgeorgeguy
       #- YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
       #- TWITCH=https://www.twitch.tv/technotim/
             DISCORD: https://discord.gg/jZ5NTxSP8Y

@@ -119,6 +119,11 @@ button {
   background-image: linear-gradient(-135deg, #1400c8, #b900b4, #f50000);
 }
 
+.button.button-instagram-alt {
+  color: #ffffff;
+  background-image: linear-gradient(-135deg, #07c800, #f4f005, #09ebf3);
+}
+
 /* Kit */
 .button.button-kit {
   color: #ffffff;

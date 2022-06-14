@@ -23,6 +23,7 @@ export const runtimeConfig =
       GITHUB: window?.env?.GITHUB,
       TWITTER: window?.env?.TWITTER,
       INSTAGRAM: window?.env?.INSTAGRAM,
+      INSTAGRAM_ALT: window?.env?.INSTAGRAM_ALT,
       FACEBOOK: window?.env?.FACEBOOK,
       FACEBOOK_MESSENGER: window?.env?.FACEBOOK_MESSENGER,
       LINKED_IN: window?.env?.LINKED_IN,
@@ -150,6 +151,9 @@ export const runtimeConfig =
       INSTAGRAM: nodeIsProduction
         ? process.env.INSTAGRAM
         : process.env.RAZZLE_INSTAGRAM,
+      INSTAGRAM_ALT: nodeIsProduction
+        ? process.env.INSTAGRAM_ALT
+        : process.env.RAZZLE_INSTAGRAM_ALT,
       YOUTUBE: nodeIsProduction
         ? process.env.YOUTUBE
         : process.env.RAZZLE_YOUTUBE,
