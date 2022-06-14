@@ -1,3 +1,5 @@
+RUN apk update && apk add docker docker-compose vim
+
 FROM node:16.15.0-alpine AS node-build
 WORKDIR /usr/src/app
 COPY package.json ./
