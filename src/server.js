@@ -7,7 +7,6 @@ import { runtimeConfig } from './config';
 import serialize from 'serialize-javascript'; // Safer stringify, prevents XSS attacks
 import morgan from 'morgan';
 import compression from 'compression';
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
@@ -31,15 +30,8 @@ const jsScriptTagsFromAssets = (assets, entrypoint, extra = '') => {
     : '';
 };
 
-var theme = 'light.css';
-
-if (runtimeConfig.THEME === 'Dark') {
-  theme = 'dark.css'
-} else if (runtimeConfig.THEME === 'Georgie') {
-  theme = 'georgie.css'
-} else {
-  theme = 'light.css'
-}
+//const theme = runtimeConfig.THEME === 'Dark' ? 'dark.css' : 'light.css';
+const theme = 'georgie.css';
 
 const server = express();
 
