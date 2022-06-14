@@ -362,3 +362,9 @@ button {
   color: #fff;
   background-color: #000;
 }
+
+/* CashApp */
+.button.button-cashapp {
+  color: #000;
+  background-color: #f8f9f9;
+}

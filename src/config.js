@@ -92,6 +92,7 @@ export const runtimeConfig =
         TWITTER_CREATOR: window?.env?.TWITTER_CREATOR,
         GHOST: window?.env?.GHOST,
         TRAKT: window?.env?.TRAKT,
+        CASHAPP: window?.env?.CASHAPP,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -331,6 +332,9 @@ export const runtimeConfig =
           : process.env.RAZZLE_TWITTER_CREATOR,
         GHOST: nodeIsProduction ? process.env.GHOST : process.env.RAZZLE_GHOST,
         TRAKT: nodeIsProduction ? process.env.TRAKT : process.env.RAZZLE_TRAKT,
+        CASHAPP: nodeIsProduction
+        ? process.env.CASHAPP
+        : process.env.RAZZLE_CASHAPP,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
