@@ -51,6 +51,7 @@ import untappdLogo from '../../icons/untappd.svg';
 import instantGamingLogo from '../../icons/instantgaming.svg';
 import ghostLogo from '../../icons/ghost.svg';
 import traktLogo from '../../icons/trakt.svg';
+import cashappLogo from '../../icons/cashapp.svg';
 
 function Home(props) {
   let order = [];
@@ -556,6 +557,15 @@ function Home(props) {
                   displayName="Trakt"
                   logo={traktLogo}
                   order={buttonOrder('TRAKT')}
+                />
+              )}
+              {runtimeConfig.CASHAPP && (
+                <Button
+                  name="cashapp"
+                  href={runtimeConfig.CASHAPP}
+                  displayName="Cash App"
+                  logo={cashappLogo}
+                  order={buttonOrder('CASHAPP')}
                 />
               )}
             </Sort>

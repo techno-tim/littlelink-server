@@ -78,6 +78,7 @@ services:
       - BUTTON_TARGET=_blank
       - INSTANTGAMING=https://www.instant-gaming.com/
       - TRAKT=https://trakt.tv
+      - CASHAPP=https://cash.app/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)
