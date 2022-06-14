@@ -404,3 +404,9 @@ button {
   color: #000;
   background-color: #fff;
 }
+
+/* Streamlabs */
+.button.button-streamlabs {
+  color: #000;
+  background-color: #88f4d4;
+}

@@ -99,6 +99,7 @@ export const runtimeConfig =
         ONLYFANS: window?.env?.ONLYFANS,
         SESSION: window?.env?.SESSION,
         THREEMA: window?.env?.THREEMA,
+        STREAMLABS: window?.env?.STREAMLABS,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -349,6 +350,9 @@ export const runtimeConfig =
         ONLYFANS: nodeIsProduction ? process.env.KEYBASE : process.env.ONLYFANS,
         SESSION: nodeIsProduction ? process.env.KEYBASE : process.env.SESSION,
         THREEMA: nodeIsProduction ? process.env.KEYBASE : process.env.THREEMA,
+        STREAMLABS: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.STREAMLABS,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

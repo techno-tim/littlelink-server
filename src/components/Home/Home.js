@@ -58,6 +58,7 @@ import keybaseLogo from '../../icons/keybase.svg';
 import onlyfansLogo from '../../icons/onlyfans.svg';
 import sessionLogo from '../../icons/session.svg';
 import threemaLogo from '../../icons/threema.svg';
+import streamlabsLogo from '../../icons/streamlabs.svg';
 
 function Home(props) {
   let order = [];
@@ -626,6 +627,15 @@ function Home(props) {
                   displayName="Threema"
                   logo={threemaLogo}
                   order={buttonOrder('THREEMA')}
+                />
+              )}
+              {runtimeConfig.STREAMLABS && (
+                <Button
+                  name="streamlabs"
+                  href={runtimeConfig.STREAMLABS}
+                  displayName="Streamlabs"
+                  logo={streamlabsLogo}
+                  order={buttonOrder('STREAMLABS')}
                 />
               )}
             </Sort>
