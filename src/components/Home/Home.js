@@ -155,9 +155,9 @@ function Home(props) {
                   order={buttonOrder('INSTAGRAM')}
                 />
               )}
-               {runtimeConfig.INSTAGRAM_ALT && (
+              {runtimeConfig.INSTAGRAM_ALT && (
                 <Button
-                  name="instagram-alt"
+                  name="instagram"
                   href={runtimeConfig.INSTAGRAM_ALT}
                   displayName="Personal Instagram"
                   logo={instagramLogo}
