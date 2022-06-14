@@ -345,18 +345,26 @@ export const runtimeConfig =
           : process.env.RAZZLE_CASHAPP,
         TEESPRING: nodeIsProduction
           ? process.env.TEESPRING
-          : process.env.TEESPRING,
-        XING: nodeIsProduction ? process.env.XING : process.env.XING,
-        KEYBASE: nodeIsProduction ? process.env.KEYBASE : process.env.KEYBASE,
-        ONLYFANS: nodeIsProduction ? process.env.KEYBASE : process.env.ONLYFANS,
-        SESSION: nodeIsProduction ? process.env.KEYBASE : process.env.SESSION,
-        THREEMA: nodeIsProduction ? process.env.KEYBASE : process.env.THREEMA,
+          : process.env.RAZZLE_TEESPRING,
+        XING: nodeIsProduction ? process.env.XING : process.env.RAZZLE_XING,
+        KEYBASE: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_KEYBASE,
+        ONLYFANS: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_ONLYFANS,
+        SESSION: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_SESSION,
+        THREEMA: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_THREEMA,
         STREAMLABS: nodeIsProduction
           ? process.env.KEYBASE
-          : process.env.STREAMLABS,
+          : process.env.RAZZLE_STREAMLABS,
         PRIVATEBIN: nodeIsProduction
           ? process.env.PRIVATEBIN
-          : process.env.PRIVATEBIN,
+          : process.env.RAZZLE_PRIVATEBIN,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
