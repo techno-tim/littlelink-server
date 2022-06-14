@@ -53,6 +53,7 @@ import ghostLogo from '../../icons/ghost.svg';
 import traktLogo from '../../icons/trakt.svg';
 import cashappLogo from '../../icons/cashapp.svg';
 import teespringLogo from '../../icons/teespring.svg';
+import xingLogo from '../../icons/xing.svg';
 
 function Home(props) {
   let order = [];
@@ -576,6 +577,15 @@ function Home(props) {
                   displayName="Teespring"
                   logo={teespringLogo}
                   order={buttonOrder('TEESPRING')}
+                />
+              )}
+              {runtimeConfig.XING && (
+                <Button
+                  name="xing"
+                  href={runtimeConfig.XING}
+                  displayName="Xing"
+                  logo={xingLogo}
+                  order={buttonOrder('XING')}
                 />
               )}
             </Sort>

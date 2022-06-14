@@ -374,3 +374,9 @@ button {
   color: #eb4373;
   background-color: #2f2464;
 }
+
+/* Xing */
+.button.button-xing {
+  color: #0b6162;
+  background-color: #c6f16d;
+}
