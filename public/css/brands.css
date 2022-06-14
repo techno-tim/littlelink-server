@@ -398,3 +398,9 @@ button {
   color: #04f383;
   background-color: #000;
 }
+
+/* Threema */
+.button.button-threema {
+  color: #000;
+  background-color: #fff;
+}

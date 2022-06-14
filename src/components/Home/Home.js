@@ -57,6 +57,7 @@ import xingLogo from '../../icons/xing.svg';
 import keybaseLogo from '../../icons/keybase.svg';
 import onlyfansLogo from '../../icons/onlyfans.svg';
 import sessionLogo from '../../icons/session.svg';
+import threemaLogo from '../../icons/threema.svg';
 
 function Home(props) {
   let order = [];
@@ -616,6 +617,15 @@ function Home(props) {
                   displayName="Session"
                   logo={sessionLogo}
                   order={buttonOrder('SESSION')}
+                />
+              )}
+              {runtimeConfig.THREEMA && (
+                <Button
+                  name="threema"
+                  href={runtimeConfig.THREEMA}
+                  displayName="Threema"
+                  logo={threemaLogo}
+                  order={buttonOrder('THREEMA')}
                 />
               )}
             </Sort>

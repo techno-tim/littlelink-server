@@ -98,6 +98,7 @@ export const runtimeConfig =
         KEYBASE: window?.env?.KEYBASE,
         ONLYFANS: window?.env?.ONLYFANS,
         SESSION: window?.env?.SESSION,
+        THREEMA: window?.env?.THREEMA,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -347,6 +348,7 @@ export const runtimeConfig =
         KEYBASE: nodeIsProduction ? process.env.KEYBASE : process.env.KEYBASE,
         ONLYFANS: nodeIsProduction ? process.env.KEYBASE : process.env.ONLYFANS,
         SESSION: nodeIsProduction ? process.env.KEYBASE : process.env.SESSION,
+        THREEMA: nodeIsProduction ? process.env.KEYBASE : process.env.THREEMA,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
