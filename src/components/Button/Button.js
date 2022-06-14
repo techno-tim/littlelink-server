@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { string, number, object } from 'prop-types';
 import { trackGoogleEvent } from '../../analytics/google';
-import { runtimeConfig } from '../../config';
+import { runtimeConfig } from '../Home/config';
 import { trackUmamiEvent } from '../../analytics/umami';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { trackMatomoEvent } from '../../analytics/matomo';
