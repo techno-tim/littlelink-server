@@ -31,7 +31,7 @@ const jsScriptTagsFromAssets = (assets, entrypoint, extra = '') => {
     : '';
 };
 
-const theme = 'light.css';
+var theme = 'light.css';
 
 if (runtimeConfig.THEME === 'Dark') {
   theme = 'dark.css'
