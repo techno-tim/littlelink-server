@@ -9,10 +9,31 @@
 }
 
 .column {
-    position: center;
     width: 100%;
-    float: center;
     box-sizing: border-box;
+    background-color: rgb(0, 0, 0, .85);
+    border-style: inset;
+}
+
+.me {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.avatar {
+    /*vertical-align: middle;*/
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+
+.footer {
+    margin-top: 36px;
+    padding-bottom: 36px;
 }
 
 /* For devices larger than 400px */
@@ -71,22 +92,16 @@ body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1 {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     font-weight: 800;
-}
-
-h1 {
-    font-size: 24px;
-    line-height: 64px;
     letter-spacing: 0;
 }
-
 
 /* Larger than phablet */
 @media (min-width: 550px) {
     h1 {
-        font-size: 48px;
-        line-height: 96px;
+        font-size: 2.25rem;
+        line-height: 6.5rem;
     }
 }
 
@@ -177,18 +192,4 @@ hr {
     margin-bottom: 3.5rem;
     border-width: 0;
     border-top: 1px solid #E1E1E1;
-}
-
-
-.avatar {
-    /*vertical-align: middle;*/
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-}
-
-
-.footer {
-    margin-top: 36px;
-    padding-bottom: 36px;
 }

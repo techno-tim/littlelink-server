@@ -551,7 +551,7 @@ function Home(props) {
               )}
             </Sort>
             <div>
-              <p className="footer"><img className='avatar' src={runtimeConfig.FOOTER} srcSet={runtimeConfig.FOOTER_2X} alt={runtimeConfig.FOOTER_ALT} /></p>
+              <p className="footer"><img className='me' src={runtimeConfig.FOOTER} srcSet={runtimeConfig.FOOTER_2X} alt={runtimeConfig.FOOTER_ALT} /></p>
             </div>
           </div>
         </div>
