@@ -79,6 +79,14 @@ services:
       - INSTANTGAMING=https://www.instant-gaming.com/
       - TRAKT=https://trakt.tv
       - CASHAPP=https://cash.app/
+      - TEESPRING=https://teespring.com/
+      - XING=https://www.xing.com/en
+      - KEYBASE=https://keybase.io/
+      - ONLYFANS=https://onlyfans.com/
+      - SESSION=https://getsession.org/
+      - THREEMA=https://threema.ch/en/
+      - STREAMLABS=https://streamlabs.com/
+      - PRIVATEBIN=https://privatebin.net/ 
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)

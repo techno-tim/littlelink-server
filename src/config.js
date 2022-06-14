@@ -93,6 +93,14 @@ export const runtimeConfig =
         GHOST: window?.env?.GHOST,
         TRAKT: window?.env?.TRAKT,
         CASHAPP: window?.env?.CASHAPP,
+        TEESPRING: window?.env?.TEESPRING,
+        XING: window?.env?.XING,
+        KEYBASE: window?.env?.KEYBASE,
+        ONLYFANS: window?.env?.ONLYFANS,
+        SESSION: window?.env?.SESSION,
+        THREEMA: window?.env?.THREEMA,
+        STREAMLABS: window?.env?.STREAMLABS,
+        PRIVATEBIN: window?.env?.PRIVATEBIN,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -335,6 +343,28 @@ export const runtimeConfig =
         CASHAPP: nodeIsProduction
           ? process.env.CASHAPP
           : process.env.RAZZLE_CASHAPP,
+        TEESPRING: nodeIsProduction
+          ? process.env.TEESPRING
+          : process.env.RAZZLE_TEESPRING,
+        XING: nodeIsProduction ? process.env.XING : process.env.RAZZLE_XING,
+        KEYBASE: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_KEYBASE,
+        ONLYFANS: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_ONLYFANS,
+        SESSION: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_SESSION,
+        THREEMA: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_THREEMA,
+        STREAMLABS: nodeIsProduction
+          ? process.env.KEYBASE
+          : process.env.RAZZLE_STREAMLABS,
+        PRIVATEBIN: nodeIsProduction
+          ? process.env.PRIVATEBIN
+          : process.env.RAZZLE_PRIVATEBIN,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

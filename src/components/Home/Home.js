@@ -52,6 +52,14 @@ import instantGamingLogo from '../../icons/instantgaming.svg';
 import ghostLogo from '../../icons/ghost.svg';
 import traktLogo from '../../icons/trakt.svg';
 import cashappLogo from '../../icons/cashapp.svg';
+import teespringLogo from '../../icons/teespring.svg';
+import xingLogo from '../../icons/xing.svg';
+import keybaseLogo from '../../icons/keybase.svg';
+import onlyfansLogo from '../../icons/onlyfans.svg';
+import sessionLogo from '../../icons/session.svg';
+import threemaLogo from '../../icons/threema.svg';
+import streamlabsLogo from '../../icons/streamlabs.svg';
+import privatebinLogo from '../../icons/privatebin.svg';
 
 function Home(props) {
   let order = [];
@@ -566,6 +574,78 @@ function Home(props) {
                   displayName="Cash App"
                   logo={cashappLogo}
                   order={buttonOrder('CASHAPP')}
+                />
+              )}
+              {runtimeConfig.TEESPRING && (
+                <Button
+                  name="teespring"
+                  href={runtimeConfig.TEESPRING}
+                  displayName="Teespring"
+                  logo={teespringLogo}
+                  order={buttonOrder('TEESPRING')}
+                />
+              )}
+              {runtimeConfig.XING && (
+                <Button
+                  name="xing"
+                  href={runtimeConfig.XING}
+                  displayName="Xing"
+                  logo={xingLogo}
+                  order={buttonOrder('XING')}
+                />
+              )}
+              {runtimeConfig.KEYBASE && (
+                <Button
+                  name="keybase"
+                  href={runtimeConfig.KEYBASE}
+                  displayName="Keybase"
+                  logo={keybaseLogo}
+                  order={buttonOrder('KEYBASE')}
+                />
+              )}
+              {runtimeConfig.ONLYFANS && (
+                <Button
+                  name="onlyfans"
+                  href={runtimeConfig.ONLYFANS}
+                  displayName="OnlyFans"
+                  logo={onlyfansLogo}
+                  order={buttonOrder('ONLYFANS')}
+                />
+              )}
+              {runtimeConfig.SESSION && (
+                <Button
+                  name="session"
+                  href={runtimeConfig.SESSION}
+                  displayName="Session"
+                  logo={sessionLogo}
+                  order={buttonOrder('SESSION')}
+                />
+              )}
+              {runtimeConfig.THREEMA && (
+                <Button
+                  name="threema"
+                  href={runtimeConfig.THREEMA}
+                  displayName="Threema"
+                  logo={threemaLogo}
+                  order={buttonOrder('THREEMA')}
+                />
+              )}
+              {runtimeConfig.STREAMLABS && (
+                <Button
+                  name="streamlabs"
+                  href={runtimeConfig.STREAMLABS}
+                  displayName="Streamlabs"
+                  logo={streamlabsLogo}
+                  order={buttonOrder('STREAMLABS')}
+                />
+              )}
+              {runtimeConfig.PRIVATEBIN && (
+                <Button
+                  name="privatebin"
+                  href={runtimeConfig.PRIVATEBIN}
+                  displayName="Private Bin"
+                  logo={privatebinLogo}
+                  order={buttonOrder('PRIVATEBIN')}
                 />
               )}
             </Sort>

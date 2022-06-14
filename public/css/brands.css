@@ -366,5 +366,54 @@ button {
 /* CashApp */
 .button.button-cashapp {
   color: #000;
-  background-color: #f8f9f9;
+  background-color: #fff;
 }
+
+/* Teespring */
+.button.button-teespring {
+  color: #eb4373;
+  background-color: #2f2464;
+}
+
+/* Xing */
+.button.button-xing {
+  color: #0b6162;
+  background-color: #c6f16d;
+}
+
+/* Keybase */
+.button.button-keybase {
+  color: #fff;
+  background-color: #3663ea;
+}
+
+/* Onlyfans */
+.button.button-onlyfans {
+  color: #008ccf;
+  background-color: #fff;
+}
+
+/* Session */
+.button.button-session {
+  color: #04f383;
+  background-color: #000;
+}
+
+/* Threema */
+.button.button-threema {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Streamlabs */
+.button.button-streamlabs {
+  color: #000;
+  background-color: #88f4d4;
+}
+
+/* Privatebin */
+.button.button-privatebin {
+  color: #f19d13;
+  background-color: #000;
+}
+
