@@ -157,7 +157,7 @@ function Home(props) {
               )}
               {runtimeConfig.INSTAGRAM_ALT && (
                 <Button
-                  name="instagram"
+                  name="instagram-alt"
                   href={runtimeConfig.INSTAGRAM_ALT}
                   displayName="Personal Instagram"
                   logo={instagramLogo}
