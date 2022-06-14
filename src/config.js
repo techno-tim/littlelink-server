@@ -340,9 +340,7 @@ export const runtimeConfig =
         TEESPRING: nodeIsProduction
           ? process.env.TEESPRING
           : process.env.TEESPRING,
-        XING: nodeIsProduction
-          ? process.env.XING
-          : process.env.XING,
+        XING: nodeIsProduction ? process.env.XING : process.env.XING,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
