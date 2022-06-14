@@ -12,9 +12,6 @@ FROM node:16.15.0-alpine
 WORKDIR /usr/src/app
 ENV NODE_ENV production
 RUN mkdir -p /node_modules
-RUN apk add --update docker docker-compose vim openrc
-RUN rc-update add docker
-CMD ["docker build -t alpine-docker .", "docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock alpine-docker docker ps"]
 COPY --from=node-build /usr/src/app/build ./build
 COPY --from=node-build /usr/src/app/node_modules_prod ./node_modules
 EXPOSE 3000
