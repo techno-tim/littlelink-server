@@ -46,7 +46,7 @@
     "eslint-plugin-react": "^7.27.1",
     "html-webpack-plugin": "^5.5.0",
     "markdownlint-cli": "^0.31.1",
-    "mini-css-extract-plugin": "^2.5.3",
+    "mini-css-extract-plugin": "^2.6.1",
     "prettier": "^2.7.0",
     "razzle": "^4.2.14",
     "razzle-dev-utils": "^4.2.14",
