@@ -62,6 +62,7 @@ import streamlabsLogo from '../../icons/streamlabs.svg';
 import privatebinLogo from '../../icons/privatebin.svg';
 import amazonLogo from '../../icons/amazon.svg';
 import applemusicLogo from '../../icons/applemusic.svg';
+import statusLogo from '../../icons/status.svg';
 
 function Home(props) {
   let order = [];
@@ -675,6 +676,15 @@ function Home(props) {
                   displayName="Apple Music"
                   logo={applemusicLogo}
                   order={buttonOrder('APPLE_MUSIC')}
+                />
+              )}
+              {runtimeConfig.STATUS && (
+                <Button
+                  name="status"
+                  href={runtimeConfig.STATUS}
+                  displayName="Status"
+                  logo={statusLogo}
+                  order={buttonOrder('STATUS')}
                 />
               )}
             </Sort>

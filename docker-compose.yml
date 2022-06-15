@@ -3,9 +3,7 @@
 version: "3.0"
 services:
   little-link:
-    image: docker.io/library/links
-
-    # ghcr.io/techno-tim/littlelink-server:latest
+    image: ghcr.io/techno-tim/littlelink-server:latest
     # dockerhub is also supported timothystewart6/littlelink-server
     #image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
@@ -92,6 +90,7 @@ services:
       - AMAZON_AFFILIATE=https://affiliate-program.amazon.co.uk/
       - AMAZON_WISHLIST=https://www.amazon.co.uk/b?node=22758010031
       - APPLE_MUSIC=https://www.apple.com/uk/apple-music/
+      - STATUS=https://status.im/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)

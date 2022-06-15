@@ -428,3 +428,9 @@ button {
   color: #fa425a;
   background-color: #fff;
 }
+
+/* Apple Music  */
+.button.button-status {
+  color: #000;
+  background-color: #fff;
+}
