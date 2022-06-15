@@ -385,7 +385,7 @@ function Home(props) {
                 <Button
                   name="letterboxd"
                   href={runtimeConfig.LETTERBOXD}
-                  displayName="LetterBoxd"
+                  displayName="Letterboxd"
                   logo={letterboxdLogo}
                   order={buttonOrder('LETTERBOXD')}
                 />
