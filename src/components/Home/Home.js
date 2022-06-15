@@ -61,9 +61,7 @@ import threemaLogo from '../../icons/threema.svg';
 import streamlabsLogo from '../../icons/streamlabs.svg';
 import privatebinLogo from '../../icons/privatebin.svg';
 import amazonLogo from '../../icons/amazon.svg';
-
-
-
+import applemusicLogo from '../../icons/applemusic.svg';
 
 function Home(props) {
   let order = [];
@@ -668,6 +666,15 @@ function Home(props) {
                   displayName="Amazon Wishlist"
                   logo={amazonLogo}
                   order={buttonOrder('AMAZON_WISHLIST')}
+                />
+              )}
+              {runtimeConfig.APPLE_MUSIC && (
+                <Button
+                  name="applemusic"
+                  href={runtimeConfig.APPLE_MUSIC}
+                  displayName="Apple Music"
+                  logo={applemusicLogo}
+                  order={buttonOrder('APPLE_MUSIC')}
                 />
               )}
             </Sort>
