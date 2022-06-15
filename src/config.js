@@ -101,6 +101,7 @@ export const runtimeConfig =
         THREEMA: window?.env?.THREEMA,
         STREAMLABS: window?.env?.STREAMLABS,
         PRIVATEBIN: window?.env?.PRIVATEBIN,
+        AMAZON_AFFILIATE: window?.env?.AMAZON_AFFILIATE,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -365,6 +366,9 @@ export const runtimeConfig =
         PRIVATEBIN: nodeIsProduction
           ? process.env.PRIVATEBIN
           : process.env.RAZZLE_PRIVATEBIN,
+        AMAZON_AFFILIATE: nodeIsProduction
+          ? process.env.AMAZON_AFFILIATE
+          : process.env.RAZZLE_AMAZON_AFFILIATE,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

@@ -648,6 +648,15 @@ function Home(props) {
                   order={buttonOrder('PRIVATEBIN')}
                 />
               )}
+              {runtimeConfig.AMAZON_AFFILIATE && (
+                <Button
+                  name="affiliate"
+                  href={runtimeConfig.AMAZON_AFFILIATE}
+                  displayName="Amazon Affiliate"
+                  logo={amazonLogo}
+                  order={buttonOrder('AMAZON_AFFILIATE')}
+                />
+              )}
             </Sort>
             <div>
               <p className="footer">{runtimeConfig.FOOTER}</p>

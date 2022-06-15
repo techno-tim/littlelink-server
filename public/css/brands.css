@@ -417,3 +417,8 @@ button {
   background-color: #000;
 }
 
+/* Amazon Affiliate */
+.button.button-affiliate {
+  color: #000;
+  background-color: #fff;
+}
