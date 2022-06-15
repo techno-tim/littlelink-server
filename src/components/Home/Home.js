@@ -60,6 +60,9 @@ import sessionLogo from '../../icons/session.svg';
 import threemaLogo from '../../icons/threema.svg';
 import streamlabsLogo from '../../icons/streamlabs.svg';
 import privatebinLogo from '../../icons/privatebin.svg';
+import amazonLogo from '../../icons/amazon.svg';
+import applemusicLogo from '../../icons/applemusic.svg';
+import statusLogo from '../../icons/status.svg';
 
 function Home(props) {
   let order = [];
@@ -382,7 +385,7 @@ function Home(props) {
                 <Button
                   name="letterboxd"
                   href={runtimeConfig.LETTERBOXD}
-                  displayName="LetterBoxd"
+                  displayName="Letterboxd"
                   logo={letterboxdLogo}
                   order={buttonOrder('LETTERBOXD')}
                 />
@@ -646,6 +649,42 @@ function Home(props) {
                   displayName="Private Bin"
                   logo={privatebinLogo}
                   order={buttonOrder('PRIVATEBIN')}
+                />
+              )}
+              {runtimeConfig.AMAZON_AFFILIATE && (
+                <Button
+                  name="amazon"
+                  href={runtimeConfig.AMAZON_AFFILIATE}
+                  displayName="Amazon Affiliate"
+                  logo={amazonLogo}
+                  order={buttonOrder('AMAZON_AFFILIATE')}
+                />
+              )}
+              {runtimeConfig.AMAZON_WISHLIST && (
+                <Button
+                  name="amazon"
+                  href={runtimeConfig.AMAZON_WISHLIST}
+                  displayName="Amazon Wishlist"
+                  logo={amazonLogo}
+                  order={buttonOrder('AMAZON_WISHLIST')}
+                />
+              )}
+              {runtimeConfig.APPLE_MUSIC && (
+                <Button
+                  name="applemusic"
+                  href={runtimeConfig.APPLE_MUSIC}
+                  displayName="Apple Music"
+                  logo={applemusicLogo}
+                  order={buttonOrder('APPLE_MUSIC')}
+                />
+              )}
+              {runtimeConfig.STATUS && (
+                <Button
+                  name="status"
+                  href={runtimeConfig.STATUS}
+                  displayName="Status"
+                  logo={statusLogo}
+                  order={buttonOrder('STATUS')}
                 />
               )}
             </Sort>
