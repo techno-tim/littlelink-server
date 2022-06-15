@@ -60,6 +60,10 @@ import sessionLogo from '../../icons/session.svg';
 import threemaLogo from '../../icons/threema.svg';
 import streamlabsLogo from '../../icons/streamlabs.svg';
 import privatebinLogo from '../../icons/privatebin.svg';
+import amazonLogo from '../../icons/amazon.svg';
+
+
+
 
 function Home(props) {
   let order = [];
@@ -650,11 +654,20 @@ function Home(props) {
               )}
               {runtimeConfig.AMAZON_AFFILIATE && (
                 <Button
-                  name="affiliate"
+                  name="amazon"
                   href={runtimeConfig.AMAZON_AFFILIATE}
                   displayName="Amazon Affiliate"
                   logo={amazonLogo}
                   order={buttonOrder('AMAZON_AFFILIATE')}
+                />
+              )}
+              {runtimeConfig.AMAZON_WISHLIST && (
+                <Button
+                  name="amazon"
+                  href={runtimeConfig.AMAZON_WISHLIST}
+                  displayName="Amazon Wishlist"
+                  logo={amazonLogo}
+                  order={buttonOrder('AMAZON_WISHLIST')}
                 />
               )}
             </Sort>

@@ -102,6 +102,7 @@ export const runtimeConfig =
         STREAMLABS: window?.env?.STREAMLABS,
         PRIVATEBIN: window?.env?.PRIVATEBIN,
         AMAZON_AFFILIATE: window?.env?.AMAZON_AFFILIATE,
+        AMAZON_WISHLIST: window?.env?.AMAZON_WISHLIST,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -369,6 +370,9 @@ export const runtimeConfig =
         AMAZON_AFFILIATE: nodeIsProduction
           ? process.env.AMAZON_AFFILIATE
           : process.env.RAZZLE_AMAZON_AFFILIATE,
+        AMAZON_WISHLIST: nodeIsProduction
+          ? process.env.AMAZON_WISHLIST
+          : process.env.RAZZLE_AMAZON_WISHLIST,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
