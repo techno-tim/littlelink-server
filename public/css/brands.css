@@ -434,3 +434,9 @@ button {
   color: #000;
   background-color: #fff;
 }
+
+/* [matrix]  */
+.button.button-matrix {
+  color: #333333;
+  background-color: #fff;
+}

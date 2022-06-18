@@ -63,6 +63,7 @@ import privatebinLogo from '../../icons/privatebin.svg';
 import amazonLogo from '../../icons/amazon.svg';
 import applemusicLogo from '../../icons/applemusic.svg';
 import statusLogo from '../../icons/status.svg';
+import matrixLogo from '../../icons/matrix.svg';
 
 function Home(props) {
   let order = [];
@@ -685,6 +686,15 @@ function Home(props) {
                   displayName="Status"
                   logo={statusLogo}
                   order={buttonOrder('STATUS')}
+                />
+              )}
+              {runtimeConfig.MATRIX && (
+                <Button
+                  name="matrix"
+                  href={runtimeConfig.MATRIX}
+                  displayName="[matrix]"
+                  logo={matrixLogo}
+                  order={buttonOrder('MATRIX')}
                 />
               )}
             </Sort>

@@ -91,6 +91,7 @@ services:
       - AMAZON_WISHLIST=https://www.amazon.co.uk/b?node=22758010031
       - APPLE_MUSIC=https://www.apple.com/uk/apple-music/
       - STATUS=https://status.im/
+      - MATRIX=https://matrix.to/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)

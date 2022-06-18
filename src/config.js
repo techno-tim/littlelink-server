@@ -105,6 +105,7 @@ export const runtimeConfig =
         AMAZON_WISHLIST: window?.env?.AMAZON_WISHLIST,
         APPLE_MUSIC: window?.env?.APPLE_MUSIC,
         STATUS: window?.env?.STATUS,
+        MATRIX: window?.env?.MATRIX,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -381,6 +382,9 @@ export const runtimeConfig =
         STATUS: nodeIsProduction
           ? process.env.STATUS
           : process.env.RAZZLE_STATUS,
+        MATRIX: nodeIsProduction
+          ? process.env.MATRIX
+          : process.env.RAZZLE_MATRIX,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
