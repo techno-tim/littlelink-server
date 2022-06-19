@@ -38,7 +38,7 @@ For [Analytics](/docs/analytics.md) and [Health Check](/docs/healthcheck.md) che
 
 The example below will generate a site exactly like <https://technotim.live>
 
-## Using Docker-Compose
+### Using Docker-Compose
 ```yml
 version: "3.0"
 services:
@@ -96,7 +96,7 @@ services:
     security_opt:
       - no-new-privileges:true
 ```
-## Using Docker 
+### Using Docker 
 ```bash
 docker run -d \
   --name=littlelink-server \
@@ -127,7 +127,7 @@ docker run -d \
   ghcr.io/techno-tim/littlelink-server:latest
   ```
 
-## Using Kubernetes
+### Using Kubernetes
 [Unofficial helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
 
 ```bash
@@ -142,3 +142,64 @@ Or use a values.yaml files
 
 `helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
 
+## Configuration
+
+### Analytics Support
+
+#### Google Analytics
+
+See [Getting Started with Analytics](https://support.google.com/analytics/answer/1008015?hl=en). After getting your GA Tracking Id, use your tracking Id as environment variable like `GA_TRACKING_ID=G-XXXXXXXXXX`  (See the example below)
+
+All buttons clicked will be tracked automatically if `GA_TRACKING_ID` exists.
+
+Sample event for YouTube button.
+
+```javascript
+  window.gtag('event', 'youtube-button');
+```
+
+#### Umami
+
+See [Adding a website & Collecting data](https://umami.is/docs/collect-data) page to add and generate your tracking code.
+
+Generated tracking code should look like:
+
+```javascript
+<script async defer data-website-id="00000000-1111-2222-3333-444444444444" src="https://your-umami-app.com/umami.js"></script>
+```
+
+Use `data-website-id` as environment variable `UMAMI_WEBSITE_ID` and `src` as `UMAMI_APP_URL`.
+
+Sample event for YouTube button.
+
+```javascript
+  window.umami('youtube-button');
+```
+
+#### Matomo 
+
+See [Installing Matomo fo how to configure analytics](https://matomo.org/docs/installation/) and [how to find your site id](https://matomo.org/faq/general/faq_19212/)
+
+Use `MATOMO_URL` for your URL and `MATOMO_SITE_ID` for your site id
+
+Sample event for YouTube button.
+
+```javascript
+  window._paq.push(['trackEvent', 'youtube-button']]);
+```
+
+### Health Check
+
+A health check endpoint exists on `/healthcheck`.  If healthy, it will return with a `200` and the following response:
+
+```json
+{
+  "status": "ok"
+}
+```
+
+To skip express from logging these calls, add the environment variable:
+
+```bash
+SKIP_HEALTH_CHECK_LOGS=true
+``` 
