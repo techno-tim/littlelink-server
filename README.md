@@ -1,84 +1,60 @@
-# 🔗 LittleLink-Server
+<div align="center">
+
+![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
+
+## LittleLink-Server
+
+<h4 align="center">
+
+LittleLink is a lightweight DIY alternative to services like [Linktree](https://linktr.ee)
+and [many.link](https://www.google.com).
+
+A fork of [littlelink](https://github.com/sethcottle/littlelink).
+
+</h4>
+
+</div>
+
+---
+
+## 👇 What is LittleLink?
+
+
+LittleLink is a lightweight DIY alternative to services like [Linktree](https://linktr.ee)
+and [many.link](https://www.google.com). LittleLink was built using [Skeleton](http://getskeleton.com/), a dead simple, responsive boilerplate—we just stripped out some additional code you wouldn't need and added in branded styles for popular services. 😊
+
+![Themes](https://cdn.cottle.cloud/littlelink/themes.png)
+
+LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go. Not a fan of the colors? Update `skeleton-light.css` or `skeleton-dark.css` to the HEX values of your choosing.
+
+![Performance](https://cdn.cottle.cloud/littlelink/performance.png)
+
+Using [Skeleton](http://getskeleton.com/) let us build something that loads quickly & doesn't have any of the unnecessary bloat you would get from using a large framework for a page that requires nothing more than simplicity. LittleLink scored a 99/100 in performance when tested with [Google Lighthouse](https://developers.google.com/web/tools/lighthouse).
 
 This project is based on the great work from [littlelink](https://github.com/sethcottle/littlelink)
 It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables.  If you need help configuring this, please see [this video that explains everything](https://www.youtube.com/watch?v=42SqfI_AjXU) and a live example at [technotim.live](https://technotim.live/).
 
+
+---
+## ⭐ Features
+- Over 60+ brand buttons with more able to be requested
+- Customisable Themes
+- Analytics Support
+- Health Check Support
+- A fully customisable docker-compose 
+
+---
+
 ## 🚀 Getting Started
 
-## 📍 Supported Links & Buttons & Config
+Check the [docker-compose.yml](/docker-compose.yml) file for all supported buttons and configuration!
 
-Check the [config](https://github.com/techno-tim/littlelink-server/blob/master/src/config.js) file for all supported buttons and configuration!
-
-## 📈 Analytics Support
-
-### Google Analytics
-
-See [Getting Started with Analytics](https://support.google.com/analytics/answer/1008015?hl=en).  After getting your GA Tracking Id, use your tracking Id as environment variable like `GA_TRACKING_ID=G-XXXXXXXXXX`  (See the example below)
-
-All buttons clicked will be tracked automatically if `GA_TRACKING_ID` exists.
-
-Sample event for YouTube button.
-
-```javascript
-  window.gtag('event', 'youtube-button');
-```
-
-### Umami
-
-See [Adding a website & Collecting data](https://umami.is/docs/collect-data) page to add and generate your tracking code.
-
-Generated tracking code should look like:
-
-```javascript
-<script async defer data-website-id="00000000-1111-2222-3333-444444444444" src="https://your-umami-app.com/umami.js"></script>
-```
-
-Use `data-website-id` as environment variable `UMAMI_WEBSITE_ID` and `src` as `UMAMI_APP_URL`.
-
-Sample event for YouTube button.
-
-```javascript
-  window.umami('youtube-button');
-```
-
-### Matomo 
-
-See [Installing Matomo fo how to configure analytics](https://matomo.org/docs/installation/) and [how to find your site id](https://matomo.org/faq/general/faq_19212/)
-
-Use `MATOMO_URL` for your URL and `MATOMO_SITE_ID` for your site id
-
-Sample event for YouTube button.
-
-```javascript
-  window._paq.push(['trackEvent', 'youtube-button']]);
-```
-
-## 🩺 Health Check
-
-A health check endpoint exists on `/healthcheck`.  If healthy, it will return with a `200` and the following response:
-
-```json
-{
-  "status": "ok"
-}
-```
-
-To skip express from logging these calls, add the environment variable:
-
-```bash
-SKIP_HEALTH_CHECK_LOGS=true
-``` 
-
-## 🐳 Docker
-
-This container image is published on both [GitHub Container Registry](https://github.com/techno-tim/littlelink-server/pkgs/container/littlelink-server) and [DockerHub](https://hub.docker.com/repository/docker/timothystewart6/littlelink-server) choose whichever one works for you.  They will both be updated during CI.
+For [Analytics](/docs/analytics.md) and [Health Check](/docs/healthcheck.md) check out the [docs](/docs/).
 
 The example below will generate a site exactly like <https://technotim.live>
 
-`docker-compose.yml`
-
+## Using Docker-Compose
 ```yml
----
 version: "3.0"
 services:
   littlelink-server:
@@ -135,9 +111,7 @@ services:
     security_opt:
       - no-new-privileges:true
 ```
-
-Docker command
-
+## Using Docker 
 ```bash
 docker run -d \
   --name=littlelink-server \
@@ -166,10 +140,9 @@ docker run -d \
   -e FOOTER=Techno Tim © 2022 \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
-```
+  ```
 
-## ☸ Kubernetes
-
+## Using Kubernetes
 [Unofficial helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
 
 ```bash
@@ -180,22 +153,7 @@ helm install littlelink-server \
   --set env.META_TITLE="TechnoTim"
     k8s-at-home/littlelink-server
 ```
-
 Or use a values.yaml files
 
 `helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
 
-## 👇 What is LittleLink?
-
-![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
-
-LittleLink is a lightweight DIY alternative to services like [Linktree](https://linktr.ee)
-and [many.link](https://www.google.com). LittleLink was built using [Skeleton](http://getskeleton.com/), a dead simple, responsive boilerplate—we just stripped out some additional code you wouldn't need and added in branded styles for popular services. 😊
-
-![Themes](https://cdn.cottle.cloud/littlelink/themes.png)
-
-LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go. Not a fan of the colors? Update `skeleton-light.css` or `skeleton-dark.css` to the HEX values of your choosing.
-
-![Performance](https://cdn.cottle.cloud/littlelink/performance.png)
-
-Using [Skeleton](http://getskeleton.com/) let us build something that loads quickly & doesn't have any of the unnecessary bloat you would get from using a large framework for a page that requires nothing more than simplicity. LittleLink scored a 99/100 in performance when tested with [Google Lighthouse](https://developers.google.com/web/tools/lighthouse).
