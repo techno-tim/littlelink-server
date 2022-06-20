@@ -37,8 +37,6 @@ It takes the same simple approach to a link page and hosts it within a NodeJS se
 
 Check the [docker-compose.yml](/docker-compose.yml) file for all supported buttons and configuration!
 
-For [Analytics](/docs/analytics.md) and [Health Check](/docs/healthcheck.md) check out the [docs](/docs/).
-
 The example below will generate a site exactly like <https://technotim.live>
 
 ### Using Docker-Compose
