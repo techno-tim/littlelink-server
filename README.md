@@ -145,7 +145,7 @@ Or use a values.yaml files
 
 `helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
 
-## Configuration
+## 🔧 Configuration
 ### Analytics Support
 
 #### Google Analytics
