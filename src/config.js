@@ -356,16 +356,16 @@ export const runtimeConfig =
           ? process.env.KEYBASE
           : process.env.RAZZLE_KEYBASE,
         ONLYFANS: nodeIsProduction
-          ? process.env.KEYBASE
+          ? process.env.ONLYFANS
           : process.env.RAZZLE_ONLYFANS,
         SESSION: nodeIsProduction
-          ? process.env.KEYBASE
+          ? process.env.SESSION
           : process.env.RAZZLE_SESSION,
         THREEMA: nodeIsProduction
-          ? process.env.KEYBASE
+          ? process.env.THREEMA
           : process.env.RAZZLE_THREEMA,
         STREAMLABS: nodeIsProduction
-          ? process.env.KEYBASE
+          ? process.env.STREAMLABS
           : process.env.RAZZLE_STREAMLABS,
         PRIVATEBIN: nodeIsProduction
           ? process.env.PRIVATEBIN
