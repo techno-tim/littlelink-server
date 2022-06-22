@@ -1,4 +1,4 @@
-## LittleLink-Server
+# LittleLink-Server
 
 LittleLink is a lightweight DIY alternative to services like [Linktree](https://linktr.ee)
 and [many.link](https://many.link/).
@@ -14,6 +14,7 @@ LittleLink-Server is based on the great work from [littlelink](https://github.co
 It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables. If you need help configuring this, please see this [video](https://youtu.be/42SqfI_AjXU) at explains everything and a live example at [technotim.live](https://technotim.live/).
 
 ## ⭐ Features
+
 - Over 60+ brand buttons with more able to be requested
 - Customisable Themes
 - Analytics Support
@@ -116,7 +117,7 @@ docker run -d \
   -e FOOTER=Techno Tim © 2022 \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
-  ```
+```
 
 ### Using Kubernetes
 
@@ -130,6 +131,7 @@ helm install littlelink-server \
   --set env.META_TITLE="TechnoTim"
     k8s-at-home/littlelink-server
 ```
+
 Or use a values.yaml files
 
 `helm install littlelink-server k8s-at-home/littlelink-server -f values.yaml`
