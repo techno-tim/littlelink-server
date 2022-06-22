@@ -5,7 +5,7 @@ and [many.link](https://many.link/).
 
 A fork of [littlelink](https://github.com/sethcottle/littlelink).
 
- ![image](https://user-images.githubusercontent.com/32241933/174486069-7de71728-3415-4f4e-9285-c2c16410a1e7.png)
+ ![image](https://user-images.githubusercontent.com/1322205/174909247-2515ab5c-fd39-475d-b5dc-9c0a1ea20d6e.png)
 
 
 
