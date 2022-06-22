@@ -3,7 +3,7 @@
 LittleLink is a lightweight DIY alternative to services like [Linktree](https://linktr.ee)
 and [many.link](https://many.link/).
 
-A fork of [littlelink](https://github.com/sethcottle/littlelink).
+Inspired by [littlelink](https://github.com/sethcottle/littlelink).
 
  ![image](https://user-images.githubusercontent.com/1322205/174909247-2515ab5c-fd39-475d-b5dc-9c0a1ea20d6e.png)
 
