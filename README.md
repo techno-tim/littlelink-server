@@ -1,4 +1,4 @@
-# LittleLink-Server
+# 🔗 LittleLink-Server
 
 LittleLink is a lightweight DIY alternative to services like [Linktree](https://linktr.ee)
 and [many.link](https://many.link/).
