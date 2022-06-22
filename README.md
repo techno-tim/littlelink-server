@@ -1,22 +1,12 @@
-<div align="center">
-
-![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
 ## LittleLink-Server
-
-<h4 align="center">
-
 LittleLink is a lightweight DIY alternative to services like [Linktree](https://linktr.ee)
 and [many.link](https://many.link/).
 
 A fork of [littlelink](https://github.com/sethcottle/littlelink).
 
-</h4>
-
  ![image](https://user-images.githubusercontent.com/32241933/174486069-7de71728-3415-4f4e-9285-c2c16410a1e7.png)
 
-  
-</div>
 
 
 ## 👇 What is LittleLink-Server?
