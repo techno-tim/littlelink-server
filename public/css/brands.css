@@ -429,7 +429,7 @@ button {
   background-color: #fff;
 }
 
-/* Apple Music  */
+/* Status */
 .button.button-status {
   color: #000;
   background-color: #fff;
@@ -439,4 +439,10 @@ button {
 .button.button-matrix {
   color: #333333;
   background-color: #fff;
+}
+
+/* Anilist  */
+.button.button-anilist {
+  color: #02a0f2;
+  background-color: #1c242e;
 }

@@ -64,6 +64,7 @@ import amazonLogo from '../../icons/amazon.svg';
 import applemusicLogo from '../../icons/applemusic.svg';
 import statusLogo from '../../icons/status.svg';
 import matrixLogo from '../../icons/matrix.svg';
+import anilistLogo from '../../icons/anilist.svg';
 
 function Home(props) {
   let order = [];
@@ -695,6 +696,15 @@ function Home(props) {
                   displayName="[matrix]"
                   logo={matrixLogo}
                   order={buttonOrder('MATRIX')}
+                />
+              )}
+              {runtimeConfig.ANILIST && (
+                <Button
+                  name="anilist"
+                  href={runtimeConfig.ANILIST}
+                  displayName="AniList"
+                  logo={anilistLogo}
+                  order={buttonOrder('ANILIST')}
                 />
               )}
             </Sort>

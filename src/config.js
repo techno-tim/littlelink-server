@@ -106,6 +106,7 @@ export const runtimeConfig =
         APPLE_MUSIC: window?.env?.APPLE_MUSIC,
         STATUS: window?.env?.STATUS,
         MATRIX: window?.env?.MATRIX,
+        ANILIST: window?.env?.ANILIST,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -385,6 +386,9 @@ export const runtimeConfig =
         MATRIX: nodeIsProduction
           ? process.env.MATRIX
           : process.env.RAZZLE_MATRIX,
+        ANILIST: nodeIsProduction
+          ? process.env.ANILIST
+          : process.env.RAZZLE_ANILIST,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
