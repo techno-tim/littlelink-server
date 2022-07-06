@@ -707,6 +707,7 @@ function Home(props) {
                   displayName="AniList"
                   logo={anilistLogo}
                   order={buttonOrder('ANILIST')}
+                 />
               }
               {runtimeConfig.GITBUCKET && (
                 <Button
