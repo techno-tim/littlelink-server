@@ -67,7 +67,6 @@ import matrixLogo from '../../icons/matrix.svg';
 import anilistLogo from '../../icons/anilist.svg';
 import gitbucketLogo from '../../icons/gitbucket.svg';
 
-
 function Home(props) {
   let order = [];
   if (runtimeConfig?.BUTTON_ORDER) {
@@ -707,8 +706,8 @@ function Home(props) {
                   displayName="AniList"
                   logo={anilistLogo}
                   order={buttonOrder('ANILIST')}
-                 />
-              }
+                />
+              )}
               {runtimeConfig.GITBUCKET && (
                 <Button
                   name="gitbucket"
