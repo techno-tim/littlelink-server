@@ -440,3 +440,9 @@ button {
   color: #333333;
   background-color: #fff;
 }
+
+/* Gitbucket */
+.button.button-gitbucket {
+  color: #000;
+  background-color: #fff;
+}

@@ -64,6 +64,7 @@ import amazonLogo from '../../icons/amazon.svg';
 import applemusicLogo from '../../icons/applemusic.svg';
 import statusLogo from '../../icons/status.svg';
 import matrixLogo from '../../icons/matrix.svg';
+import gitbucketLogo from '../../icons/gitbucket.svg';
 
 function Home(props) {
   let order = [];
@@ -695,6 +696,15 @@ function Home(props) {
                   displayName="[matrix]"
                   logo={matrixLogo}
                   order={buttonOrder('MATRIX')}
+                />
+              )}
+              {runtimeConfig.GITBUCKET && (
+                <Button
+                  name="gitbucket"
+                  href={runtimeConfig.GITBUCKET}
+                  displayName="GitBucket"
+                  logo={gitbucketLogo}
+                  order={buttonOrder('GITBUCKET')}
                 />
               )}
             </Sort>
