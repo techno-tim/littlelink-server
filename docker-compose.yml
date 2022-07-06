@@ -94,6 +94,7 @@ services:
       - STATUS=https://status.im/
       - MATRIX=https://matrix.to/
       - ANILIST=https://anilist.co/
+      - GITBUCKET=https://gitbucket.github.io/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)
