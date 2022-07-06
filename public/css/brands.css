@@ -429,7 +429,7 @@ button {
   background-color: #fff;
 }
 
-/* Apple Music  */
+/* Status */
 .button.button-status {
   color: #000;
   background-color: #fff;
@@ -441,8 +441,14 @@ button {
   background-color: #fff;
 }
 
+/* Anilist  */
+.button.button-anilist {
+  color: #02a0f2;
+  background-color: #1c242e;
+}
+  
 /* Gitbucket */
 .button.button-gitbucket {
   color: #000;
-  background-color: #fff;
+  background-color: #fff
 }
