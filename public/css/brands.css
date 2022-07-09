@@ -452,3 +452,9 @@ button {
   color: #000;
   background-color: #fff
 }
+
+/* Shazaom */
+.button.button-shazam {
+  color: #fff;
+  background-color: #1f5bfc
+}

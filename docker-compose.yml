@@ -3,7 +3,8 @@
 version: "3.0"
 services:
   little-link:
-    image: ghcr.io/techno-tim/littlelink-server:latest
+    image: docker.io/library/links   
+    #  ghcr.io/techno-tim/littlelink-server:latest
     # dockerhub is also supported timothystewart6/littlelink-server
     #image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
@@ -95,6 +96,7 @@ services:
       - MATRIX=https://matrix.to/
       - ANILIST=https://anilist.co/
       - GITBUCKET=https://gitbucket.github.io/
+      - SHAZAM=https://www.shazam.com/myshazam
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)
