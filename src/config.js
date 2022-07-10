@@ -108,6 +108,7 @@ export const runtimeConfig =
         MATRIX: window?.env?.MATRIX,
         ANILIST: window?.env?.ANILIST,
         GITBUCKET: window?.env?.GITBUCKET,
+        SHAZAM: window?.env?.SHAZAM,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -393,6 +394,9 @@ export const runtimeConfig =
         GITBUCKET: nodeIsProduction
           ? process.env.GITBUCKET
           : process.env.RAZZLE_GITBUCKET,
+        SHAZAM: nodeIsProduction
+          ? process.env.SHAZAM
+          : process.env.RAZZLE_SHAZAM,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

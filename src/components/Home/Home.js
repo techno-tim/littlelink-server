@@ -66,6 +66,7 @@ import statusLogo from '../../icons/status.svg';
 import matrixLogo from '../../icons/matrix.svg';
 import anilistLogo from '../../icons/anilist.svg';
 import gitbucketLogo from '../../icons/gitbucket.svg';
+import shazamLogo from '../../icons/shazam.svg';
 
 function Home(props) {
   let order = [];
@@ -715,6 +716,15 @@ function Home(props) {
                   displayName="GitBucket"
                   logo={gitbucketLogo}
                   order={buttonOrder('GITBUCKET')}
+                />
+              )}
+              {runtimeConfig.SHAZAM && (
+                <Button
+                  name="shazam"
+                  href={runtimeConfig.SHAZAM}
+                  displayName="Shazam"
+                  logo={shazamLogo}
+                  order={buttonOrder('SHAZAM')}
                 />
               )}
             </Sort>
