@@ -96,7 +96,7 @@ docker run -d \
   -e META_TITLE='Techno Tim' \
   -e META_DESCRIPTION='Techno Tim Link page' \
   -e META_AUTHOR='Techno Tim' \
-  -e META_KEYWORDS='HomeLab, HTML, CSS, Engineering \
+  -e META_KEYWORDS='HomeLab, HTML, CSS, Engineering' \
   -e LANG=en \
   -e META_INDEX_STATUS='noindex' \
   -e THEME='Dark' \
