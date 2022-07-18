@@ -464,3 +464,9 @@ button {
   color: #fff;
   background-color: #000
 }
+
+/* TPDB */
+.button.button-tpdb {
+  color: #fff;
+  background-color: #FA6940
+}

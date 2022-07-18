@@ -110,6 +110,7 @@ export const runtimeConfig =
         GITBUCKET: window?.env?.GITBUCKET,
         SHAZAM: window?.env?.SHAZAM,
         FLICKR: window?.env?.FLICKR,
+        TPDB: window?.env?.TPDB,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
       }
@@ -401,6 +402,7 @@ export const runtimeConfig =
         FLICKR: nodeIsProduction
           ? process.env.FLICKR
           : process.env.RAZZLE_FLICKR,
+        TPDB: nodeIsProduction ? process.env.TPDB : process.env.RAZZLE_TPDB,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
