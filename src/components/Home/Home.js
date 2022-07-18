@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
+import Share from '../Share/Share';
 import { runtimeConfig } from '../../config';
 import githubLogo from '../../icons/github.svg';
 import instagramLogo from '../../icons/instagram.svg';
@@ -729,7 +730,18 @@ function Home(props) {
               )}
             </Sort>
             <div>
-              <p className="footer">{runtimeConfig.FOOTER}</p>
+              <p className="footer">
+                {runtimeConfig.FOOTER}
+                {runtimeConfig.SHARE &&
+                  runtimeConfig.OG_TITLE &&
+                  runtimeConfig.OG_DESCRIPTION && (
+                    <Share
+                      url={runtimeConfig.SHARE}
+                      title={runtimeConfig.OG_TITLE}
+                      text={runtimeConfig.OG_DESCRIPTION}
+                    />
+                  )}
+              </p>
             </div>
           </div>
         </div>
