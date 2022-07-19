@@ -87,7 +87,7 @@ services:
       - SESSION=https://getsession.org/
       - THREEMA=https://threema.ch/en/
       - STREAMLABS=https://streamlabs.com/
-      - PRIVATEBIN=https://privatebin.net/ 
+      - PRIVATEBIN=https://privatebin.net/
       - AMAZON_AFFILIATE=https://affiliate-program.amazon.co.uk/
       - AMAZON_WISHLIST=https://www.amazon.co.uk/b?node=22758010031
       - APPLE_MUSIC=https://www.apple.com/uk/apple-music/
@@ -96,6 +96,8 @@ services:
       - ANILIST=https://anilist.co/
       - GITBUCKET=https://gitbucket.github.io/
       - SHAZAM=https://www.shazam.com/myshazam
+      - TPDB=https://theposterdb.com/
+      - FLICKR=https://www.flickr.com/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)
@@ -107,6 +109,7 @@ services:
       - TWITTER_IMAGE=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
       - TWITTER_SITE=@TechnoTimLive
       - TWITTER_CREATOR=@TechnoTimLive
+      - SHARE=https://technotim.live
     ports:
       - 8080:3000
     restart: unless-stopped
