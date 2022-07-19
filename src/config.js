@@ -109,6 +109,8 @@ export const runtimeConfig =
         ANILIST: window?.env?.ANILIST,
         GITBUCKET: window?.env?.GITBUCKET,
         SHAZAM: window?.env?.SHAZAM,
+        FLICKR: window?.env?.FLICKR,
+        TPDB: window?.env?.TPDB,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         SHARE: window?.env?.SHARE,
@@ -398,6 +400,10 @@ export const runtimeConfig =
         SHAZAM: nodeIsProduction
           ? process.env.SHAZAM
           : process.env.RAZZLE_SHAZAM,
+        FLICKR: nodeIsProduction
+          ? process.env.FLICKR
+          : process.env.RAZZLE_FLICKR,
+        TPDB: nodeIsProduction ? process.env.TPDB : process.env.RAZZLE_TPDB,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

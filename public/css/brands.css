@@ -458,3 +458,15 @@ button {
   color: #fff;
   background-color: #1f5bfc
 }
+
+/* Flickr */
+.button.button-flickr {
+  color: #fff;
+  background-color: #000
+}
+
+/* TPDB */
+.button.button-tpdb {
+  color: #fff;
+  background-color: #FA6940
+}

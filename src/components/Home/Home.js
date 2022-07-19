@@ -68,6 +68,8 @@ import matrixLogo from '../../icons/matrix.svg';
 import anilistLogo from '../../icons/anilist.svg';
 import gitbucketLogo from '../../icons/gitbucket.svg';
 import shazamLogo from '../../icons/shazam.svg';
+import flickrLogo from '../../icons/flickr.svg';
+import tpdbLogo from '../../icons/tpdb.svg';
 
 function Home(props) {
   let order = [];
@@ -726,6 +728,24 @@ function Home(props) {
                   displayName="Shazam"
                   logo={shazamLogo}
                   order={buttonOrder('SHAZAM')}
+                />
+              )}
+              {runtimeConfig.FLICKR && (
+                <Button
+                  name="flickr"
+                  href={runtimeConfig.FLICKR}
+                  displayName="Flickr"
+                  logo={flickrLogo}
+                  order={buttonOrder('FLICKR')}
+                />
+              )}
+              {runtimeConfig.TPDB && (
+                <Button
+                  name="tpdb"
+                  href={runtimeConfig.TPDB}
+                  displayName="The Poster Database"
+                  logo={tpdbLogo}
+                  order={buttonOrder('TPDB')}
                 />
               )}
             </Sort>
