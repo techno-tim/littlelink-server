@@ -98,6 +98,7 @@ services:
       - SHAZAM=https://www.shazam.com/myshazam
       - TPDB=https://theposterdb.com/
       - FLICKR=https://www.flickr.com/
+      - OSU=https://osu.ppy.sh/users/
       - OG_SITE_NAME=Techno Tim Live (OG)
       - OG_TITLE=Techno Tim (OG)
       - OG_DESCRIPTION=Techno Tim Link page (OG)

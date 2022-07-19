@@ -111,6 +111,7 @@ export const runtimeConfig =
         SHAZAM: window?.env?.SHAZAM,
         FLICKR: window?.env?.FLICKR,
         TPDB: window?.env?.TPDB,
+        OSU: window?.env?.OSU,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         SHARE: window?.env?.SHARE,
@@ -404,6 +405,9 @@ export const runtimeConfig =
           ? process.env.FLICKR
           : process.env.RAZZLE_FLICKR,
         TPDB: nodeIsProduction ? process.env.TPDB : process.env.RAZZLE_TPDB,
+        OSU: nodeIsProduction
+          ? process.env.OSU
+          : process.env.RAZZLE_OSU,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

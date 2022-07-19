@@ -470,3 +470,9 @@ button {
   color: #fff;
   background-color: #FA6940
 }
+
+/* osu! */
+.button.button-osu {
+  color: #fff;
+  background-color: #FF8EE6
+}

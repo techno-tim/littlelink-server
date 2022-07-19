@@ -70,6 +70,7 @@ import gitbucketLogo from '../../icons/gitbucket.svg';
 import shazamLogo from '../../icons/shazam.svg';
 import flickrLogo from '../../icons/flickr.svg';
 import tpdbLogo from '../../icons/tpdb.svg';
+import tpdbLogo from '../../icons/osu.svg';
 
 function Home(props) {
   let order = [];
@@ -746,6 +747,15 @@ function Home(props) {
                   displayName="The Poster Database"
                   logo={tpdbLogo}
                   order={buttonOrder('TPDB')}
+                />
+              )}
+              {runtimeConfig.OSU && (
+                <Button
+                  name="osu"
+                  href={runtimeConfig.OSU}
+                  displayName="osu!"
+                  logo={tpdbLogo}
+                  order={buttonOrder('OSU')}
                 />
               )}
             </Sort>
