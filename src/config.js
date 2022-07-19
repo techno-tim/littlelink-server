@@ -111,6 +111,7 @@ export const runtimeConfig =
         SHAZAM: window?.env?.SHAZAM,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
+        SHARE: window?.env?.SHARE,
       }
     : {
         // server
@@ -403,4 +404,5 @@ export const runtimeConfig =
         MATOMO_SITE_ID: nodeIsProduction
           ? process.env.MATOMO_SITE_ID
           : process.env.RAZZLE_MATOMO_SITE_ID,
+        SHARE: nodeIsProduction ? process.env.SHARE : process.env.RAZZLE_SHARE,
       };
