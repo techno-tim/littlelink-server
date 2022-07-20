@@ -405,9 +405,7 @@ export const runtimeConfig =
           ? process.env.FLICKR
           : process.env.RAZZLE_FLICKR,
         TPDB: nodeIsProduction ? process.env.TPDB : process.env.RAZZLE_TPDB,
-        OSU: nodeIsProduction
-          ? process.env.OSU
-          : process.env.RAZZLE_OSU,
+        OSU: nodeIsProduction ? process.env.OSU : process.env.RAZZLE_OSU,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
