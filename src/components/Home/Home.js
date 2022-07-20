@@ -70,7 +70,7 @@ import gitbucketLogo from '../../icons/gitbucket.svg';
 import shazamLogo from '../../icons/shazam.svg';
 import flickrLogo from '../../icons/flickr.svg';
 import tpdbLogo from '../../icons/tpdb.svg';
-import tpdbLogo from '../../icons/osu.svg';
+import osuLogo from '../../icons/osu.svg';
 
 function Home(props) {
   let order = [];
