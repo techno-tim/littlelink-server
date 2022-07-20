@@ -754,7 +754,7 @@ function Home(props) {
                   name="osu"
                   href={runtimeConfig.OSU}
                   displayName="osu!"
-                  logo={tpdbLogo}
+                  logo={osuLogo}
                   order={buttonOrder('OSU')}
                 />
               )}
