@@ -112,6 +112,9 @@ export const runtimeConfig =
         FLICKR: window?.env?.FLICKR,
         TPDB: window?.env?.TPDB,
         OSU: window?.env?.OSU,
+        LINE: window?.env?.LINE,
+        KAKAOTALK: window?.env?.KAKAOTALK,
+        DESIGNBYHUMANS: window?.env?.DESIGNBYHUMANS,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         SHARE: window?.env?.SHARE,
@@ -406,6 +409,13 @@ export const runtimeConfig =
           : process.env.RAZZLE_FLICKR,
         TPDB: nodeIsProduction ? process.env.TPDB : process.env.RAZZLE_TPDB,
         OSU: nodeIsProduction ? process.env.OSU : process.env.RAZZLE_OSU,
+        LINE: nodeIsProduction ? process.env.LINE : process.env.RAZZLE_LINE,
+        KAKAOTALK: nodeIsProduction
+          ? process.env.KAKAOTALK
+          : process.env.RAZZLE_KAKAOTALK,
+        DESIGNBYHUMANS: nodeIsProduction
+          ? process.env.DESIGNBYHUMANS
+          : process.env.RAZZLE_DESIGNBYHUMANS,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,
