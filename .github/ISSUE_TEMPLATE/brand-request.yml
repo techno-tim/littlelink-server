@@ -28,7 +28,7 @@ body:
     attributes:
       label: Please enter the brand website.
       description: Please enter the brand website. 
-      placeholder: Brand name how it would appear on a button. e.g. https://Google.com
+      placeholder: https://Google.com
     validations:
       required: true
 
