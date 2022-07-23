@@ -5,7 +5,7 @@
 -
 -
 
-### Screenshot (If Applicable)
+Screenshot (If Applicable)
 
 ## Checklist
 
