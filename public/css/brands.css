@@ -476,3 +476,24 @@ button {
   color: #fff;
   background-color: #FF8EE6
 }
+
+/* Line */
+.button.button-lineMessenger {
+  color: #fff;
+  background-color: #02df45
+}
+
+
+/* kakaoTalk */
+.button.button-kakaoTalk {
+  color: #000;
+  background-color: #fae513
+}
+
+
+/* DesignByHumans */
+.button.button-designByHumans {
+  color: #000;
+  background-color: #fff
+}
+
