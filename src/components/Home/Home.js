@@ -71,6 +71,9 @@ import shazamLogo from '../../icons/shazam.svg';
 import flickrLogo from '../../icons/flickr.svg';
 import tpdbLogo from '../../icons/tpdb.svg';
 import osuLogo from '../../icons/osu.svg';
+import lineLogo from '../../icons/linemessenger.svg';
+import kakaoLogo from '../../icons/kaokotalk.svg';
+import designByHumansLogo from '../../icons/designbyhumans.svg';
 
 function Home(props) {
   let order = [];
@@ -756,6 +759,33 @@ function Home(props) {
                   displayName="osu!"
                   logo={osuLogo}
                   order={buttonOrder('OSU')}
+                />
+              )}
+              {runtimeConfig.KAKAOTALK && (
+                <Button
+                  name="kakaoTalk"
+                  href={runtimeConfig.KAKAOTALK}
+                  displayName="KakaoTalk"
+                  logo={kakaoLogo}
+                  order={buttonOrder('KAKAOTALK')}
+                />
+              )}
+              {runtimeConfig.LINE && (
+                <Button
+                  name="lineMessenger"
+                  href={runtimeConfig.LINE}
+                  displayName="Line Messenger"
+                  logo={lineLogo}
+                  order={buttonOrder('LINE')}
+                />
+              )}
+              {runtimeConfig.DESIGNBYHUMANS && (
+                <Button
+                  name="designByHumans"
+                  href={runtimeConfig.DESIGNBYHUMANS}
+                  displayName="Design By Humans!"
+                  logo={designByHumansLogo}
+                  order={buttonOrder('DESIGNBYHUMANS')}
                 />
               )}
             </Sort>
