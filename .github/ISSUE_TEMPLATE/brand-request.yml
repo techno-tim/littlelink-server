@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |-
-        ## Please enter the following headings if possible to make it easier to complete this request!
+        ## Please enter the following headings, where applicable, to make it easier to complete this request!
     validations:
       required: false
 
