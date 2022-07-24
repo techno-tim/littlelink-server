@@ -783,7 +783,7 @@ function Home(props) {
                 <Button
                   name="designByHumans"
                   href={runtimeConfig.DESIGNBYHUMANS}
-                  displayName="Design By Humans!"
+                  displayName="Design By Hümans"
                   logo={designByHumansLogo}
                   order={buttonOrder('DESIGNBYHUMANS')}
                 />

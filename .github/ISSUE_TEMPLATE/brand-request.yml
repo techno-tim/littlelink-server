@@ -1,0 +1,55 @@
+name: Brand Request
+description: Suggest a brand to be added
+title: '[BRAND REQUEST] <title>'
+labels: ['Add Brand']
+
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |-
+        ## Please enter the following headings, where applicable, to make it easier to complete this request!
+    validations:
+      required: false
+
+
+  - type: textarea
+    id: brandName
+    attributes:
+      label: Please enter the brand name.
+      description: Please enter the brand name as youd like it to appear on the button. 
+      placeholder: Brand name how it would appear on a button. e.g. Google
+    validations:
+      required: true
+
+  - type: textarea
+    id: brandSite
+    attributes:
+      label: Please enter the brand website.
+      description: Please enter the brand website. 
+      placeholder: https://Google.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: brandSVG
+    attributes:
+      label: Please enter the brand SVG. (If Applicable)
+      description: Please enter the brand SVG. 
+      placeholder: Brand name how it would appear on a button. e.g. https://www.svgrepo.com/show/355037/google.svg
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |-
+        ## Thanks 🙏
+        Please note that there is no guarantee that your brand will be implemented
+        If you haven't already done so, please Star the LittleLink-Server repository on GitHub!
+    validations:
+      required: false
+
+
+
+
