@@ -74,6 +74,7 @@ import osuLogo from '../../icons/osu.svg';
 import lineLogo from '../../icons/linemessenger.svg';
 import kakaoLogo from '../../icons/kaokotalk.svg';
 import designByHumansLogo from '../../icons/designbyhumans.svg';
+import dockerhubLogo from '../../icons/docker.svg';
 
 function Home(props) {
   let order = [];
@@ -786,6 +787,15 @@ function Home(props) {
                   displayName="Design By Hümans"
                   logo={designByHumansLogo}
                   order={buttonOrder('DESIGNBYHUMANS')}
+                />
+              )}
+              {runtimeConfig.DOCKERHUB && (
+                <Button
+                  name="dockerhub"
+                  href={runtimeConfig.DOCKERHUB}
+                  displayName="Dockerhub"
+                  logo={dockerhubLogo}
+                  order={buttonOrder('DOCKERHUB')}
                 />
               )}
             </Sort>
