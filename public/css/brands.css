@@ -497,3 +497,9 @@ button {
   background-color: #fff
 }
 
+/* Dockerhub */
+.button.button-dockerhub {
+  color: #099cec;
+  background-color: #fff
+}
+
