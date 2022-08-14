@@ -86,6 +86,8 @@ export const runtimeConfig =
         OG_IMAGE: window?.env?.OG_IMAGE,
         OG_IMAGE_WIDTH: window?.env?.OG_IMAGE_WIDTH,
         OG_IMAGE_HEIGHT: window?.env?.OG_IMAGE_HEIGHT,
+        TWITTER_TITLE: window?.env?.TWITTER_TITLE,
+        TWITTER_DESCRIPTION: window?.env?.TWITTER_DESCRIPTION,
         TWITTER_CARD: window?.env?.TWITTER_CARD,
         TWITTER_IMAGE: window?.env?.TWITTER_IMAGE,
         TWITTER_SITE: window?.env?.TWITTER_SITE,
@@ -342,6 +344,12 @@ export const runtimeConfig =
         OG_IMAGE_HEIGHT: nodeIsProduction
           ? process.env.OG_IMAGE_HEIGHT
           : process.env.RAZZLE_OG_IMAGE_HEIGHT,
+        TWITTER_TITLE: nodeIsProduction
+          ? process.env.TWITTER_TITLE
+          : process.env.RAZZLE_TWITTER_TITLE,
+        TWITTER_DESCRIPTION: nodeIsProduction
+          ? process.env.TWITTER_DESCRIPTION
+          : process.env.RAZZLE_TWITTER_DESCRIPTION,
         TWITTER_CARD: nodeIsProduction
           ? process.env.TWITTER_CARD
           : process.env.RAZZLE_TWITTER_CARD,
