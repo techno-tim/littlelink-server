@@ -122,6 +122,16 @@ server
             : ''
         }
         ${
+          runtimeConfig.TWITTER_TITLE
+            ? `<meta property="twitter:title" content="${runtimeConfig.TWITTER_TITLE}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.TWITTER_DESCRIPTION
+            ? `<meta property="twitter:description" content="${runtimeConfig.TWITTER_DESCRIPTION}" />`
+            : ''
+        }
+        ${
           runtimeConfig.TWITTER_CARD
             ? `<meta property="twitter:card" content="${runtimeConfig.TWITTER_CARD}" />`
             : ''
