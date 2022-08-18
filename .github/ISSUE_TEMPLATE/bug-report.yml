@@ -41,15 +41,6 @@ body:
       required: true
 
   - type: textarea
-    id: expected
-    attributes:
-      label: Expected Result
-      description: Please explain the bug, include any errors
-      placeholder: Bug report
-    validations:
-      required: true
-
-  - type: textarea
     id: additional
     attributes:
       label: Additional Information
@@ -58,7 +49,7 @@ body:
       required: false
 
   - type: textarea
-    id: lnks
+    id: links
     attributes:
       label: Images
       description: CTRL V to paste images in
