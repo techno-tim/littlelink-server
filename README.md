@@ -106,7 +106,7 @@ docker run -d \
   -e AVATAR_2X_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg' \
   -e AVATAR_ALT='Techno Tim Profile Pic' \
   -e NAME='TechnoTim' \
-  -e BIO='Hey! Just a place where you can connect with me!' \
+  -e BIO='Software Engineer | Gamer | Twitch Streamer | Content Creator on YouTube | Homelab | 🇺🇸 🇯🇵 | Full Nerd' \
   -e GITHUB='https://l.technotim.live/github' \
   -e TWITTER='https://l.technotim.live/twitter' \
   -e INSTAGRAM='https://www.instagram.com/techno.tim' \
