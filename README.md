@@ -120,6 +120,7 @@ docker run -d \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
+
 ### Using Kubernetes
 
 [Unofficial helm chart provided by k8s-at-home](https://github.com/k8s-at-home/charts/tree/master/charts/stable/littlelink-server)
