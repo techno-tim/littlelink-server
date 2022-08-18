@@ -1,5 +1,5 @@
-name: Brand Request
-description: Suggest a brand to be added
+name: Bug Report
+description: Report a bug with littlelink-server
 title: '[BUG REPORT] <Concise description of the bug>'
 labels: ['bug']
 
