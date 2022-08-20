@@ -58,9 +58,9 @@ services:
       - AVATAR_2X_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
       - AVATAR_ALT=Techno Tim Profile Pic
       - NAME=TechnoTim
-      - BIO=Hey! Just a place where you can connect with me!
+      - BIO=Software Engineer | Gamer | Twitch Streamer | Content Creator on YouTube | Homelab | 🇺🇸 🇯🇵 | Full Nerd
       # use ENV variable names for order, listed buttons will be boosted to the top
-      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,PATREON,GEAR,DOCUMENTATION
+      - BUTTON_ORDER=YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,LINKED_IN,DISCORD,FACEBOOK,TIKTOK,PATREON,GEAR,DOCUMENTATION
       # you can render an unlimited amount of custom buttons by adding 
       # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
       - CUSTOM_BUTTON_TEXT=Documentation,Recommended Gear
@@ -73,6 +73,7 @@ services:
       - GITHUB=https://l.technotim.live/github
       - TWITTER=https://l.technotim.live/twitter
       - INSTAGRAM=https://l.technotim.live/instagram
+      - LINKED_IN=https://l.technotim.live/linkedin
       - YOUTUBE=https://l.technotim.live/subscribe
       - TWITCH=https://l.technotim.live/twitch
       - DISCORD=https://l.technotim.live/discord
@@ -105,10 +106,11 @@ docker run -d \
   -e AVATAR_2X_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg' \
   -e AVATAR_ALT='Techno Tim Profile Pic' \
   -e NAME='TechnoTim' \
-  -e BIO='Hey! Just a place where you can connect with me!' \
+  -e BIO='Software Engineer | Gamer | Twitch Streamer | Content Creator on YouTube | Homelab | 🇺🇸 🇯🇵 | Full Nerd' \
   -e GITHUB='https://l.technotim.live/github' \
   -e TWITTER='https://l.technotim.live/twitter' \
   -e INSTAGRAM='https://www.instagram.com/techno.tim' \
+  -e LINKED_IN='https://l.technotim.live/linkedin' \
   -e YOUTUBE='https://l.technotim.live/subscribe' \
   -e TWITCH='https://l.technotim.live/twitch' \
   -e DISCORD='https://l.technotim.live/discord' \
