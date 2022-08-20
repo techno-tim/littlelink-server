@@ -118,6 +118,7 @@ export const runtimeConfig =
         KAKAOTALK: window?.env?.KAKAOTALK,
         DESIGNBYHUMANS: window?.env?.DESIGNBYHUMANS,
         DOCKERHUB: window?.env?.DOCKERHUB,
+        MYANIMELIST: window?.env?.MYANIMELIST,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         SHARE: window?.env?.SHARE,
@@ -428,6 +429,9 @@ export const runtimeConfig =
         DOCKERHUB: nodeIsProduction
           ? process.env.DOCKERHUB
           : process.env.RAZZLE_DOCKERHUB,
+        MYANIMELIST: nodeIsProduction
+          ? process.env.MYANIMELIST
+          : process.env.RAZZLE_MYANIMELIST,
         MATOMO_URL: nodeIsProduction
           ? process.env.MATOMO_URL
           : process.env.RAZZLE_MATOMO_URL,

@@ -446,7 +446,7 @@ button {
   color: #02a0f2;
   background-color: #1c242e;
 }
-  
+
 /* Gitbucket */
 .button.button-gitbucket {
   color: #000;
@@ -503,3 +503,8 @@ button {
   background-color: #fff
 }
 
+/* MyAnimeList */
+.button.button-myAnimeList {
+  color: #133a95;
+  background-color: #fff
+}

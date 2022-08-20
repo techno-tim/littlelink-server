@@ -75,6 +75,7 @@ import lineLogo from '../../icons/linemessenger.svg';
 import kakaoLogo from '../../icons/kaokotalk.svg';
 import designByHumansLogo from '../../icons/designbyhumans.svg';
 import dockerhubLogo from '../../icons/docker.svg';
+import myAnimeListLogo from '../../icons/myanimelist.svg';
 
 function Home(props) {
   let order = [];
@@ -796,6 +797,15 @@ function Home(props) {
                   displayName="Dockerhub"
                   logo={dockerhubLogo}
                   order={buttonOrder('DOCKERHUB')}
+                />
+              )}
+              {runtimeConfig.MYANIMELIST && (
+                <Button
+                  name="myAnimeList"
+                  href={runtimeConfig.MYANIMELIST}
+                  displayName="MyAnimeList"
+                  logo={myAnimeListLogo}
+                  order={buttonOrder('MYANIMELIST')}
                 />
               )}
             </Sort>
