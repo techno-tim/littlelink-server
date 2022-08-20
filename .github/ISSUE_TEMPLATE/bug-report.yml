@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a bug with littlelink-server
+title: '[BUG REPORT] <Concise description of the bug>'
+labels: ['bug']
+
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |-
+        ## Please enter the following headings, where applicable, to make it easier to complete this request!
+    validations:
+      required: false
+
+  - type: textarea
+    id: buttonrelation
+    attributes:
+      label: Buttons Relation
+      description: What button is this in relation too. If multiple, please seperate with `,`. If none, please write `N/A`
+      placeholder: e.g Twitter
+    validations:
+      required: true
+
+  - type: textarea
+    id: bugexplanation
+    attributes:
+      label: Bug Description
+      description: Please explain the bug, include any errors
+      placeholder: Bug report
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result
+      description: Please explain the bug, include any errors
+      placeholder: The expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Anything to give further context to the bug report or information that will assist in solving the issue
+    validations:
+      required: false
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Images
+      description: CTRL V to paste images in
+    validations:
+      required: false
+
+
+
+
