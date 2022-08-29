@@ -151,7 +151,7 @@ server
             ? `<meta property="twitter:creator" content="${runtimeConfig.TWITTER_CREATOR}" />`
             : ''
         }
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;display=swap" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/${theme}">
         <link rel="stylesheet" href="css/brands.css">
