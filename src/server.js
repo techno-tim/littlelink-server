@@ -32,6 +32,7 @@ const jsScriptTagsFromAssets = (assets, entrypoint, extra = '') => {
 
 const theme = runtimeConfig.THEME === 'Dark' ? 'dark.css' : 'light.css';
 
+const helmet = require('helmet');
 const server = express();
 
 if (process.env.NODE_ENV === 'production') {
@@ -55,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 server
-  .disable('x-powered-by')
+  .use(helmet.hidePoweredBy())
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
   .get('/', (req, res) => {
     const context = {};
