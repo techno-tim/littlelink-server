@@ -24,13 +24,13 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "compression": "^1.7.4",
     "express": "^4.17.2",
+    "helmet": "^6.0.0",
     "morgan": "^1.10.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
-    "serialize-javascript": "^6.0.0",
-    "helmet": "^6.0.0"
+    "serialize-javascript": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.0",
@@ -43,7 +43,7 @@
     "eslint-plugin-jsx": "^0.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.8",
     "html-webpack-plugin": "^5.5.0",
     "markdownlint-cli": "^0.32.1",
