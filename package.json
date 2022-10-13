@@ -43,7 +43,7 @@
     "eslint-plugin-jsx": "^0.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-promise": "^6.1.0",
     "eslint-plugin-react": "^7.31.10",
     "html-webpack-plugin": "^5.5.0",
     "markdownlint-cli": "^0.32.1",
