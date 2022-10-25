@@ -80,7 +80,7 @@ services:
       - TIKTOK=https://l.technotim.live/tiktok
       - FACEBOOK=https://l.technotim.live/facebook
       - PATREON=https://l.technotim.live/patreon
-      - FOOTER=Techno Tim © 2022
+      - FOOTER=Techno Tim
     ports:
       - 8080:3000
     restart: unless-stopped
@@ -116,7 +116,7 @@ docker run -d \
   -e DISCORD='https://l.technotim.live/discord' \
   -e TIKTOK='https://l.technotim.live/discord' \
   -e KIT='https://l.technotim.live/gear' \
-  -e FOOTER=Techno Tim © 2022 \
+  -e FOOTER=Techno Tim \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
