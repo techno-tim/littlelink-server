@@ -811,7 +811,7 @@ function Home(props) {
             </Sort>
             <div>
               <p className="footer">
-                {runtimeConfig.FOOTER}
+                {runtimeConfig.FOOTER} © {new Date().getFullYear()}
                 {runtimeConfig.SHARE &&
                   runtimeConfig.OG_TITLE &&
                   runtimeConfig.OG_DESCRIPTION && (
