@@ -696,7 +696,7 @@ function Home(props) {
                 <Button
                   name="youtubemusic"
                   href={runtimeConfig.YOUTUBE_MUSIC}
-                  displayName="Youtube Music"
+                  displayName="YouTube Music"
                   logo={youtubemusiclogo}
                   order={buttonOrder('YOUTUBEMUSIC')}
                 />
