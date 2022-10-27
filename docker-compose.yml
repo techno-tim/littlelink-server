@@ -91,7 +91,7 @@ services:
       - AMAZON_AFFILIATE=https://affiliate-program.amazon.co.uk/
       - AMAZON_WISHLIST=https://www.amazon.co.uk/b?node=22758010031
       - APPLE_MUSIC=https://www.apple.com/uk/apple-music/
-      - YOUTUBEMUSIC=https://music.youtube.com/playlist?list=
+      - YOUTUBE_MUSIC=https://music.youtube.com/playlist?list=
       - STATUS=https://status.im/
       - MATRIX=https://matrix.to/
       - ANILIST=https://anilist.co/
