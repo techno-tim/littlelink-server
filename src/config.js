@@ -107,6 +107,7 @@ export const runtimeConfig =
         AMAZON_WISHLIST: window?.env?.AMAZON_WISHLIST,
         APPLE_MUSIC: window?.env?.APPLE_MUSIC,
         YOUTUBE_MUSIC: window?.env?.YOUTUBE_MUSIC,
+        VENMO: window?.env?.VENMO,
         STATUS: window?.env?.STATUS,
         MATRIX: window?.env?.MATRIX,
         ANILIST: window?.env?.ANILIST,
@@ -403,6 +404,9 @@ export const runtimeConfig =
         YOUTUBE_MUSIC: nodeIsProduction
           ? process.env.YOUTUBE_MUSIC
           : process.env.RAZZLE_YOUTUBE_MUSIC,
+        VENMO: nodeIsProduction
+          ? process.env.VENMO
+          : process.env.RAZZLE_VENMO,
         STATUS: nodeIsProduction
           ? process.env.STATUS
           : process.env.RAZZLE_STATUS,

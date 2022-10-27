@@ -92,6 +92,7 @@ services:
       - AMAZON_WISHLIST=https://www.amazon.co.uk/b?node=22758010031
       - APPLE_MUSIC=https://www.apple.com/uk/apple-music/
       - YOUTUBE_MUSIC=https://music.youtube.com/playlist?list=
+      - VENMO=https://venmo.com/
       - STATUS=https://status.im/
       - MATRIX=https://matrix.to/
       - ANILIST=https://anilist.co/
