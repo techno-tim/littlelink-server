@@ -106,6 +106,7 @@ export const runtimeConfig =
         AMAZON_AFFILIATE: window?.env?.AMAZON_AFFILIATE,
         AMAZON_WISHLIST: window?.env?.AMAZON_WISHLIST,
         APPLE_MUSIC: window?.env?.APPLE_MUSIC,
+        YOUTUBE_MUSIC: window?.env?.YOUTUBE_MUSIC,
         STATUS: window?.env?.STATUS,
         MATRIX: window?.env?.MATRIX,
         ANILIST: window?.env?.ANILIST,
@@ -399,6 +400,9 @@ export const runtimeConfig =
         APPLE_MUSIC: nodeIsProduction
           ? process.env.APPLE_MUSIC
           : process.env.RAZZLE_APPLE_MUSIC,
+        YOUTUBE_MUSIC: nodeIsProduction
+          ? process.env.YOUTUBE_MUSIC
+          : process.env.RAZZLE_YOUTUBE_MUSIC,
         STATUS: nodeIsProduction
           ? process.env.STATUS
           : process.env.RAZZLE_STATUS,
