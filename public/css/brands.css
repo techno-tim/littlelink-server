@@ -429,6 +429,12 @@ button {
   background-color: #fff;
 }
 
+/* YouTube Music */
+.button.button-youtubemusic {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 /* Status */
 .button.button-status {
   color: #000;
