@@ -404,9 +404,7 @@ export const runtimeConfig =
         YOUTUBE_MUSIC: nodeIsProduction
           ? process.env.YOUTUBE_MUSIC
           : process.env.RAZZLE_YOUTUBE_MUSIC,
-        VENMO: nodeIsProduction
-          ? process.env.VENMO
-          : process.env.RAZZLE_VENMO,
+        VENMO: nodeIsProduction ? process.env.VENMO : process.env.RAZZLE_VENMO,
         STATUS: nodeIsProduction
           ? process.env.STATUS
           : process.env.RAZZLE_STATUS,
