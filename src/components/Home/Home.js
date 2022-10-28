@@ -63,7 +63,8 @@ import streamlabsLogo from '../../icons/streamlabs.svg';
 import privatebinLogo from '../../icons/privatebin.svg';
 import amazonLogo from '../../icons/amazon.svg';
 import applemusicLogo from '../../icons/applemusic.svg';
-import youtubemusiclogo from '../../icons/youtubemusic.svg';
+import youtubemusicLogo from '../../icons/youtubemusic.svg';
+import venmoLogo from '../../icons/venmo.svg';
 import statusLogo from '../../icons/status.svg';
 import matrixLogo from '../../icons/matrix.svg';
 import anilistLogo from '../../icons/anilist.svg';
@@ -697,8 +698,17 @@ function Home(props) {
                   name="youtubemusic"
                   href={runtimeConfig.YOUTUBE_MUSIC}
                   displayName="YouTube Music"
-                  logo={youtubemusiclogo}
-                  order={buttonOrder('YOUTUBEMUSIC')}
+                  logo={youtubemusicLogo}
+                  order={buttonOrder('YOUTUBE_MUSIC')}
+                />
+              )}
+              {runtimeConfig.VENMO && (
+                <Button
+                  name="venmo"
+                  href={runtimeConfig.VENMO}
+                  displayName="Venmo"
+                  logo={venmoLogo}
+                  order={buttonOrder('VENMO')}
                 />
               )}
               {runtimeConfig.STATUS && (

@@ -435,6 +435,12 @@ button {
   background-color: #000000;
 }
 
+/* Venmo */
+.button.button-venmo {
+  color: #ffffff;
+  background-color: #3d95ce;
+}
+
 /* Status */
 .button.button-status {
   color: #000;
