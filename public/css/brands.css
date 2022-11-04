@@ -515,6 +515,12 @@ button {
   background-color: #fff
 }
 
+/* Vero */
+.button.button-vero {
+  color: #fff;
+  background-color: #000
+}
+
 /* MyAnimeList */
 .button.button-myAnimeList {
   color: #133a95;

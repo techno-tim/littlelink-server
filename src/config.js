@@ -119,6 +119,7 @@ export const runtimeConfig =
         LINE: window?.env?.LINE,
         KAKAOTALK: window?.env?.KAKAOTALK,
         DESIGNBYHUMANS: window?.env?.DESIGNBYHUMANS,
+        VERO: window?.env?.VERO,
         DOCKERHUB: window?.env?.DOCKERHUB,
         MYANIMELIST: window?.env?.MYANIMELIST,
         MATOMO_URL: window?.env?.MATOMO_URL,
@@ -433,6 +434,7 @@ export const runtimeConfig =
         DESIGNBYHUMANS: nodeIsProduction
           ? process.env.DESIGNBYHUMANS
           : process.env.RAZZLE_DESIGNBYHUMANS,
+        VERO: nodeIsProduction ? process.env.VERO : process.env.RAZZLE_VERO,
         DOCKERHUB: nodeIsProduction
           ? process.env.DOCKERHUB
           : process.env.RAZZLE_DOCKERHUB,
