@@ -5,6 +5,7 @@ import { runtimeConfig } from '../../config';
 import { trackUmamiEvent } from '../../analytics/umami';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { trackMatomoEvent } from '../../analytics/matomo';
+import { addShadow } from '../../utils';
 
 function Button(props) {
   const { name, href, displayName, logo, styles, alt, icon } = props;
@@ -26,7 +27,7 @@ function Button(props) {
   return (
     <>
       <a
-        className={styles ? 'button' : `button button-${name}`}
+        className={(styles ? 'button' : `button button-${name}`) + addShadow()}
         href={href}
         target={runtimeConfig?.BUTTON_TARGET || '_blank'}
         rel="noopener noreferrer"

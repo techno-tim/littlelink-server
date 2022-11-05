@@ -77,6 +77,7 @@ import lineLogo from '../../icons/linemessenger.svg';
 import kakaoLogo from '../../icons/kaokotalk.svg';
 import designByHumansLogo from '../../icons/designbyhumans.svg';
 import dockerhubLogo from '../../icons/docker.svg';
+import veroLogo from '../../icons/vero.svg';
 import myAnimeListLogo from '../../icons/myanimelist.svg';
 
 function Home(props) {
@@ -817,6 +818,15 @@ function Home(props) {
                   displayName="Dockerhub"
                   logo={dockerhubLogo}
                   order={buttonOrder('DOCKERHUB')}
+                />
+              )}
+              {runtimeConfig.VERO && (
+                <Button
+                  name="vero"
+                  href={runtimeConfig.VERO}
+                  displayName="VERO"
+                  logo={veroLogo}
+                  order={buttonOrder('VERO')}
                 />
               )}
               {runtimeConfig.MYANIMELIST && (
