@@ -8,7 +8,7 @@ import { trackMatomoEvent } from '../../analytics/matomo';
 import { addShadow } from '../../utils';
 
 function Button(props) {
-  const { name, href, displayName, logo, styles, alt, icon } = props;
+  const { name, href, displayName, logo, styles, alt, icon, rels } = props;
 
   const handleClick = () => {
     const eventName = `${name}-button`;
@@ -30,7 +30,7 @@ function Button(props) {
         className={(styles ? 'button' : `button button-${name}`) + addShadow()}
         href={href}
         target={runtimeConfig?.BUTTON_TARGET || '_blank'}
-        rel="noopener noreferrer"
+        rel={rels ? rels : 'noopener noreferrer'}
         onClick={handleClick}
         style={styles ? styles : undefined}
         title={alt || displayName}
@@ -59,4 +59,5 @@ Button.propType = {
   logo: string,
   icon: string,
   styles: object,
+  rels: string,
 };
