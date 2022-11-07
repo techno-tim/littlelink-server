@@ -114,6 +114,7 @@ export const runtimeConfig =
         GITBUCKET: window?.env?.GITBUCKET,
         SHAZAM: window?.env?.SHAZAM,
         FLICKR: window?.env?.FLICKR,
+        FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
         TPDB: window?.env?.TPDB,
         OSU: window?.env?.OSU,
         LINE: window?.env?.LINE,
@@ -425,6 +426,9 @@ export const runtimeConfig =
         FLICKR: nodeIsProduction
           ? process.env.FLICKR
           : process.env.RAZZLE_FLICKR,
+        FIVEHUNDREDPX: nodeIsProduction
+          ? process.env.FIVEHUNDREDPX
+          : process.env.RAZZLE_FIVEHUNDREDPX,
         TPDB: nodeIsProduction ? process.env.TPDB : process.env.RAZZLE_TPDB,
         OSU: nodeIsProduction ? process.env.OSU : process.env.RAZZLE_OSU,
         LINE: nodeIsProduction ? process.env.LINE : process.env.RAZZLE_LINE,

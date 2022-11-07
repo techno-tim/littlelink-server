@@ -71,6 +71,7 @@ import anilistLogo from '../../icons/anilist.svg';
 import gitbucketLogo from '../../icons/gitbucket.svg';
 import shazamLogo from '../../icons/shazam.svg';
 import flickrLogo from '../../icons/flickr.svg';
+import fiveHundredPXLogo from '../../icons/500px.svg';
 import tpdbLogo from '../../icons/tpdb.svg';
 import osuLogo from '../../icons/osu.svg';
 import lineLogo from '../../icons/linemessenger.svg';
@@ -765,6 +766,15 @@ function Home(props) {
                   displayName="Flickr"
                   logo={flickrLogo}
                   order={buttonOrder('FLICKR')}
+                />
+              )}
+              {runtimeConfig.FIVEHUNDREDPX && (
+                <Button
+                  name="500px"
+                  href={runtimeConfig.FIVEHUNDREDPX}
+                  displayName="500px"
+                  logo={fiveHundredPXLogo}
+                  order={buttonOrder('FIVEHUNDREDPX')}
                 />
               )}
               {runtimeConfig.TPDB && (
