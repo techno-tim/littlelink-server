@@ -477,12 +477,6 @@ button {
   background-color: #000
 }
 
-/* 500px */
-.button.button-500px {
-  color: #000;
-  background-color: #fff
-}
-
 /* TPDB */
 .button.button-tpdb {
   color: #fff;
@@ -530,5 +524,11 @@ button {
 /* MyAnimeList */
 .button.button-myAnimeList {
   color: #133a95;
+  background-color: #fff
+}
+
+/* 500px */
+.button.button-500px {
+  color: #000;
   background-color: #fff
 }

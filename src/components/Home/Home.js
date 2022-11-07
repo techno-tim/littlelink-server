@@ -768,15 +768,6 @@ function Home(props) {
                   order={buttonOrder('FLICKR')}
                 />
               )}
-              {runtimeConfig.FIVEHUNDREDPX && (
-                <Button
-                  name="500px"
-                  href={runtimeConfig.FIVEHUNDREDPX}
-                  displayName="500px"
-                  logo={fiveHundredPXLogo}
-                  order={buttonOrder('FIVEHUNDREDPX')}
-                />
-              )}
               {runtimeConfig.TPDB && (
                 <Button
                   name="tpdb"
@@ -847,6 +838,15 @@ function Home(props) {
                   displayName="MyAnimeList"
                   logo={myAnimeListLogo}
                   order={buttonOrder('MYANIMELIST')}
+                />
+              )}
+              {runtimeConfig.FIVEHUNDREDPX && (
+                <Button
+                  name="500px"
+                  href={runtimeConfig.FIVEHUNDREDPX}
+                  displayName="500px"
+                  logo={fiveHundredPXLogo}
+                  order={buttonOrder('FIVEHUNDREDPX')}
                 />
               )}
             </Sort>
