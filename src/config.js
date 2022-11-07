@@ -437,8 +437,8 @@ export const runtimeConfig =
           : process.env.RAZZLE_DESIGNBYHUMANS,
         VERO: nodeIsProduction ? process.env.VERO : process.env.RAZZLE_VERO,
         FIVEHUNDREDPX: nodeIsProduction
-        ? process.env.FIVEHUNDREDPX
-        : process.env.RAZZLE_FIVEHUNDREDPX,
+          ? process.env.FIVEHUNDREDPX
+          : process.env.RAZZLE_FIVEHUNDREDPX,
         DOCKERHUB: nodeIsProduction
           ? process.env.DOCKERHUB
           : process.env.RAZZLE_DOCKERHUB,
