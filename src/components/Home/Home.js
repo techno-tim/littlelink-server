@@ -81,7 +81,6 @@ import veroLogo from '../../icons/vero.svg';
 import myAnimeListLogo from '../../icons/myanimelist.svg';
 import fiveHundredPXLogo from '../../icons/500px.svg';
 
-
 function Home(props) {
   let order = [];
   if (runtimeConfig?.BUTTON_ORDER) {

@@ -114,7 +114,6 @@ export const runtimeConfig =
         GITBUCKET: window?.env?.GITBUCKET,
         SHAZAM: window?.env?.SHAZAM,
         FLICKR: window?.env?.FLICKR,
-        FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
         TPDB: window?.env?.TPDB,
         OSU: window?.env?.OSU,
         LINE: window?.env?.LINE,
@@ -127,6 +126,7 @@ export const runtimeConfig =
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         SHARE: window?.env?.SHARE,
         DROP_SHADOW: window?.env?.DROP_SHADOW,
+        FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
       }
     : {
         // server
@@ -436,9 +436,6 @@ export const runtimeConfig =
           ? process.env.DESIGNBYHUMANS
           : process.env.RAZZLE_DESIGNBYHUMANS,
         VERO: nodeIsProduction ? process.env.VERO : process.env.RAZZLE_VERO,
-        FIVEHUNDREDPX: nodeIsProduction
-          ? process.env.FIVEHUNDREDPX
-          : process.env.RAZZLE_FIVEHUNDREDPX,
         DOCKERHUB: nodeIsProduction
           ? process.env.DOCKERHUB
           : process.env.RAZZLE_DOCKERHUB,
@@ -455,4 +452,7 @@ export const runtimeConfig =
         DROP_SHADOW: nodeIsProduction
           ? process.env.DROP_SHADOW
           : process.env.RAZZLE_DROP_SHADOW,
+        FIVEHUNDREDPX: nodeIsProduction
+          ? process.env.FIVEHUNDREDPX
+          : process.env.RAZZLE_FIVEHUNDREDPX,
       };
