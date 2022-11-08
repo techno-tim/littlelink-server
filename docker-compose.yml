@@ -119,6 +119,8 @@ services:
       - TWITTER_SITE=@TechnoTimLive
       - TWITTER_CREATOR=@TechnoTimLive
       - SHARE=https://technotim.live
+      - FIVEHUNDREDPX=https://500px.com/
+
     ports:
       - 8080:3000
     restart: unless-stopped

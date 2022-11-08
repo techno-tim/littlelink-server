@@ -126,6 +126,7 @@ export const runtimeConfig =
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         SHARE: window?.env?.SHARE,
         DROP_SHADOW: window?.env?.DROP_SHADOW,
+        FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
       }
     : {
         // server
@@ -451,4 +452,7 @@ export const runtimeConfig =
         DROP_SHADOW: nodeIsProduction
           ? process.env.DROP_SHADOW
           : process.env.RAZZLE_DROP_SHADOW,
+        FIVEHUNDREDPX: nodeIsProduction
+          ? process.env.FIVEHUNDREDPX
+          : process.env.RAZZLE_FIVEHUNDREDPX,
       };

@@ -526,3 +526,9 @@ button {
   color: #133a95;
   background-color: #fff
 }
+
+/* 500px */
+.button.button-500px {
+  color: #000;
+  background-color: #fff
+}
