@@ -33,11 +33,11 @@
     "serialize-javascript": "^6.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.6",
+    "@babel/core": "^7.20.2",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-react": "^7.18.6",
     "babel-preset-razzle": "^4.2.14",
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx": "^0.1.0",
@@ -52,7 +52,7 @@
     "razzle": "^4.2.14",
     "razzle-dev-utils": "^4.2.14",
     "react-test-renderer": "^18.2.0",
-    "stylelint": "^14.14.0",
+    "stylelint": "^14.14.1",
     "stylelint-config-prettier": "^9.0.3",
     "url": "^0.11.0",
     "webpack": "^5.74.0",
