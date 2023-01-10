@@ -48,7 +48,7 @@
     "html-webpack-plugin": "^5.5.0",
     "markdownlint-cli": "^0.32.1",
     "mini-css-extract-plugin": "^2.7.2",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "razzle": "^4.2.14",
     "razzle-dev-utils": "^4.2.14",
     "react-test-renderer": "^18.2.0",
