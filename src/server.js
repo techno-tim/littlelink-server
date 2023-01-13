@@ -73,20 +73,30 @@ server
         `<!doctype html>
     <html lang="${runtimeConfig.LANG || 'en'}">
     <head>
+        <title >${runtimeConfig.META_TITLE || 'My Site'}</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
-        <title >${runtimeConfig.META_TITLE}</title>
-        <meta name="description" content="${runtimeConfig.META_DESCRIPTION}">
-        <meta name="author" content="${runtimeConfig.META_AUTHOR}">
+        <meta property="og:type" content="siteweb" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="${
+          runtimeConfig.META_INDEX_STATUS || 'noindex'
+        }">
+        ${
+          runtimeConfig.META_AUTHOR
+            ? `<meta name="description" content="${runtimeConfig.META_DESCRIPTION}" />`
+            : ''
+        }
+        ${
+          runtimeConfig.META_AUTHOR
+            ? `<meta name="author" content="${runtimeConfig.META_AUTHOR}" />`
+            : ''
+        }
         ${
           runtimeConfig.META_KEYWORDS
             ? `<meta name="keywords" content="${runtimeConfig.META_KEYWORDS}" />`
             : ''
         }
-        <meta name="robots" content="${
-          runtimeConfig.META_INDEX_STATUS || 'noindex'
-        }">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         ${
           runtimeConfig.OG_SITE_NAME
             ? `<meta property="og:site_name" content="${runtimeConfig.OG_SITE_NAME}" />`
@@ -107,7 +117,6 @@ server
             ? `<meta property="og:url" content="${runtimeConfig.OG_URL}" />`
             : ''
         }
-        <meta property="og:type" content="siteweb" />
         ${
           runtimeConfig.OG_IMAGE
             ? `
