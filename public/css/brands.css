@@ -532,3 +532,9 @@ button {
   color: #000;
   background-color: #fff
 }
+
+/* jetphotos */
+.button.button-jetphotos {
+  color: #ffffff;
+  background-color: #000000;
+}

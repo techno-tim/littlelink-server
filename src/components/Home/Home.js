@@ -80,6 +80,7 @@ import dockerhubLogo from '../../icons/docker.svg';
 import veroLogo from '../../icons/vero.svg';
 import myAnimeListLogo from '../../icons/myanimelist.svg';
 import fiveHundredPXLogo from '../../icons/500px.svg';
+import jetphotosLogo from '../../icons/jetphotos.svg';
 
 function Home(props) {
   let order = [];
@@ -847,6 +848,15 @@ function Home(props) {
                   displayName="500px"
                   logo={fiveHundredPXLogo}
                   order={buttonOrder('FIVEHUNDREDPX')}
+                />
+              )}
+              {runtimeConfig.JETPHOTOS && (
+                <Button
+                  name="jetphotos"
+                  href={runtimeConfig.JETPHOTOS}
+                  displayName="JetPhotos"
+                  logo={jetphotosLogo}
+                  order={buttonOrder('JETPHOTOS')}
                 />
               )}
             </Sort>

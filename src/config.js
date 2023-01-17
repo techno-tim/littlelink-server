@@ -127,6 +127,7 @@ export const runtimeConfig =
         SHARE: window?.env?.SHARE,
         DROP_SHADOW: window?.env?.DROP_SHADOW,
         FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
+        JETPHOTOS: window?.env?.JETPHOTOS,
       }
     : {
         // server
@@ -455,4 +456,7 @@ export const runtimeConfig =
         FIVEHUNDREDPX: nodeIsProduction
           ? process.env.FIVEHUNDREDPX
           : process.env.RAZZLE_FIVEHUNDREDPX,
+        JETPHOTOS: nodeIsProduction
+          ? process.env.JETPHOTOS
+          : process.env.RAZZLE_JETPHOTOS,
       };
