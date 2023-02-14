@@ -1,12 +1,13 @@
 import Share from '../Share';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { render } from 'react-dom';
 
 describe('<Share />', () => {
   test('renders without exploding', () => {
-    const div = document.createElement('div');
-    render(<Share />, div);
+    const root = document.getElementById('root');
+    if (root) {
+      root.render(<Share />);
+    }
   });
   test('<Share /> snapshot', () => {
     const tree = renderer.create(<Share />).toJSON();
