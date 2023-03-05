@@ -866,11 +866,14 @@ function Home(props) {
                 {runtimeConfig.SHARE &&
                   runtimeConfig.OG_TITLE &&
                   runtimeConfig.OG_DESCRIPTION && (
-                    <Share
-                      url={runtimeConfig.SHARE}
-                      title={runtimeConfig.OG_TITLE}
-                      text={runtimeConfig.OG_DESCRIPTION}
-                    />
+                    <>
+                      <br />
+                      <Share
+                        url={runtimeConfig.SHARE}
+                        title={runtimeConfig.OG_TITLE}
+                        text={runtimeConfig.OG_DESCRIPTION}
+                      />
+                    </>
                   )}
               </p>
             </div>
