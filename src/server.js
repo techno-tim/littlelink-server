@@ -30,7 +30,7 @@ const jsScriptTagsFromAssets = (assets, entrypoint, extra = '') => {
     : '';
 };
 
-const theme = runtimeConfig.THEME === 'Dark' ? 'dark.css' : 'light.css';
+const theme = runtimeConfig.THEME === 'Dark' ? 'dark' : 'light';
 
 const helmet = require('helmet');
 const server = express();
@@ -71,7 +71,7 @@ server
     } else {
       res.status(200).send(
         `<!doctype html>
-    <html lang="${runtimeConfig.LANG || 'en'}">
+    <html lang="${runtimeConfig.LANG || 'en'}" class="${theme}">
     <head>
         <title >${runtimeConfig.META_TITLE || 'My Site'}</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -167,7 +167,13 @@ server
         }
         <link href="css/fonts.css" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/${theme}">
+        <link rel="stylesheet" href="css/${theme}.css">
+        ${
+          runtimeConfig.THEME_OS
+            ? `<link rel="stylesheet" href="css/os.css">`
+            : ''
+        }
+        <link rel="stylesheet" href="css/littlelink.css">
         <link rel="stylesheet" href="css/brands.css">
         ${cssLinksFromAssets(assets, 'client')}
         <link rel="icon" type="image/png" href="${runtimeConfig.FAVICON_URL}">

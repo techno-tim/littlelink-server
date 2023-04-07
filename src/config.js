@@ -128,6 +128,7 @@ export const runtimeConfig =
         DROP_SHADOW: window?.env?.DROP_SHADOW,
         FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
         JETPHOTOS: window?.env?.JETPHOTOS,
+        THEME_OS: window?.env?.THEME_OS,
       }
     : {
         // server
@@ -459,4 +460,7 @@ export const runtimeConfig =
         JETPHOTOS: nodeIsProduction
           ? process.env.JETPHOTOS
           : process.env.RAZZLE_JETPHOTOS,
+        THEME_OS: nodeIsProduction
+          ? process.env.THEME_OS
+          : process.env.RAZZLE_THEME_OS,
       };
