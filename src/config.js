@@ -129,6 +129,7 @@ export const runtimeConfig =
         FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
         JETPHOTOS: window?.env?.JETPHOTOS,
         THEME_OS: window?.env?.THEME_OS,
+        SUBSTACK: window?.env?.SUBSTACK,
       }
     : {
         // server
@@ -463,4 +464,7 @@ export const runtimeConfig =
         THEME_OS: nodeIsProduction
           ? process.env.THEME_OS
           : process.env.RAZZLE_THEME_OS,
+        SUBSTACK: nodeIsProduction
+          ? process.env.SUBSTACK
+          : process.env.RAZZLE_SUBSTACK,
       };

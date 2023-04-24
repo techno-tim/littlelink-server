@@ -538,3 +538,9 @@ button {
   color: #ffffff;
   background-color: #000000;
 }
+
+/* substack */
+.button.button-substack {
+  color: #000;
+  background-color: #fff;
+}
