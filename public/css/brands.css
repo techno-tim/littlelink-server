@@ -544,3 +544,9 @@ button {
   color: #000;
   background-color: #fff;
 }
+
+/* printables */
+.button.button-printables {
+  color: #000;
+  background-color: #eb5405;
+}
