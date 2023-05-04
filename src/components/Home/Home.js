@@ -82,6 +82,7 @@ import myAnimeListLogo from '../../icons/myanimelist.svg';
 import fiveHundredPXLogo from '../../icons/500px.svg';
 import jetphotosLogo from '../../icons/jetphotos.svg';
 import substackLogo from '../../icons/substack.svg';
+import printablesLogo from '../../icons/printables.svg';
 
 function Home(props) {
   let order = [];
@@ -867,6 +868,15 @@ function Home(props) {
                   displayName="Substack"
                   logo={substackLogo}
                   order={buttonOrder('SUBSTACK')}
+                />
+              )}
+              {runtimeConfig.PRINTABLES && (
+                <Button
+                  name="printables"
+                  href={runtimeConfig.PRINTABLES}
+                  displayName="Printables"
+                  logo={printablesLogo}
+                  order={buttonOrder('PRINTABLES')}
                 />
               )}
             </Sort>
