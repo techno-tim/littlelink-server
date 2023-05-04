@@ -131,6 +131,7 @@ export const runtimeConfig =
         THEME_OS: window?.env?.THEME_OS,
         SUBSTACK: window?.env?.SUBSTACK,
         PRINTABLES: window?.env?.PRINTABLES,
+        PHONE: window?.env?.PHONE,
       }
     : {
         // server
@@ -471,4 +472,7 @@ export const runtimeConfig =
         PRINTABLES: nodeIsProduction
           ? process.env.PRINTABLES
           : process.env.RAZZLE_PRINTABLES,
+        PHONE: nodeIsProduction
+          ? process.env.PHONE
+          : process.env.RAZZLE_PHONE,
       };

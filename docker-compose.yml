@@ -121,6 +121,7 @@ services:
       - SHARE=https://technotim.live
       - FIVEHUNDREDPX=https://500px.com/
       - PRINTABLES=https://www.printables.com
+      - PHONE=tel:+1234567890      
 
     ports:
       - 8080:3000

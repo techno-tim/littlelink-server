@@ -83,6 +83,7 @@ import fiveHundredPXLogo from '../../icons/500px.svg';
 import jetphotosLogo from '../../icons/jetphotos.svg';
 import substackLogo from '../../icons/substack.svg';
 import printablesLogo from '../../icons/printables.svg';
+import phoneLogo from '../../icons/phone.svg';
 
 function Home(props) {
   let order = [];
@@ -877,6 +878,15 @@ function Home(props) {
                   displayName="Printables"
                   logo={printablesLogo}
                   order={buttonOrder('PRINTABLES')}
+                />
+              )}
+              {runtimeConfig.PHONE && (
+                <Button
+                  name="phone"
+                  href={runtimeConfig.PHONE}
+                  displayName="Phone"
+                  logo={phoneLogo}
+                  order={buttonOrder('PHONE')}
                 />
               )}
             </Sort>

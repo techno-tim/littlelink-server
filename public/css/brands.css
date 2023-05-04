@@ -550,3 +550,9 @@ button {
   color: #000;
   background-color: #eb5405;
 }
+
+/* phone */
+.button.button-phone {
+  color: #000;
+  background-color: #33b5e5;
+}
