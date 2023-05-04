@@ -130,6 +130,7 @@ export const runtimeConfig =
         JETPHOTOS: window?.env?.JETPHOTOS,
         THEME_OS: window?.env?.THEME_OS,
         SUBSTACK: window?.env?.SUBSTACK,
+        PRINTABLES: window?.env?.PRINTABLES,
       }
     : {
         // server
@@ -467,4 +468,7 @@ export const runtimeConfig =
         SUBSTACK: nodeIsProduction
           ? process.env.SUBSTACK
           : process.env.RAZZLE_SUBSTACK,
+        PRINTABLES: nodeIsProduction
+          ? process.env.PRINTABLES
+          : process.env.RAZZLE_PRINTABLES,
       };
