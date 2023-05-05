@@ -223,6 +223,14 @@ server
             <!-- Matomo End -->`
             : ''
         }
+        ${
+          runtimeConfig.PLAUSIBLE_DATA_DOMAIN && runtimeConfig.PLAUSIBLE_URL
+            ? `
+            <!-- Plausible Analytics -->
+            <script async defer data-domain="${runtimeConfig.PLAUSIBLE_DATA_DOMAIN}" src="${runtimeConfig.PLAUSIBLE_URL}/js/script.js">
+            </script>`
+            : ''
+        }
 
     </head>
     <body>
