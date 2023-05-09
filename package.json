@@ -56,6 +56,6 @@
     "stylelint-config-prettier": "^9.0.5",
     "url": "^0.11.0",
     "webpack": "^5.82.0",
-    "webpack-dev-server": "^4.13.2"
+    "webpack-dev-server": "^4.15.0"
   }
 }
