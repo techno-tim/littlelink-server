@@ -125,6 +125,7 @@ export const runtimeConfig =
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
         PLAUSIBLE_URL: window?.env?.PLAUSIBLE_URL,
+        PLAUSIBLE_DATA_API: window?.env?.PLAUSIBLE_DATA_API,
         PLAUSIBLE_DATA_DOMAIN: window?.env?.PLAUSIBLE_DATA_DOMAIN,
         SHARE: window?.env?.SHARE,
         DROP_SHADOW: window?.env?.DROP_SHADOW,
@@ -457,6 +458,9 @@ export const runtimeConfig =
         PLAUSIBLE_URL: nodeIsProduction
           ? process.env.PLAUSIBLE_URL
           : process.env.RAZZLE_PLAUSIBLE_URL,
+        PLAUSIBLE_DATA_API: nodeIsProduction
+          ? process.env.PLAUSIBLE_DATA_API
+          : process.env.RAZZLE_PLAUSIBLE_DATA_API,
         PLAUSIBLE_DATA_DOMAIN: nodeIsProduction
           ? process.env.PLAUSIBLE_DATA_DOMAIN
           : process.env.RAZZLE_PLAUSIBLE_DATA_DOMAIN,
