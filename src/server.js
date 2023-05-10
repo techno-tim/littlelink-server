@@ -195,11 +195,8 @@ server
           runtimeConfig.UMAMI_WEBSITE_ID && runtimeConfig.UMAMI_APP_URL
             ? `
             <!-- Umami Analytics -->
-            <script async defer data-website-id="${runtimeConfig.UMAMI_WEBSITE_ID}" src="${runtimeConfig.UMAMI_APP_URL}/umami.js">
+            <script async defer data-website-id="${runtimeConfig.UMAMI_WEBSITE_ID}" src="${runtimeConfig.UMAMI_APP_URL}/${runtimeConfig.UMAMI_SCRIPT_NAME || "umami.js"}">
             </script>
-            <!-- Newer Umami script link -->
-            <script async defer data-website-id="${runtimeConfig.UMAMI_WEBSITE_ID}" src="${runtimeConfig.UMAMI_APP_URL}/script.js">
-            </script>`
             : ''
         }
         ${
