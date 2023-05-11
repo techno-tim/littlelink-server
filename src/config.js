@@ -1,7 +1,7 @@
 // config.js
-const nodeIsProduction = process.env.NODE_ENV === "production";
+const nodeIsProduction = process.env.NODE_ENV === 'production';
 export const runtimeConfig =
-  typeof window !== "undefined"
+  typeof window !== 'undefined'
     ? {
         // client
         META_TITLE: window?.env?.META_TITLE,
