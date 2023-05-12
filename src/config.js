@@ -125,6 +125,9 @@ export const runtimeConfig =
         MYANIMELIST: window?.env?.MYANIMELIST,
         MATOMO_URL: window?.env?.MATOMO_URL,
         MATOMO_SITE_ID: window?.env?.MATOMO_SITE_ID,
+        PLAUSIBLE_URL: window?.env?.PLAUSIBLE_URL,
+        PLAUSIBLE_DATA_API: window?.env?.PLAUSIBLE_DATA_API,
+        PLAUSIBLE_DATA_DOMAIN: window?.env?.PLAUSIBLE_DATA_DOMAIN,
         SHARE: window?.env?.SHARE,
         DROP_SHADOW: window?.env?.DROP_SHADOW,
         FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
@@ -456,6 +459,15 @@ export const runtimeConfig =
         MATOMO_SITE_ID: nodeIsProduction
           ? process.env.MATOMO_SITE_ID
           : process.env.RAZZLE_MATOMO_SITE_ID,
+        PLAUSIBLE_URL: nodeIsProduction
+          ? process.env.PLAUSIBLE_URL
+          : process.env.RAZZLE_PLAUSIBLE_URL,
+        PLAUSIBLE_DATA_API: nodeIsProduction
+          ? process.env.PLAUSIBLE_DATA_API
+          : process.env.RAZZLE_PLAUSIBLE_DATA_API,
+        PLAUSIBLE_DATA_DOMAIN: nodeIsProduction
+          ? process.env.PLAUSIBLE_DATA_DOMAIN
+          : process.env.RAZZLE_PLAUSIBLE_DATA_DOMAIN,
         SHARE: nodeIsProduction ? process.env.SHARE : process.env.RAZZLE_SHARE,
         DROP_SHADOW: nodeIsProduction
           ? process.env.DROP_SHADOW
