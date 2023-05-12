@@ -196,7 +196,7 @@ server
             ? `
             <!-- Umami Analytics -->
             <script async defer data-website-id="${runtimeConfig.UMAMI_WEBSITE_ID}" src="${runtimeConfig.UMAMI_APP_URL}/${runtimeConfig.UMAMI_SCRIPT_NAME || "umami.js"}">
-            </script>
+            </script>`
             : ''
         }
         ${
