@@ -61,6 +61,7 @@ export const runtimeConfig =
         PATREON: window?.env?.PATREON,
         DEVTO: window?.env?.DEVTO,
         UMAMI_APP_URL: window?.env?.UMAMI_APP_URL,
+        UMAMI_SCRIPT_NAME: window?.env?.UMAMI_SCRIPT_NAME,
         BUTTON_ORDER: window?.env?.BUTTON_ORDER,
         PAYPAL: window?.env?.PAYPAL,
         SLACK: window?.env?.SLACK,
@@ -283,6 +284,9 @@ export const runtimeConfig =
         UMAMI_APP_URL: nodeIsProduction
           ? process.env.UMAMI_APP_URL
           : process.env.RAZZLE_UMAMI_APP_URL,
+        UMAMI_SCRIPT_NAME: nodeIsProduction
+          ? process.env.UMAMI_SCRIPT_NAME
+          : process.env.RAZZLE_UMAMI_SCRIPT_NAME,
         BUTTON_ORDER: nodeIsProduction
           ? process.env.BUTTON_ORDER
           : process.env.RAZZLE_BUTTON_ORDER,
