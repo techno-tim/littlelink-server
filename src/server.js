@@ -224,7 +224,9 @@ server
             : ''
         }
         ${
-          runtimeConfig.PLAUSIBLE_DATA_DOMAIN && runtimeConfig.PLAUSIBLE_DATA_API && runtimeConfig.PLAUSIBLE_URL
+          runtimeConfig.PLAUSIBLE_DATA_DOMAIN &&
+          runtimeConfig.PLAUSIBLE_DATA_API &&
+          runtimeConfig.PLAUSIBLE_URL
             ? `
             <!-- Plausible Analytics -->
             <script async defer data-domain="${runtimeConfig.PLAUSIBLE_DATA_DOMAIN}" data-api="${runtimeConfig.PLAUSIBLE_DATA_API}" src="${runtimeConfig.PLAUSIBLE_URL}">
