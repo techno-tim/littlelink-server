@@ -134,8 +134,8 @@ export const runtimeConfig =
         JETPHOTOS: window?.env?.JETPHOTOS,
         THEME_OS: window?.env?.THEME_OS,
         SUBSTACK: window?.env?.SUBSTACK,
-        PRINTABLES: window?.env?.PRINTABLES, 
-        SERIALIZD: window?.env?.SERIALIZD, 
+        PRINTABLES: window?.env?.PRINTABLES,
+        SERIALIZD: window?.env?.SERIALIZD,
       }
     : {
         // server
