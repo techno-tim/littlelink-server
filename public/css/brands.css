@@ -84,13 +84,15 @@ button {
 /* Facebook Messenger */
 .button.button-facebookmessenger {
   color: #ffffff;
-  background-image: linear-gradient(25deg,
-      #0099ff,
-      #5f5dff,
-      #a033ff,
-      #c740cc,
-      #ff5280,
-      #ff7061);
+  background-image: linear-gradient(
+  25deg,
+#0099ff,
+#5f5dff,
+#a033ff,
+#c740cc,
+#ff5280,
+#ff7061
+);
 }
 
 /* Figma */
