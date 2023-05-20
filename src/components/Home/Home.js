@@ -83,6 +83,7 @@ import fiveHundredPXLogo from '../../icons/500px.svg';
 import jetphotosLogo from '../../icons/jetphotos.svg';
 import substackLogo from '../../icons/substack.svg';
 import printablesLogo from '../../icons/printables.svg';
+import serializdLogo from '../../icons/serializd.svg';
 
 function Home(props) {
   let order = [];
@@ -877,6 +878,15 @@ function Home(props) {
                   displayName="Printables"
                   logo={printablesLogo}
                   order={buttonOrder('PRINTABLES')}
+                />
+              )}
+              {runtimeConfig.SERIALIZD && (
+                <Button
+                  name="serializd"
+                  href={runtimeConfig.SERIALIZD}
+                  displayName="Serializd"
+                  logo={serializdLogo}
+                  order={buttonOrder('SERIALIZD')}
                 />
               )}
             </Sort>

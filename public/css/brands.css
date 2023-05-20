@@ -84,15 +84,13 @@ button {
 /* Facebook Messenger */
 .button.button-facebookmessenger {
   color: #ffffff;
-  background-image: linear-gradient(
-  25deg,
-  #0099ff,
-  #5f5dff,
-  #a033ff,
-  #c740cc,
-  #ff5280,
-  #ff7061
-);
+  background-image: linear-gradient(25deg,
+      #0099ff,
+      #5f5dff,
+      #a033ff,
+      #c740cc,
+      #ff5280,
+      #ff7061);
 }
 
 /* Figma */
@@ -310,6 +308,7 @@ button {
   background-color: #f8f9f9;
   font-weight: 100;
 }
+
 .button.button-stackoverflow:after {
   content: "overflow";
   font-weight: 700;
@@ -549,4 +548,10 @@ button {
 .button.button-printables {
   color: #000;
   background-color: #eb5405;
+}
+
+/* serializd */
+.button.button-serializd {
+  color: #57c2ad;
+  background-color: #0a0c0e;
 }
