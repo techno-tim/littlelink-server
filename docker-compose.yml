@@ -122,6 +122,7 @@ services:
       - SHARE=https://technotim.live
       - FIVEHUNDREDPX=https://500px.com/
       - PRINTABLES=https://www.printables.com
+      - SERIALIZD=https://www.serializd.com/
 
     ports:
       - 8080:3000
