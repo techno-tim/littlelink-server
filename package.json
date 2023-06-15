@@ -54,7 +54,7 @@
     "react-test-renderer": "^18.2.0",
     "stylelint": "^15.7.0",
     "stylelint-config-prettier": "^9.0.5",
-    "url": "^0.11.0",
+    "url": "^0.11.1",
     "webpack": "^5.86.0",
     "webpack-dev-server": "^4.15.1"
   }
