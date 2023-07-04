@@ -33,7 +33,7 @@
     "serialize-javascript": "^6.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.5",
+    "@babel/core": "^7.22.6",
     "@babel/eslint-parser": "^7.22.5",
     "@babel/preset-react": "^7.22.3",
     "babel-preset-razzle": "^4.2.18",
