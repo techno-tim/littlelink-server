@@ -84,6 +84,7 @@ import jetphotosLogo from '../../icons/jetphotos.svg';
 import substackLogo from '../../icons/substack.svg';
 import printablesLogo from '../../icons/printables.svg';
 import serializdLogo from '../../icons/serializd.svg';
+import threadsLogo from '../../icons/threads.svg';
 
 function Home(props) {
   let order = [];
@@ -887,6 +888,15 @@ function Home(props) {
                   displayName="Serializd"
                   logo={serializdLogo}
                   order={buttonOrder('SERIALIZD')}
+                />
+              )}
+              {runtimeConfig.THREADS && (
+                <Button
+                  name="threads"
+                  href={runtimeConfig.THREADS}
+                  displayName="Threads"
+                  logo={threadsLogo}
+                  order={buttonOrder('THREADS')}
                 />
               )}
             </Sort>

@@ -136,6 +136,7 @@ export const runtimeConfig =
         SUBSTACK: window?.env?.SUBSTACK,
         PRINTABLES: window?.env?.PRINTABLES,
         SERIALIZD: window?.env?.SERIALIZD,
+        THREADS: window?.env?.THREADS,
       }
     : {
         // server
@@ -491,4 +492,7 @@ export const runtimeConfig =
         SERIALIZD: nodeIsProduction
           ? process.env.SERIALIZD
           : process.env.RAZZLE_SERIALIZD,
+        THREADS: nodeIsProduction
+          ? process.env.THREADS
+          : process.env.RAZZLE_THREADS,
       };
