@@ -85,6 +85,9 @@ import substackLogo from '../../icons/substack.svg';
 import printablesLogo from '../../icons/printables.svg';
 import serializdLogo from '../../icons/serializd.svg';
 import threadsLogo from '../../icons/threads.svg';
+import lemmyLogo from '../../icons/lemmy.svg';
+import pixelfedLogo from '../../icons/pixelfed.svg';
+import vrchatLogo from '../../icons/vrchat.svg';
 
 function Home(props) {
   let order = [];
@@ -897,6 +900,33 @@ function Home(props) {
                   displayName="Threads"
                   logo={threadsLogo}
                   order={buttonOrder('THREADS')}
+                />
+              )}
+              {runtimeConfig.LEMMY && (
+                <Button
+                  name="lemmy"
+                  href={runtimeConfig.LEMMY}
+                  displayName="Lemmy"
+                  logo={lemmyLogo}
+                  order={buttonOrder('LEMMY')}
+                />
+              )}
+              {runtimeConfig.PIXELFED && (
+                <Button
+                  name="pixelfed"
+                  href={runtimeConfig.PIXELFED}
+                  displayName="Pixelfed"
+                  logo={pixelfedLogo}
+                  order={buttonOrder('PIXELFED')}
+                />
+              )}
+              {runtimeConfig.VRCHAT && (
+                <Button
+                  name="vrchat"
+                  href={runtimeConfig.VRCHAT}
+                  displayName="VRChat"
+                  logo={vrchatLogo}
+                  order={buttonOrder('VRCHAT')}
                 />
               )}
             </Sort>

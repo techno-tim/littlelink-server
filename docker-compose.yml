@@ -123,6 +123,9 @@ services:
       - FIVEHUNDREDPX=https://500px.com/
       - PRINTABLES=https://www.printables.com
       - SERIALIZD=https://www.serializd.com/
+      - LEMMY=https://join-lemmy.org
+      - PIXELFED=https://pixelfed.org/
+      - VRCHAT=https://vrchat.com
 
     ports:
       - 8080:3000

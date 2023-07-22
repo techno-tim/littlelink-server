@@ -563,3 +563,21 @@ button {
   color: #ffffff;
   background-color: #000000;
 }
+
+/* lemmy */
+.button.button-lemmy {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* pixelfed */
+.button.button-pixelfed {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* vrchat */
+.button.button-vrchat {
+  color: #000000;
+  background-color: #ffffff;
+}

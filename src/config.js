@@ -137,6 +137,9 @@ export const runtimeConfig =
         PRINTABLES: window?.env?.PRINTABLES,
         SERIALIZD: window?.env?.SERIALIZD,
         THREADS: window?.env?.THREADS,
+        LEMMY: window?.env?.LEMMY,
+        PIXELFED: window?.env?.PIXELFED,
+        VRCHAT: window?.env?.VRCHAT,
       }
     : {
         // server
@@ -495,4 +498,11 @@ export const runtimeConfig =
         THREADS: nodeIsProduction
           ? process.env.THREADS
           : process.env.RAZZLE_THREADS,
+        LEMMY: nodeIsProduction ? process.env.LEMMY : process.env.RAZZLE_LEMMY,
+        PIXELFED: nodeIsProduction
+          ? process.env.PIXELFED
+          : process.env.RAZZLE_PIXELFED,
+        VRCHAT: nodeIsProduction
+          ? process.env.VRCHAT
+          : process.env.RAZZLE_VRCHAT,
       };
