@@ -11,7 +11,7 @@ Inspired by [littlelink](https://github.com/sethcottle/littlelink).
 
 LittleLink-Server is based on the great work from [littlelink](https://github.com/sethcottle/littlelink), a lightweight DIY alternative to services like [Linktree](https://linktr.ee) and [many.link](https://many.link/). LittleLink and LittleLink-Server is built using [Skeleton](http://getskeleton.com/), a dead simple, responsive boilerplate—we just stripped out some additional code you wouldn't need and added in branded styles for popular services. 😊
 
-It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables. If you need help configuring this, please see this [video](https://youtu.be/42SqfI_AjXU) at explains everything g and a live example at [technotim.live](https://links.technotim.live/).
+It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing `LittleLink` with `littlelink-server` is as easy as passing in some environment variables. If you need help configuring this, please see this [video](https://youtu.be/42SqfI_AjXU) at explains everything and a live example at [links.technotim.live](https://links.technotim.live/).
 
 ## ⭐ Features
 
