@@ -141,7 +141,6 @@ export const runtimeConfig =
         PIXELFED: window?.env?.PIXELFED,
         VRCHAT: window?.env?.VRCHAT,
         X: window?.env?.X,
-
       }
     : {
         // server
@@ -507,7 +506,5 @@ export const runtimeConfig =
         VRCHAT: nodeIsProduction
           ? process.env.VRCHAT
           : process.env.RAZZLE_VRCHAT,
-        X: nodeIsProduction
-          ? process.env.X
-          : process.env.RAZZLE_X,
+        X: nodeIsProduction ? process.env.X : process.env.RAZZLE_X,
       };
