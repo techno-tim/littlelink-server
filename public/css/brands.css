@@ -581,3 +581,9 @@ button {
   color: #000000;
   background-color: #ffffff;
 }
+
+/* X */
+.button.button-x {
+  color: #000000;
+  background-color: #000000;
+}
