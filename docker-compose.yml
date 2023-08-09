@@ -126,7 +126,7 @@ services:
       - LEMMY=https://join-lemmy.org
       - PIXELFED=https://pixelfed.org/
       - VRCHAT=https://vrchat.com
-
+      - X=https://x.com
     ports:
       - 8080:3000
     restart: unless-stopped
