@@ -36,6 +36,7 @@ import emailLogo from '../../icons/email.svg';
 import emailAltLogo from '../../icons/email_alt.svg';
 import whatsappLogo from '../../icons/whatsapp.svg';
 import stravaLogo from '../../icons/strava.svg';
+import blueSkyLogo from '../../icons/bluesky.svg';
 import buyMeACoffeeLogo from '../../icons/buymeacoffee.svg';
 import gitlabLogo from '../../icons/gitlab.svg';
 import patreonLogo from '../../icons/patreon.svg';
@@ -460,6 +461,15 @@ function Home(props) {
                   displayName="Strava"
                   logo={stravaLogo}
                   order={buttonOrder('STRAVA')}
+                />
+              )}
+              {runtimeConfig.BLUESKY && (
+                <Button
+                  name="bluesky"
+                  href={runtimeConfig.BLUESKY}
+                  displayName="BlueSky"
+                  logo={blueSkyLogo}
+                  order={buttonOrder('BLUESKY')}
                 />
               )}
               {runtimeConfig.BUYMEACOFFEE && (
