@@ -56,6 +56,7 @@ export const runtimeConfig =
         FOOTER: window?.env?.FOOTER,
         WHATSAPP: window?.env?.WHATSAPP,
         STRAVA: window?.env?.STRAVA,
+        BLUESKY: window?.env?.BLUESKY,
         BUYMEACOFFEE: window?.env?.BUYMEACOFFEE,
         GITLAB: window?.env?.GITLAB,
         PATREON: window?.env?.PATREON,
@@ -280,6 +281,9 @@ export const runtimeConfig =
         STRAVA: nodeIsProduction
           ? process.env.STRAVA
           : process.env.RAZZLE_STRAVA,
+        BLUESKY: nodeIsProduction
+          ? process.env.BLUESKY
+          : process.env.RAZZLE_BLUESKY,
         BUYMEACOFFEE: nodeIsProduction
           ? process.env.BUYMEACOFFEE
           : process.env.RAZZLE_BUYMEACOFFEE,

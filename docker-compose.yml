@@ -60,6 +60,7 @@ services:
       - MICRO_BLOG=https://micro.blog/
       - WHATSAPP=https://www.whatsapp.com/
       - STRAVA=https://www.strava.com/
+      - BLUESKY=https://bsky.app/profile/bsky.app
       - BUYMEACOFFEE=https://www.buymeacoffee.com/
       - GITLAB=https://www.gitlab.com/
       - PATREON=https://www.patreon.com/technotim

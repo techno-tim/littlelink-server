@@ -268,6 +268,17 @@ button {
   background-color: #fd5000;
 }
 
+/* Bluesky */
+.button.button-bluesky {
+  color: #000000;
+  background-color: #F3F9FF;
+  border: 1px solid #212121;
+}
+.button.button-bluesky:hover,
+.button.button-bluesky:focus {
+  filter: brightness(90%);
+}
+
 /* Buy Me a Coffee */
 .button.button-buymeacoffee {
   color: #000000;
