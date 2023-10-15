@@ -128,6 +128,7 @@ services:
       - PIXELFED=https://pixelfed.org/
       - VRCHAT=https://vrchat.com
       - X=https://x.com
+      - CODEWARS=https://www.codewars.com
     ports:
       - 8080:3000
     restart: unless-stopped

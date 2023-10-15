@@ -90,6 +90,7 @@ import lemmyLogo from '../../icons/lemmy.svg';
 import pixelfedLogo from '../../icons/pixelfed.svg';
 import vrchatLogo from '../../icons/vrchat.svg';
 import xLogo from '../../icons/x.svg';
+import codewarsLogo from '../../icons/codewars.svg';
 
 function Home(props) {
   let order = [];
@@ -947,6 +948,15 @@ function Home(props) {
                   displayName=" "
                   logo={xLogo}
                   order={buttonOrder('X')}
+                />
+              )}
+              {runtimeConfig.CODEWARS && (
+                <Button
+                  name="codewars"
+                  href={runtimeConfig.CODEWARS}
+                  displayName="Codewars"
+                  logo={codewarsLogo}
+                  order={buttonOrder('CODEWARS')}
                 />
               )}
             </Sort>
