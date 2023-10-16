@@ -142,6 +142,7 @@ export const runtimeConfig =
         PIXELFED: window?.env?.PIXELFED,
         VRCHAT: window?.env?.VRCHAT,
         X: window?.env?.X,
+        CODEWARS: window?.env?.CODEWARS,
       }
     : {
         // server
@@ -511,4 +512,7 @@ export const runtimeConfig =
           ? process.env.VRCHAT
           : process.env.RAZZLE_VRCHAT,
         X: nodeIsProduction ? process.env.X : process.env.RAZZLE_X,
+        CODEWARS: nodeIsProduction
+          ? process.env.CODEWARS
+          : process.env.RAZZLE_CODEWARS,
       };

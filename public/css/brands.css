@@ -598,3 +598,9 @@ button {
   color: #000000;
   background-color: #000000;
 }
+
+/* Codewars */
+.button.button-codewars {
+  color: #df605c;
+  background-color: #222327;
+}
