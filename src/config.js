@@ -50,6 +50,7 @@ export const runtimeConfig =
         VIMEO: window?.env?.VIMEO,
         WORDPRESS: window?.env?.WORDPRESS,
         GOODREADS: window?.env?.GOODREADS,
+        GOOGLEPODCASTS: window?.env?.GOOGLEPODCASTS,
         SKOOB: window?.env?.SKOOB,
         LETTERBOXD: window?.env?.LETTERBOXD,
         MASTODON: window?.env?.MASTODON,
@@ -267,6 +268,9 @@ export const runtimeConfig =
         GOODREADS: nodeIsProduction
           ? process.env.GOODREADS
           : process.env.RAZZLE_GOODREADS,
+        GOOGLEPODCASTS: nodeIsProduction
+          ? process.env.GOOGLEPODCASTS
+          : process.env.RAZZLE_GOOGLEPODCASTS,
         SKOOB: nodeIsProduction ? process.env.SKOOB : process.env.RAZZLE_SKOOB,
         LETTERBOXD: nodeIsProduction
           ? process.env.LETTERBOXD
