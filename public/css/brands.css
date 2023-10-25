@@ -186,6 +186,15 @@ button {
   background-color: #ffffff;
 }
 
+/* Pocket Casts */
+.button.button-pocket-casts {
+  color: #000000;
+  border-style: solid;
+  border-color: #b8c3c9;
+  border-width: 1px;
+  background-color: #ffffff;
+}
+
 /* Reddit */
 .button.button-reddit {
   color: #000000;
