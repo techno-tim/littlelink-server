@@ -143,6 +143,10 @@ export const runtimeConfig =
         VRCHAT: window?.env?.VRCHAT,
         X: window?.env?.X,
         CODEWARS: window?.env?.CODEWARS,
+        APPLE_PODCASTS: window?.env?.APPLE_PODCASTS,
+        GOOGLE_PODCASTS: window?.env?.GOOGLE_PODCASTS,
+        POCKET_CASTS: window?.env?.POCKET_CASTS,
+        OVERCAST: window?.env?.OVERCAST,
         RSS: window?.env?.RSS,
       }
     : {
@@ -518,6 +522,18 @@ export const runtimeConfig =
         CODEWARS: nodeIsProduction
           ? process.env.CODEWARS
           : process.env.RAZZLE_CODEWARS,
+        APPLE_PODCASTS: nodeIsProduction
+          ? process.env.APPLE_PODCASTS
+          : process.env.RAZZLE_APPLE_PODCASTS,
+        GOOGLE_PODCASTS: nodeIsProduction
+          ? process.env.GOOGLE_PODCASTS
+          : process.env.RAZZLE_GOOGLE_PODCASTS,
+        POCKET_CASTS: nodeIsProduction
+          ? process.env.POCKET_CASTS
+          : process.env.RAZZLE_POCKET_CASTS,
+        OVERCAST: nodeIsProduction
+          ? process.env.OVERCAST
+          : process.env.RAZZLE_OVERCAST,
         RSS: nodeIsProduction
           ? process.env.RSS
           : process.env.RAZZLE_RSS,

@@ -91,6 +91,10 @@ import pixelfedLogo from '../../icons/pixelfed.svg';
 import vrchatLogo from '../../icons/vrchat.svg';
 import xLogo from '../../icons/x.svg';
 import codewarsLogo from '../../icons/codewars.svg';
+import applePodcastsLogo from '../../icons/apple-podcasts.svg';
+import googlePodcastsLogo from '../../icons/google-podcasts.svg';
+import pocketCastsLogo from '../../icons/pocketcasts.svg';
+import overcastLogo from '../../icons/overcast.svg';
 import rssLogo from '../../icons/generic-rss.svg';
 
 function Home(props) {
@@ -205,7 +209,6 @@ function Home(props) {
                   order={buttonOrder('GITHUB')}
                 />
               )}
-
               {runtimeConfig.DISCORD && (
                 <Button
                   name="discord"
@@ -958,6 +961,42 @@ function Home(props) {
                   displayName="Codewars"
                   logo={codewarsLogo}
                   order={buttonOrder('CODEWARS')}
+                />
+              )}
+              {runtimeConfig.APPLE_PODCASTS && (
+                <Button
+                  name="apple-podcasts"
+                  href={runtimeConfig.APPLE_PODCASTS}
+                  displayName="Apple Podcasts"
+                  logo={applePodcastsLogo}
+                  order={buttonOrder('APPLE_PODCASTS')}
+                />
+              )}
+              {runtimeConfig.GOOGLE_PODCASTS && (
+                <Button
+                  name="google-podcasts"
+                  href={runtimeConfig.GOOGLE_PODCASTS}
+                  displayName="Google Podcasts"
+                  logo={googlePodcastsLogo}
+                  order={buttonOrder('GOOGLE_PODCASTS')}
+                />
+              )}
+              {runtimeConfig.POCKET_CASTS && (
+                <Button
+                  name="pocket-casts"
+                  href={runtimeConfig.POCKET_CASTS}
+                  displayName="Pocket Casts"
+                  logo={pocketCastsLogo}
+                  order={buttonOrder('POCKET_CASTS')}
+                />
+              )}
+              {runtimeConfig.OVERCAST && (
+                <Button
+                  name="overcast"
+                  href={runtimeConfig.OVERCAST}
+                  displayName="Overcast"
+                  logo={overcastLogo}
+                  order={buttonOrder('OVERCAST')}
                 />
               )}
               {runtimeConfig.RSS && (
