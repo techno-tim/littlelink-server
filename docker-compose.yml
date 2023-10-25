@@ -42,6 +42,7 @@ services:
       - REDDIT=https://www.reddit.com/
       - MEDIUM=https://medium.com
       - PINTEREST=https://www.pinterest.com/
+      - RSS=https://example.com/rss
       - EMAIL=you@example.com
       - EMAIL_TEXT=Email Me!
       - EMAIL_ALT=you@example.com
