@@ -29,6 +29,7 @@ import steamLogo from '../../icons/steam.svg';
 import vimeoLogo from '../../icons/vimeo.svg';
 import wordpressLogo from '../../icons/wordpress.svg';
 import goodreadsLogo from '../../icons/goodreads.svg';
+import googlePodcastsLogo from '../../icons/google-podcasts.svg';
 import skoobLogo from '../../icons/skoob.svg';
 import letterboxdLogo from '../../icons/letterboxd.svg';
 import mastodonLogo from '../../icons/mastodon.svg';
@@ -406,6 +407,15 @@ function Home(props) {
                   displayName="Goodreads"
                   logo={goodreadsLogo}
                   order={buttonOrder('GOODREADS')}
+                />
+              )}
+              {runtimeConfig.APPLEPODCASTS && (
+                <Button
+                  name="google-podcasts"
+                  href={runtimeConfig.GOOGLEPODCASTS}
+                  displayName="Google Podcsasts"
+                  logo={googlePodcastsLogo}
+                  order={buttonOrder('GOOGLEPODCASTS')}
                 />
               )}
               {runtimeConfig.SKOOB && (

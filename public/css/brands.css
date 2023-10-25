@@ -124,6 +124,17 @@ button {
   background-color: #f3f1e6;
 }
 
+/* Google Podcasts */
+.button.button-google-podcasts {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #212121;
+}
+.button.button-google-podcasts:hover,
+.button.button-google-podcasts:focus {
+  filter: brightness(90%);
+}
+
 /* Instagram */
 .button.button-instagram {
   color: #ffffff;

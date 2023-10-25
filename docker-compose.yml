@@ -55,6 +55,7 @@ services:
       - VIMEO=https://vimeo.com/
       - WORDPRESS=https://wordpress.com/
       - GOODREADS=https://www.goodreads.com/
+      - GOOGLEPODCASTS=https://podcasts.google.com/feed/XYZ
       - SKOOB=https://www.skoob.com.br/
       - LETTERBOXD=https://letterboxd.com/
       - MASTODON=https://mastodon.social/
