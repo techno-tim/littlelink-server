@@ -212,7 +212,7 @@ function Home(props) {
                 <Button
                   name="apple-podcasts"
                   href={runtimeConfig.APPLEPODCASTS}
-                  displayName="Apple Podcsasts"
+                  displayName="Apple Podcasts"
                   logo={applePodcastLogo}
                   order={buttonOrder('APPLEPODCASTS')}
                 />
@@ -435,7 +435,7 @@ function Home(props) {
                 <Button
                   name="google-podcasts"
                   href={runtimeConfig.GOOGLEPODCASTS}
-                  displayName="Google Podcsasts"
+                  displayName="Google Podcasts"
                   logo={googlePodcastsLogo}
                   order={buttonOrder('GOOGLEPODCASTS')}
                 />
