@@ -127,9 +127,9 @@ services:
       - PIXELFED=https://pixelfed.org/
       - VRCHAT=https://vrchat.com
       - X=https://x.com
-      - APPLEPODCASTS=https://podcasts.apple.com/de/podcast/NAME/id000000000
-      - GOOGLEPODCASTS=https://podcasts.google.com/feed/XYZ
-      - POCKETCASTS=https://pca.st/XYZ
+      - APPLE_PODCASTS=https://podcasts.apple.com/de/podcast/NAME/id000000000
+      - GOOGLE_PODCASTS=https://podcasts.google.com/feed/XYZ
+      - POCKET_CASTS=https://pca.st/XYZ
       - OVERCAST=https://overcast.fm/itunes00000000
     ports:
       - 8080:3000

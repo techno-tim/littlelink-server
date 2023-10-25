@@ -89,7 +89,7 @@ import lemmyLogo from '../../icons/lemmy.svg';
 import pixelfedLogo from '../../icons/pixelfed.svg';
 import vrchatLogo from '../../icons/vrchat.svg';
 import xLogo from '../../icons/x.svg';
-import applePodcastLogo from '../../icons/apple-podcasts.svg';
+import applePodcastsLogo from '../../icons/apple-podcasts.svg';
 import googlePodcastsLogo from '../../icons/google-podcasts.svg';
 import pocketCastsLogo from '../../icons/pocketcasts.svg';
 import overcastLogo from '../../icons/overcast.svg';
@@ -942,31 +942,31 @@ function Home(props) {
                   order={buttonOrder('X')}
                 />
               )}
-              {runtimeConfig.APPLEPODCASTS && (
+              {runtimeConfig.APPLE_PODCASTS && (
                 <Button
                   name="apple-podcasts"
-                  href={runtimeConfig.APPLEPODCASTS}
+                  href={runtimeConfig.APPLE_PODCASTS}
                   displayName="Apple Podcasts"
-                  logo={applePodcastLogo}
-                  order={buttonOrder('APPLEPODCASTS')}
+                  logo={applePodcastsLogo}
+                  order={buttonOrder('APPLE_PODCASTS')}
                 />
               )}
-              {runtimeConfig.GOOGLEPODCASTS && (
+              {runtimeConfig.GOOGLE_PODCASTS && (
                 <Button
                   name="google-podcasts"
-                  href={runtimeConfig.GOOGLEPODCASTS}
+                  href={runtimeConfig.GOOGLE_PODCASTS}
                   displayName="Google Podcasts"
                   logo={googlePodcastsLogo}
-                  order={buttonOrder('GOOGLEPODCASTS')}
+                  order={buttonOrder('GOOGLE_PODCASTS')}
                 />
               )}
-              {runtimeConfig.POCKETCASTS && (
+              {runtimeConfig.POCKET_CASTS && (
                 <Button
                   name="pocket-casts"
-                  href={runtimeConfig.POCKETCASTS}
+                  href={runtimeConfig.POCKET_CASTS}
                   displayName="Pocket Casts"
                   logo={pocketCastsLogo}
-                  order={buttonOrder('POCKETCASTS')}
+                  order={buttonOrder('POCKET_CASTS')}
                 />
               )}
               {runtimeConfig.OVERCAST && (
