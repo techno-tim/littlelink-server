@@ -143,9 +143,9 @@ export const runtimeConfig =
         VRCHAT: window?.env?.VRCHAT,
         X: window?.env?.X,
         CODEWARS: window?.env?.CODEWARS,
-        APPLEPODCASTS: window?.env?.APPLEPODCASTS,
-        GOOGLEPODCASTS: window?.env?.GOOGLEPODCASTS,
-        POCKETCASTS: window?.env?.POCKETCASTS,
+        APPLE_PODCASTS: window?.env?.APPLE_PODCASTS,
+        GOOGLE_PODCASTS: window?.env?.GOOGLE_PODCASTS,
+        POCKET_CASTS: window?.env?.POCKET_CASTS,
         OVERCAST: window?.env?.OVERCAST,
       }
     : {
@@ -519,15 +519,15 @@ export const runtimeConfig =
         CODEWARS: nodeIsProduction
           ? process.env.CODEWARS
           : process.env.RAZZLE_CODEWARS,
-        APPLEPODCASTS: nodeIsProduction
-          ? process.env.APPLEPODCASTS
-          : process.env.RAZZLE_APPLEPODCASTS,
-        GOOGLEPODCASTS: nodeIsProduction
-          ? process.env.GOOGLEPODCASTS
-          : process.env.RAZZLE_GOOGLEPODCASTS,
-        POCKETCASTS: nodeIsProduction
-          ? process.env.POCKETCASTS
-          : process.env.RAZZLE_POCKETCASTS,
+        APPLE_PODCASTS: nodeIsProduction
+          ? process.env.APPLE_PODCASTS
+          : process.env.RAZZLE_APPLE_PODCASTS,
+        GOOGLE_PODCASTS: nodeIsProduction
+          ? process.env.GOOGLE_PODCASTS
+          : process.env.RAZZLE_GOOGLE_PODCASTS,
+        POCKET_CASTS: nodeIsProduction
+          ? process.env.POCKET_CASTS
+          : process.env.RAZZLE_POCKET_CASTS,
         OVERCAST: nodeIsProduction
           ? process.env.OVERCAST
           : process.env.RAZZLE_OVERCAST,

@@ -962,7 +962,7 @@ function Home(props) {
                   order={buttonOrder('CODEWARS')}
                 />
               )}
-              {runtimeConfig.APPLEPODCASTS && (
+              {runtimeConfig.APPLE_PODCASTS && (
                 <Button
                   name="apple-podcasts"
                   href={runtimeConfig.APPLE_PODCASTS}
