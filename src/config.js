@@ -147,6 +147,7 @@ export const runtimeConfig =
         GOOGLE_PODCASTS: window?.env?.GOOGLE_PODCASTS,
         POCKET_CASTS: window?.env?.POCKET_CASTS,
         OVERCAST: window?.env?.OVERCAST,
+        RSS: window?.env?.RSS,
       }
     : {
         // server
@@ -531,4 +532,5 @@ export const runtimeConfig =
         OVERCAST: nodeIsProduction
           ? process.env.OVERCAST
           : process.env.RAZZLE_OVERCAST,
+        RSS: nodeIsProduction ? process.env.RSS : process.env.RAZZLE_RSS,
       };

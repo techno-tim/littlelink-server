@@ -95,6 +95,7 @@ import applePodcastsLogo from '../../icons/apple-podcasts.svg';
 import googlePodcastsLogo from '../../icons/google-podcasts.svg';
 import pocketCastsLogo from '../../icons/pocketcasts.svg';
 import overcastLogo from '../../icons/overcast.svg';
+import rssLogo from '../../icons/generic-rss.svg';
 
 function Home(props) {
   let order = [];
@@ -996,6 +997,15 @@ function Home(props) {
                   displayName="Overcast"
                   logo={overcastLogo}
                   order={buttonOrder('OVERCAST')}
+                />
+              )}
+              {runtimeConfig.RSS && (
+                <Button
+                  name="rss"
+                  href={runtimeConfig.RSS}
+                  displayName="RSS"
+                  logo={rssLogo}
+                  order={buttonOrder('RSS')}
                 />
               )}
             </Sort>

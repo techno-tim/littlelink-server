@@ -644,3 +644,9 @@ button {
   border-width: 1px;
   background-color: #ffffff;
 }
+
+/* RSS */
+.button.button-rss {
+  color: #ffffff;
+  background-color: #FF9800;
+}
