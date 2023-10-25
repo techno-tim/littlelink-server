@@ -16,6 +16,7 @@ import facebookLogo from '../../icons/facebook.svg';
 import messengerLogo from '../../icons/messenger.svg';
 import linkedinLogo from '../../icons/linkedin.svg';
 import producthuntLogo from '../../icons/producthunt.svg';
+import pocketCastsLogo from '../../icons/pocketcasts.svg';
 import snapchatLogo from '../../icons/snapchat.svg';
 import spotifyLogo from '../../icons/spotify.svg';
 import redditLogo from '../../icons/reddit.svg';
@@ -267,6 +268,15 @@ function Home(props) {
                   displayName="Product Hunt"
                   logo={producthuntLogo}
                   order={buttonOrder('PRODUCT_HUNT')}
+                />
+              )}
+              {runtimeConfig.POCKETCASTS && (
+                <Button
+                  name="pocket-casts"
+                  href={runtimeConfig.POCKETCASTS}
+                  displayName="Pocket Casts"
+                  logo={pocketCastsLogo}
+                  order={buttonOrder('POCKETCASTS')}
                 />
               )}
               {runtimeConfig.SNAPCHAT && (

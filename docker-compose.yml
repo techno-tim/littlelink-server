@@ -38,6 +38,7 @@ services:
       - FACEBOOK_MESSENGER=https://facebook.com
       - LINKED_IN=https://linkedin.com
       - PRODUCT_HUNT=https://www.producthunt.com/
+      - POCKETCASTS=https://pca.st/XYZ
       - SNAPCHAT=https://www.snapchat.com/
       - SPOTIFY=https://www.spotify.com/
       - REDDIT=https://www.reddit.com/
