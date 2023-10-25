@@ -25,6 +25,7 @@ services:
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
       - FOOTER=Thanks for stopping by!
+      - APPLEPODCASTS=https://podcasts.apple.com/de/podcast/geekparents/id000000000
       - GITHUB=https://github.com/timothystewart6
       - TWITTER=https://twitter.com/TechnoTimLive
       - INSTAGRAM=https://www.instagram.com/techno.tim
