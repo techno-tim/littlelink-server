@@ -20,7 +20,6 @@ export const runtimeConfig =
         AVATAR_2X_URL: window?.env?.AVATAR_2X_URL,
         NAME: window?.env?.NAME,
         BIO: window?.env?.BIO,
-        APPLEPODCASTS: window?.env?.APPLEPODCASTS,
         GITHUB: window?.env?.GITHUB,
         TWITTER: window?.env?.TWITTER,
         INSTAGRAM: window?.env?.INSTAGRAM,
@@ -31,8 +30,6 @@ export const runtimeConfig =
         DISCORD: window?.env?.DISCORD,
         TWITCH: window?.env?.TWITCH,
         PRODUCT_HUNT: window?.env?.PRODUCT_HUNT,
-        POCKETCASTS: window?.env?.POCKETCASTS,
-        OVERCAST: window?.env?.OVERCAST,
         SNAPCHAT: window?.env?.SNAPCHAT,
         SPOTIFY: window?.env?.SPOTIFY,
         REDDIT: window?.env?.REDDIT,
@@ -52,7 +49,6 @@ export const runtimeConfig =
         VIMEO: window?.env?.VIMEO,
         WORDPRESS: window?.env?.WORDPRESS,
         GOODREADS: window?.env?.GOODREADS,
-        GOOGLEPODCASTS: window?.env?.GOOGLEPODCASTS,
         SKOOB: window?.env?.SKOOB,
         LETTERBOXD: window?.env?.LETTERBOXD,
         MASTODON: window?.env?.MASTODON,
@@ -147,6 +143,10 @@ export const runtimeConfig =
         VRCHAT: window?.env?.VRCHAT,
         X: window?.env?.X,
         CODEWARS: window?.env?.CODEWARS,
+        APPLEPODCASTS: window?.env?.APPLEPODCASTS,
+        GOOGLEPODCASTS: window?.env?.GOOGLEPODCASTS,
+        POCKETCASTS: window?.env?.POCKETCASTS,
+        OVERCAST: window?.env?.OVERCAST,
       }
     : {
         // server
@@ -190,9 +190,6 @@ export const runtimeConfig =
           : process.env.RAZZLE_AVATAR_2X_URL,
         NAME: nodeIsProduction ? process.env.NAME : process.env.RAZZLE_NAME,
         BIO: nodeIsProduction ? process.env.BIO : process.env.RAZZLE_BIO,
-        APPLEPODCASTS: nodeIsProduction
-          ? process.env.APPLEPODCASTS
-          : process.env.RAZZLE_APPLEPODCASTS,
         GITHUB: nodeIsProduction
           ? process.env.GITHUB
           : process.env.RAZZLE_GITHUB,
@@ -227,12 +224,6 @@ export const runtimeConfig =
         PRODUCT_HUNT: nodeIsProduction
           ? process.env.PRODUCT_HUNT
           : process.env.RAZZLE_PRODUCT_HUNT,
-        POCKETCASTS: nodeIsProduction
-          ? process.env.POCKETCASTS
-          : process.env.RAZZLE_POCKETCASTS,
-        OVERCAST: nodeIsProduction
-          ? process.env.OVERCAST
-          : process.env.RAZZLE_OVERCAST,
         SNAPCHAT: nodeIsProduction
           ? process.env.SNAPCHAT
           : process.env.RAZZLE_SNAPCHAT,
@@ -276,9 +267,6 @@ export const runtimeConfig =
         GOODREADS: nodeIsProduction
           ? process.env.GOODREADS
           : process.env.RAZZLE_GOODREADS,
-        GOOGLEPODCASTS: nodeIsProduction
-          ? process.env.GOOGLEPODCASTS
-          : process.env.RAZZLE_GOOGLEPODCASTS,
         SKOOB: nodeIsProduction ? process.env.SKOOB : process.env.RAZZLE_SKOOB,
         LETTERBOXD: nodeIsProduction
           ? process.env.LETTERBOXD
@@ -531,4 +519,16 @@ export const runtimeConfig =
         CODEWARS: nodeIsProduction
           ? process.env.CODEWARS
           : process.env.RAZZLE_CODEWARS,
+        APPLEPODCASTS: nodeIsProduction
+          ? process.env.APPLEPODCASTS
+          : process.env.RAZZLE_APPLEPODCASTS,
+        GOOGLEPODCASTS: nodeIsProduction
+          ? process.env.GOOGLEPODCASTS
+          : process.env.RAZZLE_GOOGLEPODCASTS,
+        POCKETCASTS: nodeIsProduction
+          ? process.env.POCKETCASTS
+          : process.env.RAZZLE_POCKETCASTS,
+        OVERCAST: nodeIsProduction
+          ? process.env.OVERCAST
+          : process.env.RAZZLE_OVERCAST,
       };

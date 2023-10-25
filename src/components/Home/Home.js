@@ -3,7 +3,6 @@ import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
 import Share from '../Share/Share';
 import { runtimeConfig } from '../../config';
-import applePodcastLogo from '../../icons/apple-podcasts.svg';
 import githubLogo from '../../icons/github.svg';
 import instagramLogo from '../../icons/instagram.svg';
 import kitLogo from '../../icons/kit.svg';
@@ -16,8 +15,6 @@ import facebookLogo from '../../icons/facebook.svg';
 import messengerLogo from '../../icons/messenger.svg';
 import linkedinLogo from '../../icons/linkedin.svg';
 import producthuntLogo from '../../icons/producthunt.svg';
-import pocketCastsLogo from '../../icons/pocketcasts.svg';
-import overcastLogo from '../../icons/overcast.svg';
 import snapchatLogo from '../../icons/snapchat.svg';
 import spotifyLogo from '../../icons/spotify.svg';
 import redditLogo from '../../icons/reddit.svg';
@@ -31,7 +28,6 @@ import steamLogo from '../../icons/steam.svg';
 import vimeoLogo from '../../icons/vimeo.svg';
 import wordpressLogo from '../../icons/wordpress.svg';
 import goodreadsLogo from '../../icons/goodreads.svg';
-import googlePodcastsLogo from '../../icons/google-podcasts.svg';
 import skoobLogo from '../../icons/skoob.svg';
 import letterboxdLogo from '../../icons/letterboxd.svg';
 import mastodonLogo from '../../icons/mastodon.svg';
@@ -95,6 +91,10 @@ import pixelfedLogo from '../../icons/pixelfed.svg';
 import vrchatLogo from '../../icons/vrchat.svg';
 import xLogo from '../../icons/x.svg';
 import codewarsLogo from '../../icons/codewars.svg';
+import applePodcastLogo from '../../icons/apple-podcasts.svg';
+import googlePodcastsLogo from '../../icons/google-podcasts.svg';
+import pocketCastsLogo from '../../icons/pocketcasts.svg';
+import overcastLogo from '../../icons/overcast.svg';
 
 function Home(props) {
   let order = [];
@@ -208,16 +208,6 @@ function Home(props) {
                   order={buttonOrder('GITHUB')}
                 />
               )}
-              {runtimeConfig.APPLEPODCASTS && (
-                <Button
-                  name="apple-podcasts"
-                  href={runtimeConfig.APPLEPODCASTS}
-                  displayName="Apple Podcasts"
-                  logo={applePodcastLogo}
-                  order={buttonOrder('APPLEPODCASTS')}
-                />
-              )}
-
               {runtimeConfig.DISCORD && (
                 <Button
                   name="discord"
@@ -271,24 +261,6 @@ function Home(props) {
                   displayName="Product Hunt"
                   logo={producthuntLogo}
                   order={buttonOrder('PRODUCT_HUNT')}
-                />
-              )}
-              {runtimeConfig.POCKETCASTS && (
-                <Button
-                  name="pocket-casts"
-                  href={runtimeConfig.POCKETCASTS}
-                  displayName="Pocket Casts"
-                  logo={pocketCastsLogo}
-                  order={buttonOrder('POCKETCASTS')}
-                />
-              )}
-              {runtimeConfig.OVERCAST && (
-                <Button
-                  name="overcast"
-                  href={runtimeConfig.OVERCAST}
-                  displayName="Overcast"
-                  logo={overcastLogo}
-                  order={buttonOrder('OVERCAST')}
                 />
               )}
               {runtimeConfig.SNAPCHAT && (
@@ -429,15 +401,6 @@ function Home(props) {
                   displayName="Goodreads"
                   logo={goodreadsLogo}
                   order={buttonOrder('GOODREADS')}
-                />
-              )}
-              {runtimeConfig.APPLEPODCASTS && (
-                <Button
-                  name="google-podcasts"
-                  href={runtimeConfig.GOOGLEPODCASTS}
-                  displayName="Google Podcasts"
-                  logo={googlePodcastsLogo}
-                  order={buttonOrder('GOOGLEPODCASTS')}
                 />
               )}
               {runtimeConfig.SKOOB && (
@@ -997,6 +960,42 @@ function Home(props) {
                   displayName="Codewars"
                   logo={codewarsLogo}
                   order={buttonOrder('CODEWARS')}
+                />
+              )}
+              {runtimeConfig.APPLEPODCASTS && (
+                <Button
+                  name="apple-podcasts"
+                  href={runtimeConfig.APPLEPODCASTS}
+                  displayName="Apple Podcasts"
+                  logo={applePodcastLogo}
+                  order={buttonOrder('APPLEPODCASTS')}
+                />
+              )}
+              {runtimeConfig.GOOGLEPODCASTS && (
+                <Button
+                  name="google-podcasts"
+                  href={runtimeConfig.GOOGLEPODCASTS}
+                  displayName="Google Podcasts"
+                  logo={googlePodcastsLogo}
+                  order={buttonOrder('GOOGLEPODCASTS')}
+                />
+              )}
+              {runtimeConfig.POCKETCASTS && (
+                <Button
+                  name="pocket-casts"
+                  href={runtimeConfig.POCKETCASTS}
+                  displayName="Pocket Casts"
+                  logo={pocketCastsLogo}
+                  order={buttonOrder('POCKETCASTS')}
+                />
+              )}
+              {runtimeConfig.OVERCAST && (
+                <Button
+                  name="overcast"
+                  href={runtimeConfig.OVERCAST}
+                  displayName="Overcast"
+                  logo={overcastLogo}
+                  order={buttonOrder('OVERCAST')}
                 />
               )}
             </Sort>

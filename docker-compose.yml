@@ -25,7 +25,6 @@ services:
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
       - FOOTER=Thanks for stopping by!
-      - APPLEPODCASTS=https://podcasts.apple.com/de/podcast/geekparents/id000000000
       - GITHUB=https://github.com/timothystewart6
       - TWITTER=https://twitter.com/TechnoTimLive
       - INSTAGRAM=https://www.instagram.com/techno.tim
@@ -38,8 +37,6 @@ services:
       - FACEBOOK_MESSENGER=https://facebook.com
       - LINKED_IN=https://linkedin.com
       - PRODUCT_HUNT=https://www.producthunt.com/
-      - POCKETCASTS=https://pca.st/XYZ
-      - OVERCAST=https://overcast.fm/itunes00000000
       - SNAPCHAT=https://www.snapchat.com/
       - SPOTIFY=https://www.spotify.com/
       - REDDIT=https://www.reddit.com/
@@ -57,7 +54,6 @@ services:
       - VIMEO=https://vimeo.com/
       - WORDPRESS=https://wordpress.com/
       - GOODREADS=https://www.goodreads.com/
-      - GOOGLEPODCASTS=https://podcasts.google.com/feed/XYZ
       - SKOOB=https://www.skoob.com.br/
       - LETTERBOXD=https://letterboxd.com/
       - MASTODON=https://mastodon.social/
@@ -133,6 +129,10 @@ services:
       - VRCHAT=https://vrchat.com
       - X=https://x.com
       - CODEWARS=https://www.codewars.com
+      - APPLEPODCASTS=https://podcasts.apple.com/de/podcast/NAME/id000000000
+      - GOOGLEPODCASTS=https://podcasts.google.com/feed/XYZ
+      - POCKETCASTS=https://pca.st/XYZ
+      - OVERCAST=https://overcast.fm/itunes00000000
     ports:
       - 8080:3000
     restart: unless-stopped
