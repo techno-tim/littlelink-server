@@ -3,6 +3,7 @@ import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
 import Share from '../Share/Share';
 import { runtimeConfig } from '../../config';
+import applePodcastLogo from '../../icons/apple-podcasts.svg';
 import githubLogo from '../../icons/github.svg';
 import instagramLogo from '../../icons/instagram.svg';
 import kitLogo from '../../icons/kit.svg';
@@ -200,6 +201,15 @@ function Home(props) {
                   displayName="GitHub"
                   logo={githubLogo}
                   order={buttonOrder('GITHUB')}
+                />
+              )}
+              {runtimeConfig.APPLEPODCASTS && (
+                <Button
+                  name="apple-podcasts"
+                  href={runtimeConfig.APPLEPODCASTS}
+                  displayName="Apple Podcsasts"
+                  logo={applePodcastLogo}
+                  order={buttonOrder('APPLEPODCASTS')}
                 />
               )}
 

@@ -20,6 +20,7 @@ export const runtimeConfig =
         AVATAR_2X_URL: window?.env?.AVATAR_2X_URL,
         NAME: window?.env?.NAME,
         BIO: window?.env?.BIO,
+        APPLEPODCASTS: window?.env?.APPLEPODCASTS,
         GITHUB: window?.env?.GITHUB,
         TWITTER: window?.env?.TWITTER,
         INSTAGRAM: window?.env?.INSTAGRAM,
@@ -184,6 +185,9 @@ export const runtimeConfig =
           : process.env.RAZZLE_AVATAR_2X_URL,
         NAME: nodeIsProduction ? process.env.NAME : process.env.RAZZLE_NAME,
         BIO: nodeIsProduction ? process.env.BIO : process.env.RAZZLE_BIO,
+        APPLEPODCASTS: nodeIsProduction
+          ? process.env.APPLEPODCASTS
+          : process.env.RAZZLE_APPLEPODCASTS,
         GITHUB: nodeIsProduction
           ? process.env.GITHUB
           : process.env.RAZZLE_GITHUB,
