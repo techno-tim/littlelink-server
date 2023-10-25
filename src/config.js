@@ -35,7 +35,6 @@ export const runtimeConfig =
         REDDIT: window?.env?.REDDIT,
         MEDIUM: window?.env?.MEDIUM,
         PINTEREST: window?.env?.PINTEREST,
-        RSS: window?.env?.RSS,
         TIKTOK: window?.env?.TIKTOK,
         EMAIL: window?.env?.EMAIL,
         EMAIL_TEXT: window?.env?.EMAIL_TEXT,
@@ -144,6 +143,7 @@ export const runtimeConfig =
         VRCHAT: window?.env?.VRCHAT,
         X: window?.env?.X,
         CODEWARS: window?.env?.CODEWARS,
+        RSS: window?.env?.RSS,
       }
     : {
         // server
@@ -236,9 +236,6 @@ export const runtimeConfig =
         PINTEREST: nodeIsProduction
           ? process.env.PINTEREST
           : process.env.RAZZLE_PINTEREST,
-        RSS: nodeIsProduction
-          ? process.env.RSS
-          : process.env.RAZZLE_RSS,
         EMAIL: nodeIsProduction ? process.env.EMAIL : process.env.RAZZLE_EMAIL,
         EMAIL_TEXT: nodeIsProduction
           ? process.env.EMAIL_TEXT
@@ -515,8 +512,13 @@ export const runtimeConfig =
         VRCHAT: nodeIsProduction
           ? process.env.VRCHAT
           : process.env.RAZZLE_VRCHAT,
-        X: nodeIsProduction ? process.env.X : process.env.RAZZLE_X,
+        X: nodeIsProduction
+          ? process.env.X
+          : process.env.RAZZLE_X,
         CODEWARS: nodeIsProduction
           ? process.env.CODEWARS
           : process.env.RAZZLE_CODEWARS,
+        RSS: nodeIsProduction
+          ? process.env.RSS
+          : process.env.RAZZLE_RSS,
       };

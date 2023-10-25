@@ -155,12 +155,6 @@ button {
   background-color: #ffe2eb;
 }
 
-/* RSS */
-.button.button-rss {
-  color: #ffffff;
-  background-color: #FF9800;
-}
-
 /* Producthunt */
 .button.button-producthunt {
   color: #da552f;
@@ -609,4 +603,10 @@ button {
 .button.button-codewars {
   color: #df605c;
   background-color: #222327;
+}
+
+/* RSS */
+.button.button-rss {
+  color: #ffffff;
+  background-color: #FF9800;
 }

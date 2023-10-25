@@ -20,7 +20,6 @@ import spotifyLogo from '../../icons/spotify.svg';
 import redditLogo from '../../icons/reddit.svg';
 import mediumLogo from '../../icons/medium.svg';
 import pinterestLogo from '../../icons/pinterest.svg';
-import rssLogo from '../../icons/generic-rss.svg';
 import soundcloudLogo from '../../icons/soundcloud.svg';
 import figmaLogo from '../../icons/figma.svg';
 import telegramLogo from '../../icons/telegram.svg';
@@ -92,6 +91,7 @@ import pixelfedLogo from '../../icons/pixelfed.svg';
 import vrchatLogo from '../../icons/vrchat.svg';
 import xLogo from '../../icons/x.svg';
 import codewarsLogo from '../../icons/codewars.svg';
+import rssLogo from '../../icons/generic-rss.svg';
 
 function Home(props) {
   let order = [];
@@ -304,15 +304,6 @@ function Home(props) {
                   displayName="Pinterest"
                   logo={pinterestLogo}
                   order={buttonOrder('PINTEREST')}
-                />
-              )}
-              {runtimeConfig.RSS && (
-                <Button
-                  name="rss"
-                  href={runtimeConfig.RSS}
-                  displayName="RSS"
-                  logo={rssLogo}
-                  order={buttonOrder('RSS')}
                 />
               )}
               {runtimeConfig.EMAIL && (
@@ -967,6 +958,15 @@ function Home(props) {
                   displayName="Codewars"
                   logo={codewarsLogo}
                   order={buttonOrder('CODEWARS')}
+                />
+              )}
+              {runtimeConfig.RSS && (
+                <Button
+                  name="rss"
+                  href={runtimeConfig.RSS}
+                  displayName="RSS"
+                  logo={rssLogo}
+                  order={buttonOrder('RSS')}
                 />
               )}
             </Sort>
