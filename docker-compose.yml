@@ -129,6 +129,10 @@ services:
       - VRCHAT=https://vrchat.com
       - X=https://x.com
       - CODEWARS=https://www.codewars.com
+      - APPLE_PODCASTS=https://podcasts.apple.com/de/podcast/NAME/id000000000
+      - GOOGLE_PODCASTS=https://podcasts.google.com/feed/XYZ
+      - POCKET_CASTS=https://pca.st/XYZ
+      - OVERCAST=https://overcast.fm/itunes00000000
     ports:
       - 8080:3000
     restart: unless-stopped

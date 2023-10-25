@@ -604,3 +604,43 @@ button {
   color: #df605c;
   background-color: #222327;
 }
+
+/* Apple Podcasts */
+.button.button-apple-podcasts {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+}
+.button.button-apple-podcasts:hover,
+.button.button-apple-podcasts:focus {
+  filter: brightness(90%);
+}
+
+/* Google Podcasts */
+.button.button-google-podcasts {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #212121;
+}
+.button.button-google-podcasts:hover,
+.button.button-google-podcasts:focus {
+  filter: brightness(90%);
+}
+
+/* Pocket Casts */
+.button.button-pocket-casts {
+  color: #000000;
+  border-style: solid;
+  border-color: #b8c3c9;
+  border-width: 1px;
+  background-color: #ffffff;
+}
+
+/* Overcast */
+.button.button-overcast {
+  color: #000000;
+  border-style: solid;
+  border-color: #b8c3c9;
+  border-width: 1px;
+  background-color: #ffffff;
+}
