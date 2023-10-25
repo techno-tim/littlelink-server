@@ -39,6 +39,7 @@ services:
       - LINKED_IN=https://linkedin.com
       - PRODUCT_HUNT=https://www.producthunt.com/
       - POCKETCASTS=https://pca.st/XYZ
+      - OVERCAST=https://overcast.fm/itunes00000000
       - SNAPCHAT=https://www.snapchat.com/
       - SPOTIFY=https://www.spotify.com/
       - REDDIT=https://www.reddit.com/
