@@ -516,9 +516,7 @@ export const runtimeConfig =
         VRCHAT: nodeIsProduction
           ? process.env.VRCHAT
           : process.env.RAZZLE_VRCHAT,
-        X: nodeIsProduction
-          ? process.env.X
-          : process.env.RAZZLE_X,
+        X: nodeIsProduction ? process.env.X : process.env.RAZZLE_X,
         CODEWARS: nodeIsProduction
           ? process.env.CODEWARS
           : process.env.RAZZLE_CODEWARS,
@@ -534,7 +532,5 @@ export const runtimeConfig =
         OVERCAST: nodeIsProduction
           ? process.env.OVERCAST
           : process.env.RAZZLE_OVERCAST,
-        RSS: nodeIsProduction
-          ? process.env.RSS
-          : process.env.RAZZLE_RSS,
+        RSS: nodeIsProduction ? process.env.RSS : process.env.RAZZLE_RSS,
       };
