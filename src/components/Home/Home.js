@@ -17,6 +17,7 @@ import messengerLogo from '../../icons/messenger.svg';
 import linkedinLogo from '../../icons/linkedin.svg';
 import producthuntLogo from '../../icons/producthunt.svg';
 import pocketCastsLogo from '../../icons/pocketcasts.svg';
+import overcastLogo from '../../icons/overcast.svg';
 import snapchatLogo from '../../icons/snapchat.svg';
 import spotifyLogo from '../../icons/spotify.svg';
 import redditLogo from '../../icons/reddit.svg';
@@ -279,6 +280,15 @@ function Home(props) {
                   displayName="Pocket Casts"
                   logo={pocketCastsLogo}
                   order={buttonOrder('POCKETCASTS')}
+                />
+              )}
+              {runtimeConfig.OVERCAST && (
+                <Button
+                  name="overcast"
+                  href={runtimeConfig.OVERCAST}
+                  displayName="Overcast"
+                  logo={overcastLogo}
+                  order={buttonOrder('OVERCAST')}
                 />
               )}
               {runtimeConfig.SNAPCHAT && (

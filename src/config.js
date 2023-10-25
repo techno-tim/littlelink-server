@@ -32,6 +32,7 @@ export const runtimeConfig =
         TWITCH: window?.env?.TWITCH,
         PRODUCT_HUNT: window?.env?.PRODUCT_HUNT,
         POCKETCASTS: window?.env?.POCKETCASTS,
+        OVERCAST: window?.env?.OVERCAST,
         SNAPCHAT: window?.env?.SNAPCHAT,
         SPOTIFY: window?.env?.SPOTIFY,
         REDDIT: window?.env?.REDDIT,
@@ -226,9 +227,12 @@ export const runtimeConfig =
         PRODUCT_HUNT: nodeIsProduction
           ? process.env.PRODUCT_HUNT
           : process.env.RAZZLE_PRODUCT_HUNT,
-          POCKETCASTS: nodeIsProduction
+        POCKETCASTS: nodeIsProduction
           ? process.env.POCKETCASTS
           : process.env.RAZZLE_POCKETCASTS,
+        OVERCAST: nodeIsProduction
+          ? process.env.OVERCAST
+          : process.env.RAZZLE_OVERCAST,
         SNAPCHAT: nodeIsProduction
           ? process.env.SNAPCHAT
           : process.env.RAZZLE_SNAPCHAT,
