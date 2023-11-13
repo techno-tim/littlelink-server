@@ -9,20 +9,13 @@ function Avatar(props) {
   const { src, srcSet, alt } = props;
   const avatarSize = runtimeConfig.AVATAR_SIZE || null;
 
-  return avatarSize ? (
+  return (
     <img
       className={'avatar' + addShadow()}
       src={src}
       srcSet={srcSet}
       alt={alt}
-      style={{ width: avatarSize, height: avatarSize }}
-    />
-  ) : (
-    <img
-      className={'avatar' + addShadow()}
-      src={src}
-      srcSet={srcSet}
-      alt={alt}
+      style={avatarSize ? { width: avatarSize, height: avatarSize } : {}}
     />
   );
 }
