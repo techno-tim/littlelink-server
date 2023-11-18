@@ -16,6 +16,7 @@ export const runtimeConfig =
         THEME: window?.env?.THEME,
         FAVICON_URL: window?.env?.FAVICON_URL,
         AVATAR_URL: window?.env?.AVATAR_URL,
+        AVATAR_SIZE: window?.env?.AVATAR_SIZE,
         AVATAR_ALT: window?.env?.AVATAR_ALT,
         AVATAR_2X_URL: window?.env?.AVATAR_2X_URL,
         NAME: window?.env?.NAME,
@@ -183,6 +184,9 @@ export const runtimeConfig =
         AVATAR_URL: nodeIsProduction
           ? process.env.AVATAR_URL
           : process.env.RAZZLE_AVATAR_URL,
+        AVATAR_SIZE: nodeIsProduction
+          ? process.env.AVATAR_SIZE
+          : process.env.RAZZLE_AVATAR_SIZE,
         AVATAR_ALT: nodeIsProduction
           ? process.env.AVATAR_ALT
           : process.env.RAZZLE_AVATAR_ALT,
