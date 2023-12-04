@@ -37,7 +37,7 @@
     "@babel/eslint-parser": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
     "babel-preset-razzle": "^4.2.18",
-    "eslint": "^8.54.0",
+    "eslint": "^8.55.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsx": "^0.1.0",
