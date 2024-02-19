@@ -54,7 +54,7 @@
     "react-test-renderer": "^18.2.0",
     "stylelint": "^16.2.1",
     "url": "^0.11.3",
-    "webpack": "^5.90.2",
+    "webpack": "^5.90.3",
     "webpack-dev-server": "^4.15.1"
   },
   "resolutions": {
