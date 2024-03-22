@@ -23,7 +23,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "compression": "^1.7.4",
-    "express": "^4.18.3",
+    "express": "^4.19.1",
     "helmet": "^7.1.0",
     "morgan": "^1.10.0",
     "prop-types": "^15.8.1",
