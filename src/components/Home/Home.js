@@ -102,6 +102,7 @@ import forgejoLogo from '../../icons/forgejo.svg';
 import orcidLogo from '../../icons/orcid.svg';
 import credlyLogo from '../../icons/credly.svg';
 import semanticscholarLogo from '../../icons/semanticscholar.svg';
+import googlescholarLogo from '../../icons/googlescholar.svg';
 
 function Home(props) {
   let order = [];
@@ -1066,6 +1067,15 @@ function Home(props) {
                   displayName="Semantic Scholar"
                   logo={semanticscholarLogo}
                   order={buttonOrder('SEMANTICSCHOLAR')}
+                />
+              )}
+              {runtimeConfig.GOOGLESCHOLAR && (
+                <Button
+                  name="googlescholar"
+                  href={runtimeConfig.GOOGLESCHOLAR}
+                  displayName="Google Scholar"
+                  logo={googlescholarLogo}
+                  order={buttonOrder('GOOGLESCHOLAR')}
                 />
               )}
             </Sort>

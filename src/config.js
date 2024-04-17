@@ -155,6 +155,7 @@ export const runtimeConfig =
         ORCID: window?.env?.ORCID,
         CREDLY: window?.env?.CREDLY,
         SEMANTICSCHOLAR: window?.env?.SEMANTICSCHOLAR,
+        GOOGLESCHOLAR: window?.env?.GOOGLESCHOLAR,
       }
     : {
         // server
@@ -559,4 +560,7 @@ export const runtimeConfig =
         SEMANTICSCHOLAR: nodeIsProduction
           ? process.env.SEMANTICSCHOLAR
           : process.env.RAZZLE_SEMANTICSCHOLAR,
+        GOOGLESCHOLAR: nodeIsProduction
+          ? process.env.GOOGLESCHOLAR
+          : process.env.RAZZLE_GOOGLESCHOLAR,
       };

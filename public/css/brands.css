@@ -686,3 +686,9 @@ button {
   color: #000000;
   background-color: #ffffff;
 }
+
+/* Google Scholar */
+.button.button-googlescholar {
+  color: #356AC3;
+  background-color: #ffffff;
+}
