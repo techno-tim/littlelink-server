@@ -135,6 +135,7 @@ services:
       - OVERCAST=https://overcast.fm/itunes00000000
       - RSS=https://example.com/rss
       - AUDIUS=https://audius.co/
+      - BANDCAMP=https://bandcamp.com/
       - 8080:3000
     restart: unless-stopped
     security_opt:

@@ -150,6 +150,7 @@ export const runtimeConfig =
         OVERCAST: window?.env?.OVERCAST,
         RSS: window?.env?.RSS,
         AUDIUS: window?.env?.AUDIUS,
+        BANDCAMP: window?.env?.BANDCAMP,
       }
     : {
         // server
@@ -541,4 +542,7 @@ export const runtimeConfig =
         AUDIUS: nodeIsProduction
           ? process.env.AUDIUS
           : process.env.RAZZLE_AUDIUS,
+        BANDCAMP: nodeIsProduction
+          ? process.env.BANDCAMP
+          : process.env.RAZZLE_BANDCAMP,
       };

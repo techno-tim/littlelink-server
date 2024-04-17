@@ -651,8 +651,14 @@ button {
   background-color: #FF9800;
 }
 
-/* RSS */
+/* Audius */
 .button.button-audius {
   color: #000000;
+  background-color: #ffffff;
+}
+
+/* Bandcamp */
+.button.button-bandcamp {
+  color: #11AADD;
   background-color: #ffffff;
 }
