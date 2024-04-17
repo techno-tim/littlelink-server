@@ -99,6 +99,7 @@ import rssLogo from '../../icons/generic-rss.svg';
 import audiusLogo from '../../icons/audius.svg';
 import bandcampLogo from '../../icons/bandcamp.svg';
 import forgejoLogo from '../../icons/forgejo.svg';
+import orcidLogo from '../../icons/orcid.svg';
 
 function Home(props) {
   let order = [];
@@ -1036,6 +1037,15 @@ function Home(props) {
                   displayName="Forgejo"
                   logo={forgejoLogo}
                   order={buttonOrder('FORGEJO')}
+                />
+              )}
+              {runtimeConfig.ORCID && (
+                <Button
+                  name="orcid"
+                  href={runtimeConfig.ORCID}
+                  displayName="ORCID"
+                  logo={orcidLogo}
+                  order={buttonOrder('ORCID')}
                 />
               )}
             </Sort>

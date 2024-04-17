@@ -152,6 +152,7 @@ export const runtimeConfig =
         AUDIUS: window?.env?.AUDIUS,
         BANDCAMP: window?.env?.BANDCAMP,
         FORGEJO: window?.env?.FORGEJO,
+        ORCID: window?.env?.ORCID,
       }
     : {
         // server
@@ -549,4 +550,5 @@ export const runtimeConfig =
         FORGEJO: nodeIsProduction
           ? process.env.FORGEJO
           : process.env.RAZZLE_FORGEJO,
+        ORCID: nodeIsProduction ? process.env.ORCID : process.env.RAZZLE_ORCID,
       };
