@@ -680,3 +680,9 @@ button {
   color: #FF6A00;
   background-color: #ffffff;
 }
+
+/* Semantic Scholar */
+.button.button-semanticscholar {
+  color: #000000;
+  background-color: #ffffff;
+}

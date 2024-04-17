@@ -140,6 +140,7 @@ services:
       - FORGEJO=https://forgejo.org/
       - ORCID=https://orcid.org/
       - CREDLY=https://www.credly.com/
+      - SEMANTICSCHOLAR=https://www.semanticscholar.org/
     ports:
       - 8080:3000
     restart: unless-stopped

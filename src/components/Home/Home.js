@@ -101,6 +101,7 @@ import bandcampLogo from '../../icons/bandcamp.svg';
 import forgejoLogo from '../../icons/forgejo.svg';
 import orcidLogo from '../../icons/orcid.svg';
 import credlyLogo from '../../icons/credly.svg';
+import semanticscholarLogo from '../../icons/semanticscholar.svg';
 
 function Home(props) {
   let order = [];
@@ -1056,6 +1057,15 @@ function Home(props) {
                   displayName="Credly"
                   logo={credlyLogo}
                   order={buttonOrder('CREDLY')}
+                />
+              )}
+              {runtimeConfig.SEMANTICSCHOLAR && (
+                <Button
+                  name="semanticscholar"
+                  href={runtimeConfig.SEMANTICSCHOLAR}
+                  displayName="Semantic Scholar"
+                  logo={semanticscholarLogo}
+                  order={buttonOrder('SEMANTICSCHOLAR')}
                 />
               )}
             </Sort>

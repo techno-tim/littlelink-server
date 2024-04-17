@@ -154,6 +154,7 @@ export const runtimeConfig =
         FORGEJO: window?.env?.FORGEJO,
         ORCID: window?.env?.ORCID,
         CREDLY: window?.env?.CREDLY,
+        SEMANTICSCHOLAR: window?.env?.SEMANTICSCHOLAR,
       }
     : {
         // server
@@ -555,4 +556,7 @@ export const runtimeConfig =
         CREDLY: nodeIsProduction
           ? process.env.CREDLY
           : process.env.RAZZLE_CREDLY,
+        SEMANTICSCHOLAR: nodeIsProduction
+          ? process.env.SEMANTICSCHOLAR
+          : process.env.RAZZLE_SEMANTICSCHOLAR,
       };
