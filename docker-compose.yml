@@ -136,6 +136,7 @@ services:
       - RSS=https://example.com/rss
       - AUDIUS=https://audius.co/
       - BANDCAMP=https://bandcamp.com/
+      - FORGEJO=https://forgejo.org/      
       - 8080:3000
     restart: unless-stopped
     security_opt:

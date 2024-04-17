@@ -151,6 +151,7 @@ export const runtimeConfig =
         RSS: window?.env?.RSS,
         AUDIUS: window?.env?.AUDIUS,
         BANDCAMP: window?.env?.BANDCAMP,
+        FORGEJO: window?.env?.FORGEJO,
       }
     : {
         // server
@@ -545,4 +546,7 @@ export const runtimeConfig =
         BANDCAMP: nodeIsProduction
           ? process.env.BANDCAMP
           : process.env.RAZZLE_BANDCAMP,
+        FORGEJO: nodeIsProduction
+          ? process.env.FORGEJO
+          : process.env.RAZZLE_FORGEJO,
       };

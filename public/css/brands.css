@@ -662,3 +662,9 @@ button {
   color: #11AADD;
   background-color: #ffffff;
 }
+
+/* Forgejo */
+.button.button-forgejo {
+  color: #C2410C;
+  background-color: #ffffff;
+}

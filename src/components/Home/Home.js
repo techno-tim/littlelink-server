@@ -98,6 +98,7 @@ import overcastLogo from '../../icons/overcast.svg';
 import rssLogo from '../../icons/generic-rss.svg';
 import audiusLogo from '../../icons/audius.svg';
 import bandcampLogo from '../../icons/bandcamp.svg';
+import forgejoLogo from '../../icons/forgejo.svg';
 
 function Home(props) {
   let order = [];
@@ -1026,6 +1027,15 @@ function Home(props) {
                   displayName="Bandcamp"
                   logo={bandcampLogo}
                   order={buttonOrder('BANDCAMP')}
+                />
+              )}
+              {runtimeConfig.FORGEJO && (
+                <Button
+                  name="forgejo"
+                  href={runtimeConfig.FORGEJO}
+                  displayName="Forgejo"
+                  logo={forgejoLogo}
+                  order={buttonOrder('FORGEJO')}
                 />
               )}
             </Sort>
