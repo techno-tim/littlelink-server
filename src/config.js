@@ -153,6 +153,7 @@ export const runtimeConfig =
         BANDCAMP: window?.env?.BANDCAMP,
         FORGEJO: window?.env?.FORGEJO,
         ORCID: window?.env?.ORCID,
+        CREDLY: window?.env?.CREDLY,
       }
     : {
         // server
@@ -551,4 +552,7 @@ export const runtimeConfig =
           ? process.env.FORGEJO
           : process.env.RAZZLE_FORGEJO,
         ORCID: nodeIsProduction ? process.env.ORCID : process.env.RAZZLE_ORCID,
+        CREDLY: nodeIsProduction
+          ? process.env.CREDLY
+          : process.env.RAZZLE_CREDLY,
       };

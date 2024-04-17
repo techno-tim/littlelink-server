@@ -3,7 +3,8 @@
 version: "3.0"
 services:
   little-link:
-    image: ghcr.io/techno-tim/littlelink-server:latest
+    image: docker.io/library/tag
+    # ghcr.io/techno-tim/littlelink-server:latest
     # dockerhub is also supported timothystewart6/littlelink-server
     #image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
@@ -138,6 +139,8 @@ services:
       - BANDCAMP=https://bandcamp.com/
       - FORGEJO=https://forgejo.org/
       - ORCID=https://orcid.org/
+      - CREDLY=https://www.credly.com/
+    ports:
       - 8080:3000
     restart: unless-stopped
     security_opt:

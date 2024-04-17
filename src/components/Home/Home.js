@@ -100,6 +100,7 @@ import audiusLogo from '../../icons/audius.svg';
 import bandcampLogo from '../../icons/bandcamp.svg';
 import forgejoLogo from '../../icons/forgejo.svg';
 import orcidLogo from '../../icons/orcid.svg';
+import credlyLogo from '../../icons/credly.svg';
 
 function Home(props) {
   let order = [];
@@ -1046,6 +1047,15 @@ function Home(props) {
                   displayName="ORCID"
                   logo={orcidLogo}
                   order={buttonOrder('ORCID')}
+                />
+              )}
+              {runtimeConfig.CREDLY && (
+                <Button
+                  name="credly"
+                  href={runtimeConfig.CREDLY}
+                  displayName="Credly"
+                  logo={credlyLogo}
+                  order={buttonOrder('CREDLY')}
                 />
               )}
             </Sort>

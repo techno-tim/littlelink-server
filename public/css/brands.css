@@ -674,3 +674,9 @@ button {
   color: #A6CE39;
   background-color: #ffffff;
 }
+
+/* Credly */
+.button.button-credly {
+  color: #FF6A00;
+  background-color: #ffffff;
+}
