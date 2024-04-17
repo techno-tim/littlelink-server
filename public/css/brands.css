@@ -692,3 +692,9 @@ button {
   color: #356AC3;
   background-color: #ffffff;
 }
+
+/* Simplex */
+.button.button-simplex {
+  color: #07B4B9;
+  background-color: #ffffff;
+}

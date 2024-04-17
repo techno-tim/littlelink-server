@@ -142,6 +142,7 @@ services:
       - CREDLY=https://www.credly.com/
       - SEMANTICSCHOLAR=https://www.semanticscholar.org/
       - GOOGLESCHOLAR=https://scholar.google.co.uk/
+      - SIMPLEX=https://simplex.chat/
     ports:
       - 8080:3000
     restart: unless-stopped

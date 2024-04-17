@@ -103,6 +103,7 @@ import orcidLogo from '../../icons/orcid.svg';
 import credlyLogo from '../../icons/credly.svg';
 import semanticscholarLogo from '../../icons/semanticscholar.svg';
 import googlescholarLogo from '../../icons/googlescholar.svg';
+import simplexLogo from '../../icons/simplex.svg';
 
 function Home(props) {
   let order = [];
@@ -1076,6 +1077,15 @@ function Home(props) {
                   displayName="Google Scholar"
                   logo={googlescholarLogo}
                   order={buttonOrder('GOOGLESCHOLAR')}
+                />
+              )}
+              {runtimeConfig.SIMPLEX && (
+                <Button
+                  name="simplex"
+                  href={runtimeConfig.SIMPLEX}
+                  displayName="Simplex"
+                  logo={simplexLogo}
+                  order={buttonOrder('SIMPLEX')}
                 />
               )}
             </Sort>

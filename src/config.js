@@ -156,6 +156,7 @@ export const runtimeConfig =
         CREDLY: window?.env?.CREDLY,
         SEMANTICSCHOLAR: window?.env?.SEMANTICSCHOLAR,
         GOOGLESCHOLAR: window?.env?.GOOGLESCHOLAR,
+        SIMPLEX: window?.env?.SIMPLEX,
       }
     : {
         // server
@@ -563,4 +564,7 @@ export const runtimeConfig =
         GOOGLESCHOLAR: nodeIsProduction
           ? process.env.GOOGLESCHOLAR
           : process.env.RAZZLE_GOOGLESCHOLAR,
+        SIMPLEX: nodeIsProduction
+          ? process.env.SIMPLEX
+          : process.env.RAZZLE_SIMPLEX,
       };
