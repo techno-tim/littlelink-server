@@ -157,6 +157,7 @@ export const runtimeConfig =
         SEMANTICSCHOLAR: window?.env?.SEMANTICSCHOLAR,
         GOOGLESCHOLAR: window?.env?.GOOGLESCHOLAR,
         SIMPLEX: window?.env?.SIMPLEX,
+        MIXCLOUD: window?.env?.MIXCLOUD,
       }
     : {
         // server
@@ -567,4 +568,7 @@ export const runtimeConfig =
         SIMPLEX: nodeIsProduction
           ? process.env.SIMPLEX
           : process.env.RAZZLE_SIMPLEX,
+        MIXCLOUD: nodeIsProduction
+          ? process.env.MIXCLOUD
+          : process.env.RAZZLE_MIXCLOUD,
       };

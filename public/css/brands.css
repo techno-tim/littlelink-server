@@ -698,3 +698,9 @@ button {
   color: #07B4B9;
   background-color: #ffffff;
 }
+
+/* Mixcloud */
+.button.button-mixcloud {
+  color: #000000;
+  background-color: #ffffff;
+}

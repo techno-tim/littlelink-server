@@ -104,6 +104,7 @@ import credlyLogo from '../../icons/credly.svg';
 import semanticscholarLogo from '../../icons/semanticscholar.svg';
 import googlescholarLogo from '../../icons/googlescholar.svg';
 import simplexLogo from '../../icons/simplex.svg';
+import mixcloudLogo from '../../icons/mixcloud.svg';
 
 function Home(props) {
   let order = [];
@@ -1086,6 +1087,15 @@ function Home(props) {
                   displayName="Simplex"
                   logo={simplexLogo}
                   order={buttonOrder('SIMPLEX')}
+                />
+              )}
+              {runtimeConfig.MIXCLOUD && (
+                <Button
+                  name="mixcloud"
+                  href={runtimeConfig.MIXCLOUD}
+                  displayName="MIXCLOUD"
+                  logo={mixcloudLogo}
+                  order={buttonOrder('MIXCLOUD')}
                 />
               )}
             </Sort>
