@@ -650,3 +650,9 @@ button {
   color: #ffffff;
   background-color: #FF9800;
 }
+
+/* RSS */
+.button.button-audius {
+  color: #000000;
+  background-color: #ffffff;
+}

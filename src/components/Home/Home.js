@@ -96,6 +96,7 @@ import googlePodcastsLogo from '../../icons/google-podcasts.svg';
 import pocketCastsLogo from '../../icons/pocketcasts.svg';
 import overcastLogo from '../../icons/overcast.svg';
 import rssLogo from '../../icons/generic-rss.svg';
+import audiusLogo from '../../icons/audius.svg';
 
 function Home(props) {
   let order = [];
@@ -1006,6 +1007,15 @@ function Home(props) {
                   displayName="RSS"
                   logo={rssLogo}
                   order={buttonOrder('RSS')}
+                />
+              )}
+              {runtimeConfig.AUDIUS && (
+                <Button
+                  name="audius"
+                  href={runtimeConfig.AUDIUS}
+                  displayName="Audius"
+                  logo={audiusLogo}
+                  order={buttonOrder('AUDIUS')}
                 />
               )}
             </Sort>

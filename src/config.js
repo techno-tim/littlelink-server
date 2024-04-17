@@ -149,6 +149,7 @@ export const runtimeConfig =
         POCKET_CASTS: window?.env?.POCKET_CASTS,
         OVERCAST: window?.env?.OVERCAST,
         RSS: window?.env?.RSS,
+        AUDIUS: window?.env?.AUDIUS,
       }
     : {
         // server
@@ -537,4 +538,7 @@ export const runtimeConfig =
           ? process.env.OVERCAST
           : process.env.RAZZLE_OVERCAST,
         RSS: nodeIsProduction ? process.env.RSS : process.env.RAZZLE_RSS,
+        AUDIUS: nodeIsProduction
+          ? process.env.AUDIUS
+          : process.env.RAZZLE_AUDIUS,
       };
