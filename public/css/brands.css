@@ -650,3 +650,57 @@ button {
   color: #ffffff;
   background-color: #FF9800;
 }
+
+/* Audius */
+.button.button-audius {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Bandcamp */
+.button.button-bandcamp {
+  color: #11AADD;
+  background-color: #ffffff;
+}
+
+/* Forgejo */
+.button.button-forgejo {
+  color: #C2410C;
+  background-color: #ffffff;
+}
+
+/* Orcid */
+.button.button-orcid {
+  color: #A6CE39;
+  background-color: #ffffff;
+}
+
+/* Credly */
+.button.button-credly {
+  color: #FF6A00;
+  background-color: #ffffff;
+}
+
+/* Semantic Scholar */
+.button.button-semanticscholar {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Google Scholar */
+.button.button-googlescholar {
+  color: #356AC3;
+  background-color: #ffffff;
+}
+
+/* Simplex */
+.button.button-simplex {
+  color: #07B4B9;
+  background-color: #ffffff;
+}
+
+/* Mixcloud */
+.button.button-mixcloud {
+  color: #000000;
+  background-color: #ffffff;
+}

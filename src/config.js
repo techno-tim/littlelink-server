@@ -149,6 +149,15 @@ export const runtimeConfig =
         POCKET_CASTS: window?.env?.POCKET_CASTS,
         OVERCAST: window?.env?.OVERCAST,
         RSS: window?.env?.RSS,
+        AUDIUS: window?.env?.AUDIUS,
+        BANDCAMP: window?.env?.BANDCAMP,
+        FORGEJO: window?.env?.FORGEJO,
+        ORCID: window?.env?.ORCID,
+        CREDLY: window?.env?.CREDLY,
+        SEMANTICSCHOLAR: window?.env?.SEMANTICSCHOLAR,
+        GOOGLESCHOLAR: window?.env?.GOOGLESCHOLAR,
+        SIMPLEX: window?.env?.SIMPLEX,
+        MIXCLOUD: window?.env?.MIXCLOUD,
       }
     : {
         // server
@@ -537,4 +546,29 @@ export const runtimeConfig =
           ? process.env.OVERCAST
           : process.env.RAZZLE_OVERCAST,
         RSS: nodeIsProduction ? process.env.RSS : process.env.RAZZLE_RSS,
+        AUDIUS: nodeIsProduction
+          ? process.env.AUDIUS
+          : process.env.RAZZLE_AUDIUS,
+        BANDCAMP: nodeIsProduction
+          ? process.env.BANDCAMP
+          : process.env.RAZZLE_BANDCAMP,
+        FORGEJO: nodeIsProduction
+          ? process.env.FORGEJO
+          : process.env.RAZZLE_FORGEJO,
+        ORCID: nodeIsProduction ? process.env.ORCID : process.env.RAZZLE_ORCID,
+        CREDLY: nodeIsProduction
+          ? process.env.CREDLY
+          : process.env.RAZZLE_CREDLY,
+        SEMANTICSCHOLAR: nodeIsProduction
+          ? process.env.SEMANTICSCHOLAR
+          : process.env.RAZZLE_SEMANTICSCHOLAR,
+        GOOGLESCHOLAR: nodeIsProduction
+          ? process.env.GOOGLESCHOLAR
+          : process.env.RAZZLE_GOOGLESCHOLAR,
+        SIMPLEX: nodeIsProduction
+          ? process.env.SIMPLEX
+          : process.env.RAZZLE_SIMPLEX,
+        MIXCLOUD: nodeIsProduction
+          ? process.env.MIXCLOUD
+          : process.env.RAZZLE_MIXCLOUD,
       };

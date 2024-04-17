@@ -134,6 +134,15 @@ services:
       - POCKET_CASTS=https://pca.st/XYZ
       - OVERCAST=https://overcast.fm/itunes00000000
       - RSS=https://example.com/rss
+      - AUDIUS=https://audius.co/
+      - BANDCAMP=https://bandcamp.com/
+      - FORGEJO=https://forgejo.org/
+      - ORCID=https://orcid.org/
+      - CREDLY=https://www.credly.com/
+      - SEMANTICSCHOLAR=https://www.semanticscholar.org/
+      - GOOGLESCHOLAR=https://scholar.google.co.uk/
+      - SIMPLEX=https://simplex.chat/
+      - MIXCLOUD=https://www.mixcloud.com/
     ports:
       - 8080:3000
     restart: unless-stopped

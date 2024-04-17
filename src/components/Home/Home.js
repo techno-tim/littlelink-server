@@ -96,6 +96,15 @@ import googlePodcastsLogo from '../../icons/google-podcasts.svg';
 import pocketCastsLogo from '../../icons/pocketcasts.svg';
 import overcastLogo from '../../icons/overcast.svg';
 import rssLogo from '../../icons/generic-rss.svg';
+import audiusLogo from '../../icons/audius.svg';
+import bandcampLogo from '../../icons/bandcamp.svg';
+import forgejoLogo from '../../icons/forgejo.svg';
+import orcidLogo from '../../icons/orcid.svg';
+import credlyLogo from '../../icons/credly.svg';
+import semanticscholarLogo from '../../icons/semanticscholar.svg';
+import googlescholarLogo from '../../icons/googlescholar.svg';
+import simplexLogo from '../../icons/simplex.svg';
+import mixcloudLogo from '../../icons/mixcloud.svg';
 
 function Home(props) {
   let order = [];
@@ -1006,6 +1015,87 @@ function Home(props) {
                   displayName="RSS"
                   logo={rssLogo}
                   order={buttonOrder('RSS')}
+                />
+              )}
+              {runtimeConfig.AUDIUS && (
+                <Button
+                  name="audius"
+                  href={runtimeConfig.AUDIUS}
+                  displayName="Audius"
+                  logo={audiusLogo}
+                  order={buttonOrder('AUDIUS')}
+                />
+              )}
+              {runtimeConfig.BANDCAMP && (
+                <Button
+                  name="bandcamp"
+                  href={runtimeConfig.BANDCAMP}
+                  displayName="Bandcamp"
+                  logo={bandcampLogo}
+                  order={buttonOrder('BANDCAMP')}
+                />
+              )}
+              {runtimeConfig.FORGEJO && (
+                <Button
+                  name="forgejo"
+                  href={runtimeConfig.FORGEJO}
+                  displayName="Forgejo"
+                  logo={forgejoLogo}
+                  order={buttonOrder('FORGEJO')}
+                />
+              )}
+              {runtimeConfig.ORCID && (
+                <Button
+                  name="orcid"
+                  href={runtimeConfig.ORCID}
+                  displayName="ORCID"
+                  logo={orcidLogo}
+                  order={buttonOrder('ORCID')}
+                />
+              )}
+              {runtimeConfig.CREDLY && (
+                <Button
+                  name="credly"
+                  href={runtimeConfig.CREDLY}
+                  displayName="Credly"
+                  logo={credlyLogo}
+                  order={buttonOrder('CREDLY')}
+                />
+              )}
+              {runtimeConfig.SEMANTICSCHOLAR && (
+                <Button
+                  name="semanticscholar"
+                  href={runtimeConfig.SEMANTICSCHOLAR}
+                  displayName="Semantic Scholar"
+                  logo={semanticscholarLogo}
+                  order={buttonOrder('SEMANTICSCHOLAR')}
+                />
+              )}
+              {runtimeConfig.GOOGLESCHOLAR && (
+                <Button
+                  name="googlescholar"
+                  href={runtimeConfig.GOOGLESCHOLAR}
+                  displayName="Google Scholar"
+                  logo={googlescholarLogo}
+                  order={buttonOrder('GOOGLESCHOLAR')}
+                />
+              )}
+              {runtimeConfig.SIMPLEX && (
+                <Button
+                  name="simplex"
+                  href={runtimeConfig.SIMPLEX}
+                  displayName="Simplex"
+                  logo={simplexLogo}
+                  order={buttonOrder('SIMPLEX')}
+                />
+              )}
+              {runtimeConfig.MIXCLOUD && (
+                <Button
+                  name="mixcloud"
+                  href={runtimeConfig.MIXCLOUD}
+                  displayName="MIXCLOUD"
+                  logo={mixcloudLogo}
+                  order={buttonOrder('MIXCLOUD')}
                 />
               )}
             </Sort>
