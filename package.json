@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
-    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-react": "^7.24.7",
     "@babel/eslint-parser": "^7.24.6",
     "babel-preset-razzle": "^4.2.18",
     "eslint": "^8.57.0",
