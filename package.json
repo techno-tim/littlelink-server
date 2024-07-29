@@ -19,7 +19,7 @@
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "compression": "^1.7.4",
@@ -29,13 +29,13 @@
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.24.1",
+    "react-router-dom": "^6.25.1",
     "serialize-javascript": "^6.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
     "@babel/preset-react": "^7.24.7",
-    "@babel/eslint-parser": "^7.24.8",
+    "@babel/eslint-parser": "^7.25.0",
     "babel-preset-razzle": "^4.2.18",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -52,8 +52,8 @@
     "razzle": "^4.2.18",
     "razzle-dev-utils": "^4.2.18",
     "react-test-renderer": "^18.3.1",
-    "stylelint": "^16.7.0",
-    "url": "^0.11.3",
+    "stylelint": "^16.8.0",
+    "url": "^0.11.4",
     "webpack": "^5.93.0",
     "webpack-dev-server": "^4.15.2"
   },
