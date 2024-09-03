@@ -105,6 +105,11 @@ import semanticscholarLogo from '../../icons/semanticscholar.svg';
 import googlescholarLogo from '../../icons/googlescholar.svg';
 import simplexLogo from '../../icons/simplex.svg';
 import mixcloudLogo from '../../icons/mixcloud.svg';
+import internetarchiveLogo from '../../icons/internetarchive.svg';
+import googlemapsLogo from '../../icons/googlemaps.svg';
+import tidalLogo from '../../icons/tidal.svg';
+import thestorygraphLogo from '../../icons/storygraph.svg';
+import geocachingLogo from '../../icons/geocaching.svg';
 
 function Home(props) {
   let order = [];
@@ -1096,6 +1101,51 @@ function Home(props) {
                   displayName="MIXCLOUD"
                   logo={mixcloudLogo}
                   order={buttonOrder('MIXCLOUD')}
+                />
+              )}
+              {runtimeConfig.INTERNETARCHIVE && (
+                <Button
+                  name="internetarchive"
+                  href={runtimeConfig.INTERNETARCHIVE}
+                  displayName="Internet Archive"
+                  logo={internetarchiveLogo}
+                  order={buttonOrder('INTERNETARCHIVE')}
+                />
+              )}
+              {runtimeConfig.GOOGLEMAPS && (
+                <Button
+                  name="googlemaps"
+                  href={runtimeConfig.GOOGLEMAPS}
+                  displayName="Google Maps"
+                  logo={googlemapsLogo}
+                  order={buttonOrder('GOOGLEMAPS')}
+                />
+              )}
+              {runtimeConfig.TIDAL && (
+                <Button
+                  name="tidal"
+                  href={runtimeConfig.TIDAL}
+                  displayName="Tidal"
+                  logo={tidalLogo}
+                  order={buttonOrder('TIDAL')}
+                />
+              )}
+              {runtimeConfig.THESTORYGRAPH && (
+                <Button
+                  name="thestorygraph"
+                  href={runtimeConfig.THESTORYGRAPH}
+                  displayName="The StoryGraph"
+                  logo={thestorygraphLogo}
+                  order={buttonOrder('THESTORYGRAPH')}
+                />
+              )}
+              {runtimeConfig.GEOCACHING && (
+                <Button
+                  name="geocaching"
+                  href={runtimeConfig.GEOCACHING}
+                  displayName="GEOCACHING"
+                  logo={geocachingLogo}
+                  order={buttonOrder('GEOCACHING')}
                 />
               )}
             </Sort>

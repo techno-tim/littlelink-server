@@ -704,3 +704,36 @@ button {
   color: #000000;
   background-color: #ffffff;
 }
+
+/* Internet Archive */
+.button.button-internetarchive {
+  color: #000000;
+  background-color: #ffff;
+}
+
+/* Google Maps */
+.button.button-googlemaps {
+  color: #4482f1;
+  background-color: #fff;
+}
+
+/* Tidal */
+.button.button-tidal {
+  color: #000000;
+  background-color: #fff;
+}
+
+/* TheStoryGraph */
+.button.button-thestorygraph {
+  color: #ffff;
+  background-color: #18949c;
+}
+
+/* Geocaching */
+.button.button-geocaching {
+  color: #000000;
+  background-color: #ffff;
+}
+
+
+

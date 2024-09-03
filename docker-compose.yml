@@ -143,6 +143,11 @@ services:
       - GOOGLESCHOLAR=https://scholar.google.co.uk/
       - SIMPLEX=https://simplex.chat/
       - MIXCLOUD=https://www.mixcloud.com/
+      - INTERNETARCHIVE=https://archive.org/
+      - GOOGLEMAPS=https://www.google.com/maps
+      - TIDAL=https://tidal.com/
+      - THESTORYGRAPH=https://www.thestorygraph.com/
+      - GEOCACHING=https://www.geocaching.com/play
     ports:
       - 8080:3000
     restart: unless-stopped
