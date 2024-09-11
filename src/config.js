@@ -158,6 +158,11 @@ export const runtimeConfig =
         GOOGLESCHOLAR: window?.env?.GOOGLESCHOLAR,
         SIMPLEX: window?.env?.SIMPLEX,
         MIXCLOUD: window?.env?.MIXCLOUD,
+        INTERNETARCHIVE: window?.env?.INTERNETARCHIVE,
+        GOOGLEMAPS: window?.env?.GOOGLEMAPS,
+        TIDAL: window?.env?.TIDAL,
+        THESTORYGRAPH: window?.env?.THESTORYGRAPH,
+        GEOCACHING: window?.env?.GEOCACHING,
       }
     : {
         // server
@@ -571,4 +576,17 @@ export const runtimeConfig =
         MIXCLOUD: nodeIsProduction
           ? process.env.MIXCLOUD
           : process.env.RAZZLE_MIXCLOUD,
+        INTERNETARCHIVE: nodeIsProduction
+          ? process.env.INTERNETARCHIVE
+          : process.env.RAZZLE_INTERNETARCHIVE,
+        GOOGLEMAPS: nodeIsProduction
+          ? process.env.GOOGLEMAPS
+          : process.env.RAZZLE_GOOGLEMAPS,
+        TIDAL: nodeIsProduction ? process.env.TIDAL : process.env.RAZZLE_TIDAL,
+        THESTORYGRAPH: nodeIsProduction
+          ? process.env.THESTORYGRAPH
+          : process.env.RAZZLE_THESTORYGRAPH,
+        GEOCACHING: nodeIsProduction
+          ? process.env.GEOCACHING
+          : process.env.RAZZLE_GEOCACHING,
       };
