@@ -35,7 +35,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-react": "^7.24.7",
-    "@babel/eslint-parser": "^7.25.1",
+    "@babel/eslint-parser": "^7.25.9",
     "babel-preset-razzle": "^4.2.18",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -46,7 +46,7 @@
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-react": "^7.35.2",
     "html-webpack-plugin": "^5.6.0",
-    "markdownlint-cli": "^0.42.0",
+    "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.1",
     "prettier": "^3.3.3",
     "razzle": "^4.2.18",
@@ -54,7 +54,7 @@
     "react-test-renderer": "^18.3.1",
     "stylelint": "^16.9.0",
     "url": "^0.11.4",
-    "webpack": "^5.94.0",
+    "webpack": "^5.95.0",
     "webpack-dev-server": "^4.15.2"
   },
   "resolutions": {
