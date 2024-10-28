@@ -17,10 +17,10 @@
     "lint:markdown": "markdownlint .github/*.md && markdownlint README.md"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "compression": "^1.7.4",
     "express": "^4.20.0",
@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
-    "@babel/preset-react": "^7.24.7",
     "@babel/eslint-parser": "^7.25.9",
+    "@babel/preset-react": "^7.24.7",
     "babel-preset-razzle": "^4.2.18",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -45,8 +45,8 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-react": "^7.35.2",
-    "html-webpack-plugin": "^5.6.0",
     "html-webpack-plugin": "^5.6.3",
+    "markdownlint-cli": "^0.42.0",
     "mini-css-extract-plugin": "^2.9.1",
     "prettier": "^3.3.3",
     "razzle": "^4.2.18",
