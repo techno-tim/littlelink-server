@@ -5,10 +5,15 @@ import { runtimeConfig } from '../../config';
 
 import './Avatar.css';
 
+// Avatar component that renders an image with shadow.
 function Avatar(props) {
+  // Props of the component.
   const { src, srcSet, alt } = props;
+
+  // Get avatar size from runtime config.
   const avatarSize = runtimeConfig.AVATAR_SIZE || null;
 
+  // Render the image with shadow.
   return (
     <img
       className={'avatar' + addShadow()}
@@ -20,6 +25,7 @@ function Avatar(props) {
   );
 }
 
+// Memoize the component to improve performance.
 export default memo(Avatar);
 
 Avatar.propType = {
