@@ -735,5 +735,29 @@ button {
   background-color: #ffff;
 }
 
+/* Neocities */
+.button.button-neocities {
+  color: #ffff;
+  background-color: #65a0ad;
+}
+
+/*  Dreamwidth */
+.button.button-dreamwidth {
+  color: #C1272D;
+  background-color: #ffff;
+}
+
+/* Spacehey */
+.button.button-spacehey {
+  color: #204cdc;
+  background-color: #ffff;
+}
+
+/* Viber */
+.button.button-viber {
+  color: #583cbc;
+  background-color: #ffff;
+}
+
 
 

@@ -110,6 +110,10 @@ import googlemapsLogo from '../../icons/googlemaps.svg';
 import tidalLogo from '../../icons/tidal.svg';
 import thestorygraphLogo from '../../icons/storygraph.svg';
 import geocachingLogo from '../../icons/geocaching.svg';
+import neocitiesLogo from '../../icons/neocities.svg';
+import dreamwidthLogo from '../../icons/dreamwidth.svg';
+import spaceheyLogo from '../../icons/spacehey.svg';
+import viberLogo from '../../icons/viber.svg';
 
 function Home(props) {
   let order = [];
@@ -1146,6 +1150,42 @@ function Home(props) {
                   displayName="GEOCACHING"
                   logo={geocachingLogo}
                   order={buttonOrder('GEOCACHING')}
+                />
+              )}
+              {runtimeConfig.NEOCITIES && (
+                <Button
+                  name="neocities"
+                  href={runtimeConfig.NEOCITIES}
+                  displayName="NEOCITIES"
+                  logo={neocitiesLogo}
+                  order={buttonOrder('NEOCITIES')}
+                />
+              )}
+              {runtimeConfig.DREAMWIDTH && (
+                <Button
+                  name="dreamwidth"
+                  href={runtimeConfig.DREAMWIDTH}
+                  displayName="DREAMWIDTH"
+                  logo={dreamwidthLogo}
+                  order={buttonOrder('DREAMWIDTH')}
+                />
+              )}
+              {runtimeConfig.SPACEHEY && (
+                <Button
+                  name="spacehey"
+                  href={runtimeConfig.SPACEHEY}
+                  displayName="SPACEHEY"
+                  logo={spaceheyLogo}
+                  order={buttonOrder('SPACEHEY')}
+                />
+              )}
+              {runtimeConfig.VIBER && (
+                <Button
+                  name="viber"
+                  href={runtimeConfig.VIBER}
+                  displayName="VIBER"
+                  logo={viberLogo}
+                  order={buttonOrder('VIBER')}
                 />
               )}
             </Sort>
