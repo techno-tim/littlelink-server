@@ -3,7 +3,8 @@
 version: "3.0"
 services:
   little-link:
-    image: ghcr.io/techno-tim/littlelink-server:latest
+    image: sha256:2a5a64e2955852cd0647d16e08ca5c70eb7defc370c7a4ca2200a10c0239bd90
+    # ghcr.io/techno-tim/littlelink-server:latest
     # dockerhub is also supported timothystewart6/littlelink-server
     #image: timothystewart6/littlelink-server:latest
     container_name: littlelink-server
@@ -152,6 +153,7 @@ services:
       - VIBER=https://www.viber.com/en/
       - SPACEHEY=https://spacehey.com/
       - DREAMWIDTH=https://www.dreamwidth.org/login
+      - PILLOWFORT=https://www.pillowfort.social/log_in
     ports:
       - 8080:3000
     restart: unless-stopped

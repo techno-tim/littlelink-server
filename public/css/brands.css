@@ -759,5 +759,11 @@ button {
   background-color: #ffff;
 }
 
+/* Pillowfort */
+.button.button-pillowfort {
+  color: #000000;
+  background-color: #ffff;
+}
+
 
 

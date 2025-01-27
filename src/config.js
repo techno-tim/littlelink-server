@@ -167,6 +167,7 @@ export const runtimeConfig =
         DREAMWIDTH: window?.env?.DREAMWIDTH,
         SPACEHEY: window?.env?.SPACEHEY,
         VIBER: window?.env?.VIBER,
+        PILLOWFORT: window?.env?.PILLOWFORT,
       }
     : {
         // server
@@ -603,4 +604,7 @@ export const runtimeConfig =
           ? process.env.SPACEHEY
           : process.env.RAZZLE_SPACEHEY,
         VIBER: nodeIsProduction ? process.env.VIBER : process.env.RAZZLE_VIBER,
+        PILLOWFORT: nodeIsProduction
+          ? process.env.PILLOWFORT
+          : process.env.RAZZLE_PILLOWFORT,
       };
