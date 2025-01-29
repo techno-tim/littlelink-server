@@ -163,6 +163,11 @@ export const runtimeConfig =
         TIDAL: window?.env?.TIDAL,
         THESTORYGRAPH: window?.env?.THESTORYGRAPH,
         GEOCACHING: window?.env?.GEOCACHING,
+        NEOCITIES: window?.env?.NEOCITIES,
+        DREAMWIDTH: window?.env?.DREAMWIDTH,
+        SPACEHEY: window?.env?.SPACEHEY,
+        VIBER: window?.env?.VIBER,
+        PILLOWFORT: window?.env?.PILLOWFORT,
       }
     : {
         // server
@@ -589,4 +594,17 @@ export const runtimeConfig =
         GEOCACHING: nodeIsProduction
           ? process.env.GEOCACHING
           : process.env.RAZZLE_GEOCACHING,
+        NEOCITIES: nodeIsProduction
+          ? process.env.NEOCITIES
+          : process.env.RAZZLE_NEOCITIES,
+        DREAMWIDTH: nodeIsProduction
+          ? process.env.DREAMWIDTH
+          : process.env.RAZZLE_DREAMWIDTH,
+        SPACEHEY: nodeIsProduction
+          ? process.env.SPACEHEY
+          : process.env.RAZZLE_SPACEHEY,
+        VIBER: nodeIsProduction ? process.env.VIBER : process.env.RAZZLE_VIBER,
+        PILLOWFORT: nodeIsProduction
+          ? process.env.PILLOWFORT
+          : process.env.RAZZLE_PILLOWFORT,
       };

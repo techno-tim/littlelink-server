@@ -148,6 +148,11 @@ services:
       - TIDAL=https://tidal.com/
       - THESTORYGRAPH=https://www.thestorygraph.com/
       - GEOCACHING=https://www.geocaching.com/play
+      - NEOCITIES=https://neocities.org/
+      - VIBER=https://www.viber.com/en/
+      - SPACEHEY=https://spacehey.com/
+      - DREAMWIDTH=https://www.dreamwidth.org/login
+      - PILLOWFORT=https://www.pillowfort.social/log_in
     ports:
       - 8080:3000
     restart: unless-stopped
