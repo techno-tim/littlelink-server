@@ -115,6 +115,7 @@ import dreamwidthLogo from '../../icons/dreamwidth.svg';
 import spaceheyLogo from '../../icons/spacehey.svg';
 import viberLogo from '../../icons/viber.svg';
 import pillowfortLogo from '../../icons/pillowfort.svg';
+import makerworldLogo from '../../icons/makerworld.svg';
 
 function Home(props) {
   let order = [];
@@ -1196,6 +1197,15 @@ function Home(props) {
                   displayName="Pillowfort"
                   logo={pillowfortLogo}
                   order={buttonOrder('PILLOWFORT')}
+                />
+              )}
+              {runtimeConfig.MAKERWORLD && (
+                <Button
+                  name="makerworld"
+                  href={runtimeConfig.MAKERWORLD}
+                  displayName="Makerworld"
+                  logo={makerworldLogo}
+                  order={buttonOrder('MAKERWORLD')}
                 />
               )}
             </Sort>

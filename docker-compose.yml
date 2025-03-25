@@ -153,6 +153,7 @@ services:
       - SPACEHEY=https://spacehey.com/
       - DREAMWIDTH=https://www.dreamwidth.org/login
       - PILLOWFORT=https://www.pillowfort.social/log_in
+      - MAKERWORLD=https://makerworld.com/en
     ports:
       - 8080:3000
     restart: unless-stopped
