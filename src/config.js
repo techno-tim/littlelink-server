@@ -168,6 +168,7 @@ export const runtimeConfig =
         SPACEHEY: window?.env?.SPACEHEY,
         VIBER: window?.env?.VIBER,
         PILLOWFORT: window?.env?.PILLOWFORT,
+        MAKERWORLD: window?.env?.MAKERWORLD,
       }
     : {
         // server
