@@ -765,5 +765,9 @@ button {
   background-color: #ffff;
 }
 
-
+/* Makerworld */
+.button.button-makerworld {
+  color: #000000;
+  background-color: #ffff;
+}
 

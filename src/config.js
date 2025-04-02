@@ -168,6 +168,7 @@ export const runtimeConfig =
         SPACEHEY: window?.env?.SPACEHEY,
         VIBER: window?.env?.VIBER,
         PILLOWFORT: window?.env?.PILLOWFORT,
+        MAKERWORLD: window?.env?.MAKERWORLD,
       }
     : {
         // server
@@ -607,4 +608,7 @@ export const runtimeConfig =
         PILLOWFORT: nodeIsProduction
           ? process.env.PILLOWFORT
           : process.env.RAZZLE_PILLOWFORT,
+        MAKERWORLD: nodeIsProduction
+          ? process.env.MAKERWORLD
+          : process.env.RAZZLE_MAKERWORLD,
       };
